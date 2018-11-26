@@ -1,0 +1,1035 @@
+2018-07-26 14:45:06 INFO 开始获取token
+2018-07-26 14:45:06 INFO token:NDFBMDg0MjI3QUM4QjcxMkExRUY1MUI2Rjc1M0E1QzM3MTFCMTg1NkRBNkY4QTgyM0IwMjM5QzVCNkNBMTdDRQ==
+2018-07-26 14:45:06 INFO -----开始创建产品接口-----
+2018-07-26 14:45:06 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-26 14:45:06 INFO body：{"is_gateway_device": false, "name": "product_2018-07-26", "link_type": 1, "description": ""}
+2018-07-26 14:45:06 INFO 创建产品接口响应：{"is_release": false, "key": "049a56151770f4a7e99b95c8839c38df", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-26T14:45:06.434Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b2db00011607d2b6b2dbe401", "is_active_register": false, "name": "product_2018-07-26", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-26 14:45:06 INFO ----开始创建$1002数据端点----
+2018-07-26 14:45:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/datapoint
+2018-07-26 14:45:06 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-07-26 14:45:06 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6b2dbe404", "name": "$1002"}
+2018-07-26 14:45:06 INFO ----开始创建自定义数据端点----
+2018-07-26 14:45:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/datapoint
+2018-07-26 14:45:06 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-07-26 14:45:06 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6b2dbe405", "name": "para_name"}
+2018-07-26 14:45:06 INFO ----开始添加设备----
+2018-07-26 14:45:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/device
+2018-07-26 14:45:06 INFO body：{"mac": "F0FE6B792673", "sn": 45986649, "name": "TEST_1"}
+2018-07-26 14:45:07 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387677772}
+2018-07-26 14:45:07 INFO ----开始设置异常规则----
+2018-07-26 14:45:07 INFO url：http://54.222.229.62:1080/v2/alert/rule
+2018-07-26 14:45:07 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d2b6b2dbe405", "content": "value>100", "source": 1, "product_id": "1607d2b6b2db00011607d2b6b2dbe401", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-07-26 14:45:07 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6b2dbe405", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6b2dbe407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2db00011607d2b6b2dbe401"}
+2018-07-26 14:45:07 INFO ----开始报警设置----
+2018-07-26 14:45:07 INFO url：http://54.222.229.62:1080/v2/alert/rule/2807d2b6b2dbe407
+2018-07-26 14:45:07 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2dbe405", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2dbe407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2db00011607d2b6b2dbe401"}
+2018-07-26 14:45:07 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2dbe405", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2dbe407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2db00011607d2b6b2dbe401"}
+2018-07-26 14:45:07 INFO ----开始设置快照----
+2018-07-26 14:45:07 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/snapshot
+2018-07-26 14:45:07 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-07-26 14:45:07 INFO 设置快照响应：{"id": "5b596df34abd1f467140b9d6"}
+2018-07-26 14:45:07 INFO ----开始设置统计规则----
+2018-07-26 14:45:07 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/snapshot/5b596df34abd1f467140b9d6/statistic_rule
+2018-07-26 14:45:07 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-07-26 14:45:07 INFO 统计规则响应：{"id": "5b596df34abd1f467140b9d9"}
+2018-07-26 14:45:07 INFO ----开始调串口激活设备----
+2018-07-26 14:45:07 INFO len(plist): 2
+2018-07-26 14:45:07 INFO 【串口激活设备失败】
+2018-07-26 14:45:07 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 403, in test_active_device
+    ser.find_serial('COM3')
+  File "C:\wq\pyworkspace\deployment\serial_method.py", line 163, in find_serial
+    serialFd = serial.Serial(serialName, 115200, timeout=1)
+  File "C:\Python27\lib\site-packages\serial\serialwin32.py", line 31, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\serial\serialutil.py", line 240, in __init__
+    self.open()
+  File "C:\Python27\lib\site-packages\serial\serialwin32.py", line 62, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+SerialException: could not open port 'COM3': WindowsError(5, '\xbe\xdc\xbe\xf8\xb7\xc3\xce\xca\xa1\xa3')
+
+2018-07-26 14:45:07 INFO ----开始查询宽表设备列表----
+2018-07-26 14:45:07 INFO url：http://54.222.229.62:1080/v2/wide-devices
+2018-07-26 14:45:07 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d2b6b2db00011607d2b6b2dbe401"}}, "limit": 100, "offset": 0}
+2018-07-26 14:45:07 INFO [error]:{'count': 0, 'list': []}
+2018-07-26 14:45:07 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 440, in test_wide_devices
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387677772' not found in "{'count': 0, 'list': []}"
+
+2018-07-26 14:45:07 INFO ----开始设备控制----
+2018-07-26 14:45:07 INFO url：http://54.222.229.62:1080/v2/diagnosis/device/set/387677772
+2018-07-26 14:45:07 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-07-26 14:45:07 INFO [error]:{'error': {'msg': 'device is offline', 'code': 4001054}}
+2018-07-26 14:45:07 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 471, in test_device_control
+    self.assertIn("200", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in "{'error': {'msg': 'device is offline', 'code': 4001054}}"
+
+2018-07-26 14:45:07 INFO ----开始获取虚拟设备----
+2018-07-26 14:45:07 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/v_device/387677772
+2018-07-26 14:45:07 INFO body：{}
+2018-07-26 14:45:07 INFO [error]:{'error': {'msg': 'virtual device not exists', 'code': 4041044}}
+2018-07-26 14:45:07 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 491, in test_get_v_device
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387677772' not found in "{'error': {'msg': 'virtual device not exists', 'code': 4041044}}"
+
+2018-07-26 14:45:07 INFO ----开始获取设备地理位置----
+2018-07-26 14:45:07 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/device/387677772/geography
+2018-07-26 14:45:07 INFO body：{}
+2018-07-26 14:45:07 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-07-26 14:45:07 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 511, in test_get_device_geography
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387677772' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-07-26 14:45:07 INFO ----开始上传固件版本1----
+2018-07-26 14:45:08 INFO 上传固件1响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/6c0c3335679f16cbba0f7cd633b5648f", "md5": "f76948049443b1c1a209d48ca65fd371", "size": 473813}
+2018-07-26 14:45:08 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/firmware
+2018-07-26 14:45:08 INFO body：{"is_release": true, "version": "10051", "identify": "", "description": "mcu1", "file_size": 473813, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/6c0c3335679f16cbba0f7cd633b5648f", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "f76948049443b1c1a209d48ca65fd371", "type": 1, "mod": "1"}
+2018-07-26 14:45:08 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-07-26T14:45:08.404Z", "description": "mcu1", "file_md5": "f76948049443b1c1a209d48ca65fd371", "identify": 0, "file_size": 473813, "id": "1807d2b6b2dbe800", "mod": "1", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/6c0c3335679f16cbba0f7cd633b5648f", "version": 10051, "type": 1}
+2018-07-26 14:45:08 INFO ----开始上传固件版本2----
+2018-07-26 14:45:09 INFO 上传固件2响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/5124a6f4572f92a9b2118d6e3bea05db", "md5": "6d58b9eea3b715eacdad940eafc7c32b", "size": 473797}
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/firmware
+2018-07-26 14:45:09 INFO body：{"is_release": true, "version": "10052", "identify": "", "description": "mcu2", "file_size": 473797, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/5124a6f4572f92a9b2118d6e3bea05db", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "6d58b9eea3b715eacdad940eafc7c32b", "type": 1, "mod": "2"}
+2018-07-26 14:45:09 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-07-26T14:45:08.927Z", "description": "mcu2", "file_md5": "6d58b9eea3b715eacdad940eafc7c32b", "identify": 0, "file_size": 473797, "id": "1807d2b6b2dbe801", "mod": "2", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/5124a6f4572f92a9b2118d6e3bea05db", "version": 10052, "type": 1}
+2018-07-26 14:45:09 INFO ----开始创建升级任务----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task
+2018-07-26 14:45:09 INFO body：{"target_version": 10052, "description": "task_description", "target_version_size": 473797, "from_version": 10051, "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/6c0c3335679f16cbba0f7cd633b5648f", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/5124a6f4572f92a9b2118d6e3bea05db", "identify": "", "name": "task_name", "task_type": 1, "product_id": "1607d2b6b2db00011607d2b6b2dbe401", "type": 1, "target_version_md5": "6d58b9eea3b715eacdad940eafc7c32b", "scope": {"category": 0, "device_list": []}, "from_version_size": 473813, "from_version_md5": "f76948049443b1c1a209d48ca65fd371"}
+2018-07-26 14:45:09 INFO 创建升级任务响应：{"status": 0, "task_type": 1, "target_version": 10052, "description": "task_description", "from_version_md5": "f76948049443b1c1a209d48ca65fd371", "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/6c0c3335679f16cbba0f7cd633b5648f", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/5124a6f4572f92a9b2118d6e3bea05db", "name": "task_name", "product_id": "1607d2b6b2db00011607d2b6b2dbe401", "identify": 0, "from_version": 10051, "id": "2007d2b6b2dbea00", "scope": {"category": 0}, "from_version_size": 473813, "type": 1, "upgrade_count": 0, "target_version_size": 473797}
+2018-07-26 14:45:09 INFO ----开始启动升级任务----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task/status
+2018-07-26 14:45:09 INFO body：{"status": 1, "product_id": "1607d2b6b2db00011607d2b6b2dbe401", "upgrade_task_id": "2007d2b6b2dbea00"}
+2018-07-26 14:45:09 INFO 启动升级任务成功
+2018-07-26 14:45:09 INFO ----开始获取地理位置信息列表----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/service/position/geographies
+2018-07-26 14:45:09 INFO body：{"param": "F001S006"}
+2018-07-26 14:45:09 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-07-26 14:45:09 INFO ----开始调串口上报数据----
+2018-07-26 14:45:09 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\serial_method.py", line 226, in mcu_wifi
+    serialFd.write(send)
+NameError: global name 'serialFd' is not defined
+
+2018-07-26 14:45:09 INFO 【串口上报数据失败】
+2018-07-26 14:45:09 INFO ----开始获取告警记录----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/corp/alarm/states
+2018-07-26 14:45:09 INFO body：{"filter": ["id", "device_id", "rule_id", "status", "content", "count"], "query": {"scope": {"$in": [1, 3, 4]}, "product_id": {"$in": ["1607d2b6b2db00011607d2b6b2dbe401"]}, "device_id": {"$eq": 387677772}}, "limit": 10, "order": {"start_time": "desc"}, "offset": 0}
+2018-07-26 14:45:09 INFO [error]:{'count': 0, 'list': []}
+2018-07-26 14:45:09 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 861, in test_get_alarm_list
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387677772' not found in "{'count': 0, 'list': []}"
+
+2018-07-26 14:45:09 INFO ----开始用户通过邮箱注册----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/user_register
+2018-07-26 14:45:09 INFO body：{"corp_id": "1007d2acdcd76e00", "source": "2", "local_lang": "zh-cn", "password": "123456", "nickname": "nickname", "email": "wangqi@xlink.cn"}
+2018-07-26 14:45:09 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-07-26 14:45:09 INFO ----开始获取注册验证码----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/user_register/verifycode
+2018-07-26 14:45:09 INFO body：{"phone": "15018753353", "corp_id": "1007d2acdcd76e00"}
+2018-07-26 14:45:09 INFO [error]:{'error': {'msg': 'need captcha', 'code': 4001154}}
+2018-07-26 14:45:09 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 734, in test_user_register_phone_verifycode
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [400]>'
+
+2018-07-26 14:45:09 INFO ----开始用户通过邮箱登录----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/user_auth
+2018-07-26 14:45:09 INFO body：{"password": "123456", "email": "wangqi@xlink.cn", "corp_id": "1007d2acdcd76e00"}
+2018-07-26 14:45:09 INFO 用户通过邮箱登录响应：{"access_token": "MDVDQjEwMUZDNzY3NDkwMURDQTJBRERFRjAwNURGNjBBRURERjU0MDJFMDE5NURGRkE5ODAxMDNGM0I1RDU4MQ==", "expire_in": 7200, "authorize": "2207d2b6b2dbea01", "user_id": 387676740, "refresh_token": "MTQ1OTE3QTMxQ0U5MEQxODU1OTA0Mzk0MDY4REU1QTAyQUIwNzMwRENENTg5RUIyNDA1NEU4QjlCMEJFOTMwMQ=="}
+2018-07-26 14:45:09 INFO ----开始生成设备二维码----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2db00011607d2b6b2dbe401/device/387677772/qrcode
+2018-07-26 14:45:09 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-07-26 14:45:09 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2db00011607d2b6b2dbe401;QK:5b596df24abd1f467140b9cc;id:387677772;MAC:F0FE6B792673;SN:45986649;;"}
+2018-07-26 14:45:09 INFO ----开始订阅设备----
+2018-07-26 14:45:09 INFO url：http://54.222.229.62:1080/v2/user/387676740/qrcode_subscribe
+2018-07-26 14:45:09 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2db00011607d2b6b2dbe401;QK:5b596df24abd1f467140b9cc;id:387677772;MAC:F0FE6B792673;SN:45986649;;"}
+2018-07-26 14:45:10 INFO [error]:{'error': {'msg': 'virtual device info not exists', 'code': 4041044}}
+2018-07-26 14:45:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 884, in test_get_qrcode_subscribe
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387677772' not found in "{'error': {'msg': 'virtual device info not exists', 'code': 4041044}}"
+
+2018-07-26 14:45:10 INFO ----开始获取设备列表----
+2018-07-26 14:45:10 INFO url：http://54.222.229.62:1080/v2/user/387676740/subscribe/devices
+2018-07-26 14:45:10 INFO body：{}
+2018-07-26 14:45:10 INFO [error]:[]
+2018-07-26 14:45:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 905, in test_user_get_device_list
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387677772' not found in '[]'
+
+2018-07-26 14:45:10 INFO ----开始配置app----
+2018-07-26 14:45:10 INFO url：http://54.222.229.62:1080/v2/plugin/app
+2018-07-26 14:45:10 INFO body：{"enable": true, "type": 10, "name": "feedback", "plugin": "helpdesk"}
+2018-07-26 14:45:10 INFO 配置app响应：{"secret": "dd0df6ef28bc89611c7c77cf3a51a880", "create_time": "2018-07-26T14:45:09.898Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e07d2b6b2dbea02", "fee_type": 0}
+2018-07-26 14:45:10 INFO ----开始新增用户反馈----
+2018-07-26 14:45:10 INFO url：http://54.222.229.62:1080/v2/module/feedback/2e07d2b6b2dbea02/api/feedback/save
+2018-07-26 14:45:10 INFO body：{"content": "\u7535\u996d\u7172\u65e0\u6cd5\u542f\u7528", "user_name": "\u5c0f\u660e", "user_id": 387676740, "email": "xiaoming@qq.com", "phone": "1689624223"}
+2018-07-26 14:45:10 INFO [error]:
+2018-07-26 14:45:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 956, in test_feedback
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/module/feedback/2e07d2b6b2dbea02/api/feedback/save
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-26 14:45:10 INFO ----开始设备手动升级----
+2018-07-26 14:45:10 INFO url：http://54.222.229.62:1080/v2/upgrade/device
+2018-07-26 14:45:10 INFO body：{"product_id": "1607d2b6b2db00011607d2b6b2dbe401", "device_id": 387677772}
+2018-07-26 14:45:10 INFO [error]:{'error': {'msg': 'user have not subscribe device', 'code': 4001034}}
+2018-07-26 14:45:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 980, in test_upgrade_by_manual
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [404]>'
+
+2018-07-26 14:45:10 INFO ----开始删除用户----
+2018-07-26 14:45:10 INFO url：http://54.222.229.62:1080/v2/user/387676740
+2018-07-26 14:45:10 INFO 已删除用户
+2018-07-26 14:45:10 INFO ----开始删除app配置----
+2018-07-26 14:45:10 INFO url：http://54.222.229.62:1080/v2/plugin/app/2e07d2b6b2dbea02
+2018-07-26 14:45:10 INFO 已删除产品
+2018-07-26 14:46:01 INFO 开始获取token
+2018-07-26 14:46:01 INFO token:MEMwQzFCMDEyRDg2REFDQzJEQkQxRkE3QTcwQkUzRDM1NDQ2NDA1QzRGMEM3OTAwNTQ2RDE5QkRFMzgxQkVGNQ==
+2018-07-26 14:46:01 INFO -----开始创建产品接口-----
+2018-07-26 14:46:01 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-26 14:46:01 INFO body：{"is_gateway_device": false, "name": "product_2018-07-26", "link_type": 1, "description": ""}
+2018-07-26 14:46:01 INFO 创建产品接口响应：{"is_release": false, "key": "30938414c8bfec3bd3406f45ac810b90", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-26T14:46:00.863Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b2dc00011607d2b6b2dc5001", "is_active_register": false, "name": "product_2018-07-26", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-26 14:46:01 INFO ----开始创建$1002数据端点----
+2018-07-26 14:46:01 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/datapoint
+2018-07-26 14:46:01 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-07-26 14:46:01 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6b2dc5004", "name": "$1002"}
+2018-07-26 14:46:01 INFO ----开始创建自定义数据端点----
+2018-07-26 14:46:01 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/datapoint
+2018-07-26 14:46:01 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-07-26 14:46:01 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6b2dc5200", "name": "para_name"}
+2018-07-26 14:46:01 INFO ----开始添加设备----
+2018-07-26 14:46:01 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/device
+2018-07-26 14:46:01 INFO body：{"mac": "F0FE6B792673", "sn": 90300923, "name": "TEST_1"}
+2018-07-26 14:46:01 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387671703}
+2018-07-26 14:46:01 INFO ----开始设置异常规则----
+2018-07-26 14:46:01 INFO url：http://54.222.229.62:1080/v2/alert/rule
+2018-07-26 14:46:01 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d2b6b2dc5200", "content": "value>100", "source": 1, "product_id": "1607d2b6b2dc00011607d2b6b2dc5001", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-07-26 14:46:01 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6b2dc5200", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6b2dc5202", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2dc00011607d2b6b2dc5001"}
+2018-07-26 14:46:01 INFO ----开始报警设置----
+2018-07-26 14:46:01 INFO url：http://54.222.229.62:1080/v2/alert/rule/2807d2b6b2dc5202
+2018-07-26 14:46:01 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2dc5200", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2dc5202", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2dc00011607d2b6b2dc5001"}
+2018-07-26 14:46:01 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2dc5200", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2dc5202", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2dc00011607d2b6b2dc5001"}
+2018-07-26 14:46:01 INFO ----开始设置快照----
+2018-07-26 14:46:01 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/snapshot
+2018-07-26 14:46:01 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-07-26 14:46:01 INFO 设置快照响应：{"id": "5b596e294abd1f467140ba62"}
+2018-07-26 14:46:01 INFO ----开始设置统计规则----
+2018-07-26 14:46:01 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/snapshot/5b596e294abd1f467140ba62/statistic_rule
+2018-07-26 14:46:01 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-07-26 14:46:01 INFO 统计规则响应：{"id": "5b596e294abd1f467140ba67"}
+2018-07-26 14:46:01 INFO ----开始调串口激活设备----
+2018-07-26 14:46:01 INFO len(plist): 2
+2018-07-26 14:46:02 INFO serialFd: Serial<id=0x3be9870, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-26 14:46:06 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-07-26 14:46:26 INFO ----开始查询宽表设备列表----
+2018-07-26 14:46:26 INFO url：http://54.222.229.62:1080/v2/wide-devices
+2018-07-26 14:46:26 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d2b6b2dc00011607d2b6b2dc5001"}}, "limit": 100, "offset": 0}
+2018-07-26 14:46:26 INFO 查询宽表设备列表响应：{"count": 1, "list": [{"is_online": true, "is_active": true, "product_id": "1607d2b6b2dc00011607d2b6b2dc5001", "id": 387671703}]}
+2018-07-26 14:46:26 INFO ----开始设备控制----
+2018-07-26 14:46:26 INFO url：http://54.222.229.62:1080/v2/diagnosis/device/set/387671703
+2018-07-26 14:46:26 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-07-26 14:46:26 INFO 设备控制响应：{"status": 200}
+2018-07-26 14:46:26 INFO ----开始获取虚拟设备----
+2018-07-26 14:46:26 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/v_device/387671703
+2018-07-26 14:46:26 INFO body：{}
+2018-07-26 14:46:26 INFO 获取虚拟设备响应：{"cm_id": "MS-111", "last_login": "2018-07-26T14:46:09.38Z", "online_count": 17, "conn_prot": 2, "online": true, "ip": "61.140.126.154", "last_logout": "", "last_update": "", "device_id": 387671703}
+2018-07-26 14:46:26 INFO ----开始获取设备地理位置----
+2018-07-26 14:46:26 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/device/387671703/geography
+2018-07-26 14:46:26 INFO body：{}
+2018-07-26 14:46:26 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-07-26 14:46:26 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 511, in test_get_device_geography
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387671703' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-07-26 14:46:26 INFO ----开始上传固件版本1----
+2018-07-26 14:46:27 INFO 上传固件1响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/e803af39513851686ef97bb95e042974", "md5": "cff2ec698fa7a9a0ffef9ed1e8a60726", "size": 473813}
+2018-07-26 14:46:27 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/firmware
+2018-07-26 14:46:27 INFO body：{"is_release": true, "version": "10051", "identify": "", "description": "mcu1", "file_size": 473813, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/e803af39513851686ef97bb95e042974", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "cff2ec698fa7a9a0ffef9ed1e8a60726", "type": 1, "mod": "1"}
+2018-07-26 14:46:27 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-07-26T14:46:27.80Z", "description": "mcu1", "file_md5": "cff2ec698fa7a9a0ffef9ed1e8a60726", "identify": 0, "file_size": 473813, "id": "1807d2b6b2dc8600", "mod": "1", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/e803af39513851686ef97bb95e042974", "version": 10051, "type": 1}
+2018-07-26 14:46:27 INFO ----开始上传固件版本2----
+2018-07-26 14:46:28 INFO 上传固件2响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/45eeeafa10c7fae6e97075a156d5d210", "md5": "a267e9e4e77ce516cc971af8fc2d9f6a", "size": 473797}
+2018-07-26 14:46:28 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/firmware
+2018-07-26 14:46:28 INFO body：{"is_release": true, "version": "10052", "identify": "", "description": "mcu2", "file_size": 473797, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/45eeeafa10c7fae6e97075a156d5d210", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "a267e9e4e77ce516cc971af8fc2d9f6a", "type": 1, "mod": "2"}
+2018-07-26 14:46:28 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-07-26T14:46:27.797Z", "description": "mcu2", "file_md5": "a267e9e4e77ce516cc971af8fc2d9f6a", "identify": 0, "file_size": 473797, "id": "1807d2b6b2dc8601", "mod": "2", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/45eeeafa10c7fae6e97075a156d5d210", "version": 10052, "type": 1}
+2018-07-26 14:46:28 INFO ----开始创建升级任务----
+2018-07-26 14:46:28 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task
+2018-07-26 14:46:28 INFO body：{"target_version": 10052, "description": "task_description", "target_version_size": 473797, "from_version": 10051, "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/e803af39513851686ef97bb95e042974", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/45eeeafa10c7fae6e97075a156d5d210", "identify": "", "name": "task_name", "task_type": 1, "product_id": "1607d2b6b2dc00011607d2b6b2dc5001", "type": 1, "target_version_md5": "a267e9e4e77ce516cc971af8fc2d9f6a", "scope": {"category": 0, "device_list": []}, "from_version_size": 473813, "from_version_md5": "cff2ec698fa7a9a0ffef9ed1e8a60726"}
+2018-07-26 14:46:28 INFO 创建升级任务响应：{"status": 0, "task_type": 1, "target_version": 10052, "description": "task_description", "from_version_md5": "cff2ec698fa7a9a0ffef9ed1e8a60726", "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/e803af39513851686ef97bb95e042974", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/45eeeafa10c7fae6e97075a156d5d210", "name": "task_name", "product_id": "1607d2b6b2dc00011607d2b6b2dc5001", "identify": 0, "from_version": 10051, "id": "2007d2b6b2dc8602", "scope": {"category": 0}, "from_version_size": 473813, "type": 1, "upgrade_count": 0, "target_version_size": 473797}
+2018-07-26 14:46:28 INFO ----开始启动升级任务----
+2018-07-26 14:46:28 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task/status
+2018-07-26 14:46:28 INFO body：{"status": 1, "product_id": "1607d2b6b2dc00011607d2b6b2dc5001", "upgrade_task_id": "2007d2b6b2dc8602"}
+2018-07-26 14:46:28 INFO 启动升级任务成功
+2018-07-26 14:46:28 INFO ----开始获取地理位置信息列表----
+2018-07-26 14:46:28 INFO url：http://54.222.229.62:1080/v2/service/position/geographies
+2018-07-26 14:46:28 INFO body：{"param": "F001S006"}
+2018-07-26 14:46:28 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-07-26 14:46:28 INFO ----开始调串口上报数据----
+2018-07-26 14:46:30 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 14:46:32 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 14:48:32 INFO ----开始获取告警记录----
+2018-07-26 14:48:32 INFO url：http://54.222.229.62:1080/v2/corp/alarm/states
+2018-07-26 14:48:32 INFO body：{"filter": ["id", "device_id", "rule_id", "status", "content", "count"], "query": {"scope": {"$in": [1, 3, 4]}, "product_id": {"$in": ["1607d2b6b2dc00011607d2b6b2dc5001"]}, "device_id": {"$eq": 387671703}}, "limit": 10, "order": {"start_time": "desc"}, "offset": 0}
+2018-07-26 14:48:32 INFO [error]:{'count': 1, 'list': [{'count': 1, 'status': 1, 'rule_id': '2807d2b6b2dc5202', 'content': 'value>100', 'id': '2de645e1b655c9300f52ace7849e2c42', 'device_id': 387671703}]}
+2018-07-26 14:48:32 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 862, in test_get_alarm_list
+    ApiTest.qrcode = res["qrcode"]
+KeyError: 'qrcode'
+
+2018-07-26 14:48:32 INFO ----开始用户通过邮箱注册----
+2018-07-26 14:48:32 INFO url：http://54.222.229.62:1080/v2/user_register
+2018-07-26 14:48:32 INFO body：{"corp_id": "1007d2acdcd76e00", "source": "2", "local_lang": "zh-cn", "password": "123456", "nickname": "nickname", "email": "wangqi@xlink.cn"}
+2018-07-26 14:48:32 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-07-26 14:48:32 INFO ----开始获取注册验证码----
+2018-07-26 14:48:32 INFO url：http://54.222.229.62:1080/v2/user_register/verifycode
+2018-07-26 14:48:32 INFO body：{"phone": "15018753353", "corp_id": "1007d2acdcd76e00"}
+2018-07-26 14:48:32 INFO [error]:{'error': {'msg': 'need captcha', 'code': 4001154}}
+2018-07-26 14:48:32 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 734, in test_user_register_phone_verifycode
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [400]>'
+
+2018-07-26 14:48:32 INFO ----开始用户通过邮箱登录----
+2018-07-26 14:48:32 INFO url：http://54.222.229.62:1080/v2/user_auth
+2018-07-26 14:48:32 INFO body：{"password": "123456", "email": "wangqi@xlink.cn", "corp_id": "1007d2acdcd76e00"}
+2018-07-26 14:48:32 INFO 用户通过邮箱登录响应：{"access_token": "NzIyQjEyQkUxOEYxODgxQzAyQUNGNUM0NTQ0RTQwNERBQkVCODQwNzUzQzdCQkI4QUEwQUY4NEY2QUU2NkMzOQ==", "expire_in": 7200, "authorize": "2207d2b6b2dd8000", "user_id": 387675289, "refresh_token": "OUI2NjAyOEMwQzU3NjBCOTQwRTMxNjBBNzQyQUExNUEyNUQ5RTk1MTBBNzQ5QzMwNzdDQjRFOEQwQzQ3MTM5MA=="}
+2018-07-26 14:48:32 INFO ----开始生成设备二维码----
+2018-07-26 14:48:32 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2dc00011607d2b6b2dc5001/device/387671703/qrcode
+2018-07-26 14:48:32 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-07-26 14:48:32 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2dc00011607d2b6b2dc5001;QK:5b596e294abd1f467140ba54;id:387671703;MAC:F0FE6B792673;SN:90300923;;"}
+2018-07-26 14:48:32 INFO ----开始订阅设备----
+2018-07-26 14:48:32 INFO url：http://54.222.229.62:1080/v2/user/387675289/qrcode_subscribe
+2018-07-26 14:48:32 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2dc00011607d2b6b2dc5001;QK:5b596e294abd1f467140ba54;id:387671703;MAC:F0FE6B792673;SN:90300923;;"}
+2018-07-26 14:48:32 INFO 订阅设备响应：{"custom_property": {}, "mac": "F0FE6B792673", "pid": "1607d2b6b2dc00011607d2b6b2dc5001", "id": 387671703, "sn": "90300923"}
+2018-07-26 14:48:32 INFO ----开始获取设备列表----
+2018-07-26 14:48:32 INFO url：http://54.222.229.62:1080/v2/user/387675289/subscribe/devices
+2018-07-26 14:48:32 INFO body：{}
+2018-07-26 14:48:33 INFO 获取设备列表响应：[{"access_key": 0, "active_code": "5f123c8bb6a284d6a1b654f63ae58f4c", "sn": "90300923", "product_id": "1607d2b6b2dc00011607d2b6b2dc5001", "mcu_version": 0, "is_active": true, "mac": "F0FE6B792673", "firmware_mod": "0", "authorize_code": "1e07d2b6b2dc5201", "source": 3, "active_date": "2018-07-26T14:46:08.592Z", "role": 0, "authority": "RW", "groups": "", "mcu_mod": "0", "id": 387671703, "last_login": "2018-07-26T14:46:09.38Z", "firmware_version": 10051, "subscribe_date": "2018-07-26T14:48:32.596Z", "is_online": true, "name": "TEST_1"}]
+2018-07-26 14:48:33 INFO ----开始配置app----
+2018-07-26 14:48:33 INFO url：http://54.222.229.62:1080/v2/plugin/app
+2018-07-26 14:48:33 INFO body：{"enable": true, "type": 10, "name": "feedback", "plugin": "helpdesk"}
+2018-07-26 14:48:33 INFO 配置app响应：{"secret": "8eec528743740b3d2bc3d8c39f9251c4", "create_time": "2018-07-26T14:48:32.780Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e07d2b6b2dd8001", "fee_type": 0}
+2018-07-26 14:48:33 INFO ----开始新增用户反馈----
+2018-07-26 14:48:33 INFO url：http://54.222.229.62:1080/v2/module/feedback/2e07d2b6b2dd8001/api/feedback/save
+2018-07-26 14:48:33 INFO body：{"content": "\u7535\u996d\u7172\u65e0\u6cd5\u542f\u7528", "user_name": "\u5c0f\u660e", "user_id": 387675289, "email": "xiaoming@qq.com", "phone": "1689624223"}
+2018-07-26 14:48:33 INFO [error]:
+2018-07-26 14:48:33 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 956, in test_feedback
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/module/feedback/2e07d2b6b2dd8001/api/feedback/save
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-26 14:48:33 INFO ----开始设备手动升级----
+2018-07-26 14:48:33 INFO url：http://54.222.229.62:1080/v2/upgrade/device
+2018-07-26 14:48:33 INFO body：{"product_id": "1607d2b6b2dc00011607d2b6b2dc5001", "device_id": 387671703}
+2018-07-26 14:48:33 INFO 已设备手动升级
+2018-07-26 14:48:33 INFO ----开始删除用户----
+2018-07-26 14:48:33 INFO url：http://54.222.229.62:1080/v2/user/387675289
+2018-07-26 14:48:33 INFO 已删除用户
+2018-07-26 14:48:33 INFO ----开始删除app配置----
+2018-07-26 14:48:33 INFO url：http://54.222.229.62:1080/v2/plugin/app/2e07d2b6b2dd8001
+2018-07-26 14:48:33 INFO 已删除产品
+2018-07-26 14:52:26 INFO 开始获取token
+2018-07-26 14:52:26 INFO token:REVBMDE5M0RGQ0MxRUIxRDI0RTBEQTM5QjlFRTMzNDY1ODJCQzc5MEIxOUJFRUNFMUQ0M0Y5RkQwMTZFMkM2MQ==
+2018-07-26 14:52:26 INFO ----开始获取注册验证码----
+2018-07-26 14:52:26 INFO url：http://54.222.229.62:1080/v2/user_register/verifycode
+2018-07-26 14:52:26 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d2acdcd76e00"}
+2018-07-26 14:52:26 INFO [error]:{'error': {'msg': 'captcha not exists', 'code': 4001155}}
+2018-07-26 14:52:26 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 735, in test_user_register_phone_verifycode
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [400]>'
+
+2018-07-26 14:58:34 INFO 开始获取token
+2018-07-26 14:58:34 INFO token:NUREMEI4Mzk5Q0ZEOUFCRDhGRDkwNzJGMEUwQTQxRDhCNjk0MUY1MUJBRDA0RUMzQUJDNzBBRTVBMTFDQjZGRQ==
+2018-07-26 14:58:34 INFO -----开始创建产品接口-----
+2018-07-26 14:58:34 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-26 14:58:34 INFO body：{"is_gateway_device": false, "name": "product_2018-07-26", "link_type": 1, "description": ""}
+2018-07-26 14:58:34 INFO 创建产品接口响应：{"is_release": false, "key": "b7ca9aceb656b177fe7f014fb713a860", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-26T14:58:34.261Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b2e200011607d2b6b2e23401", "is_active_register": false, "name": "product_2018-07-26", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-26 14:58:34 INFO ----开始创建$1002数据端点----
+2018-07-26 14:58:34 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/datapoint
+2018-07-26 14:58:34 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-07-26 14:58:34 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6b2e23404", "name": "$1002"}
+2018-07-26 14:58:34 INFO ----开始创建自定义数据端点----
+2018-07-26 14:58:34 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/datapoint
+2018-07-26 14:58:34 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-07-26 14:58:34 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6b2e23405", "name": "para_name"}
+2018-07-26 14:58:34 INFO ----开始添加设备----
+2018-07-26 14:58:34 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/device
+2018-07-26 14:58:34 INFO body：{"mac": "F0FE6B792673", "sn": 96379172, "name": "TEST_1"}
+2018-07-26 14:58:34 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387673689}
+2018-07-26 14:58:34 INFO ----开始设置异常规则----
+2018-07-26 14:58:34 INFO url：http://54.222.229.62:1080/v2/alert/rule
+2018-07-26 14:58:34 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d2b6b2e23405", "content": "value>100", "source": 1, "product_id": "1607d2b6b2e200011607d2b6b2e23401", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-07-26 14:58:35 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6b2e23405", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6b2e23407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2e200011607d2b6b2e23401"}
+2018-07-26 14:58:35 INFO ----开始报警设置----
+2018-07-26 14:58:35 INFO url：http://54.222.229.62:1080/v2/alert/rule/2807d2b6b2e23407
+2018-07-26 14:58:35 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2e23405", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2e23407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2e200011607d2b6b2e23401"}
+2018-07-26 14:58:35 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2e23405", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2e23407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2e200011607d2b6b2e23401"}
+2018-07-26 14:58:35 INFO ----开始设置快照----
+2018-07-26 14:58:35 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/snapshot
+2018-07-26 14:58:35 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-07-26 14:58:35 INFO 设置快照响应：{"id": "5b59711a4abd1f467140be00"}
+2018-07-26 14:58:35 INFO ----开始设置统计规则----
+2018-07-26 14:58:35 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/snapshot/5b59711a4abd1f467140be00/statistic_rule
+2018-07-26 14:58:35 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-07-26 14:58:35 INFO 统计规则响应：{"id": "5b59711a4abd1f467140be03"}
+2018-07-26 14:58:35 INFO ----开始调串口激活设备----
+2018-07-26 14:58:35 INFO len(plist): 2
+2018-07-26 14:58:35 INFO serialFd: Serial<id=0x36f7030, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-26 14:58:39 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-07-26 14:58:59 INFO ----开始查询宽表设备列表----
+2018-07-26 14:58:59 INFO url：http://54.222.229.62:1080/v2/wide-devices
+2018-07-26 14:58:59 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d2b6b2e200011607d2b6b2e23401"}}, "limit": 100, "offset": 0}
+2018-07-26 14:58:59 INFO 查询宽表设备列表响应：{"count": 1, "list": [{"is_online": true, "is_active": false, "product_id": "1607d2b6b2e200011607d2b6b2e23401", "id": 387673689}]}
+2018-07-26 14:58:59 INFO ----开始设备控制----
+2018-07-26 14:58:59 INFO url：http://54.222.229.62:1080/v2/diagnosis/device/set/387673689
+2018-07-26 14:58:59 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-07-26 14:59:00 INFO 设备控制响应：{"status": 200}
+2018-07-26 14:59:00 INFO ----开始获取虚拟设备----
+2018-07-26 14:59:00 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/v_device/387673689
+2018-07-26 14:59:00 INFO body：{}
+2018-07-26 14:59:00 INFO 获取虚拟设备响应：{"cm_id": "MS-111", "last_login": "2018-07-26T14:58:58.09Z", "online_count": 1, "conn_prot": 2, "online": true, "ip": "61.140.126.154", "last_logout": "", "last_update": "", "device_id": 387673689}
+2018-07-26 14:59:00 INFO ----开始获取设备地理位置----
+2018-07-26 14:59:00 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/device/387673689/geography
+2018-07-26 14:59:00 INFO body：{}
+2018-07-26 14:59:00 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-07-26 14:59:00 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 511, in test_get_device_geography
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387673689' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-07-26 14:59:00 INFO ----开始上传固件版本1----
+2018-07-26 14:59:00 INFO 上传固件1响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/f7f933e1b3bd48cd0f09d00406edc1e2", "md5": "0938f238c13678b568f68cb09e91e802", "size": 473813}
+2018-07-26 14:59:00 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/firmware
+2018-07-26 14:59:00 INFO body：{"is_release": true, "version": "10051", "identify": "", "description": "mcu1", "file_size": 473813, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/f7f933e1b3bd48cd0f09d00406edc1e2", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "0938f238c13678b568f68cb09e91e802", "type": 1, "mod": "1"}
+2018-07-26 14:59:01 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-07-26T14:59:00.718Z", "description": "mcu1", "file_md5": "0938f238c13678b568f68cb09e91e802", "identify": 0, "file_size": 473813, "id": "1807d2b6b2e26800", "mod": "1", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/f7f933e1b3bd48cd0f09d00406edc1e2", "version": 10051, "type": 1}
+2018-07-26 14:59:01 INFO ----开始上传固件版本2----
+2018-07-26 14:59:01 INFO 上传固件2响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/efd9faf9a3d4c0d2581f511ed88c5139", "md5": "c7df06be4b1f98adc7f65cf312fb9eb6", "size": 473797}
+2018-07-26 14:59:01 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/firmware
+2018-07-26 14:59:01 INFO body：{"is_release": true, "version": "10052", "identify": "", "description": "mcu2", "file_size": 473797, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/efd9faf9a3d4c0d2581f511ed88c5139", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "c7df06be4b1f98adc7f65cf312fb9eb6", "type": 1, "mod": "2"}
+2018-07-26 14:59:01 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-07-26T14:59:01.246Z", "description": "mcu2", "file_md5": "c7df06be4b1f98adc7f65cf312fb9eb6", "identify": 0, "file_size": 473797, "id": "1807d2b6b2e26a00", "mod": "2", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/efd9faf9a3d4c0d2581f511ed88c5139", "version": 10052, "type": 1}
+2018-07-26 14:59:01 INFO ----开始创建升级任务----
+2018-07-26 14:59:01 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task
+2018-07-26 14:59:01 INFO body：{"target_version": 10052, "description": "task_description", "target_version_size": 473797, "from_version": 10051, "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/f7f933e1b3bd48cd0f09d00406edc1e2", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/efd9faf9a3d4c0d2581f511ed88c5139", "identify": "", "name": "task_name", "task_type": 1, "product_id": "1607d2b6b2e200011607d2b6b2e23401", "type": 1, "target_version_md5": "c7df06be4b1f98adc7f65cf312fb9eb6", "scope": {"category": 0, "device_list": []}, "from_version_size": 473813, "from_version_md5": "0938f238c13678b568f68cb09e91e802"}
+2018-07-26 14:59:01 INFO 创建升级任务响应：{"status": 0, "task_type": 1, "target_version": 10052, "description": "task_description", "from_version_md5": "0938f238c13678b568f68cb09e91e802", "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/f7f933e1b3bd48cd0f09d00406edc1e2", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/efd9faf9a3d4c0d2581f511ed88c5139", "name": "task_name", "product_id": "1607d2b6b2e200011607d2b6b2e23401", "identify": 0, "from_version": 10051, "id": "2007d2b6b2e26a01", "scope": {"category": 0}, "from_version_size": 473813, "type": 1, "upgrade_count": 0, "target_version_size": 473797}
+2018-07-26 14:59:01 INFO ----开始启动升级任务----
+2018-07-26 14:59:01 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task/status
+2018-07-26 14:59:01 INFO body：{"status": 1, "product_id": "1607d2b6b2e200011607d2b6b2e23401", "upgrade_task_id": "2007d2b6b2e26a01"}
+2018-07-26 14:59:01 INFO 启动升级任务成功
+2018-07-26 14:59:01 INFO ----开始获取地理位置信息列表----
+2018-07-26 14:59:01 INFO url：http://54.222.229.62:1080/v2/service/position/geographies
+2018-07-26 14:59:01 INFO body：{"param": "F001S006"}
+2018-07-26 14:59:01 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-07-26 14:59:01 INFO ----开始调串口上报数据----
+2018-07-26 14:59:03 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 14:59:05 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 15:01:05 INFO ----开始获取告警记录----
+2018-07-26 15:01:05 INFO url：http://54.222.229.62:1080/v2/corp/alarm/states
+2018-07-26 15:01:05 INFO body：{"filter": ["id", "device_id", "rule_id", "status", "content", "count"], "query": {"scope": {"$in": [1, 3, 4]}, "product_id": {"$in": ["1607d2b6b2e200011607d2b6b2e23401"]}, "device_id": {"$eq": 387673689}}, "limit": 10, "order": {"start_time": "desc"}, "offset": 0}
+2018-07-26 15:01:05 INFO 获取告警记录响应：{"count": 1, "list": [{"count": 1, "status": 1, "rule_id": "2807d2b6b2e23407", "content": "value>100", "id": "8d43d9eb8e09b631c8436f4287ebfea4", "device_id": 387673689}]}
+2018-07-26 15:01:05 INFO ----开始用户通过邮箱注册----
+2018-07-26 15:01:05 INFO url：http://54.222.229.62:1080/v2/user_register
+2018-07-26 15:01:05 INFO body：{"corp_id": "1007d2acdcd76e00", "source": "2", "local_lang": "zh-cn", "password": "123456", "nickname": "nickname", "email": "wangqi@xlink.cn"}
+2018-07-26 15:01:06 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-07-26 15:01:06 INFO ----开始用户通过邮箱登录----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/user_auth
+2018-07-26 15:01:06 INFO body：{"password": "123456", "email": "wangqi@xlink.cn", "corp_id": "1007d2acdcd76e00"}
+2018-07-26 15:01:06 INFO 用户通过邮箱登录响应：{"access_token": "MkMxNDdCQUQ5RTUxRUY2NzA2RTY4QzJEN0M1MjBERDQzNUI0MTFFMEY4QUQzOTI5RkZDMEE4RThFQkI4ODRFMA==", "expire_in": 7200, "authorize": "2207d2b6b2e36200", "user_id": 387678862, "refresh_token": "NkRBQTFEOTdFNzc0RjU0MkU4RDQ1M0E0MzM0NjBEOUFCMjNFMjhDQzRCMzQ0MjRFNTMzQkNGRUEwNTcyNjZFRQ=="}
+2018-07-26 15:01:06 INFO ----开始生成设备二维码----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e200011607d2b6b2e23401/device/387673689/qrcode
+2018-07-26 15:01:06 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-07-26 15:01:06 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2e200011607d2b6b2e23401;QK:5b59711a4abd1f467140bdf7;id:387673689;MAC:F0FE6B792673;SN:96379172;;"}
+2018-07-26 15:01:06 INFO ----开始订阅设备----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/user/387678862/qrcode_subscribe
+2018-07-26 15:01:06 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2e200011607d2b6b2e23401;QK:5b59711a4abd1f467140bdf7;id:387673689;MAC:F0FE6B792673;SN:96379172;;"}
+2018-07-26 15:01:06 INFO 订阅设备响应：{"custom_property": {}, "mac": "F0FE6B792673", "pid": "1607d2b6b2e200011607d2b6b2e23401", "id": 387673689, "sn": "96379172"}
+2018-07-26 15:01:06 INFO ----开始获取设备列表----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/user/387678862/subscribe/devices
+2018-07-26 15:01:06 INFO body：{}
+2018-07-26 15:01:06 INFO 获取设备列表响应：[{"access_key": 0, "active_code": "82da84b1d69288d7639e69de9c05357d", "sn": "96379172", "product_id": "1607d2b6b2e200011607d2b6b2e23401", "mcu_version": 0, "is_active": true, "mac": "F0FE6B792673", "firmware_mod": "0", "authorize_code": "1e07d2b6b2e23406", "source": 3, "active_date": "2018-07-26T14:58:57.176Z", "role": 0, "authority": "RW", "groups": "", "mcu_mod": "0", "id": 387673689, "last_login": "2018-07-26T14:58:58.09Z", "firmware_version": 10051, "subscribe_date": "2018-07-26T15:01:05.988Z", "is_online": true, "name": "TEST_1"}]
+2018-07-26 15:01:06 INFO ----开始配置app----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/plugin/app
+2018-07-26 15:01:06 INFO body：{"enable": true, "type": 10, "name": "feedback", "plugin": "helpdesk"}
+2018-07-26 15:01:06 INFO 配置app响应：{"secret": "d68306cc9aa0774de4619a83a600687f", "create_time": "2018-07-26T15:01:06.164Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e07d2b6b2e36400", "fee_type": 0}
+2018-07-26 15:01:06 INFO ----开始新增用户反馈----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/module/feedback/2e07d2b6b2e36400/api/feedback/save
+2018-07-26 15:01:06 INFO body：{"content": "\u7535\u996d\u7172\u65e0\u6cd5\u542f\u7528", "user_name": "\u5c0f\u660e", "user_id": 387678862, "email": "xiaoming@qq.com", "phone": "1689624223"}
+2018-07-26 15:01:06 INFO [error]:
+2018-07-26 15:01:06 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 956, in test_feedback
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/module/feedback/2e07d2b6b2e36400/api/feedback/save
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-26 15:01:06 INFO ----开始设备手动升级----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/upgrade/device
+2018-07-26 15:01:06 INFO body：{"product_id": "1607d2b6b2e200011607d2b6b2e23401", "device_id": 387673689}
+2018-07-26 15:01:06 INFO 已设备手动升级
+2018-07-26 15:01:06 INFO ----开始删除用户----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/user/387678862
+2018-07-26 15:01:06 INFO 已删除用户
+2018-07-26 15:01:06 INFO ----开始删除app配置----
+2018-07-26 15:01:06 INFO url：http://54.222.229.62:1080/v2/plugin/app/2e07d2b6b2e36400
+2018-07-26 15:01:07 INFO 已删除产品
+2018-07-26 15:14:30 INFO 开始获取token
+2018-07-26 15:14:30 INFO token:RjY5Qzk4MkRDMjhDRjgyNzdDQzVFNzA5QjI4RjQ5MTNENDIwMDU1QjhCNjc2QjExQTE0OEExRDcwRDJDRTY5RQ==
+2018-07-26 15:14:30 INFO -----开始创建产品接口-----
+2018-07-26 15:14:30 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-26 15:14:30 INFO body：{"is_gateway_device": false, "name": "product_2018-07-26", "link_type": 1, "description": ""}
+2018-07-26 15:14:30 INFO 创建产品接口响应：{"is_release": false, "key": "f37b7033ed303da264ab889d979b1bb9", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-26T15:14:30.273Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b2e900011607d2b6b2e9ac01", "is_active_register": false, "name": "product_2018-07-26", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-26 15:14:30 INFO ----开始创建$1002数据端点----
+2018-07-26 15:14:30 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/datapoint
+2018-07-26 15:14:30 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-07-26 15:14:30 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6b2e9ac04", "name": "$1002"}
+2018-07-26 15:14:30 INFO ----开始创建自定义数据端点----
+2018-07-26 15:14:30 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/datapoint
+2018-07-26 15:14:30 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-07-26 15:14:30 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6b2e9ac05", "name": "para_name"}
+2018-07-26 15:14:30 INFO ----开始添加设备----
+2018-07-26 15:14:30 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/device
+2018-07-26 15:14:30 INFO body：{"mac": "F0FE6B792673", "sn": 32702254, "name": "TEST_1"}
+2018-07-26 15:14:30 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387674161}
+2018-07-26 15:14:30 INFO ----开始设置异常规则----
+2018-07-26 15:14:30 INFO url：http://54.222.229.62:1080/v2/alert/rule
+2018-07-26 15:14:30 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d2b6b2e9ac05", "content": "value>100", "source": 1, "product_id": "1607d2b6b2e900011607d2b6b2e9ac01", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-07-26 15:14:31 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6b2e9ac05", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6b2e9ac07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2e900011607d2b6b2e9ac01"}
+2018-07-26 15:14:31 INFO ----开始报警设置----
+2018-07-26 15:14:31 INFO url：http://54.222.229.62:1080/v2/alert/rule/2807d2b6b2e9ac07
+2018-07-26 15:14:31 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2e9ac05", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2e9ac07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2e900011607d2b6b2e9ac01"}
+2018-07-26 15:14:31 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2e9ac05", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2e9ac07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2e900011607d2b6b2e9ac01"}
+2018-07-26 15:14:31 INFO ----开始设置快照----
+2018-07-26 15:14:31 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/snapshot
+2018-07-26 15:14:31 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-07-26 15:14:31 INFO 设置快照响应：{"id": "5b5974d64abd1f467140c155"}
+2018-07-26 15:14:31 INFO ----开始设置统计规则----
+2018-07-26 15:14:31 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/snapshot/5b5974d64abd1f467140c155/statistic_rule
+2018-07-26 15:14:31 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-07-26 15:14:31 INFO 统计规则响应：{"id": "5b5974d64abd1f467140c159"}
+2018-07-26 15:14:31 INFO ----开始调串口激活设备----
+2018-07-26 15:14:31 INFO len(plist): 3
+2018-07-26 15:14:31 INFO serialFd: Serial<id=0x3917e50, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-26 15:14:35 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-07-26 15:14:55 INFO ----开始查询宽表设备列表----
+2018-07-26 15:14:55 INFO url：http://54.222.229.62:1080/v2/wide-devices
+2018-07-26 15:14:55 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d2b6b2e900011607d2b6b2e9ac01"}}, "limit": 100, "offset": 0}
+2018-07-26 15:14:55 INFO 查询宽表设备列表响应：{"count": 1, "list": [{"is_online": true, "is_active": true, "product_id": "1607d2b6b2e900011607d2b6b2e9ac01", "id": 387674161}]}
+2018-07-26 15:14:55 INFO ----开始设备控制----
+2018-07-26 15:14:55 INFO url：http://54.222.229.62:1080/v2/diagnosis/device/set/387674161
+2018-07-26 15:14:55 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-07-26 15:14:55 INFO 设备控制响应：{"status": 200}
+2018-07-26 15:14:55 INFO ----开始获取虚拟设备----
+2018-07-26 15:14:55 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/v_device/387674161
+2018-07-26 15:14:55 INFO body：{}
+2018-07-26 15:14:56 INFO 获取虚拟设备响应：{"cm_id": "MS-111", "last_login": "2018-07-26T15:14:38.200Z", "online_count": 17, "conn_prot": 2, "online": true, "ip": "61.140.126.154", "last_logout": "", "last_update": "", "device_id": 387674161}
+2018-07-26 15:14:56 INFO ----开始获取设备地理位置----
+2018-07-26 15:14:56 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/device/387674161/geography
+2018-07-26 15:14:56 INFO body：{}
+2018-07-26 15:14:56 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-07-26 15:14:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 511, in test_get_device_geography
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387674161' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-07-26 15:14:56 INFO ----开始上传固件版本1----
+2018-07-26 15:14:56 INFO 上传固件1响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/70dfaed524f672f6cdd51f6b3fb3182d", "md5": "55b3a22a6e8c43f5b5e99652ac04e5aa", "size": 473813}
+2018-07-26 15:14:56 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/firmware
+2018-07-26 15:14:56 INFO body：{"is_release": true, "version": "10051", "identify": "", "description": "mcu1", "file_size": 473813, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/70dfaed524f672f6cdd51f6b3fb3182d", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "55b3a22a6e8c43f5b5e99652ac04e5aa", "type": 1, "mod": "1"}
+2018-07-26 15:14:56 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-07-26T15:14:56.443Z", "description": "mcu1", "file_md5": "55b3a22a6e8c43f5b5e99652ac04e5aa", "identify": 0, "file_size": 473813, "id": "1807d2b6b2e9e000", "mod": "1", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/70dfaed524f672f6cdd51f6b3fb3182d", "version": 10051, "type": 1}
+2018-07-26 15:14:56 INFO ----开始上传固件版本2----
+2018-07-26 15:14:57 INFO 上传固件2响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/7a8fda1799b373072a246eab77c0bf85", "md5": "68f82df58e36a4146c80f734365f4a6d", "size": 473797}
+2018-07-26 15:14:57 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/firmware
+2018-07-26 15:14:57 INFO body：{"is_release": true, "version": "10052", "identify": "", "description": "mcu2", "file_size": 473797, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/7a8fda1799b373072a246eab77c0bf85", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "68f82df58e36a4146c80f734365f4a6d", "type": 1, "mod": "2"}
+2018-07-26 15:14:57 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-07-26T15:14:56.993Z", "description": "mcu2", "file_md5": "68f82df58e36a4146c80f734365f4a6d", "identify": 0, "file_size": 473797, "id": "1807d2b6b2e9e001", "mod": "2", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/7a8fda1799b373072a246eab77c0bf85", "version": 10052, "type": 1}
+2018-07-26 15:14:57 INFO ----开始创建升级任务----
+2018-07-26 15:14:57 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task
+2018-07-26 15:14:57 INFO body：{"target_version": 10052, "description": "task_description", "target_version_size": 473797, "from_version": 10051, "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/70dfaed524f672f6cdd51f6b3fb3182d", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/7a8fda1799b373072a246eab77c0bf85", "identify": "", "name": "task_name", "task_type": 1, "product_id": "1607d2b6b2e900011607d2b6b2e9ac01", "type": 1, "target_version_md5": "68f82df58e36a4146c80f734365f4a6d", "scope": {"category": 0, "device_list": []}, "from_version_size": 473813, "from_version_md5": "55b3a22a6e8c43f5b5e99652ac04e5aa"}
+2018-07-26 15:14:57 INFO 创建升级任务响应：{"status": 0, "task_type": 1, "target_version": 10052, "description": "task_description", "from_version_md5": "55b3a22a6e8c43f5b5e99652ac04e5aa", "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/70dfaed524f672f6cdd51f6b3fb3182d", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/7a8fda1799b373072a246eab77c0bf85", "name": "task_name", "product_id": "1607d2b6b2e900011607d2b6b2e9ac01", "identify": 0, "from_version": 10051, "id": "2007d2b6b2e9e200", "scope": {"category": 0}, "from_version_size": 473813, "type": 1, "upgrade_count": 0, "target_version_size": 473797}
+2018-07-26 15:14:57 INFO ----开始启动升级任务----
+2018-07-26 15:14:57 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task/status
+2018-07-26 15:14:57 INFO body：{"status": 1, "product_id": "1607d2b6b2e900011607d2b6b2e9ac01", "upgrade_task_id": "2007d2b6b2e9e200"}
+2018-07-26 15:14:57 INFO 启动升级任务成功
+2018-07-26 15:14:57 INFO ----开始获取地理位置信息列表----
+2018-07-26 15:14:57 INFO url：http://54.222.229.62:1080/v2/service/position/geographies
+2018-07-26 15:14:57 INFO body：{"param": "F001S006"}
+2018-07-26 15:14:57 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-07-26 15:14:57 INFO ----开始调串口上报数据----
+2018-07-26 15:14:59 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 15:15:01 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 15:17:01 INFO ----开始获取告警记录----
+2018-07-26 15:17:01 INFO url：http://54.222.229.62:1080/v2/corp/alarm/states
+2018-07-26 15:17:01 INFO body：{"filter": ["id", "device_id", "rule_id", "status", "content", "count"], "query": {"scope": {"$in": [1, 3, 4]}, "product_id": {"$in": ["1607d2b6b2e900011607d2b6b2e9ac01"]}, "device_id": {"$eq": 387674161}}, "limit": 10, "order": {"start_time": "desc"}, "offset": 0}
+2018-07-26 15:17:01 INFO 获取告警记录响应：{"count": 1, "list": [{"count": 1, "status": 1, "rule_id": "2807d2b6b2e9ac07", "content": "value>100", "id": "501687b32d79db598a0b6d2dce369385", "device_id": 387674161}]}
+2018-07-26 15:17:01 INFO ----开始用户通过邮箱注册----
+2018-07-26 15:17:01 INFO url：http://54.222.229.62:1080/v2/user_register
+2018-07-26 15:17:01 INFO body：{"corp_id": "1007d2acdcd76e00", "source": "2", "local_lang": "zh-cn", "password": "123456", "nickname": "nickname", "email": "wangqi@xlink.cn"}
+2018-07-26 15:17:01 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-07-26 15:17:01 INFO ----开始用户通过邮箱登录----
+2018-07-26 15:17:01 INFO url：http://54.222.229.62:1080/v2/user_auth
+2018-07-26 15:17:01 INFO body：{"password": "123456", "email": "wangqi@xlink.cn", "corp_id": "1007d2acdcd76e00"}
+2018-07-26 15:17:01 INFO 用户通过邮箱登录响应：{"access_token": "NTJFMEM2RjcwRDUzMzZDQjQxQkVBQzM3RjUxQzhFNTQ2OTRDMUUwNzI4OEFCNTE4Q0IzQ0I3MjMzNDVGRTg3RA==", "expire_in": 7200, "authorize": "2207d2b6b2eada00", "user_id": 387673971, "refresh_token": "QjVEMTVDOTM2MTcxRTg2QTNFRDRCRUM0QjgzRjgxNkFFMDQxQjIyOEMyNjc1QzAxOTNDNzEyRjlFNUIwQzcwRg=="}
+2018-07-26 15:17:01 INFO ----开始生成设备二维码----
+2018-07-26 15:17:01 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2e900011607d2b6b2e9ac01/device/387674161/qrcode
+2018-07-26 15:17:01 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-07-26 15:17:01 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2e900011607d2b6b2e9ac01;QK:5b5974d64abd1f467140c14c;id:387674161;MAC:F0FE6B792673;SN:32702254;;"}
+2018-07-26 15:17:01 INFO ----开始订阅设备----
+2018-07-26 15:17:01 INFO url：http://54.222.229.62:1080/v2/user/387673971/qrcode_subscribe
+2018-07-26 15:17:01 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2e900011607d2b6b2e9ac01;QK:5b5974d64abd1f467140c14c;id:387674161;MAC:F0FE6B792673;SN:32702254;;"}
+2018-07-26 15:17:02 INFO 订阅设备响应：{"custom_property": {}, "mac": "F0FE6B792673", "pid": "1607d2b6b2e900011607d2b6b2e9ac01", "id": 387674161, "sn": "32702254"}
+2018-07-26 15:17:02 INFO ----开始获取设备列表----
+2018-07-26 15:17:02 INFO url：http://54.222.229.62:1080/v2/user/387673971/subscribe/devices
+2018-07-26 15:17:02 INFO body：{}
+2018-07-26 15:17:02 INFO 获取设备列表响应：[{"access_key": 0, "active_code": "76abab33c6fb02bdaacf3756f5289b16", "sn": "32702254", "product_id": "1607d2b6b2e900011607d2b6b2e9ac01", "mcu_version": 0, "is_active": true, "mac": "F0FE6B792673", "firmware_mod": "0", "authorize_code": "1e07d2b6b2e9ac06", "source": 3, "active_date": "2018-07-26T15:14:37.664Z", "role": 0, "authority": "RW", "groups": "", "mcu_mod": "0", "id": 387674161, "last_login": "2018-07-26T15:14:38.200Z", "firmware_version": 10051, "subscribe_date": "2018-07-26T15:17:01.712Z", "is_online": true, "name": "TEST_1"}]
+2018-07-26 15:17:02 INFO ----开始配置app----
+2018-07-26 15:17:02 INFO url：http://54.222.229.62:1080/v2/plugin/app
+2018-07-26 15:17:02 INFO body：{"enable": true, "type": 10, "name": "feedback", "plugin": "helpdesk"}
+2018-07-26 15:17:02 INFO 配置app响应：{"secret": "00158a6859e34143a9ea7af83b7c2eae", "create_time": "2018-07-26T15:17:01.879Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e07d2b6b2eada01", "fee_type": 0}
+2018-07-26 15:17:02 INFO ----开始新增用户反馈----
+2018-07-26 15:17:02 INFO url：http://54.222.229.62:1080/v2/module/feedback/2e07d2b6b2eada01/api/feedback/save
+2018-07-26 15:17:02 INFO body：{"content": "\u7535\u996d\u7172\u65e0\u6cd5\u542f\u7528", "user_name": "\u5c0f\u660e", "user_id": 387673971, "email": "xiaoming@qq.com", "phone": "1689624223"}
+2018-07-26 15:17:02 INFO [error]:
+2018-07-26 15:17:02 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 956, in test_feedback
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/module/feedback/2e07d2b6b2eada01/api/feedback/save
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-26 15:17:02 INFO ----开始设备手动升级----
+2018-07-26 15:17:02 INFO url：http://54.222.229.62:1080/v2/upgrade/device
+2018-07-26 15:17:02 INFO body：{"product_id": "1607d2b6b2e900011607d2b6b2e9ac01", "device_id": 387674161}
+2018-07-26 15:17:02 INFO 已设备手动升级
+2018-07-26 15:17:02 INFO ----开始删除用户----
+2018-07-26 15:17:02 INFO url：http://54.222.229.62:1080/v2/user/387673971
+2018-07-26 15:17:02 INFO 已删除用户
+2018-07-26 15:17:02 INFO ----开始删除app配置----
+2018-07-26 15:17:02 INFO url：http://54.222.229.62:1080/v2/plugin/app/2e07d2b6b2eada01
+2018-07-26 15:17:02 INFO 已删除产品
+2018-07-26 15:30:06 INFO 开始获取token
+2018-07-26 15:30:06 INFO token:N0EyNUU3OTI1QTE0RkY4ODM5MDM5NEVFRjUyMjUzOEQ0NUUxNUEyN0Q3RTNFRkU2NEU4NTY2RTczMTBCQTVFRQ==
+2018-07-26 15:30:06 INFO -----开始创建产品接口-----
+2018-07-26 15:30:06 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-26 15:30:06 INFO body：{"is_gateway_device": false, "name": "product_2018-07-26", "link_type": 1, "description": ""}
+2018-07-26 15:30:06 INFO 创建产品接口响应：{"is_release": false, "key": "0b6f35ee75c60383c97df5b19f58ee50", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-26T15:30:05.867Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b2f000011607d2b6b2f0fa01", "is_active_register": false, "name": "product_2018-07-26", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-26 15:30:06 INFO ----开始创建$1002数据端点----
+2018-07-26 15:30:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f000011607d2b6b2f0fa01/datapoint
+2018-07-26 15:30:06 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-07-26 15:30:06 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6b2f0fa04", "name": "$1002"}
+2018-07-26 15:30:06 INFO ----开始创建自定义数据端点----
+2018-07-26 15:30:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f000011607d2b6b2f0fa01/datapoint
+2018-07-26 15:30:06 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-07-26 15:30:06 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6b2f0fc00", "name": "para_name"}
+2018-07-26 15:30:06 INFO ----开始添加设备----
+2018-07-26 15:30:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f000011607d2b6b2f0fa01/device
+2018-07-26 15:30:06 INFO body：{"mac": "F0FE6B792673", "sn": 38910271, "name": "TEST_1"}
+2018-07-26 15:30:06 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387676030}
+2018-07-26 15:30:06 INFO ----开始设置异常规则----
+2018-07-26 15:30:06 INFO url：http://54.222.229.62:1080/v2/alert/rule
+2018-07-26 15:30:06 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d2b6b2f0fc00", "content": "value>100", "source": 1, "product_id": "1607d2b6b2f000011607d2b6b2f0fa01", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-07-26 15:30:06 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6b2f0fc00", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6b2f0fc02", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f000011607d2b6b2f0fa01"}
+2018-07-26 15:30:06 INFO ----开始报警设置----
+2018-07-26 15:30:06 INFO url：http://54.222.229.62:1080/v2/alert/rule/2807d2b6b2f0fc02
+2018-07-26 15:30:06 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2f0fc00", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2f0fc02", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f000011607d2b6b2f0fa01"}
+2018-07-26 15:30:06 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2f0fc00", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2f0fc02", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f000011607d2b6b2f0fa01"}
+2018-07-26 15:30:06 INFO ----开始设置快照----
+2018-07-26 15:30:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f000011607d2b6b2f0fa01/snapshot
+2018-07-26 15:30:06 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-07-26 15:30:06 INFO 设置快照响应：{"id": "5b59787e4abd1f467140c2ea"}
+2018-07-26 15:30:06 INFO ----开始设置统计规则----
+2018-07-26 15:30:06 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f000011607d2b6b2f0fa01/snapshot/5b59787e4abd1f467140c2ea/statistic_rule
+2018-07-26 15:30:06 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-07-26 15:30:06 INFO 统计规则响应：{"id": "5b59787e4abd1f467140c2ed"}
+2018-07-26 15:30:06 INFO ----开始调串口激活设备----
+2018-07-26 15:30:06 INFO len(plist): 3
+2018-07-26 15:30:07 INFO serialFd: Serial<id=0x3715e50, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-26 15:30:11 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-07-26 15:30:31 INFO ----开始查询宽表设备列表----
+2018-07-26 15:30:31 INFO url：http://54.222.229.62:1080/v2/wide-devices
+2018-07-26 15:30:31 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d2b6b2f000011607d2b6b2f0fa01"}}, "limit": 100, "offset": 0}
+2018-07-26 15:30:31 INFO 查询宽表设备列表响应：{"count": 1, "list": [{"is_online": false, "is_active": true, "product_id": "1607d2b6b2f000011607d2b6b2f0fa01", "id": 387676030}]}
+2018-07-26 15:30:31 INFO ----开始设备控制----
+2018-07-26 15:30:31 INFO url：http://54.222.229.62:1080/v2/diagnosis/device/set/387676030
+2018-07-26 15:30:31 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-07-26 15:30:31 INFO 设备控制响应：{"status": 200}
+2018-07-26 15:30:31 INFO ----开始获取虚拟设备----
+2018-07-26 15:30:31 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f000011607d2b6b2f0fa01/v_device/387676030
+2018-07-26 15:30:31 INFO body：{}
+2018-07-26 15:30:31 INFO 获取虚拟设备响应：{"cm_id": "MS-111", "last_login": "2018-07-26T15:30:27.901Z", "online_count": 3, "conn_prot": 2, "online": true, "ip": "61.140.126.154", "last_logout": "", "last_update": "", "device_id": 387676030}
+2018-07-26 15:30:31 INFO ----开始获取设备地理位置----
+2018-07-26 15:30:31 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f000011607d2b6b2f0fa01/device/387676030/geography
+2018-07-26 15:30:31 INFO body：{}
+2018-07-26 15:30:31 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-07-26 15:30:31 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 511, in test_get_device_geography
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387676030' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-07-26 15:30:31 INFO ----开始上传固件版本1----
+2018-07-26 15:30:31 INFO [error_upload]:
+2018-07-26 15:30:31 INFO [error_mcu]:
+2018-07-26 15:30:31 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 533, in test_upload_MCU
+    'file': open(filename, 'rb'),
+IOError: [Errno 2] No such file or directory: 'C:/wq/pyworkspace/deploymentV10051/lpt120-main_upgrade.bin'
+
+2018-07-26 15:30:31 INFO ----开始创建升级任务----
+2018-07-26 15:30:31 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task
+2018-07-26 15:30:31 INFO body：{"target_version": 10052, "description": "task_description", "target_version_size": null, "from_version": 10051, "from_version_url": null, "target_version_url": null, "identify": "", "name": "task_name", "task_type": 1, "product_id": "1607d2b6b2f000011607d2b6b2f0fa01", "type": 1, "target_version_md5": null, "scope": {"category": 0, "device_list": []}, "from_version_size": null, "from_version_md5": null}
+2018-07-26 15:30:32 INFO [error]:{'error': {'msg': 'service unavailable', 'code': 5031001}}
+2018-07-26 15:30:32 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 638, in test_create_mcu_task
+    self.assertIn("id", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in "{'error': {'msg': 'service unavailable', 'code': 5031001}}"
+
+2018-07-26 15:30:32 INFO ----开始启动升级任务----
+2018-07-26 15:30:32 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task/status
+2018-07-26 15:30:32 INFO body：{"status": 1, "product_id": "1607d2b6b2f000011607d2b6b2f0fa01", "upgrade_task_id": null}
+2018-07-26 15:30:32 INFO [error]:{'error': {'msg': 'upgrade task not exists', 'code': 4041013}}
+2018-07-26 15:30:32 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 662, in test_start_task
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [404]>'
+
+2018-07-26 15:30:32 INFO ----开始获取地理位置信息列表----
+2018-07-26 15:30:32 INFO url：http://54.222.229.62:1080/v2/service/position/geographies
+2018-07-26 15:30:32 INFO body：{"param": "F001S006"}
+2018-07-26 15:30:32 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-07-26 15:30:32 INFO ----开始调串口上报数据----
+2018-07-26 15:30:34 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 15:30:36 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 15:31:54 INFO 开始获取token
+2018-07-26 15:31:54 INFO token:MzQ0NDBENTNFNzY0NURFQ0NDQUFFNzY4ODhEMDNDRDMyNzVFOEFDRkJBOUUxMkFERkZERTZBOUFGRkI1ODI3Mg==
+2018-07-26 15:31:54 INFO -----开始创建产品接口-----
+2018-07-26 15:31:54 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-26 15:31:54 INFO body：{"is_gateway_device": false, "name": "product_2018-07-26", "link_type": 1, "description": ""}
+2018-07-26 15:31:54 INFO 创建产品接口响应：{"is_release": false, "key": "2bf33c39e5706f7b221607162f20196f", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-26T15:31:54.300Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b2f100011607d2b6b2f1d401", "is_active_register": false, "name": "product_2018-07-26", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-26 15:31:54 INFO ----开始创建$1002数据端点----
+2018-07-26 15:31:54 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/datapoint
+2018-07-26 15:31:54 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-07-26 15:31:54 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6b2f1d404", "name": "$1002"}
+2018-07-26 15:31:54 INFO ----开始创建自定义数据端点----
+2018-07-26 15:31:54 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/datapoint
+2018-07-26 15:31:54 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-07-26 15:31:54 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6b2f1d405", "name": "para_name"}
+2018-07-26 15:31:54 INFO ----开始添加设备----
+2018-07-26 15:31:54 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/device
+2018-07-26 15:31:54 INFO body：{"mac": "F0FE6B792673", "sn": 53796323, "name": "TEST_1"}
+2018-07-26 15:31:54 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387675155}
+2018-07-26 15:31:55 INFO ----开始设置异常规则----
+2018-07-26 15:31:55 INFO url：http://54.222.229.62:1080/v2/alert/rule
+2018-07-26 15:31:55 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d2b6b2f1d405", "content": "value>100", "source": 1, "product_id": "1607d2b6b2f100011607d2b6b2f1d401", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-07-26 15:31:55 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6b2f1d405", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6b2f1d407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f100011607d2b6b2f1d401"}
+2018-07-26 15:31:55 INFO ----开始报警设置----
+2018-07-26 15:31:55 INFO url：http://54.222.229.62:1080/v2/alert/rule/2807d2b6b2f1d407
+2018-07-26 15:31:55 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2f1d405", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2f1d407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f100011607d2b6b2f1d401"}
+2018-07-26 15:31:55 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2f1d405", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2f1d407", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f100011607d2b6b2f1d401"}
+2018-07-26 15:31:55 INFO ----开始设置快照----
+2018-07-26 15:31:55 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/snapshot
+2018-07-26 15:31:55 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-07-26 15:31:55 INFO 设置快照响应：{"id": "5b5978ea4abd1f467140c320"}
+2018-07-26 15:31:55 INFO ----开始设置统计规则----
+2018-07-26 15:31:55 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/snapshot/5b5978ea4abd1f467140c320/statistic_rule
+2018-07-26 15:31:55 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-07-26 15:31:55 INFO 统计规则响应：{"id": "5b5978eb4abd1f467140c323"}
+2018-07-26 15:31:55 INFO ----开始调串口激活设备----
+2018-07-26 15:31:55 INFO len(plist): 3
+2018-07-26 15:31:55 INFO serialFd: Serial<id=0x405be50, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-26 15:31:59 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-07-26 15:32:19 INFO ----开始查询宽表设备列表----
+2018-07-26 15:32:19 INFO url：http://54.222.229.62:1080/v2/wide-devices
+2018-07-26 15:32:19 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d2b6b2f100011607d2b6b2f1d401"}}, "limit": 100, "offset": 0}
+2018-07-26 15:32:19 INFO 查询宽表设备列表响应：{"count": 1, "list": [{"is_online": true, "is_active": true, "product_id": "1607d2b6b2f100011607d2b6b2f1d401", "id": 387675155}]}
+2018-07-26 15:32:19 INFO ----开始设备控制----
+2018-07-26 15:32:19 INFO url：http://54.222.229.62:1080/v2/diagnosis/device/set/387675155
+2018-07-26 15:32:19 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-07-26 15:32:19 INFO 设备控制响应：{"status": 200}
+2018-07-26 15:32:19 INFO ----开始获取虚拟设备----
+2018-07-26 15:32:19 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/v_device/387675155
+2018-07-26 15:32:19 INFO body：{}
+2018-07-26 15:32:20 INFO 获取虚拟设备响应：{"cm_id": "MS-111", "last_login": "2018-07-26T15:32:01.943Z", "online_count": 17, "conn_prot": 2, "online": true, "ip": "61.140.126.154", "last_logout": "", "last_update": "", "device_id": 387675155}
+2018-07-26 15:32:20 INFO ----开始获取设备地理位置----
+2018-07-26 15:32:20 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/device/387675155/geography
+2018-07-26 15:32:20 INFO body：{}
+2018-07-26 15:32:20 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-07-26 15:32:20 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 511, in test_get_device_geography
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387675155' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-07-26 15:32:20 INFO ----开始上传固件版本1----
+2018-07-26 15:32:20 INFO 上传固件1响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/1e2474b1640e76acd37eab74b69fe3a0", "md5": "81f49045f38af3b5fd0ff484f325269f", "size": 473815}
+2018-07-26 15:32:20 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/firmware
+2018-07-26 15:32:20 INFO body：{"is_release": true, "version": "10051", "identify": "", "description": "mcu1", "file_size": 473815, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/1e2474b1640e76acd37eab74b69fe3a0", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "81f49045f38af3b5fd0ff484f325269f", "type": 1, "mod": "1"}
+2018-07-26 15:32:20 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-07-26T15:32:20.584Z", "description": "mcu1", "file_md5": "81f49045f38af3b5fd0ff484f325269f", "identify": 0, "file_size": 473815, "id": "1807d2b6b2f20800", "mod": "1", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/1e2474b1640e76acd37eab74b69fe3a0", "version": 10051, "type": 1}
+2018-07-26 15:32:20 INFO ----开始上传固件版本2----
+2018-07-26 15:32:21 INFO 上传固件2响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/ecc26ac5ebc3958be6fbe6a2d4d32174", "md5": "01073687b30450debcdc6b2a3c350324", "size": 473799}
+2018-07-26 15:32:21 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/firmware
+2018-07-26 15:32:21 INFO body：{"is_release": true, "version": "10052", "identify": "", "description": "mcu2", "file_size": 473799, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/ecc26ac5ebc3958be6fbe6a2d4d32174", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "01073687b30450debcdc6b2a3c350324", "type": 1, "mod": "2"}
+2018-07-26 15:32:21 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-07-26T15:32:21.173Z", "description": "mcu2", "file_md5": "01073687b30450debcdc6b2a3c350324", "identify": 0, "file_size": 473799, "id": "1807d2b6b2f20a00", "mod": "2", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/ecc26ac5ebc3958be6fbe6a2d4d32174", "version": 10052, "type": 1}
+2018-07-26 15:32:21 INFO ----开始创建升级任务----
+2018-07-26 15:32:21 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task
+2018-07-26 15:32:21 INFO body：{"target_version": 10052, "description": "task_description", "target_version_size": 473799, "from_version": 10051, "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/1e2474b1640e76acd37eab74b69fe3a0", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/ecc26ac5ebc3958be6fbe6a2d4d32174", "identify": "", "name": "task_name", "task_type": 1, "product_id": "1607d2b6b2f100011607d2b6b2f1d401", "type": 1, "target_version_md5": "01073687b30450debcdc6b2a3c350324", "scope": {"category": 0, "device_list": []}, "from_version_size": 473815, "from_version_md5": "81f49045f38af3b5fd0ff484f325269f"}
+2018-07-26 15:32:21 INFO 创建升级任务响应：{"status": 0, "task_type": 1, "target_version": 10052, "description": "task_description", "from_version_md5": "81f49045f38af3b5fd0ff484f325269f", "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/1e2474b1640e76acd37eab74b69fe3a0", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/ecc26ac5ebc3958be6fbe6a2d4d32174", "name": "task_name", "product_id": "1607d2b6b2f100011607d2b6b2f1d401", "identify": 0, "from_version": 10051, "id": "2007d2b6b2f20a01", "scope": {"category": 0}, "from_version_size": 473815, "type": 1, "upgrade_count": 0, "target_version_size": 473799}
+2018-07-26 15:32:21 INFO ----开始启动升级任务----
+2018-07-26 15:32:21 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task/status
+2018-07-26 15:32:21 INFO body：{"status": 1, "product_id": "1607d2b6b2f100011607d2b6b2f1d401", "upgrade_task_id": "2007d2b6b2f20a01"}
+2018-07-26 15:32:21 INFO 启动升级任务成功
+2018-07-26 15:32:21 INFO ----开始获取地理位置信息列表----
+2018-07-26 15:32:21 INFO url：http://54.222.229.62:1080/v2/service/position/geographies
+2018-07-26 15:32:21 INFO body：{"param": "F001S006"}
+2018-07-26 15:32:21 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-07-26 15:32:21 INFO ----开始调串口上报数据----
+2018-07-26 15:32:23 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 15:32:25 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 15:34:25 INFO ----开始获取告警记录----
+2018-07-26 15:34:25 INFO url：http://54.222.229.62:1080/v2/corp/alarm/states
+2018-07-26 15:34:25 INFO body：{"filter": ["id", "device_id", "rule_id", "status", "content", "count"], "query": {"scope": {"$in": [1, 3, 4]}, "product_id": {"$in": ["1607d2b6b2f100011607d2b6b2f1d401"]}, "device_id": {"$eq": 387675155}}, "limit": 10, "order": {"start_time": "desc"}, "offset": 0}
+2018-07-26 15:34:25 INFO 获取告警记录响应：{"count": 1, "list": [{"count": 1, "status": 1, "rule_id": "2807d2b6b2f1d407", "content": "value>100", "id": "2d61401a5d09f1fb11f0b88b6583ec73", "device_id": 387675155}]}
+2018-07-26 15:34:25 INFO ----开始用户通过邮箱注册----
+2018-07-26 15:34:25 INFO url：http://54.222.229.62:1080/v2/user_register
+2018-07-26 15:34:25 INFO body：{"corp_id": "1007d2acdcd76e00", "source": "2", "local_lang": "zh-cn", "password": "123456", "nickname": "nickname", "email": "wangqi@xlink.cn"}
+2018-07-26 15:34:25 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-07-26 15:34:25 INFO ----开始用户通过邮箱登录----
+2018-07-26 15:34:25 INFO url：http://54.222.229.62:1080/v2/user_auth
+2018-07-26 15:34:25 INFO body：{"password": "123456", "email": "wangqi@xlink.cn", "corp_id": "1007d2acdcd76e00"}
+2018-07-26 15:34:26 INFO 用户通过邮箱登录响应：{"access_token": "MzhFQzQ0MjlCNEFBNUQ2QkY4RjYwMDI1ODA1N0Y0QzA5REY3MTU0QkI3MjFCMEM1OTY2ODQzNUUyQzhCM0E4OA==", "expire_in": 7200, "authorize": "2207d2b6b2f30200", "user_id": 387677250, "refresh_token": "QjUyQTlDQjgwQkY0RjI4MjNDNENCQ0FBQUVCODEwNTJEOEIzQzI4NEYyNUIwODJCNUY5OEUwRTU5NzM1MTY3Qw=="}
+2018-07-26 15:34:26 INFO ----开始生成设备二维码----
+2018-07-26 15:34:26 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f100011607d2b6b2f1d401/device/387675155/qrcode
+2018-07-26 15:34:26 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-07-26 15:34:26 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2f100011607d2b6b2f1d401;QK:5b5978ea4abd1f467140c317;id:387675155;MAC:F0FE6B792673;SN:53796323;;"}
+2018-07-26 15:34:26 INFO ----开始订阅设备----
+2018-07-26 15:34:26 INFO url：http://54.222.229.62:1080/v2/user/387677250/qrcode_subscribe
+2018-07-26 15:34:26 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b2f100011607d2b6b2f1d401;QK:5b5978ea4abd1f467140c317;id:387675155;MAC:F0FE6B792673;SN:53796323;;"}
+2018-07-26 15:34:26 INFO 订阅设备响应：{"custom_property": {}, "mac": "F0FE6B792673", "pid": "1607d2b6b2f100011607d2b6b2f1d401", "id": 387675155, "sn": "53796323"}
+2018-07-26 15:34:26 INFO ----开始获取设备列表----
+2018-07-26 15:34:26 INFO url：http://54.222.229.62:1080/v2/user/387677250/subscribe/devices
+2018-07-26 15:34:26 INFO body：{}
+2018-07-26 15:34:26 INFO 获取设备列表响应：[{"access_key": 0, "active_code": "97253d7d0154ed1e85f18b578af1bba5", "sn": "53796323", "product_id": "1607d2b6b2f100011607d2b6b2f1d401", "mcu_version": 0, "is_active": true, "mac": "F0FE6B792673", "firmware_mod": "0", "authorize_code": "1e07d2b6b2f1d406", "source": 3, "active_date": "2018-07-26T15:32:01.505Z", "role": 0, "authority": "RW", "groups": "", "mcu_mod": "0", "id": 387675155, "last_login": "2018-07-26T15:32:01.943Z", "firmware_version": 10051, "subscribe_date": "2018-07-26T15:34:25.889Z", "is_online": true, "name": "TEST_1"}]
+2018-07-26 15:34:26 INFO ----开始配置app----
+2018-07-26 15:34:26 INFO url：http://54.222.229.62:1080/v2/plugin/app
+2018-07-26 15:34:26 INFO body：{"enable": true, "type": 10, "name": "feedback", "plugin": "helpdesk"}
+2018-07-26 15:34:26 INFO 配置app响应：{"secret": "ee904f540c09e8e83aaa56663f44314f", "create_time": "2018-07-26T15:34:26.58Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e07d2b6b2f30400", "fee_type": 0}
+2018-07-26 15:34:26 INFO ----开始新增用户反馈----
+2018-07-26 15:34:26 INFO url：http://54.222.229.62:1080/v2/module/feedback/2e07d2b6b2f30400/api/feedback/save
+2018-07-26 15:34:26 INFO body：{"content": "\u7535\u996d\u7172\u65e0\u6cd5\u542f\u7528", "user_name": "\u5c0f\u660e", "user_id": 387677250, "email": "xiaoming@qq.com", "phone": "1689624223"}
+2018-07-26 15:34:26 INFO [error]:
+2018-07-26 15:34:26 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 956, in test_feedback
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/module/feedback/2e07d2b6b2f30400/api/feedback/save
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-26 15:34:26 INFO ----开始设备手动升级----
+2018-07-26 15:34:26 INFO url：http://54.222.229.62:1080/v2/upgrade/device
+2018-07-26 15:34:26 INFO body：{"product_id": "1607d2b6b2f100011607d2b6b2f1d401", "device_id": 387675155}
+2018-07-26 15:34:26 INFO 已设备手动升级
+2018-07-26 15:34:26 INFO ----开始删除用户----
+2018-07-26 15:34:26 INFO url：http://54.222.229.62:1080/v2/user/387677250
+2018-07-26 15:34:26 INFO 已删除用户
+2018-07-26 15:34:26 INFO ----开始删除app配置----
+2018-07-26 15:34:26 INFO url：http://54.222.229.62:1080/v2/plugin/app/2e07d2b6b2f30400
+2018-07-26 15:34:26 INFO 已删除产品
+2018-07-26 15:40:47 INFO 开始获取token
+2018-07-26 15:40:47 INFO token:N0YzNjlGQzlGNjU0N0IzMUYxRDY5NUVFNzk4QkFDMTlCMjY5NTQ3RUMzODJFNEEwNUI2NTM1RTEzMDM2NUQ2OA==
+2018-07-26 15:40:47 INFO -----开始创建产品接口-----
+2018-07-26 15:40:47 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-26 15:40:47 INFO body：{"is_gateway_device": false, "name": "product_2018-07-26", "link_type": 1, "description": ""}
+2018-07-26 15:40:47 INFO 创建产品接口响应：{"is_release": false, "key": "b3c26b064789793895db11f2818a0060", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-26T15:40:47.24Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b2f500011607d2b6b2f5fe01", "is_active_register": false, "name": "product_2018-07-26", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-26 15:40:47 INFO ----开始创建$1002数据端点----
+2018-07-26 15:40:47 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/datapoint
+2018-07-26 15:40:47 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-07-26 15:40:47 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6b2f5fe04", "name": "$1002"}
+2018-07-26 15:40:47 INFO ----开始创建自定义数据端点----
+2018-07-26 15:40:47 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/datapoint
+2018-07-26 15:40:47 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-07-26 15:40:47 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6b2f5fe05", "name": "para_name"}
+2018-07-26 15:40:47 INFO ----开始添加设备----
+2018-07-26 15:40:47 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/device
+2018-07-26 15:40:47 INFO body：{"mac": "F0FE6B792673", "sn": 79060436, "name": "TEST_1"}
+2018-07-26 15:40:47 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387674363}
+2018-07-26 15:40:47 INFO ----开始设置异常规则----
+2018-07-26 15:40:47 INFO url：http://54.222.229.62:1080/v2/alert/rule
+2018-07-26 15:40:47 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d2b6b2f5fe05", "content": "value>100", "source": 1, "product_id": "1607d2b6b2f500011607d2b6b2f5fe01", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-07-26 15:40:47 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6b2f5fe05", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6b2f5fe07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f500011607d2b6b2f5fe01"}
+2018-07-26 15:40:47 INFO ----开始报警设置----
+2018-07-26 15:40:47 INFO url：http://54.222.229.62:1080/v2/alert/rule/2807d2b6b2f5fe07
+2018-07-26 15:40:47 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2f5fe05", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2f5fe07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f500011607d2b6b2f5fe01"}
+2018-07-26 15:40:47 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6b2f5fe05", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6b2f5fe07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6b2f500011607d2b6b2f5fe01"}
+2018-07-26 15:40:47 INFO ----开始设置快照----
+2018-07-26 15:40:47 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/snapshot
+2018-07-26 15:40:47 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-07-26 15:40:48 INFO 设置快照响应：{"id": "5b597aff4abd1f467140c3b8"}
+2018-07-26 15:40:48 INFO ----开始设置统计规则----
+2018-07-26 15:40:48 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/snapshot/5b597aff4abd1f467140c3b8/statistic_rule
+2018-07-26 15:40:48 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-07-26 15:40:48 INFO 统计规则响应：{"id": "5b597aff4abd1f467140c3bb"}
+2018-07-26 15:40:48 INFO ----开始调串口激活设备----
+2018-07-26 15:40:48 INFO len(plist): 3
+2018-07-26 15:40:48 INFO serialFd: Serial<id=0x4433e50, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-26 15:40:53 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe'])
+2018-07-26 15:41:13 INFO ----开始查询宽表设备列表----
+2018-07-26 15:41:13 INFO url：http://54.222.229.62:1080/v2/wide-devices
+2018-07-26 15:41:13 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d2b6b2f500011607d2b6b2f5fe01"}}, "limit": 100, "offset": 0}
+2018-07-26 15:41:13 INFO 查询宽表设备列表响应：{"count": 1, "list": [{"is_online": true, "is_active": true, "product_id": "1607d2b6b2f500011607d2b6b2f5fe01", "id": 387674363}]}
+2018-07-26 15:41:13 INFO ----开始设备控制----
+2018-07-26 15:41:13 INFO url：http://54.222.229.62:1080/v2/diagnosis/device/set/387674363
+2018-07-26 15:41:13 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-07-26 15:41:16 INFO 设备控制响应：{"status": 200}
+2018-07-26 15:41:16 INFO ----开始获取虚拟设备----
+2018-07-26 15:41:16 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/v_device/387674363
+2018-07-26 15:41:16 INFO body：{}
+2018-07-26 15:41:16 INFO 获取虚拟设备响应：{"cm_id": "MS-111", "last_login": "2018-07-26T15:41:09.89Z", "online_count": 6, "conn_prot": 2, "online": true, "ip": "61.140.126.154", "last_logout": "", "last_update": "", "device_id": 387674363}
+2018-07-26 15:41:16 INFO ----开始获取设备地理位置----
+2018-07-26 15:41:16 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/device/387674363/geography
+2018-07-26 15:41:16 INFO body：{}
+2018-07-26 15:41:16 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-07-26 15:41:16 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 511, in test_get_device_geography
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387674363' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-07-26 15:41:16 INFO ----开始上传固件版本1----
+2018-07-26 15:41:16 INFO 上传固件1响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/6bac2d9aa1bc0cbd46d0f11687524239", "md5": "f2cc49f86b9d82cd56641401afd85455", "size": 473815}
+2018-07-26 15:41:16 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/firmware
+2018-07-26 15:41:16 INFO body：{"is_release": true, "version": "10051", "identify": "", "description": "mcu1", "file_size": 473815, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/6bac2d9aa1bc0cbd46d0f11687524239", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "f2cc49f86b9d82cd56641401afd85455", "type": 1, "mod": "1"}
+2018-07-26 15:41:16 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-07-26T15:41:16.619Z", "description": "mcu1", "file_md5": "f2cc49f86b9d82cd56641401afd85455", "identify": 0, "file_size": 473815, "id": "1807d2b6b2f63800", "mod": "1", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/6bac2d9aa1bc0cbd46d0f11687524239", "version": 10051, "type": 1}
+2018-07-26 15:41:16 INFO ----开始上传固件版本2----
+2018-07-26 15:41:17 INFO 上传固件2响应：{"url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/68eaa6d6de31fe49f0b1b00ba26abb2c", "md5": "ff18c74f4d39e0758bf39e37905db727", "size": 473815}
+2018-07-26 15:41:17 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b2f500011607d2b6b2f5fe01/firmware
+2018-07-26 15:41:17 INFO body：{"is_release": true, "version": "10052", "identify": "", "description": "mcu2", "file_size": 473815, "file_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/68eaa6d6de31fe49f0b1b00ba26abb2c", "release_date": "2018-07-26T01:36:06.173Z", "file_md5": "ff18c74f4d39e0758bf39e37905db727", "type": 1, "mod": "2"}
+2018-07-26 15:41:17 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-07-26T15:41:17.125Z", "description": "mcu2", "file_md5": "ff18c74f4d39e0758bf39e37905db727", "identify": 0, "file_size": 473815, "id": "1807d2b6b2f63a00", "mod": "2", "release_date": "2018-07-26T01:36:06.173Z", "file_url": "http://static.xlink.cn/68eaa6d6de31fe49f0b1b00ba26abb2c", "version": 10052, "type": 1}
+2018-07-26 15:41:17 INFO ----开始创建升级任务----
+2018-07-26 15:41:17 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task
+2018-07-26 15:41:17 INFO body：{"target_version": 10052, "description": "task_description", "target_version_size": 473815, "from_version": 10051, "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/6bac2d9aa1bc0cbd46d0f11687524239", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/68eaa6d6de31fe49f0b1b00ba26abb2c", "identify": "", "name": "task_name", "task_type": 0, "product_id": "1607d2b6b2f500011607d2b6b2f5fe01", "type": 1, "target_version_md5": "ff18c74f4d39e0758bf39e37905db727", "scope": {"category": 0, "device_list": []}, "from_version_size": 473815, "from_version_md5": "f2cc49f86b9d82cd56641401afd85455"}
+2018-07-26 15:41:17 INFO 创建升级任务响应：{"status": 0, "task_type": 0, "target_version": 10052, "description": "task_description", "from_version_md5": "f2cc49f86b9d82cd56641401afd85455", "from_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/6bac2d9aa1bc0cbd46d0f11687524239", "target_version_url": "http://xlink.oss-cn-hangzhou.aliyuncs.com/68eaa6d6de31fe49f0b1b00ba26abb2c", "name": "task_name", "product_id": "1607d2b6b2f500011607d2b6b2f5fe01", "identify": 0, "from_version": 10051, "id": "2007d2b6b2f63a01", "scope": {"category": 0}, "from_version_size": 473815, "type": 1, "upgrade_count": 0, "target_version_size": 473815}
+2018-07-26 15:41:17 INFO ----开始启动升级任务----
+2018-07-26 15:41:17 INFO url：http://54.222.229.62:1080/v2/upgrade/firmware/task/status
+2018-07-26 15:41:17 INFO body：{"status": 1, "product_id": "1607d2b6b2f500011607d2b6b2f5fe01", "upgrade_task_id": "2007d2b6b2f63a01"}
+2018-07-26 15:41:17 INFO 启动升级任务成功
+2018-07-26 15:41:17 INFO ----开始获取地理位置信息列表----
+2018-07-26 15:41:17 INFO url：http://54.222.229.62:1080/v2/service/position/geographies
+2018-07-26 15:41:17 INFO body：{"param": "F001S006"}
+2018-07-26 15:41:17 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-07-26 15:41:17 INFO ----开始调串口上报数据----
+2018-07-26 15:41:20 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-26 15:41:22 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']

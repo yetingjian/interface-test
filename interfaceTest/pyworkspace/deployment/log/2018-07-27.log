@@ -1,0 +1,87 @@
+2018-07-27 14:48:03 INFO 开始获取token
+2018-07-27 14:48:03 INFO token:RDNEOTlCRDM0NTk1RTdGRUY5MDNBOENDM0RBRTdBQkJENzFDRTJGOENDN0M2RDA2NTMyRjQ0MTY2QTY1QzExRg==
+2018-07-27 14:48:03 INFO -----开始创建产品接口-----
+2018-07-27 14:48:03 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-27 14:48:03 INFO body：{"is_gateway_device": false, "name": "product_2018-07-27", "link_type": 1, "description": ""}
+2018-07-27 14:48:03 INFO 创建产品接口响应：{"is_release": false, "key": "e8d1b3de691aaf6d3dcf31578e634b86", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-27T14:48:02.848Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b58000011607d2b6b5804401", "is_active_register": false, "name": "product_2018-07-27", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-27 14:48:03 INFO ----开始添加设备----
+2018-07-27 14:48:03 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b58000011607d2b6b5804401/device
+2018-07-27 14:48:03 INFO body：{"mac": "F0FE6B792673", "sn": 26554399, "name": "TEST_1"}
+2018-07-27 14:48:03 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387672181}
+2018-07-27 14:48:03 INFO ----开始调串口激活设备----
+2018-07-27 14:48:03 INFO len(plist): 3
+2018-07-27 14:48:04 INFO serialFd: Serial<id=0x45b6d10, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-27 14:48:08 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-07-27 14:48:59 INFO 开始获取token
+2018-07-27 14:48:59 INFO token:REZCMDNFNzRGRjdGQkI4NjBCRjA4RDZCNTRBODI5NEEwNTk1RTMwNEI3OUJGMkQ3RUYwODhENkQ2MkNENjg2NQ==
+2018-07-27 14:48:59 INFO -----开始创建产品接口-----
+2018-07-27 14:48:59 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-27 14:48:59 INFO body：{"is_gateway_device": false, "name": "product_2018-07-27", "link_type": 1, "description": ""}
+2018-07-27 14:48:59 INFO 创建产品接口响应：{"is_release": false, "key": "7cf5d097857564676fb9b3458492deef", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-27T14:48:58.376Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b58000011607d2b6b580b401", "is_active_register": false, "name": "product_2018-07-27", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-27 14:48:59 INFO ----开始添加设备----
+2018-07-27 14:48:59 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b58000011607d2b6b580b401/device
+2018-07-27 14:48:59 INFO body：{"mac": "F0FE6B792673", "sn": 62714791, "name": "TEST_1"}
+2018-07-27 14:48:59 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387673353}
+2018-07-27 14:48:59 INFO ----开始调串口激活设备----
+2018-07-27 14:48:59 INFO len(plist): 3
+2018-07-27 14:48:59 INFO serialFd: Serial<id=0x3be3d30, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-27 14:49:03 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-07-27 14:49:23 INFO ----开始用户通过邮箱登录----
+2018-07-27 14:49:23 INFO url：http://54.222.229.62:1080/v2/user_auth
+2018-07-27 14:49:23 INFO body：{"password": "Test1234", "email": "wangq@xlink.cn", "corp_id": "1007d2acdcd76e00"}
+2018-07-27 14:49:23 INFO 用户通过邮箱登录响应：{"access_token": "ODNGM0YxMkRBNUNEMjJDMzAyQTdDMzM3NDE3RTJBM0JCMTQxN0M1MDMwMjk2MTY2M0ZGNkMxNjQzNEY5OUY5Rg==", "expire_in": 7200, "authorize": "2207d2b5889bdc00", "user_id": 1222785504, "refresh_token": "OEVCRkQwNjREQjgzMzBBMThBRDZDQ0Y4MTdBQUYzRTgwMjlEMzAxQzAzRTY2QTI0MEFGN0FGNzMzRkJCQkEzOQ=="}
+2018-07-27 14:49:23 INFO ----开始生成设备二维码----
+2018-07-27 14:49:23 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b58000011607d2b6b580b401/device/387673353/qrcode
+2018-07-27 14:49:23 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-07-27 14:49:23 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b58000011607d2b6b580b401;QK:5b5ac05a4abd1f34f12a0ead;id:387673353;MAC:F0FE6B792673;SN:62714791;;"}
+2018-07-27 14:49:23 INFO ----开始订阅设备----
+2018-07-27 14:49:23 INFO url：http://54.222.229.62:1080/v2/user/1222785504/qrcode_subscribe
+2018-07-27 14:49:23 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b58000011607d2b6b580b401;QK:5b5ac05a4abd1f34f12a0ead;id:387673353;MAC:F0FE6B792673;SN:62714791;;"}
+2018-07-27 14:49:23 INFO [error]:{'error': {'msg': 'device can not be subscribe', 'code': 4031013}}
+2018-07-27 14:49:23 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 884, in test_get_qrcode_subscribe
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387673353' not found in "{'error': {'msg': 'device can not be subscribe', 'code': 4031013}}"
+
+2018-07-27 14:54:16 INFO 开始获取token
+2018-07-27 14:54:16 INFO token:MTczNTAyNzk1MjBFQjVDMTgzODY2RDlCMjQ2MDA3RTZFODhFNzU3NjNFRURGQ0FBODJDRDkzOUYyMUNCOTQzOA==
+2018-07-27 14:54:16 INFO -----开始创建产品接口-----
+2018-07-27 14:54:16 INFO url：http://54.222.229.62:1080/v2/product
+2018-07-27 14:54:16 INFO body：{"is_gateway_device": false, "name": "product_2018-07-27", "link_type": 1, "description": ""}
+2018-07-27 14:54:16 INFO 创建产品接口响应：{"is_release": false, "key": "24bfa7e6ad9f87915d35d0b27aadc7f3", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-27T14:54:15.732Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b58300011607d2b6b5832e01", "is_active_register": false, "name": "product_2018-07-27", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-27 14:54:16 INFO ----开始创建$1002数据端点----
+2018-07-27 14:54:16 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b58300011607d2b6b5832e01/datapoint
+2018-07-27 14:54:16 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-07-27 14:54:16 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6b5832e04", "name": "$1002"}
+2018-07-27 14:54:16 INFO ----开始创建自定义数据端点----
+2018-07-27 14:54:16 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b58300011607d2b6b5832e01/datapoint
+2018-07-27 14:54:16 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-07-27 14:54:16 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6b5832e05", "name": "para_name"}
+2018-07-27 14:54:16 INFO ----开始添加设备----
+2018-07-27 14:54:16 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b58300011607d2b6b5832e01/device
+2018-07-27 14:54:16 INFO body：{"mac": "F0FE6B792673", "sn": 96070314, "name": "TEST_1"}
+2018-07-27 14:54:17 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387675915}
+2018-07-27 14:54:17 INFO ----开始调串口激活设备----
+2018-07-27 14:54:17 INFO len(plist): 3
+2018-07-27 14:54:17 INFO serialFd: Serial<id=0x3b71cb0, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-07-27 14:54:21 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-07-27 14:54:31 INFO ----开始调串口上报数据----
+2018-07-27 14:54:33 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-27 14:54:35 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-07-27 14:54:45 INFO ----开始用户通过邮箱登录----
+2018-07-27 14:54:45 INFO url：http://54.222.229.62:1080/v2/user_auth
+2018-07-27 14:54:45 INFO body：{"password": "Test1234", "email": "wangq@xlink.cn", "corp_id": "1007d2acdcd76e00"}
+2018-07-27 14:54:45 INFO 用户通过邮箱登录响应：{"access_token": "MkIzOTFGMjY2ODQzQUE3ODg0QkM5RjhDNERDMUQ5M0REMjM2ODVFM0FDRkZCMUJFOTExRDcxRkY3RDY0NjM2QQ==", "expire_in": 7200, "authorize": "2207d2b5889bdc00", "user_id": 1222785504, "refresh_token": "OTYzODgwMDExMjFDRjk2QUUwODUwRkM0NjNDOTg5RjgzQ0E1NkVGNzNEODQzOUM2NEQ2QUFBNkQzREE5M0Y2NA=="}
+2018-07-27 14:54:45 INFO ----开始生成设备二维码----
+2018-07-27 14:54:45 INFO url：http://54.222.229.62:1080/v2/product/1607d2b6b58300011607d2b6b5832e01/device/387675915/qrcode
+2018-07-27 14:54:45 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-07-27 14:54:45 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b58300011607d2b6b5832e01;QK:5b5ac1984abd1f34f12a0f03;id:387675915;MAC:F0FE6B792673;SN:96070314;;"}
+2018-07-27 14:54:45 INFO ----开始订阅设备----
+2018-07-27 14:54:45 INFO url：http://54.222.229.62:1080/v2/user/1222785504/qrcode_subscribe
+2018-07-27 14:54:45 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6b58300011607d2b6b5832e01;QK:5b5ac1984abd1f34f12a0f03;id:387675915;MAC:F0FE6B792673;SN:96070314;;"}
+2018-07-27 14:54:45 INFO 订阅设备响应：{"custom_property": {}, "mac": "F0FE6B792673", "pid": "1607d2b6b58300011607d2b6b5832e01", "id": 387675915, "sn": "96070314"}

@@ -1,0 +1,453 @@
+2018-11-05 09:47:20 INFO 开始获取token
+2018-11-05 09:47:20 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 41, in get_access_token
+    func.log('token:'+res['access_token'])
+KeyError: 'access_token'
+
+2018-11-05 09:47:20 INFO ----开始网关授权添加证书----
+2018-11-05 09:47:20 INFO url：http://api2.xlink.cn/v2/mqtt/certificate
+2018-11-05 09:47:20 INFO body：{"grant_type": 1, "expire_in": 0, "name": "test_certificate", "product_ids": ["160192b6c8640001160192b6c864ee01"]}
+2018-11-05 09:47:20 INFO [error]:{'error': {'msg': 'Access-Token Expired', 'code': 4031021}}
+2018-11-05 09:47:20 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1105, in test_certificate
+    self.assertIn("id", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in "{'error': {'msg': 'Access-Token Expired', 'code': 4031021}}"
+
+2018-11-05 09:49:33 INFO 开始获取token
+2018-11-05 09:49:33 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 42, in get_access_token
+    func.log('token:'+res['access_token'])
+KeyError: 'access_token'
+
+2018-11-05 09:49:33 INFO ----开始网关授权添加证书----
+2018-11-05 09:49:33 INFO url：http://api2.xlink.cn/v2/mqtt/certificate
+2018-11-05 09:49:33 INFO body：{"grant_type": 1, "expire_in": 0, "name": "test_certificate", "product_ids": ["160192b6c8640001160192b6c864ee01"]}
+2018-11-05 09:49:34 INFO [error]:{'error': {'msg': 'Access-Token Expired', 'code': 4031021}}
+2018-11-05 09:49:34 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1105, in test_certificate
+    self.assertIn("id", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in "{'error': {'msg': 'Access-Token Expired', 'code': 4031021}}"
+
+2018-11-05 09:50:13 INFO 开始获取token
+2018-11-05 09:50:13 INFO r.text:{"error":{"msg":"password error","code":4001007}}
+2018-11-05 09:50:13 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 42, in get_access_token
+    func.log('token:'+res['access_token'])
+KeyError: 'access_token'
+
+2018-11-05 09:50:13 INFO ----开始网关授权添加证书----
+2018-11-05 09:50:13 INFO url：http://api2.xlink.cn/v2/mqtt/certificate
+2018-11-05 09:50:13 INFO body：{"grant_type": 1, "expire_in": 0, "name": "test_certificate", "product_ids": ["160192b6c8640001160192b6c864ee01"]}
+2018-11-05 09:50:13 INFO [error]:{'error': {'msg': 'Access-Token Expired', 'code': 4031021}}
+2018-11-05 09:50:13 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1105, in test_certificate
+    self.assertIn("id", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in "{'error': {'msg': 'Access-Token Expired', 'code': 4031021}}"
+
+2018-11-05 09:50:58 INFO 开始获取token
+2018-11-05 09:50:58 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"MTlDQ0RBRjI5MkY1MDAzQTcyN0M4NTU2MDlFQzY1NDA3RkM3RUY1RDI3QTQ0RENFNDc0MkQ2MjQwREVDMTI1Qg==","refresh_token":"NzBCRDY4NzY0M0QwMDdGNDk0OTRFRThGRjdCOENCNUY0MTJBNjE5RDZCQUEwM0ZGOTdERjc2NzMyNEQwMDk2Mg==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 09:50:58 INFO token:MTlDQ0RBRjI5MkY1MDAzQTcyN0M4NTU2MDlFQzY1NDA3RkM3RUY1RDI3QTQ0RENFNDc0MkQ2MjQwREVDMTI1Qg==
+2018-11-05 09:50:58 INFO ----开始网关授权添加证书----
+2018-11-05 09:50:58 INFO url：http://api2.xlink.cn/v2/mqtt/certificate
+2018-11-05 09:50:58 INFO body：{"grant_type": 1, "expire_in": 0, "name": "test_certificate", "product_ids": ["160192b6c8640001160192b6c864ee01"]}
+2018-11-05 09:50:58 INFO [error]:{'error': {'msg': 'product not exists', 'code': 4041005}}
+2018-11-05 09:50:58 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1105, in test_certificate
+    self.assertIn("id", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in "{'error': {'msg': 'product not exists', 'code': 4041005}}"
+
+2018-11-05 09:51:47 INFO 开始获取token
+    2018-11-05 09:51:47 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"Qzg2MkMyRkE1OTkwRTBDMjU0QjQ4RkM0QTgxNjI4QjMyODc0OTIwOTE1MDQwRTEwRTlFOTVFN0FENDdBREE5Ng==","refresh_token":"NjhENjU3NUU2NkZCMDkwRUIwMEUzQzBFNEI3OTREQkVEQjkwMTE2NEFFNDg0NzdFOUJBMkM0NDdEQjNGMzhCMQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 09:51:47 INFO token:Qzg2MkMyRkE1OTkwRTBDMjU0QjQ4RkM0QTgxNjI4QjMyODc0OTIwOTE1MDQwRTEwRTlFOTVFN0FENDdBREE5Ng==
+2018-11-05 09:51:47 INFO ----开始网关授权添加证书----
+2018-11-05 09:51:47 INFO url：http://api2.xlink.cn/v2/mqtt/certificate
+2018-11-05 09:51:47 INFO body：{"grant_type": 1, "expire_in": 0, "name": "test_certificate", "product_ids": ["160fa6b2d86003e9160fa6b2d860f201"]}
+2018-11-05 09:51:48 INFO 网关授权添加证书响应：{"status": 1, "update_time": "2018-11-05T09:51:49.761Z", "create_time": "2018-11-05T09:51:49.761Z", "product_ids": ["160fa6b2d86003e9160fa6b2d860f201"], "id": "5bdfa235c5740e097467a72c", "certificate_id": "5bdfa235c5740e097467a72d", "grant_type": 1, "expire_in": 0, "certificate_key": "6b6a1bfd-7841-4e77-95b9-20eca61c3ef1", "name": "test_certificate"}
+2018-11-05 10:16:21 INFO 开始获取token
+2018-11-05 10:16:21 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"MUZGQzVGN0YyQkZFQkFGQTQwQkE5QUVENEUzQUExQUVDNjBFQTA5RDgyOThDMERGQTg3QjExNDcyRkIxRDIwMQ==","refresh_token":"RTFBMDI3MEFDMDgxRDQ3MDNDRkI4MkE3NUQzRjQxNDA2M0E3MTE2NDA2QzgwRDEzQjg5RDRFOEQ5N0IxRTk5QQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 10:16:21 INFO token:MUZGQzVGN0YyQkZFQkFGQTQwQkE5QUVENEUzQUExQUVDNjBFQTA5RDgyOThDMERGQTg3QjExNDcyRkIxRDIwMQ==
+2018-11-05 10:16:21 INFO ----开始数据平台添加仪表盘----
+2018-11-05 10:16:21 INFO url：http://api2.xlink.cn/v2/mqtt/certificate
+2018-11-05 10:16:21 INFO body：{"auth_department": [], "auth_user": [{"aid": "", "permission": 3}], "auth_position": [], "name": "data_platform", "page_type": 2}
+2018-11-05 10:16:21 INFO [error]:{'error': {'msg': 'service unavailable', 'code': 5031001}}
+2018-11-05 10:16:21 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1140, in test_data_platform
+    self.assertIn("id", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in "{'error': {'msg': 'service unavailable', 'code': 5031001}}"
+
+2018-11-05 10:18:30 INFO 开始获取token
+2018-11-05 10:18:31 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"OEQ4OTA2OEZCN0U0NEUxOUY2QjIxRTM2Mjk5NDE5RTA5NDRDODYyRTc5REFBMDM0RjY4ODdFNTY5REY0OEU3NA==","refresh_token":"RjlBMkJCMUQyQjczOEI1MDg3RTUwOUNBMTMzNENDMEZDODM1NzQzQTdEQzNGNzcxNzdCQkI0MjU4OTk5N0NEOA==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 10:18:31 INFO token:OEQ4OTA2OEZCN0U0NEUxOUY2QjIxRTM2Mjk5NDE5RTA5NDRDODYyRTc5REFBMDM0RjY4ODdFNTY5REY0OEU3NA==
+2018-11-05 10:18:31 INFO ----开始数据平台添加仪表盘----
+2018-11-05 10:18:31 INFO url：http://api2.xlink.cn/v2/data_platform/page
+2018-11-05 10:18:31 INFO body：{"auth_department": [], "auth_user": [{"aid": "", "permission": 3}], "auth_position": [], "name": "data_platform", "page_type": 2}
+2018-11-05 10:18:31 INFO 数据平台添加仪表盘响应：{"id": "5bdfa879d93f030b4a6d0af3"}
+2018-11-05 10:22:08 INFO 开始获取token
+2018-11-05 10:22:08 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"NEUwNTBDQ0ZCNjFGNEYyQkMyRDNFM0VGMzFCNDE4NUYzMTg2QzgzMjM2QTEzMkEyQzE5NDNDMzkzMUZBNTJFRQ==","refresh_token":"RjAyODBBRDExMkNEMzRBNzgwMjAwNUYyNTYzMzE2NEY1QUE5NzBDREU3QjU1MDY3RjE5RUVDQkQzQjVGRjJBQg==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 10:22:08 INFO token:NEUwNTBDQ0ZCNjFGNEYyQkMyRDNFM0VGMzFCNDE4NUYzMTg2QzgzMjM2QTEzMkEyQzE5NDNDMzkzMUZBNTJFRQ==
+2018-11-05 10:22:08 INFO 
+2018-11-05 10:22:08 INFO ----开始数据平台添加仪表盘----
+2018-11-05 10:22:08 INFO url：http://api2.xlink.cn/v2/data_platform/page
+2018-11-05 10:22:08 INFO body：{"auth_department": [], "auth_user": [{"aid": "", "permission": 3}], "auth_position": [], "name": "data_platform", "page_type": 2}
+2018-11-05 10:22:09 INFO 数据平台添加仪表盘响应：{"id": "5bdfa952d93f030b4a6d0af4"}
+2018-11-05 10:22:26 INFO 开始获取token
+2018-11-05 10:22:26 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"QzZERTNBMzFCMUNCM0VDODgwNzVCQUYzQTE5QzFDOURENjJGM0M4NzQ1OTg0MDlFMERFODVCRjg4OTk2OTNDRA==","refresh_token":"NzI3RTgzQUM2RDU3OEMwQThENzNGMTlEOTI3ODY2OENERDA2M0I2NTZFOUY0RUYzMkUyREMwMTNDMTY5QzhBMQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 10:22:26 INFO token:QzZERTNBMzFCMUNCM0VDODgwNzVCQUYzQTE5QzFDOURENjJGM0M4NzQ1OTg0MDlFMERFODVCRjg4OTk2OTNDRA==
+2018-11-05 10:22:26 INFO 
+2018-11-05 10:22:26 INFO ----开始数据平台添加仪表盘----
+2018-11-05 10:22:26 INFO url：http://api2.xlink.cn/v2/data_platform/page
+2018-11-05 10:22:26 INFO body：{"auth_department": [], "auth_user": [{"aid": "", "permission": 3}], "auth_position": [], "name": "data_platform", "page_type": 2}
+2018-11-05 10:22:27 INFO 数据平台添加仪表盘响应：{"id": "5bdfa964d93f030b4a6d0af5"}
+2018-11-05 10:24:53 INFO 开始获取token
+2018-11-05 10:24:53 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"QkUzNUU3REFDM0I5MjAxQ0FGM0EyRkRCREE1RDRGRjkxRTNBNzNCQjVCQTUyQUNCMkJEQUY3NDk5ODJBREIzMg==","refresh_token":"NzU5MEE0MDIxN0Y1RDlDRUU3MjI2NTBCQTgzMjU0OTJGMzcwOERDQzVGMTQxRjE5RDYyQjRBOThCQzYwMTZCOQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 10:24:53 INFO token:QkUzNUU3REFDM0I5MjAxQ0FGM0EyRkRCREE1RDRGRjkxRTNBNzNCQjVCQTUyQUNCMkJEQUY3NDk5ODJBREIzMg==
+2018-11-05 10:24:53 INFO 120fa2b24fee7e00
+2018-11-05 10:24:53 INFO ----开始数据平台添加仪表盘----
+2018-11-05 10:24:53 INFO url：http://api2.xlink.cn/v2/data_platform/page
+2018-11-05 10:24:53 INFO body：{"auth_department": [], "auth_user": [{"aid": "", "permission": 3}], "auth_position": [], "name": "data_platform", "page_type": 2}
+2018-11-05 10:24:53 INFO 数据平台添加仪表盘响应：{"id": "5bdfa9f7c2e32f48011b926a"}
+2018-11-05 10:25:12 INFO 开始获取token
+2018-11-05 10:25:13 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"NkM2NkNGRUZFMEJBNUE1MkVBMzEyOEU0NzFBMDQ2MTA3NTZFNkExOTRBODJBQjBBQUQwMkIxNUY1MDFBRERFRQ==","refresh_token":"NEY4MTkyMzBBQUZDNDNFRDA2OUU0QUI2NTYyRENEMTJGNUY0RUZFQzM2RDQ2Njk1M0NCODI3MUNGMUFFREVCRQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 10:25:13 INFO token:NkM2NkNGRUZFMEJBNUE1MkVBMzEyOEU0NzFBMDQ2MTA3NTZFNkExOTRBODJBQjBBQUQwMkIxNUY1MDFBRERFRQ==
+2018-11-05 10:25:13 INFO 120fa2b24fee7e00
+2018-11-05 10:25:13 INFO 
+2018-11-05 10:25:13 INFO ----开始数据平台添加仪表盘----
+2018-11-05 10:25:13 INFO url：http://api2.xlink.cn/v2/data_platform/page
+2018-11-05 10:25:13 INFO body：{"auth_department": [], "auth_user": [{"aid": "", "permission": 3}], "auth_position": [], "name": "data_platform", "page_type": 2}
+2018-11-05 10:25:14 INFO 数据平台添加仪表盘响应：{"id": "5bdfaa0bc2e32f48011b926b"}
+2018-11-05 11:53:58 INFO 开始获取token
+2018-11-05 11:53:58 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"OTdCNTcwMjU0NDgyQUVFMzk1MjhEQTUwRTQxNUQzMDNCOTNGODU3MzI1MDlGMTVGODcyMUU1ODgwQjc1NjRGOQ==","refresh_token":"NTk5N0Q0QTVGRTY4MzVEM0UyQTVCNDJGQTFBNUU3NjU0NDE0NzE2NTI3QjlGRTk3NTQ0QjI3MzdENjkyRjk4QQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 11:53:58 INFO token:OTdCNTcwMjU0NDgyQUVFMzk1MjhEQTUwRTQxNUQzMDNCOTNGODU3MzI1MDlGMTVGODcyMUU1ODgwQjc1NjRGOQ==
+2018-11-05 11:53:58 INFO 
+2018-11-05 11:53:58 INFO 
+2018-11-05 11:53:58 INFO ----开始数据平台添加仪表盘----
+2018-11-05 11:53:58 INFO url：http://api2.xlink.cn/v2/data_platform/page
+2018-11-05 11:53:58 INFO body：{"auth_department": [], "auth_user": [], "auth_position": [], "name": "data_platform", "page_type": 2}
+2018-11-05 11:53:59 INFO 数据平台添加仪表盘响应：{"id": "5bdfbed9d93f030b4a6d0af9"}
+2018-11-05 14:36:17 INFO 开始获取token
+2018-11-05 14:36:17 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"OURFOTI1MTVDMkFGNTZDNDc5RDFCOTFBOUQyNkY2MTZGMTM5ODhCQ0FCREM3MUNBREY4NzFBMUJBNDRCNDZDOQ==","refresh_token":"Qzk5QkU3OUY3MzY1QTIxMzYyRDM4NEYxNTQ3NUE4N0ZDQTU1QkMwMTI3QTdCRENEMTBGRkVDMDNEMUNFMTI3NQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 14:36:17 INFO token:OURFOTI1MTVDMkFGNTZDNDc5RDFCOTFBOUQyNkY2MTZGMTM5ODhCQ0FCREM3MUNBREY4NzFBMUJBNDRCNDZDOQ==
+2018-11-05 14:36:17 INFO 
+2018-11-05 14:36:17 INFO ----开始智能维保添加工单----
+2018-11-05 14:36:17 INFO url：http://api2.xlink.cn/v2/work_order
+2018-11-05 14:36:17 INFO body：{"link_phone": "13555555555", "link_country": "F001", "link_province": "F001S001", "link_man": "link_man", "title": "work_order", "event_logs": [{"type": 1, "description": "description"}], "link_city": "F001S001T0001", "is_notice": false, "extends": {"isDealer": false}, "link_address": "link_address", "type": "2"}
+2018-11-05 14:36:17 INFO 智能维保添加工单响应：{"status": 1, "update_time": "2018-11-05T14:36:19.121Z", "code": "4904317429310146049", "link_man": "link_man", "title": "work_order", "event_logs": [{"_id": "5bdfe4e3c5740e097467d406", "type": 1, "description": "description", "time": "2018-11-05T14:36:19.121Z"}], "creator_type": 1, "link_province": "F001S001", "link_phone_zone": "+86", "labels": [], "creator_id": "120fa2b24fee7e00", "create_time": "2018-11-05T14:36:19.121Z", "extends": {"isDealer": false}, "link_address": "link_address", "link_city": "F001S001T0001", "images": [], "reply": [], "link_phone": "13555555555", "_id": "440fa2b7bfc9c600", "type": 2, "link_country": "F001"}
+2018-11-05 14:43:40 INFO 开始获取token
+2018-11-05 14:43:40 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"QTA2MTg0RUM3MkM3MjIzNDE0Njg3OUQ3QUY1MkE4MzEyMTY4REVBQjVENjFGMzEwQUNEMjFDQjNGMEY1N0FDMg==","refresh_token":"NzlCMEJDMzA3OENDRkI0RDE5NjhGMTA2RjkwMjQ4RjFDREYyMkQ4QzM1MzUyNEVFNTAyMUM0NTU4MDI2MzNENA==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 14:43:40 INFO token:QTA2MTg0RUM3MkM3MjIzNDE0Njg3OUQ3QUY1MkE4MzEyMTY4REVBQjVENjFGMzEwQUNEMjFDQjNGMEY1N0FDMg==
+2018-11-05 14:43:40 INFO 
+2018-11-05 14:43:40 INFO ----开始智能维保添加巡检任务----
+2018-11-05 14:43:40 INFO url：http://api2.xlink.cn/v2/service/maintenance/strategy_task
+2018-11-05 14:43:40 INFO body：{"checkUser": "\u7cfb\u7edf", "status": 2, "runTime": "00:00:00", "name": "name", "productList": ["160fa6b2d86003e9160fa6b2d860f201"], "circleMode": 1, "neverFail": 1, "type": 4}
+2018-11-05 14:43:41 INFO 智能维保添加巡检任务响应：{"status": 200, "msg": "OK", "data": {"_id": "5bdfe69ed93f036a4132167b"}}
+2018-11-05 15:18:05 INFO 开始获取token
+2018-11-05 15:18:06 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"MEQ3QjQ1NTIyRkQ1OTczRUUzNjAzOUI1RTFFRkNGMDE3MUQ5NTBERTQwNjk2RkJENDEyNzE3MzYyMjA3RURBMA==","refresh_token":"NEZCOEU0REU2MkIzMzNDMDJEM0FGMTkyNUFERkYwNjU0QzFFMzdCRTI5REU1MzY4MjY1MEI0N0FBNENGNzlBMw==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 15:18:06 INFO token:MEQ3QjQ1NTIyRkQ1OTczRUUzNjAzOUI1RTFFRkNGMDE3MUQ5NTBERTQwNjk2RkJENDEyNzE3MzYyMjA3RURBMA==
+2018-11-05 15:18:06 INFO 
+2018-11-05 15:19:14 INFO 开始获取token
+2018-11-05 15:19:15 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"MzgxRTZFMTYyQkFFRDBCREVGRUEyQjM2RkQyOEE1MDU1NjBBOUIwQkNDNDFBNERFQzg4RUI4MTFGOUI2QzFCOA==","refresh_token":"NDQzODI3MjdDMzMyNjA3MDlCNTBCNTVDMDQ4RUJBQTZCNUFCMUFDMURENkU4NTdBNUI3QTk2QjRGMTI5OEFDMg==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 15:19:15 INFO token:MzgxRTZFMTYyQkFFRDBCREVGRUEyQjM2RkQyOEE1MDU1NjBBOUIwQkNDNDFBNERFQzg4RUI4MTFGOUI2QzFCOA==
+2018-11-05 15:19:15 INFO 
+2018-11-05 15:19:15 INFO 开始获取异常设备数
+2018-11-05 15:19:16 INFO 异常设备数为：37
+2018-11-05 15:19:16 INFO 开始获取过滤器配置
+2018-11-05 15:19:17 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 15:19:17 INFO 开始获取设备总数和在线设备数
+2018-11-05 15:19:17 INFO 设备总数为：1094在线数为：19离线数为：1075
+2018-11-05 15:37:15 INFO 开始获取token
+2018-11-05 15:37:15 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"Nzc0QTg2MEQ5MjA3MUY2NjBCMUEwNTk0REZBQjlFMUI3MzJBREFDRTFFOEE3QTAzNTk2REYyMDlCOUVEMDhDNg==","refresh_token":"NDE0MTk3NDAwOUFEMkMyMzRGQkRFMTIxMzRBMEVCNDAzQzY5RkFEMzRBQ0Y3RTUyOUI0Nzc4RTJDOEM0NzQ1Ng==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 15:37:15 INFO token:Nzc0QTg2MEQ5MjA3MUY2NjBCMUEwNTk0REZBQjlFMUI3MzJBREFDRTFFOEE3QTAzNTk2REYyMDlCOUVEMDhDNg==
+2018-11-05 15:37:15 INFO 开始获取异常设备数
+2018-11-05 15:37:16 INFO 异常设备数为：37
+2018-11-05 15:37:16 INFO 开始获取过滤器配置
+2018-11-05 15:37:17 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 15:37:17 INFO 开始获取设备总数和在线设备数
+2018-11-05 15:37:17 INFO 设备总数为：1094 在线数为：20 离线数为：1074
+2018-11-05 15:37:17 INFO ----检查设备管理的设备数统计----
+2018-11-05 15:37:17 INFO 开始获取异常设备数
+2018-11-05 15:37:19 INFO 异常设备数为：37
+2018-11-05 15:37:19 INFO 开始获取过滤器配置
+2018-11-05 15:37:20 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 15:37:20 INFO 开始获取设备总数和在线设备数
+2018-11-05 15:37:21 INFO 设备总数为：1094 在线数为：20 离线数为：1074
+2018-11-05 15:37:21 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1234, in test_check_device_summary
+    self.assertEqual(ApiTest.devices_summary, new_devices_summary)
+  File "C:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python27\lib\unittest\case.py", line 742, in assertListEqual
+    self.assertSequenceEqual(list1, list2, msg, seq_type=list)
+  File "C:\Python27\lib\unittest\case.py", line 724, in assertSequenceEqual
+    self.fail(msg)
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Lists differ: [1094, 20, 1074, 37] != [1095, 21, 1074, 38]
+
+First differing element 0:
+1094
+1095
+
+- [1094, 20, 1074, 37]
+?     ^   ^         ^
+
++ [1095, 21, 1074, 38]
+?     ^   ^         ^
+
+
+2018-11-05 15:38:26 INFO 开始获取token
+2018-11-05 15:38:27 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"RjhGODU0NTZEOTIwMjEzQjREQzk0OUQ2OTU1REM2ODY3REJBOEQwMjQ3MURBMkIxQzI3MTU2RDQyMkMyQzU5NA==","refresh_token":"NzNBQjcwRTdCQzU0NTJBQUE1QjA2ODJERjRFMjgwQjI1MkEwNDc5MkYxRTEzQ0Q1RkY0QTZGQTMwOUU2NjAyNA==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 15:38:27 INFO token:RjhGODU0NTZEOTIwMjEzQjREQzk0OUQ2OTU1REM2ODY3REJBOEQwMjQ3MURBMkIxQzI3MTU2RDQyMkMyQzU5NA==
+2018-11-05 15:38:27 INFO 开始获取异常设备数
+2018-11-05 15:38:27 INFO 异常设备数为：37
+2018-11-05 15:38:27 INFO 开始获取过滤器配置
+2018-11-05 15:38:28 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 15:38:28 INFO 开始获取设备总数和在线设备数
+2018-11-05 15:38:28 INFO 设备总数为：1094 在线数为：20 离线数为：1074
+2018-11-05 15:38:28 INFO ----检查设备管理的设备数统计----
+2018-11-05 15:38:28 INFO 开始获取异常设备数
+2018-11-05 15:38:29 INFO 异常设备数为：37
+2018-11-05 15:38:29 INFO 开始获取过滤器配置
+2018-11-05 15:38:30 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 15:38:30 INFO 开始获取设备总数和在线设备数
+2018-11-05 15:38:31 INFO 设备总数为：1094 在线数为：20 离线数为：1074
+2018-11-05 16:18:03 INFO 开始获取token
+2018-11-05 16:18:03 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"QUQ4QkQ1M0I4ODMzNEM0RDJGMEMwNzQ2MkI0NUQwRTY4M0E2MTNCRjg1QzI0MDUwQjE0M0UzNDA5QzM5NzY5OQ==","refresh_token":"RTgwNTFCRDY0NDAwRkI5QjhGRTU0Q0JBRTUyM0ZCRTlEMjIwQjVGM0U5OTE2MjE1RDQ1NkIyODA3MTFCNTk1OQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 16:18:03 INFO token:QUQ4QkQ1M0I4ODMzNEM0RDJGMEMwNzQ2MkI0NUQwRTY4M0E2MTNCRjg1QzI0MDUwQjE0M0UzNDA5QzM5NzY5OQ==
+2018-11-05 16:18:03 INFO 开始获取异常设备数
+2018-11-05 16:18:04 INFO 异常设备数为：37
+2018-11-05 16:18:04 INFO 开始获取过滤器配置
+2018-11-05 16:18:05 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 16:18:05 INFO 开始获取设备总数和在线设备数
+2018-11-05 16:18:05 INFO 设备总数为：1095 在线数为：19 离线数为：1076
+2018-11-05 16:18:05 INFO 开始获取设备报警统计
+2018-11-05 16:18:05 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 471, in get_alarm_summary
+    alarms = int(res['alarms'])
+KeyError: 'alarms'
+
+2018-11-05 16:18:05 INFO ----开始检查报警数据统计----
+2018-11-05 16:18:05 INFO 开始获取设备报警统计
+2018-11-05 16:18:06 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 471, in get_alarm_summary
+    alarms = int(res['alarms'])
+KeyError: 'alarms'
+
+2018-11-05 16:19:01 INFO 开始获取token
+2018-11-05 16:19:01 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"OUNCMjVEMEMyNjY5REQ0QjVFNkI3QzBDOTI5NEY1NzUyQzEyOTAyNUI2QkUxRTc3QjUxMDJBQzQxODgzMEIwRQ==","refresh_token":"NDUzMTExOUVDQ0M1MEYyNEMzOUJGRDE2M0QyMUI5RUMzMEM2MkZEOEEzRkIzNUFCMEEzRkE1NDMwN0Q2MTg4Mg==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 16:19:01 INFO token:OUNCMjVEMEMyNjY5REQ0QjVFNkI3QzBDOTI5NEY1NzUyQzEyOTAyNUI2QkUxRTc3QjUxMDJBQzQxODgzMEIwRQ==
+2018-11-05 16:19:01 INFO 开始获取异常设备数
+2018-11-05 16:19:01 INFO 异常设备数为：37
+2018-11-05 16:19:01 INFO 开始获取过滤器配置
+2018-11-05 16:19:02 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 16:19:02 INFO 开始获取设备总数和在线设备数
+2018-11-05 16:19:02 INFO 设备总数为：1095 在线数为：19 离线数为：1076
+2018-11-05 16:19:02 INFO 开始获取设备报警统计
+2018-11-05 16:19:02 INFO {"error":{"msg":"Access-Token permission invalid","code":4031003}}
+2018-11-05 16:19:02 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 472, in get_alarm_summary
+    alarms = int(res['alarms'])
+KeyError: 'alarms'
+
+2018-11-05 16:19:02 INFO ----开始检查报警数据统计----
+2018-11-05 16:19:02 INFO 开始获取设备报警统计
+2018-11-05 16:19:02 INFO {"error":{"msg":"Access-Token permission invalid","code":4031003}}
+2018-11-05 16:19:02 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 472, in get_alarm_summary
+    alarms = int(res['alarms'])
+KeyError: 'alarms'
+
+2018-11-05 16:20:33 INFO 开始获取token
+2018-11-05 16:20:33 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"Qjc1QzU1NEVBNzM0NDYyQTU2QjdGNTQ4NTkxNjZBRjU5OTg1MjYzRDk2MjNBQjdFMEQwNUZBNUY0RjI2QjBBOA==","refresh_token":"OEMyMzA3REZCNTMzRDlEOEExOUVENEI3OTlBRDE0QkZDRkM4MEU4NjdFNTc1NUFCNzE2MzUyMUI5QTU4MkM2MA==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 16:20:33 INFO token:Qjc1QzU1NEVBNzM0NDYyQTU2QjdGNTQ4NTkxNjZBRjU5OTg1MjYzRDk2MjNBQjdFMEQwNUZBNUY0RjI2QjBBOA==
+2018-11-05 16:20:33 INFO 开始获取异常设备数
+2018-11-05 16:20:34 INFO 异常设备数为：37
+2018-11-05 16:20:34 INFO 开始获取过滤器配置
+2018-11-05 16:20:35 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 16:20:35 INFO 开始获取设备总数和在线设备数
+2018-11-05 16:20:35 INFO 设备总数为：1095 在线数为：19 离线数为：1076
+2018-11-05 16:20:35 INFO 开始获取设备报警统计
+2018-11-05 16:20:35 INFO {"condition_alarams":2,"alarms":73,"today_alarms":0,"exceptions":37}
+2018-11-05 16:20:35 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-05 16:20:35 INFO ----开始检查报警数据统计----
+2018-11-05 16:20:35 INFO 开始获取设备报警统计
+2018-11-05 16:20:35 INFO {"condition_alarams":2,"alarms":73,"today_alarms":0,"exceptions":37}
+2018-11-05 16:20:35 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-05 16:20:35 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1258, in test_alarm_summary
+    self.assertEqual(ApiTest.alarm_summary, new_alarm_summary)
+  File "C:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python27\lib\unittest\case.py", line 742, in assertListEqual
+    self.assertSequenceEqual(list1, list2, msg, seq_type=list)
+  File "C:\Python27\lib\unittest\case.py", line 724, in assertSequenceEqual
+    self.fail(msg)
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Lists differ: [73, 37, 0, 2] != [74, 38, 1, 3]
+
+First differing element 0:
+73
+74
+
+- [73, 37, 0, 2]
++ [74, 38, 1, 3]
+
+2018-11-05 16:53:43 INFO 开始获取token
+2018-11-05 16:53:44 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"NTdERTM1MjdCNkQwOTMyOEE3RkQwRUMzNUIwN0E0RkZBRjY1MTMzMTU1NjY4NTMwM0U0REFBQzY0ODk2NUFFMg==","refresh_token":"ODM3OTEzRDUwNUUwMTg0RTVERUVBMjMwODAyRjk2RjNBOUQwNzBBNkE3NkRCMzlEMDQ0N0FDMkU4MzU3Mzk4NA==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 16:53:44 INFO token:NTdERTM1MjdCNkQwOTMyOEE3RkQwRUMzNUIwN0E0RkZBRjY1MTMzMTU1NjY4NTMwM0U0REFBQzY0ODk2NUFFMg==
+2018-11-05 16:53:44 INFO 开始获取异常设备数
+2018-11-05 16:53:45 INFO 异常设备数为：37
+2018-11-05 16:53:45 INFO 开始获取过滤器配置
+2018-11-05 16:53:46 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 16:53:46 INFO 开始获取设备总数和在线设备数
+2018-11-05 16:53:46 INFO 设备总数为：1095 在线数为：19 离线数为：1076
+2018-11-05 16:53:46 INFO 开始获取设备报警统计
+2018-11-05 16:53:47 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-05 16:53:47 INFO 开始获取地图设备总数
+2018-11-05 16:53:47 INFO 地图设备总数为：1194
+2018-11-05 16:53:47 INFO 开始获取地图在线设备数
+2018-11-05 16:53:48 INFO 地图在线设备数为：23
+2018-11-05 16:53:48 INFO 开始获取地图异常设备数
+2018-11-05 16:53:48 INFO 地图异常设备数为：37
+2018-11-05 16:53:48 INFO ----开始检查地图设备数据统计----
+2018-11-05 16:53:48 INFO 开始获取地图设备总数
+2018-11-05 16:53:49 INFO 地图设备总数为：1194
+2018-11-05 16:53:49 INFO 开始获取地图在线设备数
+2018-11-05 16:53:49 INFO 地图在线设备数为：23
+2018-11-05 16:53:49 INFO 开始获取地图异常设备数
+2018-11-05 16:53:50 INFO 地图异常设备数为：37
+2018-11-05 16:53:50 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1278, in test_check_map_summary
+    self.assertEqual(ApiTest.map_summary, new_map_summary)
+  File "C:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python27\lib\unittest\case.py", line 742, in assertListEqual
+    self.assertSequenceEqual(list1, list2, msg, seq_type=list)
+  File "C:\Python27\lib\unittest\case.py", line 724, in assertSequenceEqual
+    self.fail(msg)
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Lists differ: [1194, 23, 37] != [1193, 22, 36]
+
+First differing element 0:
+1194
+1193
+
+- [1194, 23, 37]
++ [1193, 22, 36]
+
+2018-11-05 17:33:26 INFO 开始获取token
+2018-11-05 17:33:26 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"NjdBNzMzNEIwODJDMkRCREY3QTc5QTFGOTlCMTE4QUJBNzUwRUVGRjNEMzQxOTkxMUY0MDVGNkM0NDFFNzI0Ng==","refresh_token":"MkJERUNCQjRERDBFNTBDQUIyQzE0OUUyRUI3NjNCQzBFNDg3QzY2MDlGREUzRTAzMkU5MkE2RTVCRDNBN0E3Rg==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 17:33:26 INFO token:NjdBNzMzNEIwODJDMkRCREY3QTc5QTFGOTlCMTE4QUJBNzUwRUVGRjNEMzQxOTkxMUY0MDVGNkM0NDFFNzI0Ng==
+2018-11-05 17:33:26 INFO 开始获取异常设备数
+2018-11-05 17:33:27 INFO 异常设备数为：37
+2018-11-05 17:33:27 INFO 开始获取过滤器配置
+2018-11-05 17:33:27 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 17:33:27 INFO 开始获取设备总数和在线设备数
+2018-11-05 17:33:28 INFO 设备总数为：1095 在线数为：20 离线数为：1075
+2018-11-05 17:33:28 INFO 开始获取设备报警统计
+2018-11-05 17:33:28 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-05 17:33:28 INFO 开始获取地图设备总数
+2018-11-05 17:33:29 INFO 地图设备总数为：1194
+2018-11-05 17:33:29 INFO 开始获取地图在线设备数
+2018-11-05 17:33:29 INFO 地图在线设备数为：24
+2018-11-05 17:33:29 INFO 开始获取地图异常设备数
+2018-11-05 17:33:30 INFO 地图异常设备数为：37
+2018-11-05 17:33:30 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-05 17:34:17 INFO 开始获取token
+2018-11-05 17:34:17 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"NTJENUE1M0I4QzI0MjAzNTBFNENBNkE3RjY1RUQ2NTRERTg5MjJCODM4MzBFNzcwNzU3M0FGOTlFNkM5RUNBNg==","refresh_token":"NzU1N0NGNzAxQkQ1RjMxMkQyMUMzRDEwNkUzRjk1OENERTUyN0QwNkI5NUZCMkY4MjhCMkU5ODBCRDEzMTdCNA==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 17:34:17 INFO token:NTJENUE1M0I4QzI0MjAzNTBFNENBNkE3RjY1RUQ2NTRERTg5MjJCODM4MzBFNzcwNzU3M0FGOTlFNkM5RUNBNg==
+2018-11-05 17:34:17 INFO 开始获取异常设备数
+2018-11-05 17:34:18 INFO 异常设备数为：37
+2018-11-05 17:34:18 INFO 开始获取过滤器配置
+2018-11-05 17:34:19 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 17:34:19 INFO 开始获取设备总数和在线设备数
+2018-11-05 17:34:19 INFO 设备总数为：1095 在线数为：20 离线数为：1075
+2018-11-05 17:34:19 INFO 开始获取设备报警统计
+2018-11-05 17:34:20 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-05 17:34:20 INFO 开始获取地图设备总数
+2018-11-05 17:34:20 INFO 地图设备总数为：1194
+2018-11-05 17:34:20 INFO 开始获取地图在线设备数
+2018-11-05 17:34:20 INFO 地图在线设备数为：24
+2018-11-05 17:34:20 INFO 开始获取地图异常设备数
+2018-11-05 17:34:20 INFO 地图异常设备数为：37
+2018-11-05 17:34:20 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-05 17:37:02 INFO 开始获取token
+2018-11-05 17:37:02 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"MEY1OTQzNEI0RDc3MEUwRDFGRjFEMjkyRUU3MDYyODFBQjREOEIyNkNEQzA5RENENUNENkU0NjRBOTc5MTM1RA==","refresh_token":"M0M4QjY5Q0M4NEY4RDg1RDY5Mjc2RDc5NUZEMUM0OUM4QTg0N0U5MTFEMjQ3NzVEQzE5REQ5NkI2NzM3NjQyNA==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 17:37:02 INFO token:MEY1OTQzNEI0RDc3MEUwRDFGRjFEMjkyRUU3MDYyODFBQjREOEIyNkNEQzA5RENENUNENkU0NjRBOTc5MTM1RA==
+2018-11-05 17:37:02 INFO 开始获取异常设备数
+2018-11-05 17:37:02 INFO 异常设备数为：37
+2018-11-05 17:37:02 INFO 开始获取过滤器配置
+2018-11-05 17:37:02 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 17:37:02 INFO 开始获取设备总数和在线设备数
+2018-11-05 17:37:03 INFO 设备总数为：1095 在线数为：20 离线数为：1075
+2018-11-05 17:37:03 INFO 开始获取设备报警统计
+2018-11-05 17:37:03 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-05 17:37:03 INFO 开始获取地图设备总数
+2018-11-05 17:37:03 INFO 地图设备总数为：1194
+2018-11-05 17:37:03 INFO 开始获取地图在线设备数
+2018-11-05 17:37:03 INFO 地图在线设备数为：24
+2018-11-05 17:37:03 INFO 开始获取地图异常设备数
+2018-11-05 17:37:03 INFO 地图异常设备数为：37
+2018-11-05 17:37:03 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-05 17:37:03 INFO http://api2.xlink.cn/v2/corp_setting
+2018-11-05 17:38:30 INFO 开始获取token
+2018-11-05 17:38:31 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"MDAwQTdFOUU4NUJGMDI5QkYzQjYyRDM4QkUzQTFEMkEzOTVFQ0U0Q0EzNzRBNkY0ODc5MDQ5QzY3MEE3QUUyQg==","refresh_token":"RkY2MjdEQ0U3RUJFMkJEMzNBQ0IwQkM3MDMyOEYzNjNBOTBENjI3RjlENEQwMEVGQTAwREFGRTZFNzYxODRENg==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-05 17:38:31 INFO token:MDAwQTdFOUU4NUJGMDI5QkYzQjYyRDM4QkUzQTFEMkEzOTVFQ0U0Q0EzNzRBNkY0ODc5MDQ5QzY3MEE3QUUyQg==
+2018-11-05 17:38:31 INFO 开始获取异常设备数
+2018-11-05 17:38:31 INFO 异常设备数为：37
+2018-11-05 17:38:31 INFO 开始获取过滤器配置
+2018-11-05 17:38:32 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-05 17:38:32 INFO 开始获取设备总数和在线设备数
+2018-11-05 17:38:32 INFO 设备总数为：1095 在线数为：20 离线数为：1075
+2018-11-05 17:38:32 INFO 开始获取设备报警统计
+2018-11-05 17:38:33 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-05 17:38:33 INFO 开始获取地图设备总数
+2018-11-05 17:38:33 INFO 地图设备总数为：1194
+2018-11-05 17:38:33 INFO 开始获取地图在线设备数
+2018-11-05 17:38:34 INFO 地图在线设备数为：24
+2018-11-05 17:38:34 INFO 开始获取地图异常设备数
+2018-11-05 17:38:34 INFO 地图异常设备数为：37
+2018-11-05 17:38:34 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-05 17:38:34 INFO http://api2.xlink.cn/v2/corp_setting
+2018-11-05 17:38:34 INFO 开始设置是否激活验证为：True
+2018-11-05 17:38:35 INFO 是否激活验证已设置为为：True
+2018-11-05 17:38:35 INFO 用户通过邮箱注册
+2018-11-05 17:38:35 INFO 用户通过邮箱注册响应：{"error": {"msg": "[email] is not a email ", "code": 4001001}}
+2018-11-05 17:38:35 INFO 用户通过邮箱登录
+2018-11-05 17:38:35 INFO 用户通过邮箱登录响应：{"error": {"msg": "user not exists", "code": 4041011}}

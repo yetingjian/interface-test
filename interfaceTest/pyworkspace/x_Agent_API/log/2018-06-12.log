@@ -1,0 +1,865 @@
+2018-06-12 10:09:06 INFO 开始获取token
+2018-06-12 10:09:27 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 35, in get_access_token
+    r = requests.post(url=login_url, json=login_body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/corp_auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03C03810>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 10:10:04 INFO 开始获取token
+2018-06-12 10:10:04 INFO token:M0E3MzRDMTczMTg0NThDNDNDMDMzNUQ4NjU4NDQ5Q0IzRTEzQjA0OUYyMkUyNjdBMkRCMTI4RUZFRjU0MzZGNQ==
+2018-06-12 10:10:04 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 10:10:04 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 10:10:04 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:10:25 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 217, in get_query_json
+    r = requests.post(url=url, json=body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/query?service=diesel_generator&object=generator (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03A6FCF0>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 10:10:25 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 10:10:25 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=id_num
+2018-06-12 10:10:46 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 255, in get_data_api
+    r = requests.get(url=url, json=body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/get_data?service=diesel_generator&object=generator&id=id_num (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03AF1DD0>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 10:10:46 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 10:10:46 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:10:46 INFO {"count": 4, "list": [{"status": 1, "power_factor": 248.58, "generator_speed": 386, "online_status": 2, "reactive_power": 741.91, "tps_c_electric": 997.25, "active_power": 196.48, "generator_battery_voltage": 258.32, "tps_b_voltage": 229.3, "tps_b_electric": 165.93, "frequency": 327.1, "generator_time": 30337, "tps_a_electric": 177.5, "tps_c_voltage": 891.69, "tps_a_voltage": 18.1, "id": "5", "generator_oil_pressure": 246.98}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 10:10:46 INFO id=：5 body：{'status': 1, 'power_factor': 248.58, 'generator_speed': 386, 'online_status': 2, 'reactive_power': 741.91, 'tps_c_electric': 997.25, 'active_power': 196.48, 'generator_battery_voltage': 258.32, 'tps_b_voltage': 229.3, 'tps_b_electric': 165.93, 'frequency': 327.1, 'generator_time': 30337, 'tps_a_electric': 177.5, 'tps_c_voltage': 891.69, 'tps_a_voltage': 18.1, 'id': '5', 'generator_oil_pressure': 246.98}
+2018-06-12 10:10:46 INFO 已有记录数：4
+2018-06-12 10:10:46 INFO 断言北向接口请求返回的body
+2018-06-12 10:10:46 INFO a :{}
+2018-06-12 10:10:46 INFO b :{"status": 1, "power_factor": 248.58, "generator_speed": 386, "online_status": 2, "reactive_power": 741.91, "tps_c_electric": 997.25, "active_power": 196.48, "generator_battery_voltage": 258.32, "tps_b_voltage": 229.3, "tps_b_electric": 165.93, "frequency": 327.1, "generator_time": 30337, "tps_a_electric": 177.5, "tps_c_voltage": 891.69, "tps_a_voltage": 18.1, "id": "5", "generator_oil_pressure": 246.98}
+2018-06-12 10:10:46 INFO 断言失败：{"status": 1, "power_factor": 248.58, "generator_speed": 386, "online_status": 2, "reactive_power": 741.91, "tps_c_electric": 997.25, "active_power": 196.48, "generator_battery_voltage": 258.32, "tps_b_voltage": 229.3, "tps_b_electric": 165.93, "frequency": 327.1, "generator_time": 30337, "tps_a_electric": 177.5, "tps_c_voltage": 891.69, "tps_a_voltage": 18.1, "id": "5", "generator_oil_pressure": 246.98}
+2018-06-12 10:10:46 INFO 预期返回：{}
+2018-06-12 10:10:46 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 303, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 10:10:46 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 10:10:46 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 10:10:46 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:10:46 INFO {"count": 4, "list": [{"status": 1, "power_factor": 248.58, "generator_speed": 386, "online_status": 2, "reactive_power": 741.91, "tps_c_electric": 997.25, "active_power": 196.48, "generator_battery_voltage": 258.32, "tps_b_voltage": 229.3, "tps_b_electric": 165.93, "frequency": 327.1, "generator_time": 30337, "tps_a_electric": 177.5, "tps_c_voltage": 891.69, "tps_a_voltage": 18.1, "id": "5", "generator_oil_pressure": 246.98}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 10:10:46 INFO id=：5 body：{'status': 1, 'power_factor': 248.58, 'generator_speed': 386, 'online_status': 2, 'reactive_power': 741.91, 'tps_c_electric': 997.25, 'active_power': 196.48, 'generator_battery_voltage': 258.32, 'tps_b_voltage': 229.3, 'tps_b_electric': 165.93, 'frequency': 327.1, 'generator_time': 30337, 'tps_a_electric': 177.5, 'tps_c_voltage': 891.69, 'tps_a_voltage': 18.1, 'id': '5', 'generator_oil_pressure': 246.98}
+2018-06-12 10:10:46 INFO 已有记录数：4
+2018-06-12 10:10:46 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 1.1, "power_factor": "a", "reactive_power": "a", "generator_speed": 1.1, "online_status": 1.1, "tps_a_voltage": "a", "tps_c_electric": "a", "active_power": "a", "generator_battery_voltage": "a", "tps_b_voltage": "a", "tps_b_electric": "a", "frequency": "a", "generator_time": 1.1, "tps_a_electric": "a", "tps_c_voltage": "a", "id": "5", "generator_oil_pressure": "a"}, "table": "generator"}
+2018-06-12 10:10:46 INFO 开始掉南向接口
+2018-06-12 10:10:47 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, frequency type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:a, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1.1, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, active_power type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:1.1, status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:a]", "code": 4001001}}
+2018-06-12 10:10:47 INFO 断言南向接口非法数据请求返回
+2018-06-12 10:10:47 INFO 非法数据请求返回断言成功
+2018-06-12 10:10:47 INFO ----------------------test_a5_diesel_generator_generator_not_empty---------------------
+2018-06-12 10:10:47 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 10:10:47 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:10:47 INFO {"count": 4, "list": [{"status": 1, "power_factor": 248.58, "generator_speed": 386, "online_status": 2, "reactive_power": 741.91, "tps_c_electric": 997.25, "active_power": 196.48, "generator_battery_voltage": 258.32, "tps_b_voltage": 229.3, "tps_b_electric": 165.93, "frequency": 327.1, "generator_time": 30337, "tps_a_electric": 177.5, "tps_c_voltage": 891.69, "tps_a_voltage": 18.1, "id": "5", "generator_oil_pressure": 246.98}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 10:10:47 INFO id=：5 body：{'status': 1, 'power_factor': 248.58, 'generator_speed': 386, 'online_status': 2, 'reactive_power': 741.91, 'tps_c_electric': 997.25, 'active_power': 196.48, 'generator_battery_voltage': 258.32, 'tps_b_voltage': 229.3, 'tps_b_electric': 165.93, 'frequency': 327.1, 'generator_time': 30337, 'tps_a_electric': 177.5, 'tps_c_voltage': 891.69, 'tps_a_voltage': 18.1, 'id': '5', 'generator_oil_pressure': 246.98}
+2018-06-12 10:10:47 INFO 已有记录数：4
+2018-06-12 10:10:47 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {}, "table": "generator"}
+2018-06-12 10:10:47 INFO 开始掉南向接口
+2018-06-12 10:10:50 INFO 南向接口响应：{"error": {"msg": "required field ungiven. field need:[id]", "code": 4001001}}
+2018-06-12 10:10:50 INFO 断言南向接口非法数据请求返回
+2018-06-12 10:10:50 INFO 非法数据请求返回断言成功
+2018-06-12 10:10:50 INFO ----------------------test_a6_diesel_generator_generator_invalid_range---------------------
+2018-06-12 10:10:50 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 10:10:50 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:10:50 INFO {"count": 4, "list": [{"status": 1, "power_factor": 248.58, "generator_speed": 386, "online_status": 2, "reactive_power": 741.91, "tps_c_electric": 997.25, "active_power": 196.48, "generator_battery_voltage": 258.32, "tps_b_voltage": 229.3, "tps_b_electric": 165.93, "frequency": 327.1, "generator_time": 30337, "tps_a_electric": 177.5, "tps_c_voltage": 891.69, "tps_a_voltage": 18.1, "id": "5", "generator_oil_pressure": 246.98}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 10:10:50 INFO id=：5 body：{'status': 1, 'power_factor': 248.58, 'generator_speed': 386, 'online_status': 2, 'reactive_power': 741.91, 'tps_c_electric': 997.25, 'active_power': 196.48, 'generator_battery_voltage': 258.32, 'tps_b_voltage': 229.3, 'tps_b_electric': 165.93, 'frequency': 327.1, 'generator_time': 30337, 'tps_a_electric': 177.5, 'tps_c_voltage': 891.69, 'tps_a_voltage': 18.1, 'id': '5', 'generator_oil_pressure': 246.98}
+2018-06-12 10:10:50 INFO 已有记录数：4
+2018-06-12 10:10:50 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 3, "power_factor": 1001.0, "reactive_power": 1001.0, "generator_speed": 1001, "online_status": 3, "tps_a_voltage": 1001.0, "tps_c_electric": 1001.0, "active_power": 1001.0, "generator_battery_voltage": 1001.0, "tps_b_voltage": 1001.0, "tps_b_electric": 1001.0, "frequency": 1001.0, "generator_time": 100001, "tps_a_electric": 1001.0, "tps_c_voltage": 1001.0, "id": "5", "generator_oil_pressure": 1001.0}, "table": "generator"}
+2018-06-12 10:10:50 INFO 开始掉南向接口
+2018-06-12 10:10:50 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:3, status type:int32 min:1, max:2, maxLength:64\uff0c value:3, active_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1001, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:100001, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, frequency type:float min:0, max:1000, maxLength:64\uff0c value:1001.0]", "code": 4001001}}
+2018-06-12 10:10:50 INFO 断言南向接口非法数据请求返回
+2018-06-12 10:10:50 INFO 非法数据请求返回断言成功
+2018-06-12 10:14:53 INFO 开始获取token
+2018-06-12 10:15:14 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 35, in get_access_token
+    r = requests.post(url=login_url, json=login_body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/corp_auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0437D810>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 10:15:21 INFO 开始获取token
+2018-06-12 10:15:42 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 35, in get_access_token
+    r = requests.post(url=login_url, json=login_body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/corp_auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0406D810>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 10:15:51 INFO 开始获取token
+2018-06-12 10:15:51 INFO token:MUU4NDg1N0UyMUI1RENGNDg2QTg5OUE4RjhENDJBM0IyQzRDRTk1MURGQUYzMzQ0QTc4RDJGNkZGMTI3QjdBNQ==
+2018-06-12 10:15:51 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 10:15:51 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 10:15:51 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:16:00 INFO {"count": 4, "list": [{"status": 1, "power_factor": 248.58, "generator_speed": 386, "online_status": 2, "reactive_power": 741.91, "tps_c_electric": 997.25, "active_power": 196.48, "generator_battery_voltage": 258.32, "tps_b_voltage": 229.3, "tps_b_electric": 165.93, "frequency": 327.1, "generator_time": 30337, "tps_a_electric": 177.5, "tps_c_voltage": 891.69, "tps_a_voltage": 18.1, "id": "5", "generator_oil_pressure": 246.98}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 10:16:00 INFO id=：5 body：{'status': 1, 'power_factor': 248.58, 'generator_speed': 386, 'online_status': 2, 'reactive_power': 741.91, 'tps_c_electric': 997.25, 'active_power': 196.48, 'generator_battery_voltage': 258.32, 'tps_b_voltage': 229.3, 'tps_b_electric': 165.93, 'frequency': 327.1, 'generator_time': 30337, 'tps_a_electric': 177.5, 'tps_c_voltage': 891.69, 'tps_a_voltage': 18.1, 'id': '5', 'generator_oil_pressure': 246.98}
+2018-06-12 10:16:00 INFO 已有记录数：4
+2018-06-12 10:16:00 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 2, "power_factor": 336.31, "reactive_power": 279.23, "generator_speed": 223, "online_status": 1, "tps_a_voltage": 452.03, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "id": "5", "generator_oil_pressure": 778.42}, "table": "generator"}
+2018-06-12 10:16:00 INFO 开始掉南向接口
+2018-06-12 10:16:03 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-12 10:16:03 INFO 断言南向接口请求返回
+2018-06-12 10:16:03 INFO success
+2018-06-12 10:16:03 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 10:16:03 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 10:16:03 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO 断言北向接口请求返回的body
+2018-06-12 10:16:03 INFO a :{"status": 2, "power_factor": 336.31, "reactive_power": 279.23, "generator_speed": 223, "online_status": 1, "tps_a_voltage": 452.03, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO b :{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO 断言失败：{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO 预期返回：{"status": 2, "power_factor": 336.31, "reactive_power": 279.23, "generator_speed": 223, "online_status": 1, "tps_a_voltage": 452.03, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 303, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 10:16:03 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 10:16:03 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:16:03 INFO {"count": 4, "list": [{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 10:16:03 INFO id=：5 body：{'status': 2, 'power_factor': 336.31, 'generator_speed': 223, 'online_status': 1, 'reactive_power': 279.23, 'tps_c_electric': 752.0, 'active_power': 159.33, 'generator_battery_voltage': 494.0, 'tps_b_voltage': 922.57, 'tps_b_electric': 35.84, 'frequency': 165.16, 'generator_time': 48092, 'tps_a_electric': 860.82, 'tps_c_voltage': 11.78, 'tps_a_voltage': 452.03, 'id': '5', 'generator_oil_pressure': 778.42}
+2018-06-12 10:16:03 INFO 已有记录数：4
+2018-06-12 10:16:03 INFO 断言北向接口请求返回的body
+2018-06-12 10:16:03 INFO a :{"status": 2, "power_factor": 336.31, "reactive_power": 279.23, "generator_speed": 223, "online_status": 1, "tps_a_voltage": 452.03, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO b :{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO 断言失败：{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO 预期返回：{"status": 2, "power_factor": 336.31, "reactive_power": 279.23, "generator_speed": 223, "online_status": 1, "tps_a_voltage": 452.03, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "id": "5", "generator_oil_pressure": 778.42}
+2018-06-12 10:16:03 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 303, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 10:16:03 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 10:16:03 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 10:16:03 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:16:24 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 217, in get_query_json
+    r = requests.post(url=url, json=body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/query?service=diesel_generator&object=generator (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03F35BD0>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 10:16:24 INFO ----------------------test_a5_diesel_generator_generator_not_empty---------------------
+2018-06-12 10:16:24 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 10:16:24 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:16:24 INFO {"count": 4, "list": [{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 10:16:24 INFO id=：5 body：{'status': 2, 'power_factor': 336.31, 'generator_speed': 223, 'online_status': 1, 'reactive_power': 279.23, 'tps_c_electric': 752.0, 'active_power': 159.33, 'generator_battery_voltage': 494.0, 'tps_b_voltage': 922.57, 'tps_b_electric': 35.84, 'frequency': 165.16, 'generator_time': 48092, 'tps_a_electric': 860.82, 'tps_c_voltage': 11.78, 'tps_a_voltage': 452.03, 'id': '5', 'generator_oil_pressure': 778.42}
+2018-06-12 10:16:24 INFO 已有记录数：4
+2018-06-12 10:16:24 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {}, "table": "generator"}
+2018-06-12 10:16:24 INFO 开始掉南向接口
+2018-06-12 10:16:45 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 239, in post_south_api
+    r = requests.post(url=url, json=body, headers=header)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/publish?sdk=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03FF3CB0>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 10:16:45 INFO ----------------------test_a6_diesel_generator_generator_invalid_range---------------------
+2018-06-12 10:16:45 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 10:16:45 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 10:16:45 INFO {"count": 4, "list": [{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 10:16:45 INFO id=：5 body：{'status': 2, 'power_factor': 336.31, 'generator_speed': 223, 'online_status': 1, 'reactive_power': 279.23, 'tps_c_electric': 752.0, 'active_power': 159.33, 'generator_battery_voltage': 494.0, 'tps_b_voltage': 922.57, 'tps_b_electric': 35.84, 'frequency': 165.16, 'generator_time': 48092, 'tps_a_electric': 860.82, 'tps_c_voltage': 11.78, 'tps_a_voltage': 452.03, 'id': '5', 'generator_oil_pressure': 778.42}
+2018-06-12 10:16:45 INFO 已有记录数：4
+2018-06-12 10:16:45 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 3, "power_factor": 1001.0, "reactive_power": 1001.0, "generator_speed": 1001, "online_status": 3, "tps_a_voltage": 1001.0, "tps_c_electric": 1001.0, "active_power": 1001.0, "generator_battery_voltage": 1001.0, "tps_b_voltage": 1001.0, "tps_b_electric": 1001.0, "frequency": 1001.0, "generator_time": 100001, "tps_a_electric": 1001.0, "tps_c_voltage": 1001.0, "id": "5", "generator_oil_pressure": 1001.0}, "table": "generator"}
+2018-06-12 10:16:45 INFO 开始掉南向接口
+2018-06-12 10:16:45 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:3, status type:int32 min:1, max:2, maxLength:64\uff0c value:3, active_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1001, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:100001, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, frequency type:float min:0, max:1000, maxLength:64\uff0c value:1001.0]", "code": 4001001}}
+2018-06-12 10:16:45 INFO 断言南向接口非法数据请求返回
+2018-06-12 10:16:45 INFO 非法数据请求返回断言成功
+2018-06-12 11:50:51 INFO 开始获取token
+2018-06-12 11:50:51 INFO token:MTAyOEJFOEUyQkRENzQ0NEMxMkQyMzc2QTRCRjIxQjk1NTUzQjc4NTZENDk4MjJDOEE1OEE1ODgxQTFEQ0FGNg==
+2018-06-12 11:50:51 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 11:50:51 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:50:51 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:50:51 INFO {"count": 4, "list": [{"status": 2, "power_factor": 336.31, "generator_speed": 223, "online_status": 1, "reactive_power": 279.23, "tps_c_electric": 752.0, "active_power": 159.33, "generator_battery_voltage": 494.0, "tps_b_voltage": 922.57, "tps_b_electric": 35.84, "frequency": 165.16, "generator_time": 48092, "tps_a_electric": 860.82, "tps_c_voltage": 11.78, "tps_a_voltage": 452.03, "id": "5", "generator_oil_pressure": 778.42}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:50:51 INFO id=：5 body：{'status': 2, 'power_factor': 336.31, 'generator_speed': 223, 'online_status': 1, 'reactive_power': 279.23, 'tps_c_electric': 752.0, 'active_power': 159.33, 'generator_battery_voltage': 494.0, 'tps_b_voltage': 922.57, 'tps_b_electric': 35.84, 'frequency': 165.16, 'generator_time': 48092, 'tps_a_electric': 860.82, 'tps_c_voltage': 11.78, 'tps_a_voltage': 452.03, 'id': '5', 'generator_oil_pressure': 778.42}
+2018-06-12 11:50:51 INFO 已有记录数：4
+2018-06-12 11:50:51 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 2, "power_factor": 549.61, "reactive_power": 599.35, "generator_speed": 66, "online_status": 1, "tps_a_voltage": 33.46, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "id": "5", "generator_oil_pressure": 695.93}, "table": "generator"}
+2018-06-12 11:50:51 INFO 开始掉南向接口
+2018-06-12 11:50:51 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-12 11:50:51 INFO 断言南向接口请求返回
+2018-06-12 11:50:51 INFO success
+2018-06-12 11:50:51 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 11:50:51 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 11:50:51 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:51 INFO 断言北向接口请求返回的body
+2018-06-12 11:50:51 INFO a :{"status": 2, "power_factor": 549.61, "reactive_power": 599.35, "generator_speed": 66, "online_status": 1, "tps_a_voltage": 33.46, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:51 INFO b :{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:51 INFO 断言失败：{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:51 INFO 预期返回：{"status": 2, "power_factor": 549.61, "reactive_power": 599.35, "generator_speed": 66, "online_status": 1, "tps_a_voltage": 33.46, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:51 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 303, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:50:51 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 11:50:51 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:50:52 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:50:52 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:50:52 INFO 已有记录数：4
+2018-06-12 11:50:52 INFO 断言北向接口请求返回的body
+2018-06-12 11:50:52 INFO a :{"status": 2, "power_factor": 549.61, "reactive_power": 599.35, "generator_speed": 66, "online_status": 1, "tps_a_voltage": 33.46, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:52 INFO b :{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:52 INFO 断言失败：{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:52 INFO 预期返回：{"status": 2, "power_factor": 549.61, "reactive_power": 599.35, "generator_speed": 66, "online_status": 1, "tps_a_voltage": 33.46, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:50:52 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 303, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:50:52 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 11:50:52 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:50:52 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:50:52 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:50:52 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:50:52 INFO 已有记录数：4
+2018-06-12 11:50:52 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 1.1, "power_factor": "a", "reactive_power": "a", "generator_speed": 1.1, "online_status": 1.1, "tps_a_voltage": "a", "tps_c_electric": "a", "active_power": "a", "generator_battery_voltage": "a", "tps_b_voltage": "a", "tps_b_electric": "a", "frequency": "a", "generator_time": 1.1, "tps_a_electric": "a", "tps_c_voltage": "a", "id": "5", "generator_oil_pressure": "a"}, "table": "generator"}
+2018-06-12 11:50:52 INFO 开始掉南向接口
+2018-06-12 11:50:52 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, frequency type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:a, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1.1, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, active_power type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:1.1, status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:a]", "code": 4001001}}
+2018-06-12 11:50:52 INFO 断言南向接口非法数据请求返回
+2018-06-12 11:50:52 INFO 非法数据请求返回断言成功
+2018-06-12 11:50:52 INFO ----------------------test_a5_diesel_generator_generator_not_empty---------------------
+2018-06-12 11:50:52 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:50:52 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:50:52 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:50:52 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:50:52 INFO 已有记录数：4
+2018-06-12 11:50:52 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {}, "table": "generator"}
+2018-06-12 11:50:52 INFO 开始掉南向接口
+2018-06-12 11:50:52 INFO 南向接口响应：{"error": {"msg": "required field ungiven. field need:[id]", "code": 4001001}}
+2018-06-12 11:50:52 INFO 断言南向接口非法数据请求返回
+2018-06-12 11:50:52 INFO 非法数据请求返回断言成功
+2018-06-12 11:50:52 INFO ----------------------test_a6_diesel_generator_generator_invalid_range---------------------
+2018-06-12 11:50:52 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:50:52 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:50:52 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:50:52 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:50:52 INFO 已有记录数：4
+2018-06-12 11:50:52 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 3, "power_factor": 1001.0, "reactive_power": 1001.0, "generator_speed": 1001, "online_status": 3, "tps_a_voltage": 1001.0, "tps_c_electric": 1001.0, "active_power": 1001.0, "generator_battery_voltage": 1001.0, "tps_b_voltage": 1001.0, "tps_b_electric": 1001.0, "frequency": 1001.0, "generator_time": 100001, "tps_a_electric": 1001.0, "tps_c_voltage": 1001.0, "id": "5", "generator_oil_pressure": 1001.0}, "table": "generator"}
+2018-06-12 11:50:52 INFO 开始掉南向接口
+2018-06-12 11:50:52 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:3, status type:int32 min:1, max:2, maxLength:64\uff0c value:3, active_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1001, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:100001, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, frequency type:float min:0, max:1000, maxLength:64\uff0c value:1001.0]", "code": 4001001}}
+2018-06-12 11:50:52 INFO 断言南向接口非法数据请求返回
+2018-06-12 11:50:52 INFO 非法数据请求返回断言成功
+2018-06-12 11:55:35 INFO 开始获取token
+2018-06-12 11:55:35 INFO token:MTJBMDFBRjA4QUU2MzZBQzRFMDE1QUU5RkVCRTE1MkY5NEFEOEEyNEJFOEY0OUNGOTU0NjI2QzUwRUFGRUIxQQ==
+2018-06-12 11:55:35 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 11:55:35 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:55:35 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:55:35 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:55:35 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:55:35 INFO 已有记录数：4
+2018-06-12 11:55:35 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 1, "power_factor": 661.23, "reactive_power": 454.42, "generator_speed": 524, "online_status": 1, "tps_a_voltage": 307.67, "tps_c_electric": 137.33, "active_power": 843.16, "generator_battery_voltage": 132.39, "tps_b_voltage": 801.21, "tps_b_electric": 565.42, "frequency": 225.61, "generator_time": 95631, "tps_a_electric": 883.78, "tps_c_voltage": 53.82, "id": "5", "generator_oil_pressure": 35.54}, "table": "generator"}
+2018-06-12 11:55:35 INFO 开始掉南向接口
+2018-06-12 11:55:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 239, in post_south_api
+    r = requests.post(url=url, json=body, headers=header)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/publish?sdk=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03FC2330>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 11:55:56 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 11:55:56 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 11:55:56 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:55:56 INFO 断言北向接口请求返回的body
+2018-06-12 11:55:56 INFO a :{"status": 1, "power_factor": 661.23, "reactive_power": 454.42, "generator_speed": 524, "online_status": 1, "tps_a_voltage": 307.67, "tps_c_electric": 137.33, "active_power": 843.16, "generator_battery_voltage": 132.39, "tps_b_voltage": 801.21, "tps_b_electric": 565.42, "frequency": 225.61, "generator_time": 95631, "tps_a_electric": 883.78, "tps_c_voltage": 53.82, "id": "5", "generator_oil_pressure": 35.54}
+2018-06-12 11:55:56 INFO b :{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:55:56 INFO False
+2018-06-12 11:55:56 INFO 断言失败：{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:55:56 INFO 预期返回：{"status": 1, "power_factor": 661.23, "reactive_power": 454.42, "generator_speed": 524, "online_status": 1, "tps_a_voltage": 307.67, "tps_c_electric": 137.33, "active_power": 843.16, "generator_battery_voltage": 132.39, "tps_b_voltage": 801.21, "tps_b_electric": 565.42, "frequency": 225.61, "generator_time": 95631, "tps_a_electric": 883.78, "tps_c_voltage": 53.82, "id": "5", "generator_oil_pressure": 35.54}
+2018-06-12 11:55:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 304, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:55:56 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 11:55:56 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:55:56 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:55:56 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:55:56 INFO 已有记录数：4
+2018-06-12 11:55:56 INFO 断言北向接口请求返回的body
+2018-06-12 11:55:56 INFO a :{"status": 1, "power_factor": 661.23, "reactive_power": 454.42, "generator_speed": 524, "online_status": 1, "tps_a_voltage": 307.67, "tps_c_electric": 137.33, "active_power": 843.16, "generator_battery_voltage": 132.39, "tps_b_voltage": 801.21, "tps_b_electric": 565.42, "frequency": 225.61, "generator_time": 95631, "tps_a_electric": 883.78, "tps_c_voltage": 53.82, "id": "5", "generator_oil_pressure": 35.54}
+2018-06-12 11:55:56 INFO b :{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:55:56 INFO False
+2018-06-12 11:55:56 INFO 断言失败：{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:55:56 INFO 预期返回：{"status": 1, "power_factor": 661.23, "reactive_power": 454.42, "generator_speed": 524, "online_status": 1, "tps_a_voltage": 307.67, "tps_c_electric": 137.33, "active_power": 843.16, "generator_battery_voltage": 132.39, "tps_b_voltage": 801.21, "tps_b_electric": 565.42, "frequency": 225.61, "generator_time": 95631, "tps_a_electric": 883.78, "tps_c_voltage": 53.82, "id": "5", "generator_oil_pressure": 35.54}
+2018-06-12 11:55:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 304, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:55:56 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 11:55:56 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:55:56 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:56:04 INFO 开始获取token
+2018-06-12 11:56:07 INFO token:MkQ4NzY4Q0MyRkI5RENCREZENDEyRTlBQzUwMDNBQzAzQjRENjY2RTk1Qzg3QzMzQkU0OUI2NEVBREVDRjA4Ng==
+2018-06-12 11:56:07 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 11:56:07 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:56:07 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:56:07 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:56:07 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:56:07 INFO 已有记录数：4
+2018-06-12 11:56:07 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 2, "power_factor": 504.94, "reactive_power": 789.44, "generator_speed": 931, "online_status": 1, "tps_a_voltage": 778.31, "tps_c_electric": 578.08, "active_power": 690.63, "generator_battery_voltage": 118.89, "tps_b_voltage": 347.47, "tps_b_electric": 165.62, "frequency": 598.14, "generator_time": 52754, "tps_a_electric": 425.38, "tps_c_voltage": 829.56, "id": "5", "generator_oil_pressure": 464.32}, "table": "generator"}
+2018-06-12 11:56:07 INFO 开始掉南向接口
+2018-06-12 11:56:28 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 239, in post_south_api
+    r = requests.post(url=url, json=body, headers=header)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/publish?sdk=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x04432330>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 11:56:28 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 11:56:28 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 11:56:49 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 255, in get_data_api
+    r = requests.get(url=url, json=body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/get_data?service=diesel_generator&object=generator&id=5 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x04432830>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 11:56:49 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 11:56:49 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:56:49 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:56:49 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:56:49 INFO 已有记录数：4
+2018-06-12 11:56:49 INFO 断言北向接口请求返回的body
+2018-06-12 11:56:49 INFO a :{"status": 2, "power_factor": 504.94, "reactive_power": 789.44, "generator_speed": 931, "online_status": 1, "tps_a_voltage": 778.31, "tps_c_electric": 578.08, "active_power": 690.63, "generator_battery_voltage": 118.89, "tps_b_voltage": 347.47, "tps_b_electric": 165.62, "frequency": 598.14, "generator_time": 52754, "tps_a_electric": 425.38, "tps_c_voltage": 829.56, "id": "5", "generator_oil_pressure": 464.32}
+2018-06-12 11:56:49 INFO b :{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:56:49 INFO False
+2018-06-12 11:56:49 INFO 断言失败：{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}
+2018-06-12 11:56:49 INFO 预期返回：{"status": 2, "power_factor": 504.94, "reactive_power": 789.44, "generator_speed": 931, "online_status": 1, "tps_a_voltage": 778.31, "tps_c_electric": 578.08, "active_power": 690.63, "generator_battery_voltage": 118.89, "tps_b_voltage": 347.47, "tps_b_electric": 165.62, "frequency": 598.14, "generator_time": 52754, "tps_a_electric": 425.38, "tps_c_voltage": 829.56, "id": "5", "generator_oil_pressure": 464.32}
+2018-06-12 11:56:49 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 304, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:56:49 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 11:56:49 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:56:49 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:56:55 INFO 开始获取token
+2018-06-12 11:56:55 INFO token:OTVBRURCNUJEQ0IyOUY2RjRCNUI0MjZEQjJCQjI1QUVFRjQ1QzRENjA0OUNGMUE4NTRBQjE3MzczMDdFNEMyOQ==
+2018-06-12 11:56:55 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 11:56:55 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:56:55 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:56:58 INFO {"count": 4, "list": [{"status": 2, "power_factor": 549.61, "generator_speed": 66, "online_status": 1, "reactive_power": 599.35, "tps_c_electric": 12.65, "active_power": 694.11, "generator_battery_voltage": 949.01, "tps_b_voltage": 881.92, "tps_b_electric": 587.17, "frequency": 942.93, "generator_time": 14744, "tps_a_electric": 887.2, "tps_c_voltage": 773.85, "tps_a_voltage": 33.46, "id": "5", "generator_oil_pressure": 695.93}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:56:58 INFO id=：5 body：{'status': 2, 'power_factor': 549.61, 'generator_speed': 66, 'online_status': 1, 'reactive_power': 599.35, 'tps_c_electric': 12.65, 'active_power': 694.11, 'generator_battery_voltage': 949.01, 'tps_b_voltage': 881.92, 'tps_b_electric': 587.17, 'frequency': 942.93, 'generator_time': 14744, 'tps_a_electric': 887.2, 'tps_c_voltage': 773.85, 'tps_a_voltage': 33.46, 'id': '5', 'generator_oil_pressure': 695.93}
+2018-06-12 11:56:58 INFO 已有记录数：4
+2018-06-12 11:56:58 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 2, "power_factor": 188.51, "reactive_power": 320.14, "generator_speed": 687, "online_status": 1, "tps_a_voltage": 990.12, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "id": "5", "generator_oil_pressure": 549.82}, "table": "generator"}
+2018-06-12 11:56:58 INFO 开始掉南向接口
+2018-06-12 11:56:58 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-12 11:56:58 INFO 断言南向接口请求返回
+2018-06-12 11:56:58 INFO success
+2018-06-12 11:56:58 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 11:56:58 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 11:57:08 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO 断言北向接口请求返回的body
+2018-06-12 11:57:08 INFO a :{"status": 2, "power_factor": 188.51, "reactive_power": 320.14, "generator_speed": 687, "online_status": 1, "tps_a_voltage": 990.12, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO b :{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO False
+2018-06-12 11:57:08 INFO 断言失败：{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO 预期返回：{"status": 2, "power_factor": 188.51, "reactive_power": 320.14, "generator_speed": 687, "online_status": 1, "tps_a_voltage": 990.12, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 304, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:57:08 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 11:57:08 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:08 INFO {"count": 4, "list": [{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:08 INFO id=：5 body：{'status': 2, 'power_factor': 188.51, 'generator_speed': 687, 'online_status': 1, 'reactive_power': 320.14, 'tps_c_electric': 384.37, 'active_power': 78.06, 'generator_battery_voltage': 710.59, 'tps_b_voltage': 282.04, 'tps_b_electric': 243.3, 'frequency': 772.17, 'generator_time': 21021, 'tps_a_electric': 312.58, 'tps_c_voltage': 681.94, 'tps_a_voltage': 990.12, 'id': '5', 'generator_oil_pressure': 549.82}
+2018-06-12 11:57:08 INFO 已有记录数：4
+2018-06-12 11:57:08 INFO 断言北向接口请求返回的body
+2018-06-12 11:57:08 INFO a :{"status": 2, "power_factor": 188.51, "reactive_power": 320.14, "generator_speed": 687, "online_status": 1, "tps_a_voltage": 990.12, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO b :{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO False
+2018-06-12 11:57:08 INFO 断言失败：{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO 预期返回：{"status": 2, "power_factor": 188.51, "reactive_power": 320.14, "generator_speed": 687, "online_status": 1, "tps_a_voltage": 990.12, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "id": "5", "generator_oil_pressure": 549.82}
+2018-06-12 11:57:08 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 304, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:57:08 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 11:57:08 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:57:08 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:08 INFO {"count": 4, "list": [{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:08 INFO id=：5 body：{'status': 2, 'power_factor': 188.51, 'generator_speed': 687, 'online_status': 1, 'reactive_power': 320.14, 'tps_c_electric': 384.37, 'active_power': 78.06, 'generator_battery_voltage': 710.59, 'tps_b_voltage': 282.04, 'tps_b_electric': 243.3, 'frequency': 772.17, 'generator_time': 21021, 'tps_a_electric': 312.58, 'tps_c_voltage': 681.94, 'tps_a_voltage': 990.12, 'id': '5', 'generator_oil_pressure': 549.82}
+2018-06-12 11:57:08 INFO 已有记录数：4
+2018-06-12 11:57:08 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 1.1, "power_factor": "a", "reactive_power": "a", "generator_speed": 1.1, "online_status": 1.1, "tps_a_voltage": "a", "tps_c_electric": "a", "active_power": "a", "generator_battery_voltage": "a", "tps_b_voltage": "a", "tps_b_electric": "a", "frequency": "a", "generator_time": 1.1, "tps_a_electric": "a", "tps_c_voltage": "a", "id": "5", "generator_oil_pressure": "a"}, "table": "generator"}
+2018-06-12 11:57:08 INFO 开始掉南向接口
+2018-06-12 11:57:29 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 239, in post_south_api
+    r = requests.post(url=url, json=body, headers=header)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/publish?sdk=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03C3C7B0>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 11:57:29 INFO ----------------------test_a5_diesel_generator_generator_not_empty---------------------
+2018-06-12 11:57:29 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:57:29 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:29 INFO {"count": 4, "list": [{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:29 INFO id=：5 body：{'status': 2, 'power_factor': 188.51, 'generator_speed': 687, 'online_status': 1, 'reactive_power': 320.14, 'tps_c_electric': 384.37, 'active_power': 78.06, 'generator_battery_voltage': 710.59, 'tps_b_voltage': 282.04, 'tps_b_electric': 243.3, 'frequency': 772.17, 'generator_time': 21021, 'tps_a_electric': 312.58, 'tps_c_voltage': 681.94, 'tps_a_voltage': 990.12, 'id': '5', 'generator_oil_pressure': 549.82}
+2018-06-12 11:57:29 INFO 已有记录数：4
+2018-06-12 11:57:29 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {}, "table": "generator"}
+2018-06-12 11:57:29 INFO 开始掉南向接口
+2018-06-12 11:57:29 INFO 南向接口响应：{"error": {"msg": "required field ungiven. field need:[id]", "code": 4001001}}
+2018-06-12 11:57:29 INFO 断言南向接口非法数据请求返回
+2018-06-12 11:57:29 INFO 非法数据请求返回断言成功
+2018-06-12 11:57:29 INFO ----------------------test_a6_diesel_generator_generator_invalid_range---------------------
+2018-06-12 11:57:29 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:57:29 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:29 INFO {"count": 4, "list": [{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:29 INFO id=：5 body：{'status': 2, 'power_factor': 188.51, 'generator_speed': 687, 'online_status': 1, 'reactive_power': 320.14, 'tps_c_electric': 384.37, 'active_power': 78.06, 'generator_battery_voltage': 710.59, 'tps_b_voltage': 282.04, 'tps_b_electric': 243.3, 'frequency': 772.17, 'generator_time': 21021, 'tps_a_electric': 312.58, 'tps_c_voltage': 681.94, 'tps_a_voltage': 990.12, 'id': '5', 'generator_oil_pressure': 549.82}
+2018-06-12 11:57:29 INFO 已有记录数：4
+2018-06-12 11:57:29 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 3, "power_factor": 1001.0, "reactive_power": 1001.0, "generator_speed": 1001, "online_status": 3, "tps_a_voltage": 1001.0, "tps_c_electric": 1001.0, "active_power": 1001.0, "generator_battery_voltage": 1001.0, "tps_b_voltage": 1001.0, "tps_b_electric": 1001.0, "frequency": 1001.0, "generator_time": 100001, "tps_a_electric": 1001.0, "tps_c_voltage": 1001.0, "id": "5", "generator_oil_pressure": 1001.0}, "table": "generator"}
+2018-06-12 11:57:29 INFO 开始掉南向接口
+2018-06-12 11:57:29 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:3, status type:int32 min:1, max:2, maxLength:64\uff0c value:3, active_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1001, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:100001, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, frequency type:float min:0, max:1000, maxLength:64\uff0c value:1001.0]", "code": 4001001}}
+2018-06-12 11:57:29 INFO 断言南向接口非法数据请求返回
+2018-06-12 11:57:29 INFO 非法数据请求返回断言成功
+2018-06-12 11:57:36 INFO 开始获取token
+2018-06-12 11:57:36 INFO token:OEUwMDY2REY5ODdFNjU1QUZBM0I3NDVBRkE5NjhCMkJCMzcyREJERThCRDMzN0EwOTAzMzA1NDY3QTg2N0M0Qg==
+2018-06-12 11:57:36 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 11:57:36 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:57:36 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:36 INFO {"count": 4, "list": [{"status": 2, "power_factor": 188.51, "generator_speed": 687, "online_status": 1, "reactive_power": 320.14, "tps_c_electric": 384.37, "active_power": 78.06, "generator_battery_voltage": 710.59, "tps_b_voltage": 282.04, "tps_b_electric": 243.3, "frequency": 772.17, "generator_time": 21021, "tps_a_electric": 312.58, "tps_c_voltage": 681.94, "tps_a_voltage": 990.12, "id": "5", "generator_oil_pressure": 549.82}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:36 INFO id=：5 body：{'status': 2, 'power_factor': 188.51, 'generator_speed': 687, 'online_status': 1, 'reactive_power': 320.14, 'tps_c_electric': 384.37, 'active_power': 78.06, 'generator_battery_voltage': 710.59, 'tps_b_voltage': 282.04, 'tps_b_electric': 243.3, 'frequency': 772.17, 'generator_time': 21021, 'tps_a_electric': 312.58, 'tps_c_voltage': 681.94, 'tps_a_voltage': 990.12, 'id': '5', 'generator_oil_pressure': 549.82}
+2018-06-12 11:57:36 INFO 已有记录数：4
+2018-06-12 11:57:36 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 2, "power_factor": 29.59, "reactive_power": 548.19, "generator_speed": 209, "online_status": 2, "tps_a_voltage": 835.18, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "id": "5", "generator_oil_pressure": 257.64}, "table": "generator"}
+2018-06-12 11:57:36 INFO 开始掉南向接口
+2018-06-12 11:57:36 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-12 11:57:36 INFO 断言南向接口请求返回
+2018-06-12 11:57:36 INFO success
+2018-06-12 11:57:36 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 11:57:36 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 11:57:36 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:36 INFO 断言北向接口请求返回的body
+2018-06-12 11:57:36 INFO a :{"status": 2, "power_factor": 29.59, "reactive_power": 548.19, "generator_speed": 209, "online_status": 2, "tps_a_voltage": 835.18, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:36 INFO b :{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:36 INFO False
+2018-06-12 11:57:36 INFO 断言失败：{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:36 INFO 预期返回：{"status": 2, "power_factor": 29.59, "reactive_power": 548.19, "generator_speed": 209, "online_status": 2, "tps_a_voltage": 835.18, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:36 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 304, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:57:36 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 11:57:36 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:37 INFO {"count": 4, "list": [{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:37 INFO id=：5 body：{'status': 2, 'power_factor': 29.59, 'generator_speed': 209, 'online_status': 2, 'reactive_power': 548.19, 'tps_c_electric': 820.5, 'active_power': 872.95, 'generator_battery_voltage': 470.86, 'tps_b_voltage': 894.78, 'tps_b_electric': 476.54, 'frequency': 628.39, 'generator_time': 28159, 'tps_a_electric': 724.09, 'tps_c_voltage': 326.66, 'tps_a_voltage': 835.18, 'id': '5', 'generator_oil_pressure': 257.64}
+2018-06-12 11:57:37 INFO 已有记录数：4
+2018-06-12 11:57:37 INFO 断言北向接口请求返回的body
+2018-06-12 11:57:37 INFO a :{"status": 2, "power_factor": 29.59, "reactive_power": 548.19, "generator_speed": 209, "online_status": 2, "tps_a_voltage": 835.18, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:37 INFO b :{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:37 INFO False
+2018-06-12 11:57:37 INFO 断言失败：{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:37 INFO 预期返回：{"status": 2, "power_factor": 29.59, "reactive_power": 548.19, "generator_speed": 209, "online_status": 2, "tps_a_voltage": 835.18, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "id": "5", "generator_oil_pressure": 257.64}
+2018-06-12 11:57:37 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 304, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 11:57:37 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 11:57:37 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:57:37 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:37 INFO {"count": 4, "list": [{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:37 INFO id=：5 body：{'status': 2, 'power_factor': 29.59, 'generator_speed': 209, 'online_status': 2, 'reactive_power': 548.19, 'tps_c_electric': 820.5, 'active_power': 872.95, 'generator_battery_voltage': 470.86, 'tps_b_voltage': 894.78, 'tps_b_electric': 476.54, 'frequency': 628.39, 'generator_time': 28159, 'tps_a_electric': 724.09, 'tps_c_voltage': 326.66, 'tps_a_voltage': 835.18, 'id': '5', 'generator_oil_pressure': 257.64}
+2018-06-12 11:57:37 INFO 已有记录数：4
+2018-06-12 11:57:37 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 1.1, "power_factor": "a", "reactive_power": "a", "generator_speed": 1.1, "online_status": 1.1, "tps_a_voltage": "a", "tps_c_electric": "a", "active_power": "a", "generator_battery_voltage": "a", "tps_b_voltage": "a", "tps_b_electric": "a", "frequency": "a", "generator_time": 1.1, "tps_a_electric": "a", "tps_c_voltage": "a", "id": "5", "generator_oil_pressure": "a"}, "table": "generator"}
+2018-06-12 11:57:37 INFO 开始掉南向接口
+2018-06-12 11:57:37 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, frequency type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:a, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1.1, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, active_power type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:1.1, status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:a]", "code": 4001001}}
+2018-06-12 11:57:37 INFO 断言南向接口非法数据请求返回
+2018-06-12 11:57:37 INFO 非法数据请求返回断言成功
+2018-06-12 11:57:37 INFO ----------------------test_a5_diesel_generator_generator_not_empty---------------------
+2018-06-12 11:57:37 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:57:37 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:37 INFO {"count": 4, "list": [{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:37 INFO id=：5 body：{'status': 2, 'power_factor': 29.59, 'generator_speed': 209, 'online_status': 2, 'reactive_power': 548.19, 'tps_c_electric': 820.5, 'active_power': 872.95, 'generator_battery_voltage': 470.86, 'tps_b_voltage': 894.78, 'tps_b_electric': 476.54, 'frequency': 628.39, 'generator_time': 28159, 'tps_a_electric': 724.09, 'tps_c_voltage': 326.66, 'tps_a_voltage': 835.18, 'id': '5', 'generator_oil_pressure': 257.64}
+2018-06-12 11:57:37 INFO 已有记录数：4
+2018-06-12 11:57:37 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {}, "table": "generator"}
+2018-06-12 11:57:37 INFO 开始掉南向接口
+2018-06-12 11:57:37 INFO 南向接口响应：{"error": {"msg": "required field ungiven. field need:[id]", "code": 4001001}}
+2018-06-12 11:57:37 INFO 断言南向接口非法数据请求返回
+2018-06-12 11:57:37 INFO 非法数据请求返回断言成功
+2018-06-12 11:57:37 INFO ----------------------test_a6_diesel_generator_generator_invalid_range---------------------
+2018-06-12 11:57:37 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 11:57:37 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 11:57:37 INFO {"count": 4, "list": [{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 11:57:37 INFO id=：5 body：{'status': 2, 'power_factor': 29.59, 'generator_speed': 209, 'online_status': 2, 'reactive_power': 548.19, 'tps_c_electric': 820.5, 'active_power': 872.95, 'generator_battery_voltage': 470.86, 'tps_b_voltage': 894.78, 'tps_b_electric': 476.54, 'frequency': 628.39, 'generator_time': 28159, 'tps_a_electric': 724.09, 'tps_c_voltage': 326.66, 'tps_a_voltage': 835.18, 'id': '5', 'generator_oil_pressure': 257.64}
+2018-06-12 11:57:37 INFO 已有记录数：4
+2018-06-12 11:57:37 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 3, "power_factor": 1001.0, "reactive_power": 1001.0, "generator_speed": 1001, "online_status": 3, "tps_a_voltage": 1001.0, "tps_c_electric": 1001.0, "active_power": 1001.0, "generator_battery_voltage": 1001.0, "tps_b_voltage": 1001.0, "tps_b_electric": 1001.0, "frequency": 1001.0, "generator_time": 100001, "tps_a_electric": 1001.0, "tps_c_voltage": 1001.0, "id": "5", "generator_oil_pressure": 1001.0}, "table": "generator"}
+2018-06-12 11:57:37 INFO 开始掉南向接口
+2018-06-12 11:57:37 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:3, status type:int32 min:1, max:2, maxLength:64\uff0c value:3, active_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1001, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:100001, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, frequency type:float min:0, max:1000, maxLength:64\uff0c value:1001.0]", "code": 4001001}}
+2018-06-12 11:57:37 INFO 断言南向接口非法数据请求返回
+2018-06-12 11:57:37 INFO 非法数据请求返回断言成功
+2018-06-12 12:01:18 INFO 开始获取token
+2018-06-12 12:01:25 INFO 开始获取token
+2018-06-12 12:01:34 INFO 开始获取token
+2018-06-12 12:01:34 INFO token:MkRBQzkwMDU0MEM0RkNDRjQ5RjhBMEZBN0E5RkFCOUY5QTk2MDk1NTkxNzJCMkQwMkZBRDdFRjc4MjlBMjE2NA==
+2018-06-12 12:01:34 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 12:01:34 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:01:34 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:01:35 INFO {"count": 4, "list": [{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 12:01:35 INFO id=：5 body：{'status': 2, 'power_factor': 29.59, 'generator_speed': 209, 'online_status': 2, 'reactive_power': 548.19, 'tps_c_electric': 820.5, 'active_power': 872.95, 'generator_battery_voltage': 470.86, 'tps_b_voltage': 894.78, 'tps_b_electric': 476.54, 'frequency': 628.39, 'generator_time': 28159, 'tps_a_electric': 724.09, 'tps_c_voltage': 326.66, 'tps_a_voltage': 835.18, 'id': '5', 'generator_oil_pressure': 257.64}
+2018-06-12 12:01:35 INFO 已有记录数：4
+2018-06-12 12:01:35 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 1, "power_factor": 689.05, "reactive_power": 425.76, "generator_speed": 681, "online_status": 2, "tps_a_voltage": 992.12, "tps_c_electric": 595.67, "active_power": 280.65, "generator_battery_voltage": 111.13, "tps_b_voltage": 71.97, "tps_b_electric": 451.76, "frequency": 554.89, "generator_time": 45853, "tps_a_electric": 453.31, "tps_c_voltage": 184.07, "id": "5", "generator_oil_pressure": 149.64}, "table": "generator"}
+2018-06-12 12:01:35 INFO 开始掉南向接口
+2018-06-12 12:01:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 239, in post_south_api
+    r = requests.post(url=url, json=body, headers=header)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/publish?sdk=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03F8F330>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 12:01:56 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 12:01:56 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 12:01:56 INFO 北向接口通过id查询返回：{"error": {"msg": "Access-Token Refresh", "code": 4031022}}
+2018-06-12 12:01:56 INFO 断言北向接口请求返回的body
+2018-06-12 12:01:56 INFO False
+2018-06-12 12:01:56 INFO 断言失败：{'error': {'msg': 'Access-Token Refresh', 'code': 4031022}}
+2018-06-12 12:01:56 INFO 预期返回：{u'status': 1, u'power_factor': 689.05, u'reactive_power': 425.76, u'generator_speed': 681, u'online_status': 2, u'tps_a_voltage': 992.12, u'tps_c_electric': 595.67, u'active_power': 280.65, u'generator_battery_voltage': 111.13, u'tps_b_voltage': 71.97, u'tps_b_electric': 451.76, u'frequency': 554.89, u'generator_time': 45853, u'tps_a_electric': 453.31, u'tps_c_voltage': 184.07, u'id': '5', u'generator_oil_pressure': 149.64}
+2018-06-12 12:01:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 304, in assert_body_data
+    assert operator.eq(value1, value2)
+AssertionError
+
+2018-06-12 12:01:56 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 12:01:56 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:01:56 INFO {"error": {"msg": "Access-Token Refresh", "code": 4031022}}
+2018-06-12 12:01:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 220, in get_query_json
+    lists = res["list"]
+KeyError: 'list'
+
+2018-06-12 12:01:56 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 12:01:56 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:01:56 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:01:56 INFO {"error": {"msg": "Access-Token Refresh", "code": 4031022}}
+2018-06-12 12:01:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 220, in get_query_json
+    lists = res["list"]
+KeyError: 'list'
+
+2018-06-12 12:01:56 INFO ----------------------test_a5_diesel_generator_generator_not_empty---------------------
+2018-06-12 12:01:56 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:01:56 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:01:56 INFO {"error": {"msg": "Access-Token Refresh", "code": 4031022}}
+2018-06-12 12:01:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 220, in get_query_json
+    lists = res["list"]
+KeyError: 'list'
+
+2018-06-12 12:01:56 INFO ----------------------test_a6_diesel_generator_generator_invalid_range---------------------
+2018-06-12 12:01:56 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:01:56 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:01:56 INFO {"error": {"msg": "Access-Token Refresh", "code": 4031022}}
+2018-06-12 12:01:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 220, in get_query_json
+    lists = res["list"]
+KeyError: 'list'
+
+2018-06-12 12:02:54 INFO 开始获取token
+2018-06-12 12:03:06 INFO 开始获取token
+2018-06-12 12:03:06 INFO token:REVDODNDMjJCM0NFODhEOTA4M0M1MTlERDY0Mzc2RjJBRjI4NkNGMTNGNUM0MDlCNUYyMjg3QjMwRjA3N0FGMA==
+2018-06-12 12:03:06 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 12:03:06 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:03:06 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:03:06 INFO {"count": 4, "list": [{"status": 2, "power_factor": 29.59, "generator_speed": 209, "online_status": 2, "reactive_power": 548.19, "tps_c_electric": 820.5, "active_power": 872.95, "generator_battery_voltage": 470.86, "tps_b_voltage": 894.78, "tps_b_electric": 476.54, "frequency": 628.39, "generator_time": 28159, "tps_a_electric": 724.09, "tps_c_voltage": 326.66, "tps_a_voltage": 835.18, "id": "5", "generator_oil_pressure": 257.64}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 12:03:06 INFO id=：5 body：{'status': 2, 'power_factor': 29.59, 'generator_speed': 209, 'online_status': 2, 'reactive_power': 548.19, 'tps_c_electric': 820.5, 'active_power': 872.95, 'generator_battery_voltage': 470.86, 'tps_b_voltage': 894.78, 'tps_b_electric': 476.54, 'frequency': 628.39, 'generator_time': 28159, 'tps_a_electric': 724.09, 'tps_c_voltage': 326.66, 'tps_a_voltage': 835.18, 'id': '5', 'generator_oil_pressure': 257.64}
+2018-06-12 12:03:06 INFO 已有记录数：4
+2018-06-12 12:03:06 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 2, "power_factor": 705.66, "reactive_power": 376.13, "generator_speed": 183, "online_status": 1, "tps_a_voltage": 612.27, "tps_c_electric": 571.09, "active_power": 592.86, "generator_battery_voltage": 475.15, "tps_b_voltage": 38.17, "tps_b_electric": 972.78, "frequency": 48.98, "generator_time": 58317, "tps_a_electric": 325.49, "tps_c_voltage": 833.6, "id": "5", "generator_oil_pressure": 976.89}, "table": "generator"}
+2018-06-12 12:03:06 INFO 开始掉南向接口
+2018-06-12 12:03:06 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-12 12:03:06 INFO 断言南向接口请求返回
+2018-06-12 12:03:06 INFO success
+2018-06-12 12:03:06 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 12:03:06 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 12:03:16 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 705.66, "generator_speed": 183, "online_status": 1, "reactive_power": 376.13, "tps_c_electric": 571.09, "active_power": 592.86, "generator_battery_voltage": 475.15, "tps_b_voltage": 38.17, "tps_b_electric": 972.78, "frequency": 48.98, "generator_time": 58317, "tps_a_electric": 325.49, "tps_c_voltage": 833.6, "tps_a_voltage": 612.27, "id": "5", "generator_oil_pressure": 976.89}
+2018-06-12 12:03:16 INFO 断言北向接口请求返回的body
+2018-06-12 12:03:16 INFO True
+2018-06-12 12:03:16 INFO success
+2018-06-12 12:03:16 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 12:03:16 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:03:37 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 217, in get_query_json
+    r = requests.post(url=url, json=body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/query?service=diesel_generator&object=generator (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03BDFED0>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 12:03:37 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 12:03:37 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:03:37 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:03:58 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 217, in get_query_json
+    r = requests.post(url=url, json=body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/query?service=diesel_generator&object=generator (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03BCBB70>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 12:03:58 INFO ----------------------test_a5_diesel_generator_generator_not_empty---------------------
+2018-06-12 12:03:58 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:03:58 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:04:04 INFO 开始获取token
+2018-06-12 12:04:25 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 35, in get_access_token
+    r = requests.post(url=login_url, json=login_body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/corp_auth (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03F81810>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 12:05:02 INFO 开始获取token
+2018-06-12 12:05:02 INFO token:ODQzQzExNkQwNTJDMjA4NjQwRDQ5N0Q2OUNEREExQzgzNDZBNDc3MjI2RjhBQzhDQUJDOTIzQjk0NUUzNjI5Nw==
+2018-06-12 12:05:02 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 12:05:02 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:05:02 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:05:05 INFO {"count": 4, "list": [{"status": 2, "power_factor": 705.66, "generator_speed": 183, "online_status": 1, "reactive_power": 376.13, "tps_c_electric": 571.09, "active_power": 592.86, "generator_battery_voltage": 475.15, "tps_b_voltage": 38.17, "tps_b_electric": 972.78, "frequency": 48.98, "generator_time": 58317, "tps_a_electric": 325.49, "tps_c_voltage": 833.6, "tps_a_voltage": 612.27, "id": "5", "generator_oil_pressure": 976.89}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 12:05:05 INFO id=：5 body：{'status': 2, 'power_factor': 705.66, 'generator_speed': 183, 'online_status': 1, 'reactive_power': 376.13, 'tps_c_electric': 571.09, 'active_power': 592.86, 'generator_battery_voltage': 475.15, 'tps_b_voltage': 38.17, 'tps_b_electric': 972.78, 'frequency': 48.98, 'generator_time': 58317, 'tps_a_electric': 325.49, 'tps_c_voltage': 833.6, 'tps_a_voltage': 612.27, 'id': '5', 'generator_oil_pressure': 976.89}
+2018-06-12 12:05:05 INFO 已有记录数：4
+2018-06-12 12:05:05 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 2, "power_factor": 900.9, "reactive_power": 979.78, "generator_speed": 458, "online_status": 2, "tps_a_voltage": 918.5, "tps_c_electric": 598.3, "active_power": 580.0, "generator_battery_voltage": 992.12, "tps_b_voltage": 632.01, "tps_b_electric": 66.41, "frequency": 860.28, "generator_time": 27849, "tps_a_electric": 557.13, "tps_c_voltage": 524.28, "id": "5", "generator_oil_pressure": 271.54}, "table": "generator"}
+2018-06-12 12:05:05 INFO 开始掉南向接口
+2018-06-12 12:05:06 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-12 12:05:06 INFO 断言南向接口请求返回
+2018-06-12 12:05:06 INFO success
+2018-06-12 12:05:06 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 12:05:06 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 12:05:06 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 900.9, "generator_speed": 458, "online_status": 2, "reactive_power": 979.78, "tps_c_electric": 598.3, "active_power": 580.0, "generator_battery_voltage": 992.12, "tps_b_voltage": 632.01, "tps_b_electric": 66.41, "frequency": 860.28, "generator_time": 27849, "tps_a_electric": 557.13, "tps_c_voltage": 524.28, "tps_a_voltage": 918.5, "id": "5", "generator_oil_pressure": 271.54}
+2018-06-12 12:05:06 INFO 断言北向接口请求返回的body
+2018-06-12 12:05:06 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 12:05:06 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:05:27 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\api_operation.py", line 217, in get_query_json
+    r = requests.post(url=url, json=body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='iotapitest.bgycc.com', port=80): Max retries exceeded with url: /v2/service/iot/query?service=diesel_generator&object=generator (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x044D1B30>: Failed to establish a new connection: [Errno 10060] ',))
+
+2018-06-12 12:05:27 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 12:05:27 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:05:27 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:05:40 INFO 开始获取token
+2018-06-12 12:05:40 INFO token:MkM4NkI4REJCMTU0MURCMkJERTM3QkNDNDA0NDRBQTQ4RDU1RTI2QzE0NzgzMTZDM0VBODI2M0Y3QTk1NUU0Qg==
+2018-06-12 12:05:40 INFO ----------------------test_a1_diesel_generator_generator_south---------------------
+2018-06-12 12:05:40 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:05:40 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:05:40 INFO {"count": 4, "list": [{"status": 2, "power_factor": 900.9, "generator_speed": 458, "online_status": 2, "reactive_power": 979.78, "tps_c_electric": 598.3, "active_power": 580.0, "generator_battery_voltage": 992.12, "tps_b_voltage": 632.01, "tps_b_electric": 66.41, "frequency": 860.28, "generator_time": 27849, "tps_a_electric": 557.13, "tps_c_voltage": 524.28, "tps_a_voltage": 918.5, "id": "5", "generator_oil_pressure": 271.54}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 12:05:40 INFO id=：5 body：{'status': 2, 'power_factor': 900.9, 'generator_speed': 458, 'online_status': 2, 'reactive_power': 979.78, 'tps_c_electric': 598.3, 'active_power': 580.0, 'generator_battery_voltage': 992.12, 'tps_b_voltage': 632.01, 'tps_b_electric': 66.41, 'frequency': 860.28, 'generator_time': 27849, 'tps_a_electric': 557.13, 'tps_c_voltage': 524.28, 'tps_a_voltage': 918.5, 'id': '5', 'generator_oil_pressure': 271.54}
+2018-06-12 12:05:40 INFO 已有记录数：4
+2018-06-12 12:05:40 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 2, "power_factor": 778.41, "reactive_power": 784.31, "generator_speed": 644, "online_status": 1, "tps_a_voltage": 869.78, "tps_c_electric": 199.96, "active_power": 798.97, "generator_battery_voltage": 409.59, "tps_b_voltage": 292.2, "tps_b_electric": 833.28, "frequency": 814.71, "generator_time": 62164, "tps_a_electric": 29.12, "tps_c_voltage": 559.69, "id": "5", "generator_oil_pressure": 700.73}, "table": "generator"}
+2018-06-12 12:05:40 INFO 开始掉南向接口
+2018-06-12 12:05:40 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-12 12:05:40 INFO 断言南向接口请求返回
+2018-06-12 12:05:40 INFO success
+2018-06-12 12:05:40 INFO ----------------------test_a2_diesel_generator_generator_north_by_id---------------------
+2018-06-12 12:05:40 INFO 北向id接口url：http://iotapitest.bgycc.com/v2/service/iot/get_data?service=diesel_generator&object=generator&id=5
+2018-06-12 12:05:40 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 778.41, "generator_speed": 644, "online_status": 1, "reactive_power": 784.31, "tps_c_electric": 199.96, "active_power": 798.97, "generator_battery_voltage": 409.59, "tps_b_voltage": 292.2, "tps_b_electric": 833.28, "frequency": 814.71, "generator_time": 62164, "tps_a_electric": 29.12, "tps_c_voltage": 559.69, "tps_a_voltage": 869.78, "id": "5", "generator_oil_pressure": 700.73}
+2018-06-12 12:05:40 INFO 断言北向接口请求返回的body
+2018-06-12 12:05:40 INFO a :{u'status': 2, u'power_factor': 778.41, u'reactive_power': 784.31, u'generator_speed': 644, u'online_status': 1, u'tps_a_voltage': 869.78, u'tps_c_electric': 199.96, u'active_power': 798.97, u'generator_battery_voltage': 409.59, u'tps_b_voltage': 292.2, u'tps_b_electric': 833.28, u'frequency': 814.71, u'generator_time': 62164, u'tps_a_electric': 29.12, u'tps_c_voltage': 559.69, u'id': '5', u'generator_oil_pressure': 700.73}
+2018-06-12 12:05:40 INFO b :{'status': 2, 'power_factor': 778.41, 'generator_speed': 644, 'online_status': 1, 'reactive_power': 784.31, 'tps_c_electric': 199.96, 'active_power': 798.97, 'generator_battery_voltage': 409.59, 'tps_b_voltage': 292.2, 'tps_b_electric': 833.28, 'frequency': 814.71, 'generator_time': 62164, 'tps_a_electric': 29.12, 'tps_c_voltage': 559.69, 'tps_a_voltage': 869.78, 'id': '5', 'generator_oil_pressure': 700.73}
+2018-06-12 12:05:40 INFO True
+2018-06-12 12:05:40 INFO success
+2018-06-12 12:05:40 INFO ----------------------test_a3_diesel_generator_generator_north_total---------------------
+2018-06-12 12:05:40 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:05:40 INFO {"count": 4, "list": [{"status": 2, "power_factor": 778.41, "generator_speed": 644, "online_status": 1, "reactive_power": 784.31, "tps_c_electric": 199.96, "active_power": 798.97, "generator_battery_voltage": 409.59, "tps_b_voltage": 292.2, "tps_b_electric": 833.28, "frequency": 814.71, "generator_time": 62164, "tps_a_electric": 29.12, "tps_c_voltage": 559.69, "tps_a_voltage": 869.78, "id": "5", "generator_oil_pressure": 700.73}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 12:05:40 INFO id=：5 body：{'status': 2, 'power_factor': 778.41, 'generator_speed': 644, 'online_status': 1, 'reactive_power': 784.31, 'tps_c_electric': 199.96, 'active_power': 798.97, 'generator_battery_voltage': 409.59, 'tps_b_voltage': 292.2, 'tps_b_electric': 833.28, 'frequency': 814.71, 'generator_time': 62164, 'tps_a_electric': 29.12, 'tps_c_voltage': 559.69, 'tps_a_voltage': 869.78, 'id': '5', 'generator_oil_pressure': 700.73}
+2018-06-12 12:05:40 INFO 已有记录数：4
+2018-06-12 12:05:40 INFO 断言北向接口请求返回的body
+2018-06-12 12:05:40 INFO a :{u'status': 2, u'power_factor': 778.41, u'reactive_power': 784.31, u'generator_speed': 644, u'online_status': 1, u'tps_a_voltage': 869.78, u'tps_c_electric': 199.96, u'active_power': 798.97, u'generator_battery_voltage': 409.59, u'tps_b_voltage': 292.2, u'tps_b_electric': 833.28, u'frequency': 814.71, u'generator_time': 62164, u'tps_a_electric': 29.12, u'tps_c_voltage': 559.69, u'id': '5', u'generator_oil_pressure': 700.73}
+2018-06-12 12:05:40 INFO b :{'status': 2, 'power_factor': 778.41, 'generator_speed': 644, 'online_status': 1, 'reactive_power': 784.31, 'tps_c_electric': 199.96, 'active_power': 798.97, 'generator_battery_voltage': 409.59, 'tps_b_voltage': 292.2, 'tps_b_electric': 833.28, 'frequency': 814.71, 'generator_time': 62164, 'tps_a_electric': 29.12, 'tps_c_voltage': 559.69, 'tps_a_voltage': 869.78, 'id': '5', 'generator_oil_pressure': 700.73}
+2018-06-12 12:05:40 INFO True
+2018-06-12 12:05:40 INFO success
+2018-06-12 12:05:40 INFO ----------------------test_a4_diesel_generator_generator_invalid_value---------------------
+2018-06-12 12:05:40 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:05:40 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:05:43 INFO {"count": 4, "list": [{"status": 2, "power_factor": 778.41, "generator_speed": 644, "online_status": 1, "reactive_power": 784.31, "tps_c_electric": 199.96, "active_power": 798.97, "generator_battery_voltage": 409.59, "tps_b_voltage": 292.2, "tps_b_electric": 833.28, "frequency": 814.71, "generator_time": 62164, "tps_a_electric": 29.12, "tps_c_voltage": 559.69, "tps_a_voltage": 869.78, "id": "5", "generator_oil_pressure": 700.73}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 12:05:43 INFO id=：5 body：{'status': 2, 'power_factor': 778.41, 'generator_speed': 644, 'online_status': 1, 'reactive_power': 784.31, 'tps_c_electric': 199.96, 'active_power': 798.97, 'generator_battery_voltage': 409.59, 'tps_b_voltage': 292.2, 'tps_b_electric': 833.28, 'frequency': 814.71, 'generator_time': 62164, 'tps_a_electric': 29.12, 'tps_c_voltage': 559.69, 'tps_a_voltage': 869.78, 'id': '5', 'generator_oil_pressure': 700.73}
+2018-06-12 12:05:43 INFO 已有记录数：4
+2018-06-12 12:05:43 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 1.1, "power_factor": "a", "reactive_power": "a", "generator_speed": 1.1, "online_status": 1.1, "tps_a_voltage": "a", "tps_c_electric": "a", "active_power": "a", "generator_battery_voltage": "a", "tps_b_voltage": "a", "tps_b_electric": "a", "frequency": "a", "generator_time": 1.1, "tps_a_electric": "a", "tps_c_voltage": "a", "id": "5", "generator_oil_pressure": "a"}, "table": "generator"}
+2018-06-12 12:05:43 INFO 开始掉南向接口
+2018-06-12 12:05:46 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, frequency type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:a, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1.1, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, active_power type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:1.1, status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:a]", "code": 4001001}}
+2018-06-12 12:05:46 INFO 断言南向接口非法数据请求返回
+2018-06-12 12:05:46 INFO 非法数据请求返回断言成功
+2018-06-12 12:05:46 INFO ----------------------test_a5_diesel_generator_generator_not_empty---------------------
+2018-06-12 12:05:46 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:05:46 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:05:47 INFO {"count": 4, "list": [{"status": 2, "power_factor": 778.41, "generator_speed": 644, "online_status": 1, "reactive_power": 784.31, "tps_c_electric": 199.96, "active_power": 798.97, "generator_battery_voltage": 409.59, "tps_b_voltage": 292.2, "tps_b_electric": 833.28, "frequency": 814.71, "generator_time": 62164, "tps_a_electric": 29.12, "tps_c_voltage": 559.69, "tps_a_voltage": 869.78, "id": "5", "generator_oil_pressure": 700.73}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 12:05:47 INFO id=：5 body：{'status': 2, 'power_factor': 778.41, 'generator_speed': 644, 'online_status': 1, 'reactive_power': 784.31, 'tps_c_electric': 199.96, 'active_power': 798.97, 'generator_battery_voltage': 409.59, 'tps_b_voltage': 292.2, 'tps_b_electric': 833.28, 'frequency': 814.71, 'generator_time': 62164, 'tps_a_electric': 29.12, 'tps_c_voltage': 559.69, 'tps_a_voltage': 869.78, 'id': '5', 'generator_oil_pressure': 700.73}
+2018-06-12 12:05:47 INFO 已有记录数：4
+2018-06-12 12:05:47 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {}, "table": "generator"}
+2018-06-12 12:05:47 INFO 开始掉南向接口
+2018-06-12 12:05:47 INFO 南向接口响应：{"error": {"msg": "required field ungiven. field need:[id]", "code": 4001001}}
+2018-06-12 12:05:47 INFO 断言南向接口非法数据请求返回
+2018-06-12 12:05:47 INFO 非法数据请求返回断言成功
+2018-06-12 12:05:47 INFO ----------------------test_a6_diesel_generator_generator_invalid_range---------------------
+2018-06-12 12:05:47 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-12 12:05:47 INFO 北向all接口url：http://iotapitest.bgycc.com/v2/service/iot/query?service=diesel_generator&object=generator
+2018-06-12 12:05:47 INFO {"count": 4, "list": [{"status": 2, "power_factor": 778.41, "generator_speed": 644, "online_status": 1, "reactive_power": 784.31, "tps_c_electric": 199.96, "active_power": 798.97, "generator_battery_voltage": 409.59, "tps_b_voltage": 292.2, "tps_b_electric": 833.28, "frequency": 814.71, "generator_time": 62164, "tps_a_electric": 29.12, "tps_c_voltage": 559.69, "tps_a_voltage": 869.78, "id": "5", "generator_oil_pressure": 700.73}, {"status": 2, "power_factor": 1.9, "generator_speed": 3, "online_status": 1, "reactive_power": 1.8, "tps_c_electric": 1.5, "active_power": 1.7, "generator_battery_voltage": 2.3, "tps_b_voltage": 1.4, "tps_b_electric": 1.3, "frequency": 2.1, "generator_time": 4, "tps_a_electric": 1.1, "tps_c_voltage": 1.6, "tps_a_voltage": 1.2, "id": "6", "generator_oil_pressure": 2.2}, {"status": 1, "power_factor": 572.53, "generator_speed": 424, "online_status": 1, "reactive_power": 713.32, "tps_c_electric": 499.73, "active_power": 297.16, "generator_battery_voltage": 702.41, "tps_b_voltage": 576.18, "tps_b_electric": 601.46, "frequency": 942.0, "generator_time": 93012, "tps_a_electric": 778.84, "tps_c_voltage": 444.0, "tps_a_voltage": 269.11, "id": "3", "generator_oil_pressure": 4.93}, {"status": 1, "power_factor": 463.67, "generator_speed": 23, "online_status": 1, "reactive_power": 859.1, "tps_c_electric": 68.48, "active_power": 403.66, "generator_battery_voltage": 759.84, "tps_b_voltage": 742.46, "tps_b_electric": 667.53, "frequency": 900.62, "generator_time": 39715, "tps_a_electric": 197.34, "tps_c_voltage": 878.04, "tps_a_voltage": 402.61, "id": "4", "generator_oil_pressure": 946.02}]}
+2018-06-12 12:05:47 INFO id=：5 body：{'status': 2, 'power_factor': 778.41, 'generator_speed': 644, 'online_status': 1, 'reactive_power': 784.31, 'tps_c_electric': 199.96, 'active_power': 798.97, 'generator_battery_voltage': 409.59, 'tps_b_voltage': 292.2, 'tps_b_electric': 833.28, 'frequency': 814.71, 'generator_time': 62164, 'tps_a_electric': 29.12, 'tps_c_voltage': 559.69, 'tps_a_voltage': 869.78, 'id': '5', 'generator_oil_pressure': 700.73}
+2018-06-12 12:05:47 INFO 已有记录数：4
+2018-06-12 12:05:47 INFO 请求的json为：{"service_id": "diesel_generator", "operation": "upsert", "data": {"status": 3, "power_factor": 1001.0, "reactive_power": 1001.0, "generator_speed": 1001, "online_status": 3, "tps_a_voltage": 1001.0, "tps_c_electric": 1001.0, "active_power": 1001.0, "generator_battery_voltage": 1001.0, "tps_b_voltage": 1001.0, "tps_b_electric": 1001.0, "frequency": 1001.0, "generator_time": 100001, "tps_a_electric": 1001.0, "tps_c_voltage": 1001.0, "id": "5", "generator_oil_pressure": 1001.0}, "table": "generator"}
+2018-06-12 12:05:47 INFO 开始掉南向接口
+2018-06-12 12:05:47 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:3, status type:int32 min:1, max:2, maxLength:64\uff0c value:3, active_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1001, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:100001, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:1001.0, frequency type:float min:0, max:1000, maxLength:64\uff0c value:1001.0]", "code": 4001001}}
+2018-06-12 12:05:47 INFO 断言南向接口非法数据请求返回
+2018-06-12 12:05:47 INFO 非法数据请求返回断言成功

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../SDK/.idea/SDK.iml" filepath="$PROJECT_DIR$/../SDK/.idea/SDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../deployment/.idea/deployment.iml" filepath="$PROJECT_DIR$/../deployment/.idea/deployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../performance/.idea/performance.iml" filepath="$PROJECT_DIR$/../performance/.idea/performance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../.idea/pyworkspace.iml" filepath="$PROJECT_DIR$/../.idea/pyworkspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../x_Agent_API/.idea/x_Agent_API.iml" filepath="$PROJECT_DIR$/../x_Agent_API/.idea/x_Agent_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/xlinkweb.iml" filepath="$PROJECT_DIR$/.idea/xlinkweb.iml" />
+    </modules>
+  </component>
+</project>

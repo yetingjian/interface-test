@@ -1,0 +1,747 @@
+2018-07-24 10:13:03 INFO 开始获取token
+2018-07-24 10:13:03 INFO token:MDU1MDA0MDIzODEyMjczODk0ODQ0RDQ0NUY1QThCMjY0NTQyREY4QzYwMEQ4MjA0NkMyNzdFRDkwMTEzNEVDRg==
+2018-07-24 10:13:03 INFO 开始创建产品接口
+2018-07-24 10:13:03 INFO 创建产品接口响应：{"is_release": false, "key": "ff776904686422ef3e65d8f106c28ee1", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-24T10:13:04.316Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6ad1600011607d2b6ad166001", "is_active_register": false, "name": "ttt", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-24 10:15:44 INFO 开始获取token
+2018-07-24 10:15:44 INFO token:MjJCRkZCNTAwMDBBMDc3MzEwOThBOUM2MThDMDY1NEQyMzRDNEQwRDRGRjcyNjlFODc2MDdCRENCMkM2OTY5RA==
+2018-07-24 10:15:44 INFO 开始创建产品接口
+2018-07-24 10:15:45 INFO 创建产品接口响应：{"is_release": false, "key": "24d85f31e6eca11168023ec3c726fb7e", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-24T10:15:45.746Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6ad1700011607d2b6ad17a201", "is_active_register": false, "name": "ttt", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-24 10:20:04 INFO 开始获取token
+2018-07-24 10:20:04 INFO token:ODRBMTY2MDJFMUE0OUJCNzlFRkQ0N0I2NjJBOEFGOTE1MUMzRjlBQzVBREY0QTUwMDQ2MzY4QzkzN0NBMjYwOA==
+2018-07-24 10:20:04 INFO 开始创建产品接口
+2018-07-24 10:20:04 INFO 创建产品接口响应：{"is_release": false, "key": "a1809f3c14780ec4903cb6b28c538a26", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-24T10:20:05.253Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6ad1900011607d2b6ad19aa01", "is_active_register": false, "name": "ttt", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-24 10:20:58 INFO 开始获取token
+2018-07-24 10:20:58 INFO token:ODgyQjNEMkE4MTc4QTkwODYxRTA3QzM2MjcxQjA3NzYyQTQzNDdFQjFDMkNFM0M3MDdBNzFFOEQwM0U0QkJENw==
+2018-07-24 10:20:58 INFO 开始创建$1002数据端点
+2018-07-24 10:20:59 INFO 创建产品$1002数据端点响应：{"description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "max": 0, "symbol": "-", "is_write": true, "is_system": false, "is_read": true, "is_collect": false, "id": "1a07d2b6ad1a1600", "default_value": "", "index": 1, "name": "$1002", "min": 0, "permission_list": [4], "ui_visible": {"control": true, "state": true}, "type": 1}
+2018-07-24 10:23:00 INFO 开始获取token
+2018-07-24 10:23:00 INFO token:NkUwNkQwRTMxNURDRkYzMDA4NTJGOTZFNzMxNDhDRDRENDZDMDJBQUE4NEFDQzAwMzNCMzA5MTBCRDA4NUE4RA==
+2018-07-24 10:23:00 INFO 开始创建$1002数据端点
+2018-07-24 10:23:00 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 65, in test_add_data_point_sys
+    self.index = res['index']
+KeyError: 'index'
+
+2018-07-24 10:23:16 INFO 开始获取token
+2018-07-24 10:23:17 INFO token:REI3ODZFQzQyRTcxQTRGMzAxNzg1NjBEQkEwMkNERkI4NDZDMDQ4RjA4MzU0RjY0MjFDQUY5NjU0QjdCQTVCMg==
+2018-07-24 10:23:17 INFO 开始创建$1002数据端点
+2018-07-24 10:23:17 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 65, in test_add_data_point_sys
+    self.index = res["index"]
+KeyError: 'index'
+
+2018-07-24 10:24:55 INFO 开始获取token
+2018-07-24 10:24:55 INFO token:RkM3N0U3RUU0MTlFQUM5NTNBREM0OUZDMzEwNjIwOTVGQzg3MEY0Q0UzMTUyODdEODA5MDQ5NTAwQTc1QTY5NQ==
+2018-07-24 10:24:55 INFO 开始创建$1002数据端点
+2018-07-24 10:24:55 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 65, in test_add_data_point_sys
+    self.index = res["index"]
+TypeError: string indices must be integers, not str
+
+2018-07-24 10:25:12 INFO 开始获取token
+2018-07-24 10:25:12 INFO token:RTM0OTlBNDI0NkFCQUU3Njc4Mzk3OUZCRERDQTU4NTVEOUVGQUI1MkEyQzhGNTY5MjY1MTIwOTI3QTNDODk1Qw==
+2018-07-24 10:25:12 INFO 开始创建$1002数据端点
+2018-07-24 10:25:12 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 65, in test_add_data_point_sys
+    self.index = res["index"]
+TypeError: string indices must be integers, not str
+
+2018-07-24 10:25:43 INFO 开始获取token
+2018-07-24 10:25:43 INFO token:MTJGQTg2QzMxRDYzOEYyREQ2RDQ3NUQyMkU3M0ZGM0NFNDAzRUJFNjM1MjAzMzBCN0U4RkQ2ODY1RjU4NkEzMg==
+2018-07-24 10:25:43 INFO 开始创建$1002数据端点
+2018-07-24 10:25:44 INFO 创建产品$1002数据端点响应：{"error": {"msg": "datapoint index already exists", "code": 4001019}}
+2018-07-24 10:26:33 INFO 开始获取token
+2018-07-24 10:26:33 INFO token:ODc1MjhGQzBERUZCRTE0OTNCMkU3MkRFNUNERDVDOTQzREE3ODZDREJFREIzRjUzOEVFNDU1ODVFRDJDNDY3Qg==
+2018-07-24 10:26:33 INFO 开始创建$1002数据端点
+2018-07-24 10:26:33 INFO 创建产品$1002数据端点响应：{"description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "max": 0, "symbol": "-", "is_write": true, "is_system": false, "is_read": true, "is_collect": false, "id": "1a07d2b6ad1cb400", "default_value": "", "index": 1, "name": "$1002", "min": 0, "permission_list": [4], "ui_visible": {"control": true, "state": true}, "type": 1}
+2018-07-24 10:27:23 INFO 开始获取token
+2018-07-24 10:27:23 INFO token:MzYxMUUzRDc3QTEwMUU1MDUwNUMyRjc3RTUxQjBBNjREMzkyNzE4RERCM0RFNjMyOTI5RDEyNDY2RUEwRkJBNw==
+2018-07-24 10:27:23 INFO 开始创建$1002数据端点
+2018-07-24 10:27:23 INFO 创建产品$1002数据端点响应：{"description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "max": 0, "symbol": "-", "is_write": true, "is_system": false, "is_read": true, "is_collect": false, "id": "1a07d2b6ad1d1800", "default_value": "", "index": 1, "name": "$1002", "min": 0, "permission_list": [4], "ui_visible": {"control": true, "state": true}, "type": 1}
+2018-07-24 10:36:19 INFO 开始获取token
+2018-07-24 10:36:19 INFO token:REI2RUNCRTdENkMxNkM0RkM5OEFDNjI2MUVGNDNDNzA4MjhENTc2RkEyRUZGOUI5QjQ2MjE3QjJCMTBGRTk0OA==
+2018-07-24 10:36:19 INFO 开始创建自定义数据端点
+2018-07-24 10:36:20 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6ad214800", "name": "para_name"}
+2018-07-24 10:38:52 INFO 开始获取token
+2018-07-24 10:38:52 INFO token:RTYwRkM4REY0NTc2OTYyNEVENjM5MUQzMTMwNzAwMjNBRTdGREMzNUZBREU5NjE5Q0E1RTlDNEU1NThCRDI0RA==
+2018-07-24 10:38:52 INFO 开始添加设备
+2018-07-24 10:38:52 INFO 添加设备响应：{"mac": "DDAA", "id": 387679444}
+2018-07-24 10:40:25 INFO 开始获取token
+2018-07-24 10:40:25 INFO token:MzdBNTQ3QTUwM0I4OUNCQjE1NkEzNjkzNDczMjQ1RUFCQ0ZGREVEOEQwNEYxRDI0MDkzNDQ2OTRFRjEzRjhBOA==
+2018-07-24 10:40:25 INFO 开始添加设备
+2018-07-24 10:40:25 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 116, in test_register_device
+    self.device_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 10:40:48 INFO 开始获取token
+2018-07-24 10:40:49 INFO token:QzFFOEVFNENDMjkzNUM1OThDODYyOTQ1Q0Y3NkJFMUIyRjcwMjczREQyNDRBQzU3MzVBMDQzRkU5N0I0M0QzOQ==
+2018-07-24 10:40:49 INFO 开始添加设备
+2018-07-24 10:40:49 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 116, in test_register_device
+    self.device_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 10:40:58 INFO 开始获取token
+2018-07-24 10:40:58 INFO token:NUQ1NjI5N0FEMkYxNDk1MzBEQUU3ODkyMEI4MjM5QzY4ODQ2RDlCOEUyODYwQUUyNDI5M0FERkYxMjlBNzAyOQ==
+2018-07-24 10:40:58 INFO 开始添加设备
+2018-07-24 10:40:58 INFO 添加设备响应：{"error": {"msg": "sn is already existed", "code": 4001148}}
+2018-07-24 10:44:52 INFO 开始获取token
+2018-07-24 10:44:52 INFO token:QzM2NkQ0MTgyRjY5MDA4QTE4OTQ4OEI5MzdFN0FGQzM4QTZGMkQ3MUUzQjUzQzcyMUFCRDBDQjk1NDkyRDJDRQ==
+2018-07-24 10:44:52 INFO 开始添加设备
+2018-07-24 10:44:52 INFO 添加设备响应：{"mac": "D85C26", "id": 387678646}
+2018-07-24 10:45:06 INFO 开始获取token
+2018-07-24 10:45:07 INFO token:MTg5ODc2M0Y0MDVGQjQ0OUZEOTAyQjY5NjlDQTlFMzg3QzEyMzhGQkNBQUJDOEVGMUNFRkRCNjk1QjE2MUZDQg==
+2018-07-24 10:45:07 INFO 开始添加设备
+2018-07-24 10:45:07 INFO 添加设备响应：{"mac": "7C1B32", "id": 387674010}
+2018-07-24 11:03:34 INFO 开始获取token
+2018-07-24 11:03:34 INFO token:MERBMjJEOEFCN0ExMDg3OThFNDhCMzgxNDQ3QzY5QTg3QTRBM0E4ODNBNjI1NEQ5RkVDNkFERjlGQTVBMDExNA==
+2018-07-24 11:03:34 INFO 开始设置异常规则
+2018-07-24 11:03:34 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad2e0e00", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:04:26 INFO 开始获取token
+2018-07-24 11:04:27 INFO token:QkM0ODM5NTkwQTdDODZGQjJCNTRENTBCQjhBRkIzOUZFRTIxNDA3Qjg4NDM1MTQ1QkQ2NUVCRTEzQTBENzhEQw==
+2018-07-24 11:04:27 INFO 开始设置异常规则
+2018-07-24 11:04:27 INFO 设置异常规则响应：{"error": {"msg": "name exists", "code": 4001043}}
+2018-07-24 11:04:36 INFO 开始获取token
+2018-07-24 11:04:36 INFO token:MDAxNjZBQzVEMUE4MDEyNkRGNjkzMDYyRjcwOEE3MDE5RDgwOUQ4ODE2NDIxQkU4NDdCQzVCNzM1NzQwMzBDNw==
+2018-07-24 11:04:36 INFO 开始设置异常规则
+2018-07-24 11:04:36 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad2e8a00", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:06:45 INFO 开始获取token
+2018-07-24 11:06:45 INFO token:MzU4OEE5NzFBNTZCQ0VCQ0VCRTM0QzE4NEQ5QTc0MThGM0UyRjQyQUM5RDVFNTI5N0ZGRUFGNUZGODI4NzhBOA==
+2018-07-24 11:06:45 INFO 开始设置异常规则
+2018-07-24 11:06:45 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 164, in test_alter_rule
+    self.exception_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 11:07:02 INFO 开始获取token
+2018-07-24 11:07:02 INFO token:QTRGM0M3NUM3ODBDMzVGMTVDQURBMzMyNEY2NTA3MUU5QzIyNjREMEU3RjFCMTNDNjA3OUVCNjEwRDdEQzdCQw==
+2018-07-24 11:07:02 INFO 开始设置异常规则
+2018-07-24 11:07:02 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad2fae00", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:20:04 INFO 开始获取token
+2018-07-24 11:20:04 INFO token:MUQ1MEIwOUZFRDRFM0VGM0YzOTQ0RDlCNkU5OTA5QzFGQkFDNTEyMzA1RDk2MTQzMTc2OUQzQkI2ODdFOTIzMQ==
+2018-07-24 11:22:50 INFO 开始获取token
+2018-07-24 11:22:50 INFO token:ODcxNkMzMDU3N0UxNzQzREVGOTA4QTlFNzZCRTI5RUUxOUQxRjMxQzg2RDE1Nzk5NTQ5RUY0OEY1MjUxQzhFMQ==
+2018-07-24 11:22:50 INFO 开始设置异常规则
+2018-07-24 11:22:50 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad371600", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:24:03 INFO 开始获取token
+2018-07-24 11:24:03 INFO token:OTdFNDkwOEUzNDM5NDYxNDE0QkFCNzA5NzEwQTVEQjBERDc0NEY2QThEQThDRkVDNjREN0M2QzkwNkFCOTNGQg==
+2018-07-24 11:24:03 INFO 开始设置异常规则
+2018-07-24 11:24:03 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad37a600", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:24:03 INFO 开始报警设置
+2018-07-24 11:24:03 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 222, in test_alarm_setting
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/alert/None
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-24 11:25:23 INFO 开始获取token
+2018-07-24 11:25:23 INFO token:Mzk2MkUxQUQzRkM0MjlCREExNzU5RTA1OUY0RkVEMzAyODY2NkI2MjZCQTM4RUEwQzc4NTBBNDIyODQ3MTA4MQ==
+2018-07-24 11:25:23 INFO 开始设置异常规则
+2018-07-24 11:25:23 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad384600", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:25:23 INFO 开始报警设置
+2018-07-24 11:25:23 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 223, in test_alarm_setting
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/alert/None
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-24 11:25:56 INFO 开始获取token
+2018-07-24 11:25:56 INFO token:RENGMDI3NjUzMDI0MzBGMjA1MEVGNDI5RjJDODI5NkMwQkRBNDU0RjFFMjcyQjVCMzk2QkI5QzEzQzc5RTczOA==
+2018-07-24 11:25:56 INFO 开始设置异常规则
+2018-07-24 11:25:56 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad388a00", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:25:56 INFO 开始报警设置
+2018-07-24 11:25:57 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 224, in test_alarm_setting
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/alert/None
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-24 11:28:21 INFO 开始获取token
+2018-07-24 11:28:21 INFO token:MkQyRjQ5QzVEMzRCRkIzMzU4N0IzNjcwQ0RCREQyOTQ1MjE4QTkyNkZDMTczMDI5QzhFRDE2NjFDODE1MDQzMw==
+2018-07-24 11:28:21 INFO 开始设置异常规则
+2018-07-24 11:28:21 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 161, in test_alter_rule
+    self.exception_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 11:28:21 INFO 开始报警设置
+2018-07-24 11:28:21 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 225, in test_alarm_setting
+    self.exception_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 11:28:39 INFO 开始获取token
+2018-07-24 11:28:39 INFO token:Nzk4NkRDRjFCNDJFNEU2NUMxMjQ3NjExMjQzNTY5NDhCMjJCRTAzOTc4NzIxNTZGQ0IxODc0Mjg5RDJFNjBDMQ==
+2018-07-24 11:28:39 INFO 开始设置异常规则
+2018-07-24 11:28:39 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad39d000", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:28:39 INFO 开始报警设置
+2018-07-24 11:28:39 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 225, in test_alarm_setting
+    self.exception_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 11:29:54 INFO 开始获取token
+2018-07-24 11:29:54 INFO token:Q0FDNDA5MDUyQTJBNUQ1QkE4NUU3RjQzNzNDNkQ1N0E0NkY4RDQ0MzIzMUY4RDM4NkIyNkE4MjBEOTg3OTEwRA==
+2018-07-24 11:29:54 INFO 开始设置异常规则
+2018-07-24 11:29:54 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad3a6600", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:29:54 INFO 开始报警设置
+2018-07-24 11:29:54 INFO 报警设置响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad3a6600", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 1, "notify_target": [2], "notify_type": 2}
+2018-07-24 11:32:21 INFO 开始获取token
+2018-07-24 11:32:21 INFO token:NjQ3OEU1NkE2MjEwQjRBRTYwQ0I2NjhDNTE2QUNGNDFGNjc0NTYxNzBERDcyQjY2NjZCM0E1NzNDREZDQTg3RA==
+2018-07-24 11:32:21 INFO 开始设置异常规则
+2018-07-24 11:32:21 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad3b8c00", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:32:21 INFO 开始报警设置
+2018-07-24 11:32:21 INFO 报警设置响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad3b8c00", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 1, "notify_target": [2], "notify_type": 2}
+2018-07-24 11:33:54 INFO 开始获取token
+2018-07-24 11:33:54 INFO token:NjIxNjFDRTAzRjg5OThFNEE0OUQyQ0M4QUNEQkMxNkE0RkUxMUQ3NjY1NEI2N0M5NUVBNTMyODA5RTY2QjFGQQ==
+2018-07-24 11:33:54 INFO 开始设置异常规则
+2018-07-24 11:33:54 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad3c4600", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:33:54 INFO 开始报警设置
+2018-07-24 11:33:54 INFO 报警设置响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad3c4600", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 1, "notify_target": [2], "notify_type": 2}
+2018-07-24 11:36:56 INFO 开始获取token
+2018-07-24 11:36:56 INFO token:Q0QzMDY0MDJBNkZBNzI5MzFBRTI3RDBCODMzOUQ1MUM2NTg3NTY5MDMzNzM3QzlBQ0I3RjE5NzIzMjEwRDJBMg==
+2018-07-24 11:36:56 INFO 开始设置异常规则
+2018-07-24 11:36:56 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad3db200", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:36:56 INFO 开始报警设置
+2018-07-24 11:36:56 INFO 报警设置响应：{"error": {"msg": "request content format must be json ", "code": 4001001}}
+2018-07-24 11:37:49 INFO 开始获取token
+2018-07-24 11:37:49 INFO token:QkVBRUY0RjAyRDhBQUJCOTg3MTNFNTlCQjMxMDdGQzg4MUZCNzM0NkE2RDI5QjMzQ0Y0NTlBMUQ1NjYxRUM4NA==
+2018-07-24 11:37:49 INFO 开始报警设置
+2018-07-24 11:37:50 INFO 报警设置响应：{"error": {"msg": "request content format must be json ", "code": 4001001}}
+2018-07-24 11:44:24 INFO 开始获取token
+2018-07-24 11:44:24 INFO token:NzVFNEI3MUNCQjI3RkIyNjNDOTdDQTQxNDYyMkVBODI2REU5MzVGRTg5RDE3NUJERDhERDVGQTU5RTMyNzJGQg==
+2018-07-24 11:44:24 INFO 开始设置异常规则
+2018-07-24 11:44:24 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad413200", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:46:30 INFO 开始获取token
+2018-07-24 11:46:30 INFO token:OTlDMUNGMzgwNEQ3NDlBMTNBMDZGQjU3MDMzMzcxRERBOTJBQTA3NDk0QkVGRDU5MDBGQTkyQTkwQUQ3MDREOQ==
+2018-07-24 11:46:30 INFO 开始设置异常规则
+2018-07-24 11:46:30 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad422e00", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:52:32 INFO 开始获取token
+2018-07-24 11:52:32 INFO token:MEE5QUJFQzQ3MzQ5MkJCRUMyODBDRjIxRDM3NkZCMEY5MkNFRDVBOTM4MTgwRTI5NTRFNkEyOUU3OEI0MDJGNQ==
+2018-07-24 11:52:32 INFO 开始设置异常规则
+2018-07-24 11:52:32 INFO 设置异常规则响应：{"compare": 2, "tag": "", "value": "100", "notify_apps": [], "id": "2807d2b6ad450200", "name": "test_exception", "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "type": 1, "param": "1a07d2b6ad214800", "content": "value>100", "is_enable": true, "scope": 4, "notify_target": [], "notify_type": 2}
+2018-07-24 11:59:20 INFO 开始获取token
+2018-07-24 11:59:21 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 36, in get_access_token
+    r = requests.post(url=url, json=login_body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 306, in prepare
+    self.prepare_headers(headers)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 440, in prepare_headers
+    check_header_validity(header)
+  File "C:\Python27\lib\site-packages\requests\utils.py", line 872, in check_header_validity
+    "bytes, not %s" % (name, value, type(value)))
+InvalidHeader: Value for header {Api-Version: 2} must be of type str or bytes, not <type 'int'>
+
+2018-07-24 11:59:21 INFO 开始设置异常规则
+2018-07-24 11:59:21 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 159, in test_alter_rule
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 306, in prepare
+    self.prepare_headers(headers)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 440, in prepare_headers
+    check_header_validity(header)
+  File "C:\Python27\lib\site-packages\requests\utils.py", line 872, in check_header_validity
+    "bytes, not %s" % (name, value, type(value)))
+InvalidHeader: Value for header {Api-Version: 2} must be of type str or bytes, not <type 'int'>
+
+2018-07-24 11:59:21 INFO 开始报警设置
+2018-07-24 11:59:21 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 222, in test_alarm_setting
+    r = requests.put(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 126, in put
+    return request('put', url, data=data, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 306, in prepare
+    self.prepare_headers(headers)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 440, in prepare_headers
+    check_header_validity(header)
+  File "C:\Python27\lib\site-packages\requests\utils.py", line 872, in check_header_validity
+    "bytes, not %s" % (name, value, type(value)))
+InvalidHeader: Value for header {Api-Version: 2} must be of type str or bytes, not <type 'int'>
+
+2018-07-24 12:00:23 INFO 开始获取token
+2018-07-24 12:00:23 INFO token:RkFCQTlGNUM5MDBGOTE4NDAwODNFM0I2MTg0OTdDRTI2QjBGQTE5NjQyOUIzNzlBMTNFRTY0REQ0Q0MyRUM4NQ==
+2018-07-24 12:00:23 INFO 开始设置异常规则
+2018-07-24 12:00:23 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 161, in test_alter_rule
+    ApiTest.exception_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 12:00:23 INFO 开始报警设置
+2018-07-24 12:00:23 INFO 报警设置响应：{"error": {"msg": "alarm rule not exists", "code": 4041015}}
+2018-07-24 12:00:53 INFO 开始获取token
+2018-07-24 12:00:54 INFO token:NjI1NThCOTk0MkI0M0YyMzNDNjRCRkI1MkI0QkMyODVFOTU3OEQ4NDlDNkQ3MDczOUI2RjQwMTJBMUZDODNCNw==
+2018-07-24 12:00:54 INFO 开始设置异常规则
+2018-07-24 12:00:54 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 162, in test_alter_rule
+    ApiTest.exception_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 12:00:54 INFO 开始报警设置
+2018-07-24 12:00:54 INFO 报警设置响应：{"error": {"msg": "alarm rule not exists", "code": 4041015}}
+2018-07-24 12:02:07 INFO 开始获取token
+2018-07-24 12:02:07 INFO token:NzJDMjhEQjA5QTVBNUFCOUZEQzIxMjhCMkZGMEJCRDk4NDc1RDk4QjU5REUzREZCQzI5QzhCQzQ4MEU0MEI3NA==
+2018-07-24 12:02:07 INFO 开始设置异常规则
+2018-07-24 12:02:07 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 166, in test_alter_rule
+    ApiTest.exception_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 12:02:07 INFO 开始报警设置
+2018-07-24 12:02:07 INFO 报警设置响应：{"error": {"msg": "alarm rule not exists", "code": 4041015}}
+2018-07-24 12:04:07 INFO 开始获取token
+2018-07-24 12:04:07 INFO token:ODFDQjhCNTJDNUExQzE0RTBGQURFNUZEMTFCNjc4QjI2MTNFNTgyNTIwQkNDQTREQUQ3MTk5NTlFMDU4M0ZDQQ==
+2018-07-24 12:04:07 INFO 开始设置异常规则
+2018-07-24 12:04:07 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6ad214800", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6ad4a7000", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6ad1900011607d2b6ad19aa01"}
+2018-07-24 12:04:07 INFO 开始报警设置
+2018-07-24 12:04:07 INFO 报警设置响应：{"error": {"msg": "exception tag not exist", "code": 4041082}}
+2018-07-24 12:04:59 INFO 开始获取token
+2018-07-24 12:04:59 INFO token:QTAwOUY3REExOUZBQzQzMTNBMEZGOEE0QTM5NTY5MjMxRjYwMUJEMDEzMERFMkU3OEIyN0I3ODk0MkI4QUMwNg==
+2018-07-24 12:04:59 INFO 开始设置异常规则
+2018-07-24 12:04:59 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6ad214800", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6ad4ad600", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6ad1900011607d2b6ad19aa01"}
+2018-07-24 12:04:59 INFO 开始报警设置
+2018-07-24 12:04:59 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6ad214800", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6ad4ad600", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6ad1900011607d2b6ad19aa01"}
+2018-07-24 14:18:07 INFO 开始获取token
+2018-07-24 14:18:07 INFO token:NTI4MUMyNUEyNkRBMkYzQ0JDMERCRkE1MUYwNjRFN0EzRTZBQzlFOTJEQUQ3NkVBODM5RjExMzUwREM0REZCQQ==
+2018-07-24 14:18:07 INFO 开始设置快照
+2018-07-24 14:18:53 INFO 开始获取token
+2018-07-24 14:18:53 INFO token:Rjk1QjNEOUQ3RkM3QzQ4RDkxNzRGQjIzNzlFNzU0MjczMjU3QjlDMzgyNjdGNjhBNTNCNUQ4RTRGN0Y3QUMyRg==
+2018-07-24 14:18:53 INFO 开始设置快照
+2018-07-24 14:18:53 INFO 
+2018-07-24 14:18:53 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 281, in test_snapshot
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887//v2/product/1607d2b6ad1900011607d2b6ad19aa01snapshot
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-24 14:19:04 INFO 开始获取token
+2018-07-24 14:19:04 INFO token:QkU2MjUzRjVCMUQxQzJBOTVGMUJCMDU4Q0Q1MTk4RjRGRUQ2QzMxQ0E1Njg3N0UxNjVCQkQzOUM5MjcwQzZFNw==
+2018-07-24 14:19:04 INFO 开始设置快照
+2018-07-24 14:19:04 INFO {'error': {'msg': 'service unavailable', 'code': 5031001}}
+2018-07-24 14:19:04 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 282, in test_snapshot
+    ApiTest.snapshot_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 14:19:24 INFO 开始获取token
+2018-07-24 14:19:24 INFO token:NUJFQzczNDk2NUYyRkY3Q0FFOTVEOThBRTUxQUYwRUY5OERCOTZBOEYzMEExNkQyMzhENjI1NzRFMEVGQTI5Qw==
+2018-07-24 14:19:24 INFO 开始设置快照
+2018-07-24 14:19:24 INFO {'error': {'msg': 'service unavailable', 'code': 5031001}}
+2018-07-24 14:19:24 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 283, in test_snapshot
+    ApiTest.snapshot_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 14:19:46 INFO 开始获取token
+2018-07-24 14:19:46 INFO token:OUNEM0YwOTM5QUVGRDFGQThFRjQ5QzAzNjdBQjM1OEY2RUNEODY3OTdCRUM4QzJDRkVENjhDN0RBMUVEREQ1Qg==
+2018-07-24 14:19:46 INFO 开始设置快照
+2018-07-24 14:19:47 INFO {'error': {'msg': 'snapshot rule not exist!', 'code': 4041026}}
+2018-07-24 14:19:47 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 283, in test_snapshot
+    ApiTest.snapshot_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 14:23:40 INFO 开始获取token
+2018-07-24 14:23:40 INFO token:OEM2QUJGMkI3OUU1MEM5OUFBMUM3Qjg3RDdENTU2QzM0NUMxQUFDQ0UwMjRFMzEzREJGREIzMDRBMDVGODMzOA==
+2018-07-24 14:23:40 INFO 开始设置快照
+2018-07-24 14:23:40 INFO {'error': {'msg': 'snapshot rule not exist!', 'code': 4041026}}
+2018-07-24 14:23:40 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 286, in test_snapshot
+    ApiTest.snapshot_id = res["id"]
+KeyError: 'id'
+
+2018-07-24 14:24:42 INFO 开始获取token
+2018-07-24 14:24:42 INFO token:MDUyRjRFRjU2QUMxMTczQTFFOTgyQTRDRjRGQjdCOTQxRjI1QjNERDJENEYyNTJCRDE2RUQ1QTBDNkJBQzQ2Qw==
+2018-07-24 14:24:42 INFO 开始设置快照
+2018-07-24 14:24:42 INFO 报警设置响应：{"id": "5b56c62b4abd1f13a929a878"}
+2018-07-24 14:34:59 INFO 开始获取token
+2018-07-24 14:34:59 INFO token:NjQ4RjM5OUM2RjZGRUZEQTU0NUIwQUU4NzAzRDU0OEE3MTBFMjRENjc2ODQ2NjNFQjQ2QTc3OTkxMjZGMUI4RA==
+2018-07-24 14:34:59 INFO 开始设置统计规则
+2018-07-24 14:34:59 INFO 统计规则响应：{"id": "5b56c8944abd1f13a929a962"}
+2018-07-24 15:17:21 INFO 开始获取token
+2018-07-24 15:17:21 INFO token:REUzN0VEMzhCQjVGNjI0OEJGNTMyNkQwRjNDNDgwMEYwRERBRDFDM0I5MTgxRDNCNkQwMzM2MTA4ODdGQjM0Rg==
+2018-07-24 15:17:21 INFO 开始查询宽表设备列表
+2018-07-24 15:17:21 INFO 查询宽表设备列表响应：{"count": 3, "list": []}
+2018-07-24 15:19:20 INFO 开始获取token
+2018-07-24 15:19:20 INFO token:MjU2NDlDRDYzMjYzRDU4MEEyNkYyODU3MzI1MUUzNThFNzgzQ0VEQTc1M0RGNTlDOTVCQTk3QkY5NzJEQUZEMg==
+2018-07-24 15:19:20 INFO 开始查询宽表设备列表
+2018-07-24 15:19:20 INFO 查询宽表设备列表响应：{"error": {"msg": "service unavailable", "code": 5031001}}
+2018-07-24 15:20:10 INFO 开始获取token
+2018-07-24 15:20:10 INFO token:M0YwQTUzMjc5MkI4OUUxRkMxNDFBMURGMDBGNUFFNzA1NEZCQTgyNkFFRkI3NjA3NjhENTREMTJDRjU2NzM5Rg==
+2018-07-24 15:20:10 INFO 开始查询宽表设备列表
+2018-07-24 15:20:10 INFO 查询宽表设备列表响应：{"count": 0, "list": []}
+2018-07-24 15:22:26 INFO 开始获取token
+2018-07-24 15:22:26 INFO token:RjJBODQ1NDQ1MTJFOUY4MDJCRDNERDM3NTFBREJBMEJFODVFNDkxQjgxNDEwRTY2NjVDOEUzMEYzOUFDRDU5RA==
+2018-07-24 15:22:26 INFO 开始查询宽表设备列表
+2018-07-24 15:22:26 INFO 查询宽表设备列表响应：{"error": {"msg": "param limit error", "code": 4001001}}
+2018-07-24 15:22:35 INFO 开始获取token
+2018-07-24 15:22:35 INFO token:ODAxNjI5MzBDQkY1NkU2OUMxNTJBQzI4NUZERTdBRTY3MDc1NTVDNTY5RDU4OTNGMEM0RDZEMUY3QUI3RkIxMQ==
+2018-07-24 15:22:35 INFO 开始查询宽表设备列表
+2018-07-24 15:22:35 INFO 查询宽表设备列表响应：{"count": 3, "list": []}
+2018-07-24 15:28:47 INFO 开始获取token
+2018-07-24 15:28:47 INFO token:MzQyREVCRDI4NUUxQUMzQ0MzNkUyMzRGQzA0MEQzMjY4MDBGRkQ5MjYwQjNGNURDQkVDQkE0QkIyRUM0OUJGQw==
+2018-07-24 15:28:47 INFO 开始查询宽表设备列表
+2018-07-24 15:28:47 INFO 查询宽表设备列表响应：{"count": 3, "list": [{"is_online": false, "is_active": false, "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "id": 387679444}, {"is_online": false, "is_active": false, "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "id": 387678646}, {"is_online": false, "is_active": false, "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "id": 387674010}]}
+2018-07-24 15:30:22 INFO 开始获取token
+2018-07-24 15:30:22 INFO token:NzlFNzA3MTc4MUM3OUI2NjcyODBDNDBCRjU5ODU4OUE5RjBBN0Y3QzdDMjU2RURCRjY3NjUwRkM1NEM3MkM2NQ==
+2018-07-24 15:30:22 INFO 开始查询宽表设备列表
+2018-07-24 15:30:23 INFO {'count': 3, 'list': [{'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387679444}, {'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387678646}, {'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387674010}]}
+2018-07-24 15:30:23 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 376, in test_wide_devices
+    self.assertIn(self.device_id, res)
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387674010' not found in {'count': 3, 'list': [{'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387679444}, {'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387678646}, {'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387674010}]}
+
+2018-07-24 15:31:52 INFO 开始获取token
+2018-07-24 15:31:52 INFO token:QjQxNkU1QkFEOThEMTNDMzQyMzQ0QTJEMDJENTQxNzRDNTQ1RTA3QTMxRENDOTFCMjMxMEE2N0IyREIxODdGNQ==
+2018-07-24 15:31:52 INFO 开始查询宽表设备列表
+2018-07-24 15:31:52 INFO {'count': 3, 'list': [{'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387679444}, {'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387678646}, {'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387674010}]}
+2018-07-24 15:31:52 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 376, in test_wide_devices
+    self.assertIn(int(self.device_id), res)
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 387674010 not found in {'count': 3, 'list': [{'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387679444}, {'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387678646}, {'is_online': False, 'is_active': False, 'product_id': '1607d2b6ad1900011607d2b6ad19aa01', 'id': 387674010}]}
+
+2018-07-24 15:32:35 INFO 开始获取token
+2018-07-24 15:32:35 INFO token:RUQxNDY5RkFDODdEREQ0MzlDQ0M3M0YzRTRCNTlCQjZFQ0EzMDAyOTlEQjFEM0UzNUJCM0RBM0UwRTlBRUMxQw==
+2018-07-24 15:32:35 INFO 开始查询宽表设备列表
+2018-07-24 15:32:35 INFO 查询宽表设备列表响应：{"count": 3, "list": [{"is_online": false, "is_active": false, "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "id": 387679444}, {"is_online": false, "is_active": false, "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "id": 387678646}, {"is_online": false, "is_active": false, "product_id": "1607d2b6ad1900011607d2b6ad19aa01", "id": 387674010}]}
+2018-07-24 16:12:23 INFO 开始获取token
+2018-07-24 16:12:23 INFO token:NkFDOUI4QUNGRUZFMkM5NkFEM0Q2RDVCQzIzNjE3N0U0QzE2OUU4RjY1MEY2QzlGMUVDNDc0RkQ5NTBCNzJDNg==
+2018-07-24 16:12:23 INFO 开始调串口激活设备
+2018-07-24 16:12:23 INFO 【串口激活设备失败】
+2018-07-24 16:13:19 INFO 开始获取token
+2018-07-24 16:13:20 INFO token:MzA1NzRCMDdCN0E3REJFQUREQjMzRkU0MkQxMUIwRDBEQUI3OEFBMzM3MEFGODUzRkFCRUIwNUJBQjM2Q0NBNg==
+2018-07-24 16:13:20 INFO 开始调串口激活设备
+2018-07-24 16:13:20 INFO 【串口激活设备失败】
+2018-07-24 16:14:04 INFO 开始获取token
+2018-07-24 16:14:04 INFO token:Qzk2OEUyOTQwODRFMEVERDZBQjMzRjNENkY3NkNGMjBDMjc0ODBFMDI5RDlFNzA0MERFRkY5Q0NDN0M4QTk2Nw==
+2018-07-24 16:14:04 INFO 开始调串口激活设备
+2018-07-24 16:14:04 INFO 【串口激活设备失败】
+2018-07-24 16:15:40 INFO 开始获取token
+2018-07-24 16:15:40 INFO token:QjVBMDI2NTZDREI2MTEwQTJBRTY4RkYzMThBNTRBRThGM0FERUNBMjU1MUM3MzgyQjM0Nzc2RTZGM0Q4RkNDMg==
+2018-07-24 16:15:40 INFO 开始调串口激活设备
+2018-07-24 16:15:40 INFO 【串口激活设备失败】
+2018-07-24 16:16:18 INFO 开始获取token
+2018-07-24 16:16:18 INFO token:RDE3RURGMzVGMDFBQTlEMDEyMjZENkY2Mjg5OTI5QzBCRUE5QkZEQkM0NkVBQkE3N0YwMzkyQjREMDdGMkE3NQ==
+2018-07-24 16:16:18 INFO 开始调串口激活设备
+2018-07-24 16:16:18 INFO 【串口激活设备失败】
+2018-07-24 16:17:30 INFO 开始获取token
+2018-07-24 16:17:30 INFO token:M0ExNkEyMTYwOTgwMjdCMjlCNjIzMDk4QkZDNzg1RkRFQkREQUI5N0VBOUM5OTJERUQzMTRBMjI0MkVEMjEyNg==
+2018-07-24 16:17:30 INFO 开始调串口激活设备
+2018-07-24 16:17:30 INFO 【串口激活设备失败】
+2018-07-24 16:33:02 INFO 开始获取token
+2018-07-24 16:33:03 INFO token:Mjg5MkQyRUIzODMwQUI4RDI1NkUxRjUwRUQyNTIxMzM0RUFCOTk2NkY2MjlBRDVENUI0MDNENEQxNkRFMzg3RQ==
+2018-07-24 16:33:03 INFO 开始调串口激活设备
+2018-07-24 16:33:03 INFO 【串口激活设备失败】
+2018-07-24 16:35:20 INFO 开始获取token
+2018-07-24 16:35:20 INFO token:OUU3RDU5QTM4RTMwQTBBRDVFQjlCMDYyOERGMkNCM0JENkYwRkVDMkE0OTdEQ0RGMjA1REQ4Rjk5NThDMjIzRQ==
+2018-07-24 16:35:20 INFO 开始调串口激活设备
+2018-07-24 16:35:20 INFO 【串口激活设备失败】
+2018-07-24 16:37:22 INFO 开始获取token
+2018-07-24 16:37:22 INFO token:RjM3MTFGQjMxMUJFMzdGQUM2OTBCMEVDQzZDNTRDNEQxMjNDRjQ1QTQzRDFCMUI2QzU4NUM1Rjg0MDgzMzAyNg==
+2018-07-24 16:37:22 INFO 开始调串口激活设备
+2018-07-24 16:37:22 INFO 【串口激活设备失败】
+2018-07-24 16:41:28 INFO 开始获取token
+2018-07-24 16:41:28 INFO token:Q0U3OTJGNEYwREJGQUNBMDRFRTc5RkE3ODcwQUU0OEU3QzM1MEI5OUI0RTRFRUMzNDJEMzMzQUE0MzJFN0VBOA==
+2018-07-24 16:41:28 INFO 开始调串口激活设备
+2018-07-24 16:41:28 INFO 【串口激活设备失败】
+2018-07-24 16:41:59 INFO 开始获取token
+2018-07-24 16:41:59 INFO token:NEVFMjgxRkY3QTdDRTIwMDQ0MEFGQjFGMEY5RjFCNzFDNTdERkRCQ0YyQTYxMkVGRDFGQzk0MkZCQ0JBQUYwNw==
+2018-07-24 16:41:59 INFO 开始调串口激活设备
+2018-07-24 16:41:59 INFO 【串口激活设备失败】
+2018-07-24 16:43:15 INFO 开始获取token
+2018-07-24 16:43:15 INFO token:QzcwRjQ4MjkwNUQ3MzVEMzUwNDI0MEUwQ0IxODc1Rjc5QzlBOEQzNTg1RDMyMzA0QTcwOEQ0QzgzNDRGMDg2OA==
+2018-07-24 16:43:15 INFO 开始调串口激活设备
+2018-07-24 16:43:16 INFO 转换后response :[]
+2018-07-24 16:45:58 INFO 开始获取token
+2018-07-24 16:45:58 INFO token:RDc5MDg4N0JBNDVEMkRBMUMwNzc0MjY2MDFEOTIzRDU1RTAyNDhBNDVBMDg2N0QxNTk0NkI3QjhDNDE4NzJCNA==
+2018-07-24 16:45:58 INFO 开始调串口激活设备
+2018-07-24 16:45:59 INFO 转换后response :[]
+2018-07-24 16:48:26 INFO 开始获取token
+2018-07-24 16:48:26 INFO token:RUVDMzY4NkFFNDgxODE0RkE0NjNFRTkxODdGRkVEMDQxNTNBQzJCRjI2NENFNkZCQUI5OTNGODQ2QUZGQUFCNw==
+2018-07-24 16:48:26 INFO 开始调串口激活设备
+2018-07-24 16:48:27 INFO 转换后response :[]
+2018-07-24 16:48:44 INFO 开始获取token
+2018-07-24 16:48:44 INFO token:NUREQzg4Rjg3RTkxOUM4NzkwOUIyRjg4RTlCNjBENkZBQTAxNTgwNTRCMTNGNkFDQzcyMEFCMTc2OTU3QzdCNw==
+2018-07-24 16:48:44 INFO 开始调串口激活设备
+2018-07-24 16:48:45 INFO 转换后response :[]
+2018-07-24 16:51:05 INFO 开始获取token
+2018-07-24 16:51:06 INFO token:RjA4Qjg3NjREMEE4MTAyRTk5NjU1Q0MzQTZBQTZCQjAyODJGRUI2NUQ3MEVGOENDRDc5MTBDQjZEMEMyRDg4NA==
+2018-07-24 16:51:06 INFO 开始调串口激活设备
+2018-07-24 16:51:07 INFO 转换后response :[]
+2018-07-24 16:55:53 INFO 开始获取token
+2018-07-24 16:55:53 INFO token:REI2QjA4RjgzNkU0QzIxNjNBRjI0RjhGQjcwQUFCRUJFNkI3OUFCMkM0RTlBQzA0QjQ5RTdGRTFBMTYxNjgzQg==
+2018-07-24 16:55:53 INFO 开始调串口激活设备
+2018-07-24 16:55:54 INFO 转换后response :[]
+2018-07-24 16:59:43 INFO 开始获取token
+2018-07-24 16:59:43 INFO token:NzY1MDY1NkE1NzY5RjUxNDY4Mjg1Q0Q1QzdFQzJDOEQ2RDQ0RDE4MzhDQUQ2NDMzQTY0QjAxNTBBRTRENjk5MA==
+2018-07-24 16:59:43 INFO 开始调串口激活设备
+2018-07-24 16:59:44 INFO 转换后response :[]
+2018-07-24 17:02:05 INFO 开始获取token
+2018-07-24 17:02:05 INFO token:OEMzMkZCMTJGOUExMkI2MDM3ODgwNTZFMUU3QjE0OENGMzRBRUEwRTlCRjI4OTNGODY3MjlDREU3ODg1QTRBMg==
+2018-07-24 17:02:05 INFO 开始调串口激活设备
+2018-07-24 17:02:06 INFO 转换后response :[]
+2018-07-24 17:03:23 INFO 开始获取token
+2018-07-24 17:03:23 INFO token:NTAwNTA2Mzc4QzhDQjEwRTkyMjBFOUIwRTU3MjVEQkU4M0E2QjAyRkMzQ0U1Mzc4MzNDQzJDQTdCNTg3MjNDRA==
+2018-07-24 17:03:23 INFO 开始调串口激活设备
+2018-07-24 17:03:24 INFO 转换后response :[]
+2018-07-24 17:05:50 INFO 开始获取token
+2018-07-24 17:05:50 INFO token:MEZEQUQ0MzQzNkU2QTI1QUQ4QThBRjc3RUI5OUY5MzQ5Qjc5QjBFNjM2QjhFQURCMjU3MzYyNDFGQkVBMzQ4MQ==
+2018-07-24 17:05:50 INFO 开始调串口激活设备
+2018-07-24 17:05:51 INFO 转换后response :[]
+2018-07-24 17:07:09 INFO 开始获取token
+2018-07-24 17:07:09 INFO token:NjhCNkVCQzE2QUVEOTgwREJFMTQwNEJENTg1NTUwOTlGNDI1QTY0RDNEOTIzNzBDNTY1MzdBRkRDMDNEOTVCOQ==
+2018-07-24 17:07:09 INFO 开始调串口激活设备
+2018-07-24 17:07:10 INFO 转换后response :[]
+2018-07-24 17:08:25 INFO 开始获取token
+2018-07-24 17:08:25 INFO token:NDY2NjFCQzNBQjcyNTQxNzk1N0IyMjQ4QjM2MDEzNTBDMjdENTNEMkMyQjM0MkNCNjQ4RTNENTc1RkU1OTg2OQ==
+2018-07-24 17:08:25 INFO 开始调串口激活设备
+2018-07-24 17:08:26 INFO 转换后response :[]
+2018-07-24 17:14:25 INFO 开始获取token
+2018-07-24 17:14:25 INFO token:QUIyNTBGNjUzNUMzNTk2Rjk3MjIwNkRGMjNBRjA5MkJDNjIzNkZFNTdFQTgwRkM1NzY2NzNBQTQ2REZCRDUyNA==
+2018-07-24 17:14:25 INFO 开始调串口激活设备
+2018-07-24 17:14:26 INFO 转换后response :[]
+2018-07-24 17:23:48 INFO 开始获取token
+2018-07-24 17:23:48 INFO token:NEQwOTdEODUzQzZFQkNGODFCRjdCNDk3QjM2OTE1NDc3MkU4RjdDQjYwRDRENENEMkU4OEVDNTdBMjE0ODlEMA==
+2018-07-24 17:23:48 INFO 开始调串口激活设备
+2018-07-24 17:23:49 INFO 转换后response :[]
+2018-07-24 17:24:39 INFO 开始获取token
+2018-07-24 17:24:39 INFO token:NkVDQjQwRjI5QkNBQTI0REZENTBEQkY4NkI3M0M5RjIzRDRGRUZDOUIxQjlFMjc4NTRGMTU1RDAwNzU2NDJGNg==
+2018-07-24 17:24:39 INFO 开始调串口激活设备
+2018-07-24 17:24:39 INFO 【串口激活设备失败】
+2018-07-24 17:24:42 INFO 开始获取token
+2018-07-24 17:24:42 INFO token:QzU3OEVGNEYyRUZFQjUzOEFCMjEwM0FGNkY3REQ4MTAwNUI0RUU0RDc3N0UxQUUxMUI3OTREMzQ3MDc2ODg2Qw==
+2018-07-24 17:24:42 INFO 开始调串口激活设备
+2018-07-24 17:24:42 INFO 【串口激活设备失败】
+2018-07-24 17:26:25 INFO 开始获取token
+2018-07-24 17:26:25 INFO token:REQ5ODQ3MzNBMzRFRUVDRUFDQTlBOTE4NTIxNTlGMDkxNzEyNUU0NjY3NzBCNzY1NTY0NDYzQTBCODNEQzJGQg==
+2018-07-24 17:26:25 INFO 开始调串口激活设备
+2018-07-24 17:26:29 INFO 【串口激活设备失败】
+2018-07-24 17:27:03 INFO 开始获取token
+2018-07-24 17:27:04 INFO token:NTY2REM0QjBEMjc0ODMxMjE0NERGNjMzOTg3OUU1MTM2NTA5NkI5NjQ1MjhERDk0OTY5RDk0MTdFQjRGQ0E5OA==
+2018-07-24 17:27:04 INFO 开始调串口激活设备
+2018-07-24 17:27:08 INFO 【串口激活设备失败】
+2018-07-24 17:27:49 INFO 开始获取token
+2018-07-24 17:27:49 INFO token:REMzMEFCRjM5REM4ODE1N0Q1NDYxRTM0MUMxMzkwMzU4RTNCRjgzRjUzRTVCMDM5RDM3RDIxM0ZERENGNUFBRQ==
+2018-07-24 17:27:49 INFO 开始调串口激活设备
+2018-07-24 17:27:54 INFO 【串口激活设备失败】
+2018-07-24 17:30:40 INFO 开始获取token
+2018-07-24 17:30:40 INFO token:NjYxM0RFNjQwNDg5MDBBOEQzMDE5MUZEMkJDNDBCQ0YyMTg0MzA4QjZEMTNERjEwQkIwNUEzOTgxQjZGNEIzOQ==
+2018-07-24 17:30:40 INFO 开始调串口激活设备
+2018-07-24 17:30:44 INFO 【串口激活设备失败】
+2018-07-24 17:36:19 INFO 开始获取token
+2018-07-24 17:36:19 INFO token:MzBCNUZBQjQ3QjNFNkVCOTdDN0Y2NUIxREI0OUYxQ0YzNkEzQzNGNjcyRDhGOTlCODREMzg3RjMwRUEyODQzOQ==
+2018-07-24 17:36:19 INFO 开始调串口激活设备
+2018-07-24 17:39:32 INFO 开始获取token
+2018-07-24 17:39:32 INFO token:ODUzNUY5MTc4Q0FBM0UyMTQ2OEYxMUVDRjhGNUZGRDA1N0E3NEZCQzNDQTUwMjIwMjFGQ0U4NTJCRTNCOEVEOA==
+2018-07-24 17:39:32 INFO 开始创建产品接口
+2018-07-24 17:39:32 INFO 创建产品接口响应：{"is_release": false, "key": "72bcb3c636f54ef8a79364895a9f2fbb", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-24T17:39:33.119Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6ade700011607d2b6ade7aa01", "is_active_register": false, "name": "ttt", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-24 17:39:32 INFO 开始创建$1002数据端点
+2018-07-24 17:39:32 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6ade7aa04", "name": "$1002"}
+2018-07-24 17:39:32 INFO 开始创建自定义数据端点
+2018-07-24 17:39:32 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6ade7aa05", "name": "para_name"}
+2018-07-24 17:39:32 INFO 开始添加设备
+2018-07-24 17:39:32 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387678692}
+2018-07-24 17:39:32 INFO 开始设置异常规则
+2018-07-24 17:39:32 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6ade7aa05", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6ade7aa07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6ade700011607d2b6ade7aa01"}
+2018-07-24 17:39:32 INFO 开始报警设置
+2018-07-24 17:39:32 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6ade7aa05", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6ade7aa07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6ade700011607d2b6ade7aa01"}
+2018-07-24 17:39:32 INFO 开始设置快照
+2018-07-24 17:39:32 INFO 设置快照响应：{"id": "5b56f3d54abd1f6b2ff3ae07"}
+2018-07-24 17:39:32 INFO 开始设置统计规则
+2018-07-24 17:39:32 INFO 统计规则响应：{"id": "5b56f3d54abd1f6b2ff3ae0a"}
+2018-07-24 17:39:32 INFO 开始调串口激活设备
+2018-07-24 17:40:21 INFO 开始获取token
+2018-07-24 17:40:21 INFO token:MEFCNDczREE0QkNEMUE4ODk4RDJDMTIyOTI2NjM2NEJBNTc3MjA0Qjc3NjIxQjdFNjA1QTdGMjA2NDVFQkEyNw==
+2018-07-24 17:40:21 INFO 开始创建产品接口
+2018-07-24 17:40:21 INFO 创建产品接口响应：{"is_release": false, "key": "2f90f62dc8457d9685bde1cd7203e3fb", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-24T17:40:22.279Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6ade800011607d2b6ade80c01", "is_active_register": false, "name": "product_name", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-24 17:40:21 INFO 开始创建$1002数据端点
+2018-07-24 17:40:21 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6ade80c04", "name": "$1002"}
+2018-07-24 17:40:21 INFO 开始创建自定义数据端点
+2018-07-24 17:40:21 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6ade80c05", "name": "para_name"}
+2018-07-24 17:40:21 INFO 开始添加设备
+2018-07-24 17:40:21 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387677686}
+2018-07-24 17:40:21 INFO 开始设置异常规则
+2018-07-24 17:40:21 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6ade80c05", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6ade80c07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6ade800011607d2b6ade80c01"}
+2018-07-24 17:40:21 INFO 开始报警设置
+2018-07-24 17:40:21 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6ade80c05", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6ade80c07", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6ade800011607d2b6ade80c01"}
+2018-07-24 17:40:21 INFO 开始设置快照
+2018-07-24 17:40:22 INFO 设置快照响应：{"id": "5b56f4064abd1f6b2ff3ae55"}
+2018-07-24 17:40:22 INFO 开始设置统计规则
+2018-07-24 17:40:22 INFO 统计规则响应：{"id": "5b56f4064abd1f6b2ff3ae58"}
+2018-07-24 17:40:22 INFO 开始调串口激活设备
+2018-07-24 17:42:59 INFO 开始调串口激活设备
+2018-07-24 17:43:53 INFO 开始调串口激活设备
+2018-07-24 17:49:12 INFO 开始调串口激活设备
+2018-07-24 17:50:30 INFO 开始调串口激活设备
+2018-07-24 17:50:30 INFO 【串口激活设备失败】
+2018-07-24 17:50:58 INFO 开始调串口激活设备
+2018-07-24 17:52:03 INFO 开始获取token
+2018-07-24 17:52:03 INFO token:Q0Q2MkNGMDdGRThDNDlERTUxRDJGNzNFMTA0RDAzNkFFNjg5RDdENURDMTRFNTM5QTBDRDBFRUE0NjhDRjgzQQ==
+2018-07-24 17:52:03 INFO 开始创建产品接口
+2018-07-24 17:52:03 INFO 创建产品接口响应：{"is_release": false, "key": "c6aed2ac576bcdfc3441bac0d3842215", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-24T17:52:04.517Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6aded00011607d2b6aded8801", "is_active_register": false, "name": "product_name", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-24 17:52:03 INFO 开始创建$1002数据端点
+2018-07-24 17:52:03 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6aded8804", "name": "$1002"}
+2018-07-24 17:52:03 INFO 开始创建自定义数据端点
+2018-07-24 17:52:03 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6aded8805", "name": "para_name"}
+2018-07-24 17:52:03 INFO 开始添加设备
+2018-07-24 17:52:03 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 387675563}
+2018-07-24 17:52:03 INFO 开始设置异常规则
+2018-07-24 17:52:04 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6aded8805", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6aded8807", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6aded00011607d2b6aded8801"}
+2018-07-24 17:52:04 INFO 开始报警设置
+2018-07-24 17:52:04 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6aded8805", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6aded8807", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6aded00011607d2b6aded8801"}
+2018-07-24 17:52:04 INFO 开始设置快照
+2018-07-24 17:52:04 INFO 设置快照响应：{"id": "5b56f6c54abd1f6b2ff3b1e1"}
+2018-07-24 17:52:04 INFO 开始设置统计规则
+2018-07-24 17:52:04 INFO 统计规则响应：{"id": "5b56f6c54abd1f6b2ff3b1e4"}
+2018-07-24 17:52:04 INFO 开始调串口激活设备
+2018-07-24 18:04:59 INFO 开始获取token
+2018-07-24 18:04:59 INFO token:MUNGNTlFODJGMTM3NDNCMjM0NTg5NDgwRTI5MTUxQjFDNkIxNjQ0RTVBQUNFOTcyNTlGQjU5MkM3RTUwNDQ4NQ==
+2018-07-24 18:04:59 INFO 开始设备控制
+2018-07-24 18:05:00 INFO [error]:{'status': 200}
+2018-07-24 18:05:00 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 430, in test_device_control
+    self.assertIn(self.device_id, str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387675563' not found in "{'status': 200}"
+
+2018-07-24 18:05:28 INFO 开始获取token
+2018-07-24 18:05:28 INFO token:MERDREVCRjc4MDlCNkNENDVGODgwRkU2NTQwMTUzMEQ4QTM1MTYwODNBMDU5ODRFNjIwRjkzRTFCMDQ1QzAzOQ==
+2018-07-24 18:05:28 INFO 开始设备控制
+2018-07-24 18:05:29 INFO [error]:{'status': 200}
+2018-07-24 18:05:29 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 430, in test_device_control
+    self.assertIn(200, str(res))
+  File "C:\Python27\lib\unittest\case.py", line 800, in assertIn
+    if member not in container:
+TypeError: 'in <string>' requires string as left operand, not int
+
+2018-07-24 18:05:43 INFO 开始获取token
+2018-07-24 18:05:44 INFO token:QkIyRTMzMjc2NjE5MjU2NEQyQzYzMTIyODg2MjY2RDM0Q0I4NDQ1RDhDMjY4MUJFNTQwREU1OTZERTMwNkIwQQ==
+2018-07-24 18:05:44 INFO 开始设备控制
+2018-07-24 18:05:44 INFO 设备控制响应：{"status": 200}
+2018-07-24 18:17:09 INFO 开始获取token
+2018-07-24 18:17:09 INFO token:QUU0M0NBMjM5MENDMzJCQjA4NURBRkZCMDg1QUZBRTFBOUFCQUZFREI2NTJCQTdEN0VBQjEwNDIxRTY5NkQyNg==
+2018-07-24 18:17:09 INFO 开始设备控制
+2018-07-24 18:17:09 INFO 设备控制响应：{"status": 200}
+2018-07-24 18:17:22 INFO 开始获取token
+2018-07-24 18:17:22 INFO token:NENEMzMzQkQ4MjEyQzM2QjNFQUUwRUExMTMzM0MzNTNGMDMzNTU0Qjc4MjEyQ0I5Mzc4NTIwRjUzRkVFMURCQg==
+2018-07-24 18:17:22 INFO 开始设备控制
+2018-07-24 18:17:23 INFO 设备控制响应：{"status": 200}
+2018-07-24 18:17:35 INFO 开始获取token
+2018-07-24 18:17:35 INFO token:QUJGRUNBNEIyRkM1ODE3MTE1ODkxMjYxODcwMzVGMEM0MDBBOUU3NTY2RjZDNTkwMDc1MUJGNENDNTc5N0VCOQ==
+2018-07-24 18:17:35 INFO 开始获取虚拟设备
+2018-07-24 18:17:35 INFO [error]:{'cm_id': 'MS-111', 'last_login': '2018-07-24T17:52:26.132Z', 'online_count': 1510, 'conn_prot': 2, 'online': True, 'ip': '113.66.36.46', 'last_logout': '', 'last_update': '', 'device_id': 387675563}
+2018-07-24 18:17:35 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 449, in test_get_v_device
+    self.assertIn("200", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in "{'cm_id': 'MS-111', 'last_login': '2018-07-24T17:52:26.132Z', 'online_count': 1510, 'conn_prot': 2, 'online': True, 'ip': '113.66.36.46', 'last_logout': '', 'last_update': '', 'device_id': 387675563}"
+
+2018-07-24 18:18:06 INFO 开始获取token
+2018-07-24 18:18:06 INFO token:MTVGQTgyQUMzMjNBNUIxQzE5MTc4Mzc0ODIxNDhFQzdGNkNDODBBRjdENDA3MEEyM0UyMkExOEM2QjlCNUVCNg==
+2018-07-24 18:18:06 INFO 开始获取虚拟设备
+2018-07-24 18:18:06 INFO 获取虚拟设备响应：{"cm_id": "MS-111", "last_login": "2018-07-24T17:52:26.132Z", "online_count": 1541, "conn_prot": 2, "online": true, "ip": "113.66.36.46", "last_logout": "", "last_update": "", "device_id": 387675563}
+2018-07-24 18:45:33 INFO 开始获取token
+2018-07-24 18:45:34 INFO token:REEzRDJBMjA5OURBOEM2MEI1MTJBRkI3QTlDOUI0MTAwMkFGMjA4OEM0MUU5MzlENTQ1RTczNUMzRUNEQzc0Nw==
+2018-07-24 18:45:34 INFO 开始获取设备地理位置
+2018-07-24 18:45:34 INFO [error]:
+2018-07-24 18:45:34 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 465, in test_get_device_geography
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://127.0.0.1:8887/v2/product/1607d2b6aded00011607d2b6aded8801/v_device/387675563/geography
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-24 18:45:58 INFO 开始获取token
+2018-07-24 18:45:58 INFO token:MTc2NkVBQkNENzMyNzU3MTUyNTIyQTdDOTU2OEUzRURERjkwRjJDOUMxOEI3MUNGQzY4NjQ0MkI2RkM3QTFGNQ==
+2018-07-24 18:45:58 INFO 开始获取设备地理位置
+2018-07-24 18:45:58 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-07-24 18:45:58 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 467, in test_get_device_geography
+    self.assertIn(self.device_id, str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '387675563' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-07-24 19:12:48 INFO 开始获取token
+2018-07-24 19:12:48 INFO token:MzJBQTVBOEJFM0VDNDQ0NDZGNzc3NzIwREY1QTgwMTlEOTk1MjJENzZGMjlCODY3QTM4RTA3QkMyMjNGNTc5Qg==
+2018-07-24 19:12:48 INFO 开始获取设备地理位置
+2018-07-24 19:12:48 INFO 获取设备地理位置响应：{"province": "\u5e7f\u4e1c\u7701", "city": "\u5e7f\u5dde\u5e02", "update_time": "2018-07-24T19:12:09.370Z", "district": "", "address": "", "lat": 23.15653812, "country": "\u4e2d\u56fd", "lon": 113.3893937, "device_id": 387675563}

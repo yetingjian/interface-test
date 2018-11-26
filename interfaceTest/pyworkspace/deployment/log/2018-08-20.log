@@ -1,0 +1,186 @@
+2018-08-20 23:46:59 INFO -----------------------------------开始测试---------------------------------
+2018-08-20 23:46:59 INFO ----开始重置设备----
+2018-08-20 23:46:59 INFO len(plist): 2
+2018-08-20 23:46:59 INFO serialFd: Serial<id=0x387d4b0, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-08-20 23:47:03 INFO ['\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x02', '\x06', '\x04', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe']
+2018-08-20 23:47:23 INFO 开始获取token
+2018-08-20 23:47:23 INFO token:NUE1QUREQTlCQjRBQzI1MjdCQ0QyNEIxRjZDODE1QTc0QUZDQjEyQ0RBNjlBMjE0RUVFOTYwMEE3MENFMTYxMg==
+2018-08-20 23:47:23 INFO -----开始添加企业成员----
+2018-08-20 23:47:23 INFO url：http://iotadmin.bgycc.com/v2/corp/member_add
+2018-08-20 23:47:23 INFO body：{"phone": "15018753353", "password": "Iotpassword123", "type": 99, "email": "wangqi@xlink.cn", "name": "test"}
+2018-08-20 23:47:23 INFO 创建添加企业成员响应：{"status": 1, "phone": "15018753353", "is_notice": false, "create_time": "2018-08-20T23:47:26.92Z", "role": 99, "name": "test", "is_alert": false, "id": "1207d2b6f5c51c00", "email": "wangqi@xlink.cn"}
+2018-08-20 23:47:24 INFO -----开始创建产品接口-----
+2018-08-20 23:47:24 INFO url：http://iotadmin.bgycc.com/v2/product
+2018-08-20 23:47:24 INFO body：{"is_gateway_device": false, "name": "product_2018-08-20", "link_type": 1, "description": ""}
+2018-08-20 23:47:24 INFO 创建产品接口响应：{"is_release": false, "key": "fb9275ac604bc695292d3603c6aeeaeb", "description": "", "quota": 1000000000, "is_allow_multi_admin": false, "create_time": "2018-08-20T23:47:26.787Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d4b6f5c500011607d4b6f5c51c01", "is_active_register": false, "name": "product_2018-08-20", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-08-20 23:47:24 INFO ----开始创建$1002数据端点----
+2018-08-20 23:47:24 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/datapoint
+2018-08-20 23:47:24 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-08-20 23:47:24 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d2b6f5c51c01", "name": "$1002"}
+2018-08-20 23:47:24 INFO ----开始创建自定义数据端点----
+2018-08-20 23:47:24 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/datapoint
+2018-08-20 23:47:24 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-08-20 23:47:24 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d4b6f5c51c04", "name": "para_name"}
+2018-08-20 23:47:24 INFO ----开始添加设备----
+2018-08-20 23:47:24 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/device
+2018-08-20 23:47:24 INFO body：{"mac": "F0FE6B792673", "sn": 20067578, "name": "TEST_1"}
+2018-08-20 23:47:24 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 825509059}
+2018-08-20 23:47:24 INFO ----开始设置异常规则----
+2018-08-20 23:47:24 INFO url：http://iotadmin.bgycc.com/v2/alert/rule
+2018-08-20 23:47:24 INFO body：{"exception": {"suggestions": "", "tag_id": "7728fae28f0f44e1c1c5771b03f8c9cf"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d4b6f5c51c04", "content": "value>100", "source": 1, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-08-20 23:47:25 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "7728fae28f0f44e1c1c5771b03f8c9cf"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d4b6f5c51c04", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6f5c51e01", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d4b6f5c500011607d4b6f5c51c01"}
+2018-08-20 23:47:25 INFO ----开始报警设置----
+2018-08-20 23:47:25 INFO url：http://iotadmin.bgycc.com/v2/alert/rule/2807d2b6f5c51e01
+2018-08-20 23:47:25 INFO body：{"exception": {"suggestions": "", "tag_id": "7728fae28f0f44e1c1c5771b03f8c9cf"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d4b6f5c51c04", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6f5c51e01", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d4b6f5c500011607d4b6f5c51c01"}
+2018-08-20 23:47:25 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "7728fae28f0f44e1c1c5771b03f8c9cf"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d4b6f5c51c04", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6f5c51e01", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d4b6f5c500011607d4b6f5c51c01"}
+2018-08-20 23:47:25 INFO ----开始设置快照----
+2018-08-20 23:47:25 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/snapshot
+2018-08-20 23:47:25 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-08-20 23:47:25 INFO [error]:{'error': {'msg': 'app platform had not authorized', 'code': 4001144}}
+2018-08-20 23:47:25 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 379, in test_snapshot
+    ApiTest.snapshot_id = res["id"]
+KeyError: 'id'
+
+2018-08-20 23:47:25 INFO ----开始设置统计规则----
+2018-08-20 23:47:25 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/snapshot/None/statistic_rule
+2018-08-20 23:47:25 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-08-20 23:47:25 INFO [error]:{'error': {'msg': 'app platform had not authorized', 'code': 4001144}}
+2018-08-20 23:47:25 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 426, in test_statistic_rule
+    self.assertIn("id", res)
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in {'error': {'msg': 'app platform had not authorized', 'code': 4001144}}
+
+2018-08-20 23:47:25 INFO ----开始上传固件版本1----
+2018-08-20 23:47:25 INFO 上传固件1响应：{"url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "md5": "289481edded1f0ee9ccdb083ea0ad2b5", "size": 492528}
+2018-08-20 23:47:25 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/firmware
+2018-08-20 23:47:25 INFO body：{"is_release": true, "version": "1", "identify": "", "description": "mcu1", "file_size": 492528, "file_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "release_date": "2018-08-20T01:36:06.173Z", "file_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "type": 1, "mod": "1"}
+2018-08-20 23:47:25 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-08-20T23:47:28.114Z", "description": "mcu1", "file_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "identify": 0, "file_size": 492528, "id": "1807d4b6f5c52000", "mod": "1", "release_date": "2018-08-20T01:36:06.173Z", "file_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "version": 1, "type": 1}
+2018-08-20 23:47:25 INFO ----开始上传固件版本2----
+2018-08-20 23:47:26 INFO 上传固件2响应：{"url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/c711c74500b72b0704f81dc71694fee5", "md5": "b1df8cbe20f950939cbb04a42778457d", "size": 492528}
+2018-08-20 23:47:26 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/firmware
+2018-08-20 23:47:26 INFO body：{"is_release": true, "version": "2", "identify": "", "description": "mcu2", "file_size": 492528, "file_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/c711c74500b72b0704f81dc71694fee5", "release_date": "2018-08-20T01:36:06.173Z", "file_md5": "b1df8cbe20f950939cbb04a42778457d", "type": 1, "mod": "2"}
+2018-08-20 23:47:26 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-08-20T23:47:28.463Z", "description": "mcu2", "file_md5": "b1df8cbe20f950939cbb04a42778457d", "identify": 0, "file_size": 492528, "id": "1807d4b6f5c52001", "mod": "2", "release_date": "2018-08-20T01:36:06.173Z", "file_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/c711c74500b72b0704f81dc71694fee5", "version": 2, "type": 1}
+2018-08-20 23:47:26 INFO ----开始上传固件版本3----
+2018-08-20 23:47:26 INFO 上传固件2响应：{"url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "md5": "289481edded1f0ee9ccdb083ea0ad2b5", "size": 492528}
+2018-08-20 23:47:26 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/firmware
+2018-08-20 23:47:26 INFO body：{"is_release": true, "version": "3", "identify": "", "description": "mcu3", "file_size": 492528, "file_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "release_date": "2018-08-20T01:36:06.173Z", "file_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "type": 1, "mod": "3"}
+2018-08-20 23:47:26 INFO 上传固件版本3响应：{"is_release": true, "create_date": "2018-08-20T23:47:28.854Z", "description": "mcu3", "file_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "identify": 0, "file_size": 492528, "id": "1807d2b6f5c52000", "mod": "3", "release_date": "2018-08-20T01:36:06.173Z", "file_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "version": 3, "type": 1}
+2018-08-20 23:47:26 INFO ----开始创建自动升级任务----
+2018-08-20 23:47:26 INFO url：http://iotadmin.bgycc.com/v2/upgrade/firmware/task
+2018-08-20 23:47:26 INFO body：{"target_version": 2, "description": "task_description", "target_version_size": 492528, "from_version": 1, "from_version_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "target_version_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/c711c74500b72b0704f81dc71694fee5", "identify": "", "name": "task_auto", "task_type": 0, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "type": 1, "target_version_md5": "b1df8cbe20f950939cbb04a42778457d", "scope": {"category": 0, "device_list": []}, "from_version_size": 492528, "from_version_md5": "289481edded1f0ee9ccdb083ea0ad2b5"}
+2018-08-20 23:47:26 INFO 创建自动升级任务响应：{"status": 0, "task_type": 0, "target_version": 2, "description": "task_description", "from_version_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "from_version_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "target_version_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/c711c74500b72b0704f81dc71694fee5", "name": "task_auto", "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "identify": 0, "from_version": 1, "id": "2007d4b6f5c52002", "scope": {"category": 0}, "from_version_size": 492528, "type": 1, "upgrade_count": 0, "target_version_size": 492528}
+2018-08-20 23:47:26 INFO ----开始创建手动升级任务----
+2018-08-20 23:47:26 INFO url：http://iotadmin.bgycc.com/v2/upgrade/firmware/task
+2018-08-20 23:47:26 INFO body：{"target_version": 2, "description": "task_description", "target_version_size": 492528, "from_version": 1, "from_version_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "target_version_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/c711c74500b72b0704f81dc71694fee5", "identify": "", "name": "task_auto", "task_type": 0, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "type": 1, "target_version_md5": "b1df8cbe20f950939cbb04a42778457d", "scope": {"category": 0, "device_list": []}, "from_version_size": 492528, "from_version_md5": "289481edded1f0ee9ccdb083ea0ad2b5"}
+2018-08-20 23:47:26 INFO 创建手动升级任务响应：{"status": 0, "task_type": 1, "target_version": 3, "description": "task_description", "from_version_md5": "b1df8cbe20f950939cbb04a42778457d", "from_version_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/c711c74500b72b0704f81dc71694fee5", "target_version_url": "http://xlink-bgy.oss-cn-hangzhou.aliyuncs.com/82de2c5ac54b1d5611c770601bcf47e9", "name": "task_manu", "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "identify": 0, "from_version": 2, "id": "2007d2b6f5c52200", "scope": {"category": 0}, "from_version_size": 492528, "type": 1, "upgrade_count": 0, "target_version_size": 492528}
+2018-08-20 23:47:26 INFO ----开始启动自动升级任务----
+2018-08-20 23:47:26 INFO url：http://iotadmin.bgycc.com/v2/upgrade/firmware/task/status
+2018-08-20 23:47:26 INFO body：{"status": 1, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "upgrade_task_id": "2007d4b6f5c52002"}
+2018-08-20 23:47:26 INFO 启动自动升级任务成功
+2018-08-20 23:47:26 INFO ----开始启动手动升级任务----
+2018-08-20 23:47:26 INFO url：http://iotadmin.bgycc.com/v2/upgrade/firmware/task/status
+2018-08-20 23:47:26 INFO body：{"status": 1, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "upgrade_task_id": "2007d2b6f5c52200"}
+2018-08-20 23:47:26 INFO 启动手动升级任务成功
+2018-08-20 23:47:26 INFO ----开始调串口激活设备----
+2018-08-20 23:47:30 INFO ('response:', ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe'])
+2018-08-20 23:49:30 INFO ----开始查询宽表设备列表----
+2018-08-20 23:49:30 INFO url：http://iotadmin.bgycc.com/v2/wide-devices
+2018-08-20 23:49:30 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d4b6f5c500011607d4b6f5c51c01"}}, "limit": 100, "offset": 0}
+2018-08-20 23:49:31 INFO 查询宽表设备列表响应：{"count": 1, "list": [{"is_online": true, "is_active": true, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "id": 825509059}]}
+2018-08-20 23:49:31 INFO ----开始设备控制----
+2018-08-20 23:49:31 INFO url：http://iotadmin.bgycc.com/v2/diagnosis/device/set/825509059
+2018-08-20 23:49:31 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-08-20 23:49:31 INFO 设备控制响应：{"status": 200}
+2018-08-20 23:49:31 INFO ----开始获取虚拟设备----
+2018-08-20 23:49:31 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/v_device/825509059
+2018-08-20 23:49:31 INFO body：{}
+2018-08-20 23:49:31 INFO 获取虚拟设备响应：{"cm_id": "MS-100", "last_login": "2018-08-20T23:48:35.977Z", "online_count": 102, "conn_prot": 2, "online": true, "ip": "61.140.124.78", "last_logout": "2018-08-20T23:48:21.344Z", "last_update": "", "device_id": 825509059}
+2018-08-20 23:49:31 INFO ----开始获取设备地理位置----
+2018-08-20 23:49:31 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/device/825509059/geography
+2018-08-20 23:49:31 INFO body：{}
+2018-08-20 23:49:31 INFO 获取设备地理位置响应：{"province": "\u5e7f\u4e1c\u7701", "city": "\u5e7f\u5dde\u5e02", "update_time": "2018-08-20T23:48:35.982Z", "district": "", "address": "", "lat": 23.15653812, "country": "\u4e2d\u56fd", "lon": 113.3893937, "device_id": 825509059}
+2018-08-20 23:49:31 INFO ----开始获取地理位置信息列表----
+2018-08-20 23:49:31 INFO url：http://iotadmin.bgycc.com/v2/service/position/geographies
+2018-08-20 23:49:31 INFO body：{"param": "F001S006"}
+2018-08-20 23:49:31 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-08-20 23:49:31 INFO ----开始用户通过邮箱注册----
+2018-08-20 23:49:31 INFO url：http://iotadmin.bgycc.com/v2/user_register
+2018-08-20 23:49:31 INFO body：{"corp_id": "1007d4b6f5a78e00", "source": "2", "local_lang": "zh-cn", "password": "120211Qq", "nickname": "nickname", "email": "wangqi@xlink.cn"}
+2018-08-20 23:49:31 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-08-20 23:49:31 INFO ----开始调串口上报数据----
+2018-08-20 23:49:33 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-08-20 23:49:35 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-08-20 23:51:35 INFO ----开始获取告警记录----
+2018-08-20 23:51:35 INFO url：http://iotadmin.bgycc.com/v2/corp/alarm/states
+2018-08-20 23:51:35 INFO body：{"filter": ["id", "device_id", "rule_id", "status", "content", "count"], "query": {"scope": {"$in": [1, 3, 4]}, "product_id": {"$in": ["1607d4b6f5c500011607d4b6f5c51c01"]}, "device_id": {"$eq": 825509059}}, "limit": 10, "order": {"start_time": "desc"}, "offset": 0}
+2018-08-20 23:51:36 INFO 获取告警记录响应：{"count": 1, "list": [{"count": 1, "status": 1, "rule_id": "2807d2b6f5c51e01", "content": "value>100", "id": "d633fc0abf10efa89d41a7a712f0812d", "device_id": 825509059}]}
+2018-08-20 23:51:36 INFO ----开始获取注册验证码----
+2018-08-20 23:51:36 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-20 23:51:36 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-20 23:51:36 INFO 已发送验证码
+2018-08-20 23:51:36 INFO ----开始用户通过邮箱登录----
+2018-08-20 23:51:36 INFO url：http://iotadmin.bgycc.com/v2/user_auth
+2018-08-20 23:51:36 INFO body：{"password": "120211Qq", "email": "wangqi@xlink.cn", "corp_id": "1007d4b6f5a78e00"}
+2018-08-20 23:51:36 INFO 用户通过邮箱登录响应：{"access_token": "RkMxODU1MEI2OThEQ0I1RENCMkY1ODk4NTc2NUU0MzFBRTlBQjBFQjhGRDE3RTNCMzEyMEE3NjA3OUJDRTk4MA==", "expire_in": 7200, "authorize": "2207d4b6f5c61c00", "user_id": 825502446, "refresh_token": "ODQ0M0E5MjA4M0MyNzg0QzA0MjQ2QzBGRkI5RkQxOUIzREE2QjE1RUJENTlFODdFMjEyNzk5MkE2OTBFRjY1RA=="}
+2018-08-20 23:51:36 INFO ----开始配置app----
+2018-08-20 23:51:36 INFO url：http://iotadmin.bgycc.com/v2/plugin/app
+2018-08-20 23:51:36 INFO body：{"enable": true, "type": 10, "name": "feedback", "plugin": "helpdesk"}
+2018-08-20 23:51:36 INFO 配置app响应：{"secret": "f80e62aacb756c5bcb5ec6b715b41470", "create_time": "2018-08-20T23:51:38.630Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e07d2b6f5c71400", "fee_type": 0}
+2018-08-20 23:51:36 INFO ----开始新增用户反馈----
+2018-08-20 23:51:36 INFO url：http://iotadmin.bgycc.com/v2/module/feedback/2e07d2b6f5c71400/api/feedback/save
+2018-08-20 23:51:36 INFO body：{"content": "\u7535\u996d\u7172\u65e0\u6cd5\u542f\u7528", "user_name": "\u5c0f\u660e", "user_id": 825502446, "email": "xiaoming@qq.com", "phone": "1689624223"}
+2018-08-20 23:51:36 INFO [error]:
+2018-08-20 23:51:36 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1096, in test_feedback
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://apiserver/v2/module/feedback/2e07d2b6f5c71400/api/feedback/save
+                   ^
+SyntaxError: invalid syntax
+
+2018-08-20 23:51:36 INFO ----开始生成设备二维码----
+2018-08-20 23:51:36 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/device/825509059/qrcode
+2018-08-20 23:51:36 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-08-20 23:51:36 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d4b6f5c500011607d4b6f5c51c01;QK:5b7ae28fc253716973ef345a;id:825509059;MAC:F0FE6B792673;SN:20067578;;"}
+2018-08-20 23:51:36 INFO ----开始订阅设备----
+2018-08-20 23:51:36 INFO url：http://iotadmin.bgycc.com/v2/user/825502446/qrcode_subscribe
+2018-08-20 23:51:36 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d4b6f5c500011607d4b6f5c51c01;QK:5b7ae28fc253716973ef345a;id:825509059;MAC:F0FE6B792673;SN:20067578;;"}
+2018-08-20 23:51:36 INFO 订阅设备响应：{"custom_property": {}, "mac": "F0FE6B792673", "pid": "1607d4b6f5c500011607d4b6f5c51c01", "id": 825509059, "sn": "20067578"}
+2018-08-20 23:51:36 INFO ----开始获取设备列表----
+2018-08-20 23:51:36 INFO url：http://iotadmin.bgycc.com/v2/user/825502446/subscribe/devices
+2018-08-20 23:51:36 INFO body：{}
+2018-08-20 23:51:36 INFO 获取设备列表响应：[{"access_key": 0, "active_code": "43b7c06ac77ca649a9553717892b6574", "sn": "20067578", "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "mcu_version": 1, "is_active": true, "mac": "F0FE6B792673", "firmware_mod": "0", "authorize_code": "1e07d2b6f5c51e00", "source": 3, "active_date": "2018-08-20T23:47:35.584Z", "role": 0, "authority": "RW", "groups": "", "mcu_mod": "0", "id": 825509059, "last_login": "2018-08-20T23:48:35.977Z", "firmware_version": 2, "subscribe_date": "2018-08-20T23:51:38.964Z", "is_online": true, "name": "TEST_1"}]
+2018-08-20 23:51:36 INFO ----开始是否收到测试邮件----
+2018-08-20 23:51:37 INFO 已收到测试邮件
+2018-08-20 23:51:37 INFO ----开始检查自动升级是否成功----
+2018-08-20 23:51:37 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/device/825509059
+2018-08-20 23:51:37 INFO body：{}
+2018-08-20 23:51:37 INFO 设备信息响应：{"region_id": 0, "mcu_version": 1, "corp_id": "1007d4b6f5a78e00", "active_date": "2018-08-20T23:47:35.584Z", "create_time": "2018-08-20T23:47:27.40Z", "firmware_version": 2, "id": 825509059, "gateway_id": 0, "last_login": "2018-08-20T23:48:35.977Z", "online_count": 45, "creator_type": 1, "is_active": true, "mac": "F0FE6B792673", "is_online": true, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "access_key": 0, "name": "TEST_1", "firmware_mod": "0", "last_login_ip": "61.140.124.78", "creator_id": "1207d4b6f5a78e01", "sn": "20067578", "mcu_mod": "0"}
+2018-08-20 23:51:37 INFO ----开始关闭自动升级任务----
+2018-08-20 23:51:37 INFO url：http://iotadmin.bgycc.com/v2/upgrade/firmware/task/status
+2018-08-20 23:51:37 INFO body：{"status": 0, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "upgrade_task_id": "2007d4b6f5c52002"}
+2018-08-20 23:51:37 INFO 自动升级任务已关闭
+2018-08-20 23:51:37 INFO ----开始设备手动升级----
+2018-08-20 23:51:37 INFO url：http://iotadmin.bgycc.com/v2/upgrade/device
+2018-08-20 23:51:37 INFO body：{"product_id": "1607d4b6f5c500011607d4b6f5c51c01", "device_id": 825509059}
+2018-08-20 23:51:37 INFO 已设备手动升级
+2018-08-20 23:53:37 INFO ----开始删除app配置----
+2018-08-20 23:53:37 INFO url：http://iotadmin.bgycc.com/v2/plugin/app/2e07d2b6f5c71400
+2018-08-20 23:53:37 INFO 已删app配置
+2018-08-20 23:53:37 INFO -----------------------------------开始测试---------------------------------
+2018-08-20 23:53:37 INFO ----开始重置设备----
+2018-08-20 23:53:42 INFO ['\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x02', '\x06', '\x04', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe']
+2018-08-20 23:54:02 INFO ----开始调串口激活设备----
+2018-08-20 23:54:07 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe'])
+2018-08-20 23:56:07 INFO ----开始检查手动升级是否成功----
+2018-08-20 23:56:07 INFO url：http://iotadmin.bgycc.com/v2/product/1607d4b6f5c500011607d4b6f5c51c01/device/825509059
+2018-08-20 23:56:07 INFO body：{}
+2018-08-20 23:56:07 INFO 设备信息响应：{"region_id": 0, "mcu_version": 1, "corp_id": "1007d4b6f5a78e00", "last_reset": "2018-08-20T23:54:25.282Z", "create_time": "2018-08-20T23:47:27.40Z", "firmware_version": 1, "id": 825509059, "gateway_id": 0, "last_login": "2018-08-20T23:54:25.651Z", "online_count": 150, "creator_type": 1, "is_active": true, "mac": "F0FE6B792673", "is_online": true, "product_id": "1607d4b6f5c500011607d4b6f5c51c01", "access_key": 0, "name": "TEST_1", "active_date": "2018-08-20T23:47:35.584Z", "firmware_mod": "0", "last_login_ip": "61.140.124.78", "creator_id": "1207d4b6f5a78e01", "sn": "20067578", "mcu_mod": "0"}

@@ -1,0 +1,1057 @@
+2018-09-20 10:10:50 INFO -------------------------开始初始化环境------------------------
+2018-09-20 10:10:50 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 10:10:50 INFO ---------------------------------------------------------------
+2018-09-20 10:10:50 INFO -------------------------开始api压力测试------------------------
+2018-09-20 10:10:50 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 10:10:50 INFO ---------------------------------------------------------------
+2018-09-20 10:10:50 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 10:10:50 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 10:10:50 INFO -----------------------------------------------------------------------
+2018-09-20 10:10:50 INFO ----------------------------开始cm测试并发环境---------------------------
+2018-09-20 10:10:50 INFO --------开始cm连接测试-5万个并发
+2018-09-20 10:10:50 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 10:10:50 INFO Authentication (password) successful!
+2018-09-20 10:10:50 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 10:10:50 INFO [chan 0] sftp session closed.
+2018-09-20 10:10:50 INFO --------开始cm连接测试-10万个并发
+2018-09-20 10:10:50 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 10:10:50 INFO Authentication (password) successful!
+2018-09-20 10:10:51 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 10:11:37 INFO -------------------------开始初始化环境------------------------
+2018-09-20 10:11:37 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 10:11:37 INFO ---------------------------------------------------------------
+2018-09-20 10:11:37 INFO -------------------------开始api压力测试------------------------
+2018-09-20 10:11:37 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 10:11:37 INFO ---------------------------------------------------------------
+2018-09-20 10:11:37 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 10:11:37 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 10:11:37 INFO Authentication (password) successful!
+2018-09-20 10:11:37 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 10:11:37 INFO -----------------------------------------------------------------------
+2018-09-20 10:11:37 INFO ----------------------------开始cm测试并发环境---------------------------
+2018-09-20 10:11:37 INFO --------开始cm连接测试-5万个并发
+2018-09-20 10:11:37 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 10:11:38 INFO Authentication (password) successful!
+2018-09-20 10:11:38 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 10:11:38 INFO [chan 0] sftp session closed.
+2018-09-20 10:11:38 INFO --------开始cm连接测试-10万个并发
+2018-09-20 10:11:38 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 10:11:38 INFO Authentication (password) successful!
+2018-09-20 10:11:38 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 10:11:38 INFO [chan 0] sftp session closed.
+2018-09-20 11:07:06 INFO -------------------------开始初始化环境------------------------
+2018-09-20 11:07:06 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 11:07:06 INFO ---------------------------------------------------------------
+2018-09-20 11:07:06 INFO -------------------------开始api压力测试------------------------
+2018-09-20 11:07:06 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 11:07:06 INFO ---------------------------------------------------------------
+2018-09-20 11:07:06 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 11:07:06 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 11:07:06 INFO -----------------------------------------------------------------------
+2018-09-20 11:07:06 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 11:07:06 INFO --------开始cm连接测试-5万个并发
+2018-09-20 11:07:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:07:06 INFO Authentication (password) successful!
+2018-09-20 11:07:07 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 11:07:07 INFO [chan 0] sftp session closed.
+2018-09-20 11:07:07 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:07:07 INFO Authentication (password) successful!
+2018-09-20 11:08:07 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:08:07 INFO Authentication (password) successful!
+2018-09-20 11:08:07 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:08:07 INFO Authentication (password) successful!
+2018-09-20 11:08:08 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:08:08 INFO Authentication (password) successful!
+2018-09-20 11:08:08 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 11:09:47 INFO -------------------------开始初始化环境------------------------
+2018-09-20 11:09:47 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 11:09:47 INFO ---------------------------------------------------------------
+2018-09-20 11:09:47 INFO -------------------------开始api压力测试------------------------
+2018-09-20 11:09:47 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 11:09:47 INFO ---------------------------------------------------------------
+2018-09-20 11:09:47 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 11:09:47 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 11:09:47 INFO -----------------------------------------------------------------------
+2018-09-20 11:09:47 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 11:09:47 INFO --------开始cm连接测试-5万个并发
+2018-09-20 11:09:47 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:09:47 INFO Authentication (password) successful!
+2018-09-20 11:09:48 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 11:09:48 INFO [chan 0] sftp session closed.
+2018-09-20 11:09:48 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:09:48 INFO Authentication (password) successful!
+2018-09-20 11:10:48 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:10:48 INFO Authentication (password) successful!
+2018-09-20 11:10:48 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:10:48 INFO Authentication (password) successful!
+2018-09-20 11:10:48 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:10:49 INFO Authentication (password) successful!
+2018-09-20 11:10:49 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 11:13:41 INFO -------------------------开始初始化环境------------------------
+2018-09-20 11:13:41 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 11:13:41 INFO ---------------------------------------------------------------
+2018-09-20 11:13:41 INFO -------------------------开始api压力测试------------------------
+2018-09-20 11:13:41 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 11:13:41 INFO ---------------------------------------------------------------
+2018-09-20 11:13:41 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 11:13:41 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 11:13:41 INFO -----------------------------------------------------------------------
+2018-09-20 11:13:41 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 11:13:41 INFO --------开始cm连接测试-5万个并发
+2018-09-20 11:13:41 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:13:42 INFO Authentication (password) successful!
+2018-09-20 11:13:42 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 11:13:42 INFO [chan 0] sftp session closed.
+2018-09-20 11:13:42 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:13:42 INFO Authentication (password) successful!
+2018-09-20 11:14:42 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:14:42 INFO Authentication (password) successful!
+2018-09-20 11:14:42 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:14:42 INFO Authentication (password) successful!
+2018-09-20 11:14:43 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:14:43 INFO Authentication (password) successful!
+2018-09-20 11:19:20 INFO -------------------------开始初始化环境------------------------
+2018-09-20 11:19:20 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 11:19:20 INFO ---------------------------------------------------------------
+2018-09-20 11:19:20 INFO -------------------------开始api压力测试------------------------
+2018-09-20 11:19:20 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 11:19:20 INFO ---------------------------------------------------------------
+2018-09-20 11:19:20 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 11:19:20 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 11:19:20 INFO -----------------------------------------------------------------------
+2018-09-20 11:19:20 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 11:19:20 INFO --------开始cm连接测试-5万个并发
+2018-09-20 11:19:20 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:19:20 INFO Authentication (password) successful!
+2018-09-20 11:19:20 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 11:19:20 INFO [chan 0] sftp session closed.
+2018-09-20 11:19:20 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:19:21 INFO Authentication (password) successful!
+2018-09-20 11:20:20 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:20:21 INFO Authentication (password) successful!
+2018-09-20 11:20:21 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:20:21 INFO Authentication (password) successful!
+2018-09-20 11:20:21 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:20:21 INFO Authentication (password) successful!
+2018-09-20 11:20:21 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 11:43:51 INFO -------------------------开始初始化环境------------------------
+2018-09-20 11:43:51 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 11:43:51 INFO ---------------------------------------------------------------
+2018-09-20 11:43:51 INFO -------------------------开始api压力测试------------------------
+2018-09-20 11:43:51 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 11:43:51 INFO ---------------------------------------------------------------
+2018-09-20 11:43:51 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 11:43:51 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 11:43:51 INFO -----------------------------------------------------------------------
+2018-09-20 11:43:51 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 11:43:51 INFO --------开始cm连接测试-5万个并发
+2018-09-20 11:43:52 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:43:52 INFO Authentication (password) successful!
+2018-09-20 11:43:53 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 11:43:53 INFO [chan 0] sftp session closed.
+2018-09-20 11:43:53 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:43:53 INFO Authentication (password) successful!
+2018-09-20 11:44:53 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:44:53 INFO Authentication (password) successful!
+2018-09-20 11:44:53 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:44:53 INFO Authentication (password) successful!
+2018-09-20 11:44:53 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:44:53 INFO Authentication (password) successful!
+2018-09-20 11:48:04 INFO -------------------------开始初始化环境------------------------
+2018-09-20 11:48:04 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 11:48:04 INFO ---------------------------------------------------------------
+2018-09-20 11:48:04 INFO -------------------------开始api压力测试------------------------
+2018-09-20 11:48:04 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 11:48:04 INFO ---------------------------------------------------------------
+2018-09-20 11:48:04 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 11:48:04 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 11:48:04 INFO -----------------------------------------------------------------------
+2018-09-20 11:48:04 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 11:48:04 INFO --------开始cm连接测试-5万个并发
+2018-09-20 11:48:04 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:48:04 INFO Authentication (password) successful!
+2018-09-20 11:48:04 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 11:48:04 INFO [chan 0] sftp session closed.
+2018-09-20 11:48:04 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:48:05 INFO Authentication (password) successful!
+2018-09-20 11:48:33 INFO -------------------------开始初始化环境------------------------
+2018-09-20 11:48:33 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 11:48:33 INFO ---------------------------------------------------------------
+2018-09-20 11:48:33 INFO -------------------------开始api压力测试------------------------
+2018-09-20 11:48:33 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 11:48:33 INFO ---------------------------------------------------------------
+2018-09-20 11:48:33 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 11:48:33 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 11:48:33 INFO -----------------------------------------------------------------------
+2018-09-20 11:48:33 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 11:48:33 INFO --------开始cm连接测试-5万个并发
+2018-09-20 11:48:33 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:48:33 INFO Authentication (password) successful!
+2018-09-20 11:48:34 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 11:48:34 INFO [chan 0] sftp session closed.
+2018-09-20 11:48:34 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:48:34 INFO Authentication (password) successful!
+2018-09-20 11:53:52 INFO -------------------------开始初始化环境------------------------
+2018-09-20 11:53:52 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 11:53:52 INFO ---------------------------------------------------------------
+2018-09-20 11:53:52 INFO -------------------------开始api压力测试------------------------
+2018-09-20 11:53:52 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 11:53:52 INFO ---------------------------------------------------------------
+2018-09-20 11:53:52 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 11:53:52 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 11:53:52 INFO -----------------------------------------------------------------------
+2018-09-20 11:53:52 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 11:53:52 INFO --------开始cm连接测试-5万个并发
+2018-09-20 11:53:52 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:53:53 INFO Authentication (password) successful!
+2018-09-20 11:53:53 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 11:53:53 INFO [chan 0] sftp session closed.
+2018-09-20 11:53:53 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:53:53 INFO Authentication (password) successful!
+2018-09-20 11:54:53 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:54:53 INFO Authentication (password) successful!
+2018-09-20 11:54:53 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:54:53 INFO Authentication (password) successful!
+2018-09-20 11:54:54 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 11:54:54 INFO Authentication (password) successful!
+2018-09-20 14:17:25 INFO -------------------------开始初始化环境------------------------
+2018-09-20 14:17:25 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 14:17:25 INFO ---------------------------------------------------------------
+2018-09-20 14:17:25 INFO -------------------------开始api压力测试------------------------
+2018-09-20 14:17:25 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 14:17:25 INFO ---------------------------------------------------------------
+2018-09-20 14:17:25 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 14:17:25 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 14:17:25 INFO -----------------------------------------------------------------------
+2018-09-20 14:17:25 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 14:17:25 INFO --------开始cm连接测试-5万个并发
+2018-09-20 14:17:26 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:17:26 INFO Authentication (password) successful!
+2018-09-20 14:17:26 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 14:17:26 INFO [chan 0] sftp session closed.
+2018-09-20 14:17:26 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:17:26 INFO Authentication (password) successful!
+2018-09-20 14:18:26 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:18:26 INFO Authentication (password) successful!
+2018-09-20 14:18:26 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:18:27 INFO Authentication (password) successful!
+2018-09-20 14:18:27 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:18:27 INFO Authentication (password) successful!
+2018-09-20 14:18:27 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:18:27 INFO Authentication (password) successful!
+2018-09-20 14:19:27 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:19:27 INFO Authentication (password) successful!
+2018-09-20 14:19:28 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:19:28 INFO Authentication (password) successful!
+2018-09-20 14:19:28 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:19:28 INFO Authentication (password) successful!
+2018-09-20 14:19:28 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 14:23:39 INFO -------------------------开始初始化环境------------------------
+2018-09-20 14:23:39 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 14:23:39 INFO ---------------------------------------------------------------
+2018-09-20 14:23:39 INFO -------------------------开始api压力测试------------------------
+2018-09-20 14:23:39 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 14:23:39 INFO ---------------------------------------------------------------
+2018-09-20 14:23:39 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 14:23:39 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 14:23:39 INFO -----------------------------------------------------------------------
+2018-09-20 14:23:39 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 14:23:39 INFO --------开始cm连接测试-5万个并发
+2018-09-20 14:23:39 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:23:40 INFO Authentication (password) successful!
+2018-09-20 14:23:40 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 14:23:40 INFO [chan 0] sftp session closed.
+2018-09-20 14:23:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:23:40 INFO Authentication (password) successful!
+2018-09-20 14:24:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:24:40 INFO Authentication (password) successful!
+2018-09-20 14:24:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:24:40 INFO Authentication (password) successful!
+2018-09-20 14:24:41 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:24:41 INFO Authentication (password) successful!
+2018-09-20 14:24:41 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:24:41 INFO Authentication (password) successful!
+2018-09-20 14:25:41 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:25:41 INFO Authentication (password) successful!
+2018-09-20 14:25:41 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:25:41 INFO Authentication (password) successful!
+2018-09-20 14:25:42 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:25:42 INFO Authentication (password) successful!
+2018-09-20 14:25:42 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 14:34:48 INFO -------------------------开始初始化环境------------------------
+2018-09-20 14:34:48 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 14:34:48 INFO ---------------------------------------------------------------
+2018-09-20 14:34:48 INFO -------------------------开始api压力测试------------------------
+2018-09-20 14:34:48 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 14:34:48 INFO ---------------------------------------------------------------
+2018-09-20 14:34:48 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 14:34:48 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 14:34:48 INFO -----------------------------------------------------------------------
+2018-09-20 14:34:48 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 14:34:48 INFO --------开始cm连接测试-5万个并发
+2018-09-20 14:34:48 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:34:48 INFO Authentication (password) successful!
+2018-09-20 14:34:49 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 14:34:49 INFO [chan 0] sftp session closed.
+2018-09-20 14:34:49 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:34:49 INFO Authentication (password) successful!
+2018-09-20 14:35:49 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:35:49 INFO Authentication (password) successful!
+2018-09-20 14:35:49 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:35:49 INFO Authentication (password) successful!
+2018-09-20 14:35:50 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:35:50 INFO Authentication (password) successful!
+2018-09-20 14:35:50 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:35:50 INFO Authentication (password) successful!
+2018-09-20 14:35:50 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:35:50 INFO Authentication (password) successful!
+2018-09-20 14:35:51 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:35:51 INFO Authentication (password) successful!
+2018-09-20 14:36:51 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:36:51 INFO Authentication (password) successful!
+2018-09-20 14:36:51 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:36:51 INFO Authentication (password) successful!
+2018-09-20 14:36:51 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:36:52 INFO Authentication (password) successful!
+2018-09-20 14:36:52 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:36:52 INFO Authentication (password) successful!
+2018-09-20 14:36:52 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:36:52 INFO Authentication (password) successful!
+2018-09-20 14:36:52 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 14:55:04 INFO -------------------------开始初始化环境------------------------
+2018-09-20 14:55:04 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 14:55:04 INFO ---------------------------------------------------------------
+2018-09-20 14:55:04 INFO -------------------------开始api压力测试------------------------
+2018-09-20 14:55:04 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 14:55:04 INFO ---------------------------------------------------------------
+2018-09-20 14:55:04 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 14:55:04 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 14:55:04 INFO -----------------------------------------------------------------------
+2018-09-20 14:55:04 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 14:55:04 INFO --------开始cm连接测试-10万个并发
+2018-09-20 14:55:04 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:55:05 INFO Authentication (password) successful!
+2018-09-20 14:55:05 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 14:55:05 INFO [chan 0] sftp session closed.
+2018-09-20 14:55:05 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 14:55:05 INFO Authentication (password) successful!
+2018-09-20 14:55:05 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 14:55:05 INFO [chan 0] sftp session closed.
+2018-09-20 14:55:05 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:55:05 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 14:55:05 INFO Authentication (password) successful!
+2018-09-20 14:55:05 INFO Authentication (password) successful!
+2018-09-20 14:56:05 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:56:05 INFO Authentication (password) successful!
+2018-09-20 14:56:05 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:56:06 INFO Authentication (password) successful!
+2018-09-20 14:56:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:56:06 INFO Authentication (password) successful!
+2018-09-20 14:56:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:56:06 INFO Authentication (password) successful!
+2018-09-20 14:56:07 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 14:56:07 INFO Authentication (password) successful!
+2018-09-20 14:56:07 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:56:07 INFO Authentication (password) successful!
+2018-09-20 14:56:07 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:56:07 INFO Authentication (password) successful!
+2018-09-20 14:56:08 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 14:56:08 INFO Authentication (password) successful!
+2018-09-20 14:56:08 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 14:56:08 INFO Authentication (password) successful!
+2018-09-20 14:56:19 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 15:02:56 INFO -------------------------开始初始化环境------------------------
+2018-09-20 15:02:56 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 15:02:56 INFO ---------------------------------------------------------------
+2018-09-20 15:02:56 INFO -------------------------开始api压力测试------------------------
+2018-09-20 15:02:56 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 15:02:56 INFO ---------------------------------------------------------------
+2018-09-20 15:02:56 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 15:02:56 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 15:02:56 INFO -----------------------------------------------------------------------
+2018-09-20 15:02:56 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 15:02:56 INFO --------开始cm连接测试-10万个并发
+2018-09-20 15:02:56 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:02:56 INFO Authentication (password) successful!
+2018-09-20 15:02:56 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:02:56 INFO [chan 0] sftp session closed.
+2018-09-20 15:02:56 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:02:56 INFO Authentication (password) successful!
+2018-09-20 15:02:57 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:02:57 INFO [chan 0] sftp session closed.
+2018-09-20 15:02:57 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:02:57 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:02:57 INFO Authentication (password) successful!
+2018-09-20 15:02:57 INFO Authentication (password) successful!
+2018-09-20 15:03:57 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:03:57 INFO Authentication (password) successful!
+2018-09-20 15:03:57 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:03:57 INFO Authentication (password) successful!
+2018-09-20 15:03:57 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:03:58 INFO Authentication (password) successful!
+2018-09-20 15:03:58 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:03:58 INFO Authentication (password) successful!
+2018-09-20 15:03:58 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:03:58 INFO Authentication (password) successful!
+2018-09-20 15:03:59 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:03:59 INFO Authentication (password) successful!
+2018-09-20 15:03:59 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:03:59 INFO Authentication (password) successful!
+2018-09-20 15:04:00 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:04:00 INFO Authentication (password) successful!
+2018-09-20 15:04:00 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:04:00 INFO Authentication (password) successful!
+2018-09-20 15:04:00 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:04:01 INFO Authentication (password) successful!
+2018-09-20 15:04:11 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 15:10:39 INFO -------------------------开始初始化环境------------------------
+2018-09-20 15:10:39 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 15:10:39 INFO ---------------------------------------------------------------
+2018-09-20 15:10:39 INFO -------------------------开始api压力测试------------------------
+2018-09-20 15:10:39 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 15:10:39 INFO ---------------------------------------------------------------
+2018-09-20 15:10:39 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 15:10:39 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 15:10:39 INFO -----------------------------------------------------------------------
+2018-09-20 15:10:39 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 15:10:39 INFO --------开始cm连接测试-10万个并发
+2018-09-20 15:10:39 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:10:39 INFO Authentication (password) successful!
+2018-09-20 15:10:39 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:10:39 INFO [chan 0] sftp session closed.
+2018-09-20 15:10:39 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:10:39 INFO Authentication (password) successful!
+2018-09-20 15:10:40 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:10:40 INFO [chan 0] sftp session closed.
+2018-09-20 15:10:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:10:40 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:10:40 INFO Authentication (password) successful!
+2018-09-20 15:10:40 INFO Authentication (password) successful!
+2018-09-20 15:11:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:11:40 INFO Authentication (password) successful!
+2018-09-20 15:11:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:11:40 INFO Authentication (password) successful!
+2018-09-20 15:11:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:11:40 INFO Authentication (password) successful!
+2018-09-20 15:11:41 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:11:41 INFO Authentication (password) successful!
+2018-09-20 15:11:41 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:11:41 INFO Authentication (password) successful!
+2018-09-20 15:11:41 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:11:42 INFO Authentication (password) successful!
+2018-09-20 15:11:42 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:11:42 INFO Authentication (password) successful!
+2018-09-20 15:11:42 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:11:42 INFO Authentication (password) successful!
+2018-09-20 15:14:30 INFO -------------------------开始初始化环境------------------------
+2018-09-20 15:14:30 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 15:14:30 INFO ---------------------------------------------------------------
+2018-09-20 15:14:30 INFO -------------------------开始api压力测试------------------------
+2018-09-20 15:14:30 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 15:14:30 INFO ---------------------------------------------------------------
+2018-09-20 15:14:30 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 15:14:30 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 15:14:30 INFO -----------------------------------------------------------------------
+2018-09-20 15:14:30 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 15:14:30 INFO --------开始cm连接测试-10万个并发
+2018-09-20 15:14:30 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:14:30 INFO Authentication (password) successful!
+2018-09-20 15:14:30 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:14:30 INFO [chan 0] sftp session closed.
+2018-09-20 15:14:30 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:14:30 INFO Authentication (password) successful!
+2018-09-20 15:14:30 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:14:31 INFO [chan 0] sftp session closed.
+2018-09-20 15:14:31 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:14:31 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:14:31 INFO Authentication (password) successful!
+2018-09-20 15:14:31 INFO Authentication (password) successful!
+2018-09-20 15:15:31 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:15:31 INFO Authentication (password) successful!
+2018-09-20 15:15:31 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:15:31 INFO Authentication (password) successful!
+2018-09-20 15:15:31 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:15:31 INFO Authentication (password) successful!
+2018-09-20 15:15:32 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:15:32 INFO Authentication (password) successful!
+2018-09-20 15:15:32 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:15:32 INFO Authentication (password) successful!
+2018-09-20 15:15:32 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:15:32 INFO Authentication (password) successful!
+2018-09-20 15:15:32 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:15:33 INFO Authentication (password) successful!
+2018-09-20 15:15:33 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:15:33 INFO Authentication (password) successful!
+2018-09-20 15:15:33 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:15:33 INFO Authentication (password) successful!
+2018-09-20 15:15:43 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 15:28:34 INFO -------------------------开始初始化环境------------------------
+2018-09-20 15:28:34 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 15:28:34 INFO ---------------------------------------------------------------
+2018-09-20 15:28:34 INFO -------------------------开始api压力测试------------------------
+2018-09-20 15:28:34 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 15:28:34 INFO ---------------------------------------------------------------
+2018-09-20 15:28:34 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 15:28:34 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 15:28:34 INFO -----------------------------------------------------------------------
+2018-09-20 15:28:34 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 15:28:34 INFO --------开始cm连接测试-10万个并发
+2018-09-20 15:28:34 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:28:34 INFO Authentication (password) successful!
+2018-09-20 15:28:34 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:28:34 INFO [chan 0] sftp session closed.
+2018-09-20 15:28:34 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:28:34 INFO Authentication (password) successful!
+2018-09-20 15:28:35 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:28:35 INFO [chan 0] sftp session closed.
+2018-09-20 15:28:35 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:28:35 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:28:35 INFO Authentication (password) successful!
+2018-09-20 15:28:35 INFO Authentication (password) successful!
+2018-09-20 15:29:35 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:29:35 INFO Authentication (password) successful!
+2018-09-20 15:29:35 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:29:35 INFO Authentication (password) successful!
+2018-09-20 15:29:35 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:29:36 INFO Authentication (password) successful!
+2018-09-20 15:29:36 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:29:36 INFO Authentication (password) successful!
+2018-09-20 15:29:36 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:29:36 INFO Authentication (password) successful!
+2018-09-20 15:29:36 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:29:36 INFO Authentication (password) successful!
+2018-09-20 15:29:37 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:29:37 INFO Authentication (password) successful!
+2018-09-20 15:29:37 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:29:37 INFO Authentication (password) successful!
+2018-09-20 15:29:37 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:29:37 INFO Authentication (password) successful!
+2018-09-20 15:29:38 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:29:38 INFO Authentication (password) successful!
+2018-09-20 15:29:48 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 15:33:59 INFO -------------------------开始初始化环境------------------------
+2018-09-20 15:33:59 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 15:33:59 INFO ---------------------------------------------------------------
+2018-09-20 15:33:59 INFO -------------------------开始api压力测试------------------------
+2018-09-20 15:33:59 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 15:33:59 INFO ---------------------------------------------------------------
+2018-09-20 15:33:59 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 15:33:59 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 15:33:59 INFO -----------------------------------------------------------------------
+2018-09-20 15:33:59 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 15:33:59 INFO --------开始cm连接测试-10万个并发
+2018-09-20 15:33:59 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:33:59 INFO Authentication (password) successful!
+2018-09-20 15:33:59 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:33:59 INFO [chan 0] sftp session closed.
+2018-09-20 15:33:59 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:33:59 INFO Authentication (password) successful!
+2018-09-20 15:33:59 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:33:59 INFO [chan 0] sftp session closed.
+2018-09-20 15:33:59 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:33:59 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:34:00 INFO Authentication (password) successful!
+2018-09-20 15:34:00 INFO Authentication (password) successful!
+2018-09-20 15:34:59 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:35:00 INFO Authentication (password) successful!
+2018-09-20 15:35:00 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:35:00 INFO Authentication (password) successful!
+2018-09-20 15:35:00 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:35:00 INFO Authentication (password) successful!
+2018-09-20 15:35:01 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:35:01 INFO Authentication (password) successful!
+2018-09-20 15:35:01 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:35:01 INFO Authentication (password) successful!
+2018-09-20 15:35:02 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:35:02 INFO Authentication (password) successful!
+2018-09-20 15:35:02 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:35:02 INFO Authentication (password) successful!
+2018-09-20 15:35:02 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:35:02 INFO Authentication (password) successful!
+2018-09-20 15:35:03 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:35:03 INFO Authentication (password) successful!
+2018-09-20 15:35:03 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:35:03 INFO Authentication (password) successful!
+2018-09-20 15:35:13 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 15:39:39 INFO -------------------------开始初始化环境------------------------
+2018-09-20 15:39:39 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 15:39:39 INFO ---------------------------------------------------------------
+2018-09-20 15:39:39 INFO -------------------------开始api压力测试------------------------
+2018-09-20 15:39:39 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 15:39:39 INFO ---------------------------------------------------------------
+2018-09-20 15:39:39 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 15:39:39 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 15:39:39 INFO -----------------------------------------------------------------------
+2018-09-20 15:39:39 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 15:39:39 INFO --------开始cm连接测试-10万个并发
+2018-09-20 15:39:39 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:39:39 INFO Authentication (password) successful!
+2018-09-20 15:39:39 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:39:39 INFO [chan 0] sftp session closed.
+2018-09-20 15:39:39 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:39:39 INFO Authentication (password) successful!
+2018-09-20 15:39:40 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:39:40 INFO [chan 0] sftp session closed.
+2018-09-20 15:39:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:39:40 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:39:40 INFO Authentication (password) successful!
+2018-09-20 15:39:40 INFO Authentication (password) successful!
+2018-09-20 15:40:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:40:40 INFO Authentication (password) successful!
+2018-09-20 15:40:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:40:40 INFO Authentication (password) successful!
+2018-09-20 15:40:40 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:40:41 INFO Authentication (password) successful!
+2018-09-20 15:40:41 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:40:41 INFO Authentication (password) successful!
+2018-09-20 15:40:41 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:40:41 INFO Authentication (password) successful!
+2018-09-20 15:40:41 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:40:42 INFO Authentication (password) successful!
+2018-09-20 15:40:42 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:40:42 INFO Authentication (password) successful!
+2018-09-20 15:40:42 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:40:42 INFO Authentication (password) successful!
+2018-09-20 15:40:42 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:40:43 INFO Authentication (password) successful!
+2018-09-20 15:40:43 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:40:43 INFO Authentication (password) successful!
+2018-09-20 15:40:53 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 15:41:54 INFO -------------------------开始初始化环境------------------------
+2018-09-20 15:41:54 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 15:41:54 INFO ---------------------------------------------------------------
+2018-09-20 15:41:54 INFO -------------------------开始api压力测试------------------------
+2018-09-20 15:41:54 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 15:41:54 INFO ---------------------------------------------------------------
+2018-09-20 15:41:54 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 15:41:54 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 15:41:54 INFO -----------------------------------------------------------------------
+2018-09-20 15:41:54 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 15:41:54 INFO --------开始cm连接测试-10万个并发
+2018-09-20 15:41:54 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:41:54 INFO Authentication (password) successful!
+2018-09-20 15:41:54 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:41:54 INFO [chan 0] sftp session closed.
+2018-09-20 15:41:54 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:41:54 INFO Authentication (password) successful!
+2018-09-20 15:41:54 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:41:55 INFO [chan 0] sftp session closed.
+2018-09-20 15:41:55 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:41:55 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:41:55 INFO Authentication (password) successful!
+2018-09-20 15:41:55 INFO Authentication (password) successful!
+2018-09-20 15:42:55 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:42:55 INFO Authentication (password) successful!
+2018-09-20 15:42:55 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:42:55 INFO Authentication (password) successful!
+2018-09-20 15:42:55 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:42:55 INFO Authentication (password) successful!
+2018-09-20 15:42:56 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:42:56 INFO Authentication (password) successful!
+2018-09-20 15:42:56 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:42:56 INFO Authentication (password) successful!
+2018-09-20 15:42:56 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:42:57 INFO Authentication (password) successful!
+2018-09-20 15:42:57 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:42:57 INFO Authentication (password) successful!
+2018-09-20 15:42:57 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:42:57 INFO Authentication (password) successful!
+2018-09-20 15:42:58 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:42:58 INFO Authentication (password) successful!
+2018-09-20 15:42:58 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:42:58 INFO Authentication (password) successful!
+2018-09-20 15:43:08 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 15:46:24 INFO -------------------------开始初始化环境------------------------
+2018-09-20 15:46:24 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 15:46:24 INFO ---------------------------------------------------------------
+2018-09-20 15:46:24 INFO -------------------------开始api压力测试------------------------
+2018-09-20 15:46:24 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 15:46:24 INFO ---------------------------------------------------------------
+2018-09-20 15:46:24 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 15:46:24 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 15:46:24 INFO -----------------------------------------------------------------------
+2018-09-20 15:46:24 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 15:46:24 INFO --------开始cm连接测试-5万个并发
+2018-09-20 15:46:24 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:46:24 INFO Authentication (password) successful!
+2018-09-20 15:46:24 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:46:24 INFO [chan 0] sftp session closed.
+2018-09-20 15:46:24 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:46:24 INFO Authentication (password) successful!
+2018-09-20 15:47:24 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:47:24 INFO Authentication (password) successful!
+2018-09-20 15:47:25 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:47:25 INFO Authentication (password) successful!
+2018-09-20 15:47:25 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:47:25 INFO Authentication (password) successful!
+2018-09-20 15:47:25 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:47:25 INFO Authentication (password) successful!
+2018-09-20 15:47:26 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:47:26 INFO Authentication (password) successful!
+2018-09-20 15:47:36 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:47:36 INFO Authentication (password) successful!
+2018-09-20 15:48:36 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:48:36 INFO Authentication (password) successful!
+2018-09-20 15:48:36 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:48:36 INFO Authentication (password) successful!
+2018-09-20 15:48:37 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:48:37 INFO Authentication (password) successful!
+2018-09-20 15:48:37 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:48:37 INFO Authentication (password) successful!
+2018-09-20 15:48:37 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:48:37 INFO Authentication (password) successful!
+2018-09-20 15:48:48 INFO --------开始cm连接测试-10万个并发
+2018-09-20 15:48:48 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:48:48 INFO Authentication (password) successful!
+2018-09-20 15:48:48 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:48:48 INFO [chan 0] sftp session closed.
+2018-09-20 15:48:48 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:48:48 INFO Authentication (password) successful!
+2018-09-20 15:48:48 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 15:48:49 INFO [chan 0] sftp session closed.
+2018-09-20 15:48:49 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:48:49 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:48:49 INFO Authentication (password) successful!
+2018-09-20 15:48:49 INFO Authentication (password) successful!
+2018-09-20 15:49:49 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:49:49 INFO Authentication (password) successful!
+2018-09-20 15:49:49 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:49:49 INFO Authentication (password) successful!
+2018-09-20 15:49:49 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:49:49 INFO Authentication (password) successful!
+2018-09-20 15:49:50 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:49:50 INFO Authentication (password) successful!
+2018-09-20 15:49:50 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:49:50 INFO Authentication (password) successful!
+2018-09-20 15:49:50 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:49:50 INFO Authentication (password) successful!
+2018-09-20 15:49:51 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:49:51 INFO Authentication (password) successful!
+2018-09-20 15:49:51 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:49:51 INFO Authentication (password) successful!
+2018-09-20 15:49:51 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:49:51 INFO Authentication (password) successful!
+2018-09-20 15:49:52 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:49:52 INFO Authentication (password) successful!
+2018-09-20 15:50:02 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:50:02 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:50:02 INFO Authentication (password) successful!
+2018-09-20 15:50:02 INFO Authentication (password) successful!
+2018-09-20 15:51:02 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:51:02 INFO Authentication (password) successful!
+2018-09-20 15:51:02 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:51:02 INFO Authentication (password) successful!
+2018-09-20 15:51:03 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:51:03 INFO Authentication (password) successful!
+2018-09-20 15:51:03 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:51:03 INFO Authentication (password) successful!
+2018-09-20 15:51:03 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:51:03 INFO Authentication (password) successful!
+2018-09-20 15:51:04 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:51:04 INFO Authentication (password) successful!
+2018-09-20 15:51:04 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:51:04 INFO Authentication (password) successful!
+2018-09-20 15:51:04 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:51:04 INFO Authentication (password) successful!
+2018-09-20 15:51:04 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 15:51:05 INFO Authentication (password) successful!
+2018-09-20 15:51:05 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 15:51:05 INFO Authentication (password) successful!
+2018-09-20 15:51:15 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 17:01:32 INFO -------------------------开始初始化环境------------------------
+2018-09-20 17:01:32 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 17:01:32 INFO ---------------------------------------------------------------
+2018-09-20 17:01:32 INFO -------------------------开始api压力测试------------------------
+2018-09-20 17:01:32 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 17:01:32 INFO ---------------------------------------------------------------
+2018-09-20 17:01:32 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 17:01:32 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:01:32 INFO Authentication (password) successful!
+2018-09-20 17:01:32 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:01:33 INFO Authentication (password) successful!
+2018-09-20 17:01:33 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 17:01:33 INFO -----------------------------------------------------------------------
+2018-09-20 17:01:33 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 17:01:33 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:01:33 INFO Authentication (password) successful!
+2018-09-20 17:01:33 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 17:01:33 INFO [chan 0] sftp session closed.
+2018-09-20 17:01:33 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:01:33 INFO Authentication (password) successful!
+2018-09-20 17:01:33 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 17:01:34 INFO [chan 0] sftp session closed.
+2018-09-20 17:01:34 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:01:34 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:01:34 INFO Authentication (password) successful!
+2018-09-20 17:01:34 INFO Authentication (password) successful!
+2018-09-20 17:03:02 INFO -------------------------开始初始化环境------------------------
+2018-09-20 17:03:02 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 17:03:02 INFO ---------------------------------------------------------------
+2018-09-20 17:03:02 INFO -------------------------开始api压力测试------------------------
+2018-09-20 17:03:02 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 17:03:02 INFO ---------------------------------------------------------------
+2018-09-20 17:03:02 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 17:03:02 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:03:03 INFO Authentication (password) successful!
+2018-09-20 17:03:03 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:03:03 INFO Authentication (password) successful!
+2018-09-20 17:03:03 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 17:03:03 INFO -----------------------------------------------------------------------
+2018-09-20 17:03:03 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 17:03:03 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:03:03 INFO Authentication (password) successful!
+2018-09-20 17:03:04 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 17:03:04 INFO [chan 0] sftp session closed.
+2018-09-20 17:03:04 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:03:04 INFO Authentication (password) successful!
+2018-09-20 17:03:04 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 17:03:04 INFO [chan 0] sftp session closed.
+2018-09-20 17:03:04 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:03:04 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:03:04 INFO Authentication (password) successful!
+2018-09-20 17:03:04 INFO Authentication (password) successful!
+2018-09-20 17:05:04 INFO -------------------------开始初始化环境------------------------
+2018-09-20 17:05:04 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 17:05:04 INFO ---------------------------------------------------------------
+2018-09-20 17:05:04 INFO -------------------------开始api压力测试------------------------
+2018-09-20 17:05:04 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 17:05:04 INFO ---------------------------------------------------------------
+2018-09-20 17:05:04 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 17:05:04 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:05:05 INFO Authentication (password) successful!
+2018-09-20 17:05:05 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:05:05 INFO Authentication (password) successful!
+2018-09-20 17:05:05 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-20 17:05:05 INFO -----------------------------------------------------------------------
+2018-09-20 17:05:05 INFO ----------------------------开始cm测试并发-----------------    ----------
+2018-09-20 17:05:05 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:05:05 INFO Authentication (password) successful!
+2018-09-20 17:05:06 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 17:05:06 INFO [chan 0] sftp session closed.
+2018-09-20 17:05:06 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:05:06 INFO Authentication (password) successful!
+2018-09-20 17:05:06 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 17:05:06 INFO [chan 0] sftp session closed.
+2018-09-20 17:05:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:05:06 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:05:06 INFO Authentication (password) successful!
+2018-09-20 17:05:06 INFO Authentication (password) successful!
+2018-09-20 17:06:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:06:06 INFO Authentication (password) successful!
+2018-09-20 17:06:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:06:07 INFO Authentication (password) successful!
+2018-09-20 17:06:07 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:06:07 INFO Authentication (password) successful!
+2018-09-20 17:06:07 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:06:07 INFO Authentication (password) successful!
+2018-09-20 17:06:07 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:06:08 INFO Authentication (password) successful!
+2018-09-20 17:06:08 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:06:08 INFO Authentication (password) successful!
+2018-09-20 17:06:08 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:06:08 INFO Authentication (password) successful!
+2018-09-20 17:06:08 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:06:09 INFO Authentication (password) successful!
+2018-09-20 17:06:09 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:06:09 INFO Authentication (password) successful!
+2018-09-20 17:06:09 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:06:09 INFO Authentication (password) successful!
+2018-09-20 17:06:20 INFO --------开始cm连接测试-5万个并发
+2018-09-20 17:06:20 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:06:20 INFO Authentication (password) successful!
+2018-09-20 17:07:20 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:07:20 INFO Authentication (password) successful!
+2018-09-20 17:07:20 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:07:20 INFO Authentication (password) successful!
+2018-09-20 17:07:20 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:07:20 INFO Authentication (password) successful!
+2018-09-20 17:07:21 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:07:21 INFO Authentication (password) successful!
+2018-09-20 17:07:21 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:07:21 INFO Authentication (password) successful!
+2018-09-20 17:07:31 INFO --------开始cm连接测试-10万个并发
+2018-09-20 17:07:31 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:07:31 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:07:31 INFO Authentication (password) successful!
+2018-09-20 17:07:31 INFO Authentication (password) successful!
+2018-09-20 17:08:31 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:08:31 INFO Authentication (password) successful!
+2018-09-20 17:08:32 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:08:32 INFO Authentication (password) successful!
+2018-09-20 17:08:32 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:08:32 INFO Authentication (password) successful!
+2018-09-20 17:08:32 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:08:32 INFO Authentication (password) successful!
+2018-09-20 17:08:33 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:08:33 INFO Authentication (password) successful!
+2018-09-20 17:08:33 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:08:33 INFO Authentication (password) successful!
+2018-09-20 17:08:33 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:08:33 INFO Authentication (password) successful!
+2018-09-20 17:08:34 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:08:34 INFO Authentication (password) successful!
+2018-09-20 17:08:34 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 17:08:34 INFO Authentication (password) successful!
+2018-09-20 17:08:34 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 17:08:35 INFO Authentication (password) successful!
+2018-09-20 17:08:45 INFO ----------------------------cm测试并发结束---------------------------
+2018-09-20 18:02:23 INFO -------------------------开始初始化环境------------------------
+2018-09-20 18:02:23 INFO -------------------------初始化环境结束-------------------------
+2018-09-20 18:02:23 INFO ---------------------------------------------------------------
+2018-09-20 18:02:23 INFO -------------------------开始api压力测试------------------------
+2018-09-20 18:02:23 INFO -------------------------api压力测试结束-------------------------
+2018-09-20 18:02:23 INFO ---------------------------------------------------------------
+2018-09-20 18:02:23 INFO 每次导入5000条，导入次数： 0
+2018-09-20 18:02:23 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:23 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:23 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:23 INFO 每次导入5000条，导入次数： 1
+2018-09-20 18:02:24 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:24 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:24 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:24 INFO 每次导入5000条，导入次数： 2
+2018-09-20 18:02:24 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:24 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:24 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:24 INFO 每次导入5000条，导入次数： 3
+2018-09-20 18:02:25 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:25 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:25 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:25 INFO 每次导入5000条，导入次数： 4
+2018-09-20 18:02:25 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:25 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:25 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:25 INFO 每次导入5000条，导入次数： 5
+2018-09-20 18:02:25 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:25 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:25 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:25 INFO 每次导入5000条，导入次数： 6
+2018-09-20 18:02:26 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:26 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:26 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:26 INFO 每次导入5000条，导入次数： 7
+2018-09-20 18:02:26 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:26 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:27 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:27 INFO 每次导入5000条，导入次数： 8
+2018-09-20 18:02:27 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:27 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:27 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:27 INFO 每次导入5000条，导入次数： 9
+2018-09-20 18:02:28 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:28 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:28 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:28 INFO 每次导入5000条，导入次数： 10
+2018-09-20 18:02:28 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:28 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:28 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:28 INFO 每次导入5000条，导入次数： 11
+2018-09-20 18:02:29 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:29 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:30 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:30 INFO 每次导入5000条，导入次数： 12
+2018-09-20 18:02:30 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:30 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:30 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:30 INFO 每次导入5000条，导入次数： 13
+2018-09-20 18:02:30 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:30 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:31 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:31 INFO 每次导入5000条，导入次数： 14
+2018-09-20 18:02:31 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:31 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:32 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:32 INFO 每次导入5000条，导入次数： 15
+2018-09-20 18:02:32 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:32 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:32 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:32 INFO 每次导入5000条，导入次数： 16
+2018-09-20 18:02:32 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:32 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:33 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:33 INFO 每次导入5000条，导入次数： 17
+2018-09-20 18:02:33 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:33 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:34 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:34 INFO 每次导入5000条，导入次数： 18
+2018-09-20 18:02:34 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:34 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:35 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:35 INFO 每次导入5000条，导入次数： 19
+2018-09-20 18:02:35 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-20 18:02:35 INFO header:{"Access-Token": "token_value", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-20 18:02:35 INFO 导入设备接口响应:{"error": {"msg": "Access-Token Expired", "code": 4031021}}
+2018-09-20 18:02:35 INFO 导入设备结束
+2018-09-20 18:02:35 INFO -------------------------开始初始化cm测试环境----------------------------
+2018-09-20 18:02:35 INFO --------开始cm上线压力测试-添加缓存
+2018-09-20 18:02:35 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:02:36 INFO Authentication (password) successful!
+2018-09-20 18:02:36 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 18:02:36 INFO [chan 0] sftp session closed.
+2018-09-20 18:02:36 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:02:36 INFO Authentication (password) successful!
+2018-09-20 18:02:36 INFO [chan 0] Opened sftp connection (server version 3)
+2018-09-20 18:02:36 INFO [chan 0] sftp session closed.
+2018-09-20 18:02:36 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:02:36 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:02:37 INFO Authentication (password) successful!
+2018-09-20 18:02:37 INFO Authentication (password) successful!
+2018-09-20 18:03:36 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:03:37 INFO Authentication (password) successful!
+2018-09-20 18:03:37 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:03:38 INFO Authentication (password) successful!
+2018-09-20 18:03:38 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:03:38 INFO Authentication (password) successful!
+2018-09-20 18:03:38 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:03:38 INFO Authentication (password) successful!
+2018-09-20 18:03:39 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:03:39 INFO Authentication (password) successful!
+2018-09-20 18:03:39 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:03:39 INFO Authentication (password) successful!
+2018-09-20 18:03:39 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:03:40 INFO Authentication (password) successful!
+2018-09-20 18:03:40 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:03:41 INFO Authentication (password) successful!
+2018-09-20 18:03:42 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:03:42 INFO Authentication (password) successful!
+2018-09-20 18:03:42 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:03:43 INFO Authentication (password) successful!
+2018-09-20 18:03:54 INFO --------开始cm上线压力测试-5万个并发
+2018-09-20 18:03:54 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:03:54 INFO Authentication (password) successful!
+2018-09-20 18:04:54 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:04:54 INFO Authentication (password) successful!
+2018-09-20 18:04:54 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:04:54 INFO Authentication (password) successful!
+2018-09-20 18:04:54 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:04:55 INFO Authentication (password) successful!
+2018-09-20 18:04:55 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:04:55 INFO Authentication (password) successful!
+2018-09-20 18:04:55 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:04:55 INFO Authentication (password) successful!
+2018-09-20 18:05:06 INFO --------开始cm上线压力测试-10万个并发
+2018-09-20 18:05:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:05:06 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:05:06 INFO Authentication (password) successful!
+2018-09-20 18:05:06 INFO Authentication (password) successful!
+2018-09-20 18:06:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:06:06 INFO Authentication (password) successful!
+2018-09-20 18:06:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:06:06 INFO Authentication (password) successful!
+2018-09-20 18:06:06 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:06:06 INFO Authentication (password) successful!
+2018-09-20 18:06:07 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:06:07 INFO Authentication (password) successful!
+2018-09-20 18:06:07 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:06:07 INFO Authentication (password) successful!
+2018-09-20 18:06:07 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:06:07 INFO Authentication (password) successful!
+2018-09-20 18:06:08 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:06:08 INFO Authentication (password) successful!
+2018-09-20 18:06:08 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:06:08 INFO Authentication (password) successful!
+2018-09-20 18:06:08 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-20 18:06:08 INFO Authentication (password) successful!
+2018-09-20 18:06:09 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-20 18:06:09 INFO Authentication (password) successful!
+2018-09-20 18:06:19 INFO ----------------------------cm测试并发结束---------------------------

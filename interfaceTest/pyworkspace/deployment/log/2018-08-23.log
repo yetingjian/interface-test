@@ -1,0 +1,143 @@
+2018-08-23 18:06:55 INFO -----------------------------------开始测试---------------------------------
+2018-08-23 18:06:55 INFO ----开始重置设备----
+2018-08-23 18:06:55 INFO len(plist): 2
+2018-08-23 18:06:55 INFO serialFd: Serial<id=0x4717950, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-08-23 18:07:00 INFO ['\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x02', '\x06', '\x04', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe']
+2018-08-23 18:07:20 INFO 开始获取token
+2018-08-23 18:07:21 INFO token:Q0Q0MzVCMERCRjA5NDQ0N0UxNUVBQTAyQzg3QTY4QUFGMjhDQURBODI4MDgzRkI0NEFCMDk1MDAzMjk5QjA1RA==
+2018-08-23 18:07:21 INFO -----开始添加企业成员----
+2018-08-23 18:07:21 INFO url：http://yzyapi.4001113900.com/v2/corp/member_add
+2018-08-23 18:07:21 INFO body：{"phone": "15018753353", "password": "Iotpassword123", "type": 99, "email": "wangqi@xlink.cn", "name": "test"}
+2018-08-23 18:07:21 INFO 创建添加企业成员响应：{"status": 1, "phone": "15018753353", "is_notice": false, "create_time": "2018-08-23T18:06:42.230Z", "role": 99, "name": "test", "is_alert": false, "id": "1207d2b6fd0e6400", "email": "wangqi@xlink.cn"}
+2018-08-23 18:07:24 INFO -----开始创建产品接口-----
+2018-08-23 18:07:24 INFO url：http://yzyapi.4001113900.com/v2/product
+2018-08-23 18:07:24 INFO body：{"is_gateway_device": false, "name": "product_2018-08-23", "link_type": 1, "description": ""}
+2018-08-23 18:07:24 INFO 创建产品接口响应：{"is_release": false, "key": "77244e6728dffdc97f27d88c471da500", "description": "", "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-08-23T18:06:45.239Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "is_active_register": false, "name": "product_2018-08-23", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-08-23 18:07:24 INFO ----开始创建$1002数据端点----
+2018-08-23 18:07:24 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/datapoint
+2018-08-23 18:07:24 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-08-23 18:07:24 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d4b6fd0e6a00", "name": "$1002"}
+2018-08-23 18:07:24 INFO ----开始创建自定义数据端点----
+2018-08-23 18:07:24 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/datapoint
+2018-08-23 18:07:24 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-08-23 18:07:24 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d2b6fd0e6a04", "name": "para_name"}
+2018-08-23 18:07:24 INFO ----开始添加设备----
+2018-08-23 18:07:24 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/device
+2018-08-23 18:07:24 INFO body：{"mac": "F0FE6B792673", "sn": 53167620, "name": "TEST_1"}
+2018-08-23 18:07:24 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 1810398878}
+2018-08-23 18:07:24 INFO ----开始设置异常规则----
+2018-08-23 18:07:24 INFO url：http://yzyapi.4001113900.com/v2/alert/rule
+2018-08-23 18:07:24 INFO body：{"exception": {"suggestions": "", "tag_id": "ac19abb9acb96a3c8b85e41db3218bb6"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a07d2b6fd0e6a04", "content": "value>100", "source": 1, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-08-23 18:07:24 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "ac19abb9acb96a3c8b85e41db3218bb6"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a07d2b6fd0e6a04", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "2807d2b6fd0e6a05", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01"}
+2018-08-23 18:07:24 INFO ----开始报警设置----
+2018-08-23 18:07:24 INFO url：http://yzyapi.4001113900.com/v2/alert/rule/2807d2b6fd0e6a05
+2018-08-23 18:07:24 INFO body：{"exception": {"suggestions": "", "tag_id": "ac19abb9acb96a3c8b85e41db3218bb6"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6fd0e6a04", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6fd0e6a05", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01"}
+2018-08-23 18:07:24 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "ac19abb9acb96a3c8b85e41db3218bb6"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a07d2b6fd0e6a04", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "2807d2b6fd0e6a05", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01"}
+2018-08-23 18:07:24 INFO ----开始设置快照----
+2018-08-23 18:07:24 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/snapshot
+2018-08-23 18:07:24 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-08-23 18:07:24 INFO 设置快照响应：{"id": "5b7e873569e84d270013a76c"}
+2018-08-23 18:07:24 INFO ----开始设置统计规则----
+2018-08-23 18:07:24 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/snapshot/5b7e873569e84d270013a76c/statistic_rule
+2018-08-23 18:07:24 INFO body：{"status": 1, "name": "rule_name", "describe": "rule_description", "dp_mode": [{"index": 1, "mode": 1}, {"index": 1, "mode": 2}, {"index": 1, "mode": 3}, {"index": 1, "mode": 4}], "fineness": [6], "type": 2}
+2018-08-23 18:07:24 INFO 统计规则响应：{"id": "5b7e87351d059e68d131d506"}
+2018-08-23 18:07:24 INFO ----开始上传固件版本1----
+2018-08-23 18:07:25 INFO 上传固件1响应：{"url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "md5": "114d12359fee7c54555a3a6d9fd45422", "size": 55653}
+2018-08-23 18:07:25 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/firmware
+2018-08-23 18:07:25 INFO body：{"is_release": true, "version": "1", "identify": "", "description": "mcu1", "file_size": 55653, "file_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "release_date": "2018-08-23T01:36:06.173Z", "file_md5": "114d12359fee7c54555a3a6d9fd45422", "type": 1, "mod": "1"}
+2018-08-23 18:07:25 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-08-23T18:06:46.298Z", "description": "mcu1", "file_md5": "114d12359fee7c54555a3a6d9fd45422", "identify": 0, "file_size": 55653, "id": "1807d4b6fd0e6c00", "mod": "1", "release_date": "2018-08-23T01:36:06.173Z", "file_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "version": 1, "type": 1}
+2018-08-23 18:07:25 INFO ----开始上传固件版本2----
+2018-08-23 18:07:25 INFO 上传固件2响应：{"url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "md5": "114d12359fee7c54555a3a6d9fd45422", "size": 55653}
+2018-08-23 18:07:25 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/firmware
+2018-08-23 18:07:25 INFO body：{"is_release": true, "version": "2", "identify": "", "description": "mcu2", "file_size": 55653, "file_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "release_date": "2018-08-23T01:36:06.173Z", "file_md5": "114d12359fee7c54555a3a6d9fd45422", "type": 1, "mod": "2"}
+2018-08-23 18:07:25 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-08-23T18:06:46.607Z", "description": "mcu2", "file_md5": "114d12359fee7c54555a3a6d9fd45422", "identify": 0, "file_size": 55653, "id": "1807d2b6fd0e6c00", "mod": "2", "release_date": "2018-08-23T01:36:06.173Z", "file_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "version": 2, "type": 1}
+2018-08-23 18:07:25 INFO ----开始上传固件版本3----
+2018-08-23 18:07:25 INFO 上传固件2响应：{"url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "md5": "114d12359fee7c54555a3a6d9fd45422", "size": 55653}
+2018-08-23 18:07:25 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/firmware
+2018-08-23 18:07:25 INFO body：{"is_release": true, "version": "3", "identify": "", "description": "mcu3", "file_size": 55653, "file_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "release_date": "2018-08-23T01:36:06.173Z", "file_md5": "114d12359fee7c54555a3a6d9fd45422", "type": 1, "mod": "3"}
+2018-08-23 18:07:25 INFO 上传固件版本3响应：{"is_release": true, "create_date": "2018-08-23T18:06:46.894Z", "description": "mcu3", "file_md5": "114d12359fee7c54555a3a6d9fd45422", "identify": 0, "file_size": 55653, "id": "1807d4b6fd0e6c01", "mod": "3", "release_date": "2018-08-23T01:36:06.173Z", "file_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "version": 3, "type": 1}
+2018-08-23 18:07:25 INFO ----开始创建自动升级任务----
+2018-08-23 18:07:25 INFO url：http://yzyapi.4001113900.com/v2/upgrade/firmware/task
+2018-08-23 18:07:25 INFO body：{"target_version": 2, "description": "task_description", "target_version_size": 55653, "from_version": 1, "from_version_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "target_version_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "identify": "", "name": "task_auto", "task_type": 0, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "type": 1, "target_version_md5": "114d12359fee7c54555a3a6d9fd45422", "scope": {"category": 0, "device_list": []}, "from_version_size": 55653, "from_version_md5": "114d12359fee7c54555a3a6d9fd45422"}
+2018-08-23 18:07:25 INFO 创建自动升级任务响应：{"status": 0, "task_type": 0, "target_version": 2, "description": "task_description", "from_version_md5": "114d12359fee7c54555a3a6d9fd45422", "from_version_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "target_version_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "name": "task_auto", "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "identify": 0, "from_version": 1, "id": "2007d4b6fd0e6c02", "scope": {"category": 0}, "from_version_size": 55653, "type": 1, "upgrade_count": 0, "target_version_size": 55653}
+2018-08-23 18:07:25 INFO ----开始创建手动升级任务----
+2018-08-23 18:07:25 INFO url：http://yzyapi.4001113900.com/v2/upgrade/firmware/task
+2018-08-23 18:07:25 INFO body：{"target_version": 2, "description": "task_description", "target_version_size": 55653, "from_version": 1, "from_version_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "target_version_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "identify": "", "name": "task_auto", "task_type": 0, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "type": 1, "target_version_md5": "114d12359fee7c54555a3a6d9fd45422", "scope": {"category": 0, "device_list": []}, "from_version_size": 55653, "from_version_md5": "114d12359fee7c54555a3a6d9fd45422"}
+2018-08-23 18:07:25 INFO 创建手动升级任务响应：{"status": 0, "task_type": 1, "target_version": 3, "description": "task_description", "from_version_md5": "114d12359fee7c54555a3a6d9fd45422", "from_version_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "target_version_url": "http://yzyapi.4001113900.com/group1/M00/00/00/CgAAIlt6qd-Aa56aAADZZeOAPI00350338", "name": "task_manu", "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "identify": 0, "from_version": 2, "id": "2007d2b6fd0e6e00", "scope": {"category": 0}, "from_version_size": 55653, "type": 1, "upgrade_count": 0, "target_version_size": 55653}
+2018-08-23 18:07:25 INFO ----开始启动自动升级任务----
+2018-08-23 18:07:25 INFO url：http://yzyapi.4001113900.com/v2/upgrade/firmware/task/status
+2018-08-23 18:07:25 INFO body：{"status": 1, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "upgrade_task_id": "2007d4b6fd0e6c02"}
+2018-08-23 18:07:25 INFO 启动自动升级任务成功
+2018-08-23 18:07:25 INFO ----开始启动手动升级任务----
+2018-08-23 18:07:25 INFO url：http://yzyapi.4001113900.com/v2/upgrade/firmware/task/status
+2018-08-23 18:07:25 INFO body：{"status": 1, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "upgrade_task_id": "2007d2b6fd0e6e00"}
+2018-08-23 18:07:26 INFO 启动手动升级任务成功
+2018-08-23 18:07:26 INFO ----开始调串口激活设备----
+2018-08-23 18:07:31 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe'])
+2018-08-23 18:09:31 INFO ----开始查询宽表设备列表----
+2018-08-23 18:09:31 INFO url：http://yzyapi.4001113900.com/v2/wide-devices
+2018-08-23 18:09:31 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "1607d2b6fd0e07d21607d2b6fd0e6a01"}}, "limit": 100, "offset": 0}
+2018-08-23 18:09:32 INFO 查询宽表设备列表响应：{"count": 1, "list": [{"is_online": true, "is_active": true, "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "id": 1810398878}]}
+2018-08-23 18:09:32 INFO ----开始设备控制----
+2018-08-23 18:09:32 INFO url：http://yzyapi.4001113900.com/v2/diagnosis/device/set/1810398878
+2018-08-23 18:09:32 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-08-23 18:09:32 INFO 设备控制响应：{"status": 200}
+2018-08-23 18:09:32 INFO ----开始获取虚拟设备----
+2018-08-23 18:09:32 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/v_device/1810398878
+2018-08-23 18:09:32 INFO body：{}
+2018-08-23 18:09:32 INFO 获取虚拟设备响应：{"cm_id": "MS-201", "last_login": "2018-08-23T18:06:55.402Z", "online_count": 118, "conn_prot": 2, "online": true, "ip": "10.0.253.6", "last_logout": "", "last_update": "", "device_id": 1810398878}
+2018-08-23 18:09:32 INFO ----开始获取设备地理位置----
+2018-08-23 18:09:32 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/device/1810398878/geography
+2018-08-23 18:09:32 INFO body：{}
+2018-08-23 18:09:32 INFO [error]:{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}
+2018-08-23 18:09:32 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 578, in test_get_device_geography
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '1810398878' not found in "{'error': {'msg': 'devices geography information not exists', 'code': 4001111}}"
+
+2018-08-23 18:09:32 INFO ----开始获取地理位置信息列表----
+2018-08-23 18:09:32 INFO url：http://yzyapi.4001113900.com/v2/service/position/geographies
+2018-08-23 18:09:32 INFO body：{"param": "F001S006"}
+2018-08-23 18:09:33 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-08-23 18:09:33 INFO ----开始用户通过邮箱注册----
+2018-08-23 18:09:33 INFO url：http://yzyapi.4001113900.com/v2/user_register
+2018-08-23 18:09:33 INFO body：{"corp_id": "1007d2b6ad2fc400", "source": "2", "local_lang": "zh-cn", "password": "120211Qq", "nickname": "nickname", "email": "wangqi@xlink.cn"}
+2018-08-23 18:09:33 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-08-23 18:09:33 INFO ----开始调串口上报数据----
+2018-08-23 18:09:35 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-08-23 18:09:37 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-08-23 18:11:37 INFO ----开始获取告警记录----
+2018-08-23 18:11:37 INFO url：http://yzyapi.4001113900.com/v2/corp/alarm/states
+2018-08-23 18:11:37 INFO body：{"filter": ["id", "device_id", "rule_id", "status", "content", "count"], "query": {"scope": {"$in": [1, 3, 4]}, "product_id": {"$in": ["1607d2b6fd0e07d21607d2b6fd0e6a01"]}, "device_id": {"$eq": 1810398878}}, "limit": 10, "order": {"start_time": "desc"}, "offset": 0}
+2018-08-23 18:11:37 INFO 获取告警记录响应：{"count": 1, "list": [{"count": 1, "status": 1, "rule_id": "2807d2b6fd0e6a05", "content": "value>100", "id": "e1beacbbf1181ba1cb53475196d1e914", "device_id": 1810398878}]}
+2018-08-23 18:11:37 INFO ----开始获取注册验证码----
+2018-08-23 18:11:37 INFO url：http://yzyapi.4001113900.com/v2/user_register/verifycode
+2018-08-23 18:11:37 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d2b6ad2fc400"}
+2018-08-23 18:11:37 INFO 已发送验证码
+2018-08-23 18:11:37 INFO ----开始用户通过邮箱登录----
+2018-08-23 18:11:37 INFO url：http://yzyapi.4001113900.com/v2/user_auth
+2018-08-23 18:11:37 INFO body：{"password": "120211Qq", "email": "wangqi@xlink.cn", "corp_id": "1007d2b6ad2fc400"}
+2018-08-23 18:11:37 INFO 用户通过邮箱登录响应：{"access_token": "OTk0ODZBNUVFRUM4MTRDMzYyNkZDQUY2RkVBODBCMDEyQ0I2OURCQTg3RUNCNDVERDdEMTM5MkRFOUVBNTQwNA==", "expire_in": 7200, "authorize": "2207d2b6fd0f6c00", "user_id": 1810393694, "refresh_token": "QzQyQTdDMjlCM0NDQTM0N0E3RTVERTg0NEUzNjBDMzJFMzk4RThERkY0QzM0Q0ZGNzQ4NjFCNDQ4OTI2Mzg3MA=="}
+2018-08-23 18:11:37 INFO ----开始配置app----
+2018-08-23 18:11:37 INFO url：http://yzyapi.4001113900.com/v2/plugin/app
+2018-08-23 18:11:37 INFO body：{"enable": true, "type": 10, "name": "feedback", "plugin": "helpdesk"}
+2018-08-23 18:11:37 INFO 配置app响应：{"secret": "f1e7864b1eb5e721d9af1ff8516d4386", "create_time": "2018-08-23T18:10:58.771Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e07d4b6fd106400", "fee_type": 0}
+2018-08-23 18:11:37 INFO ----开始生成设备二维码----
+2018-08-23 18:11:37 INFO url：http://yzyapi.4001113900.com/v2/product/1607d2b6fd0e07d21607d2b6fd0e6a01/device/1810398878/qrcode
+2018-08-23 18:11:37 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-08-23 18:11:37 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6fd0e07d21607d2b6fd0e6a01;QK:5b7e87351d059e68d131d4ff;id:1810398878;MAC:F0FE6B792673;SN:53167620;;"}
+2018-08-23 18:11:37 INFO ----开始订阅设备----
+2018-08-23 18:11:37 INFO url：http://yzyapi.4001113900.com/v2/user/1810393694/qrcode_subscribe
+2018-08-23 18:11:37 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:1607d2b6fd0e07d21607d2b6fd0e6a01;QK:5b7e87351d059e68d131d4ff;id:1810398878;MAC:F0FE6B792673;SN:53167620;;"}
+2018-08-23 18:11:38 INFO 订阅设备响应：{"custom_property": {}, "mac": "F0FE6B792673", "pid": "1607d2b6fd0e07d21607d2b6fd0e6a01", "id": 1810398878, "sn": "53167620"}
+2018-08-23 18:11:38 INFO ----开始获取设备列表----
+2018-08-23 18:11:38 INFO url：http://yzyapi.4001113900.com/v2/user/1810393694/subscribe/devices
+2018-08-23 18:11:38 INFO body：{}
+2018-08-23 18:11:38 INFO 获取设备列表响应：[{"access_key": 0, "active_code": "e909f3533a83fe215ede3ee31efb9c75", "sn": "53167620", "product_id": "1607d2b6fd0e07d21607d2b6fd0e6a01", "mcu_version": 1, "is_active": true, "mac": "F0FE6B792673", "firmware_mod": "0", "authorize_code": "1e07d4b6fd0e6a01", "source": 3, "active_date": "2018-08-23T18:06:53.712Z", "role": 0, "authority": "RW", "groups": "", "mcu_mod": "0", "id": 1810398878, "last_login": "2018-08-23T18:06:55.402Z", "firmware_version": 1, "subscribe_date": "2018-08-23T18:10:59.342Z", "is_online": true, "name": "TEST_1"}]
+2018-08-23 18:11:38 INFO ----开始是否收到测试邮件----
+2018-08-23 18:11:38 INFO 已收到测试邮件

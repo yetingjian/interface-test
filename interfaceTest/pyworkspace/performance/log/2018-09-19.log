@@ -1,0 +1,162 @@
+2018-09-19 16:35:04 INFO --------开始用户登录api-1万个并发
+2018-09-19 16:35:04 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 16:35:04 INFO Authentication (password) successful!
+2018-09-19 16:35:12 INFO 用户登录api-1万个并发结束
+2018-09-19 16:35:12 INFO --------开始用户登录api-5万个并发
+2018-09-19 16:35:12 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 16:35:13 INFO Authentication (password) successful!
+2018-09-19 16:35:51 INFO 用户登录api-5万个并发结束
+2018-09-19 16:37:36 INFO --------开始用户登录api-1万个并发
+2018-09-19 16:37:36 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 16:37:36 INFO Authentication (password) successful!
+2018-09-19 16:37:45 INFO 用户登录api-1万个并发结束
+2018-09-19 16:37:45 INFO --------开始用户登录api-5万个并发
+2018-09-19 16:37:45 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 16:37:45 INFO Authentication (password) successful!
+2018-09-19 16:38:23 INFO 用户登录api-5万个并发结束
+2018-09-19 16:38:51 INFO --------开始用户登录api-1万个并发
+2018-09-19 16:38:51 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 16:38:51 INFO Authentication (password) successful!
+2018-09-19 16:38:59 INFO 用户登录api-1万个并发结束
+2018-09-19 16:38:59 INFO --------开始用户登录api-5万个并发
+2018-09-19 16:38:59 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 16:38:59 INFO Authentication (password) successful!
+2018-09-19 16:39:38 INFO 用户登录api-5万个并发结束
+2018-09-19 16:58:04 INFO --------开始获取用户订阅列表api-1万个并发
+2018-09-19 16:58:04 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 16:58:05 INFO Authentication (password) successful!
+2018-09-19 16:58:05 INFO 获取用户订阅列表api-1万个并发结束
+2018-09-19 17:04:58 INFO --------开始获取用户订阅列表api-1万个并发
+2018-09-19 17:06:20 INFO --------开始获取用户订阅列表api-1万个并发
+2018-09-19 17:07:09 INFO --------开始获取用户订阅列表api-1万个并发
+2018-09-19 17:07:09 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:07:09 INFO Authentication (password) successful!
+2018-09-19 17:07:17 INFO 获取用户订阅列表api-1万个并发结束
+2018-09-19 17:07:45 INFO --------开始获取用户订阅列表api-1万个并发
+2018-09-19 17:07:45 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:07:45 INFO Authentication (password) successful!
+2018-09-19 17:07:52 INFO 获取用户订阅列表api-1万个并发结束
+2018-09-19 17:10:16 INFO --------开始获取用户订阅列表api-1万个并发
+2018-09-19 17:10:16 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:10:16 INFO Authentication (password) successful!
+2018-09-19 17:10:23 INFO 获取用户订阅列表api-1万个并发结束
+2018-09-19 17:10:23 INFO --------开始获取用户订阅列表api-5万个并发
+2018-09-19 17:10:24 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:10:24 INFO Authentication (password) successful!
+2018-09-19 17:10:59 INFO 获取用户订阅列表api-5万个并发结束
+2018-09-19 17:10:59 INFO --------开始获取用户订阅列表api-10万个并发
+2018-09-19 17:10:59 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:11:00 INFO Authentication (password) successful!
+2018-09-19 17:12:11 INFO 获取用户订阅列表api-10万个并发结束
+2018-09-19 17:20:53 INFO --------开始获取设备订阅关系api-1万个并发
+2018-09-19 17:20:53 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:20:53 INFO Authentication (password) successful!
+2018-09-19 17:20:57 INFO 获取设备订阅关系api-1万个并发结束
+2018-09-19 17:20:57 INFO --------开始获取设备订阅关系api-5万个并发
+2018-09-19 17:20:57 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:20:57 INFO Authentication (password) successful!
+2018-09-19 17:21:18 INFO 获取设备订阅关系api-5万个并发结束
+2018-09-19 17:21:18 INFO --------开始获取设备订阅关系api-10万个并发
+2018-09-19 17:21:18 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:21:18 INFO Authentication (password) successful!
+2018-09-19 17:21:59 INFO 获取设备订阅关系api-10万个并发结束
+2018-09-19 17:28:19 INFO --------开始获取用户信息api-1万个并发
+2018-09-19 17:28:19 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:28:19 INFO Authentication (password) successful!
+2018-09-19 17:28:23 INFO 获取用户信息api-1万个并发结束
+2018-09-19 17:28:23 INFO --------开始获取用户信息api-5万个并发
+2018-09-19 17:28:23 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:28:23 INFO Authentication (password) successful!
+2018-09-19 17:28:40 INFO 获取用户信息api-5万个并发结束
+2018-09-19 17:28:40 INFO --------开始获取用户信息api-10万个并发
+2018-09-19 17:28:40 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:28:40 INFO Authentication (password) successful!
+2018-09-19 17:29:13 INFO 获取用户信息api-10万个并发结束
+2018-09-19 17:29:13 INFO --------开始获取设备扩展属性api-1万个并发
+2018-09-19 17:29:13 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:29:14 INFO Authentication (password) successful!
+2018-09-19 17:29:29 INFO 获取设备扩展属性api-1万个并发结束
+2018-09-19 17:29:29 INFO --------开始获取设备扩展属性api-5万个并发
+2018-09-19 17:29:29 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:29:29 INFO Authentication (password) successful!
+2018-09-19 17:30:43 INFO 获取设备扩展属性api-5万个并发结束
+2018-09-19 17:30:43 INFO --------开始获取设备扩展属性api-10万个并发
+2018-09-19 17:30:43 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:30:43 INFO Authentication (password) successful!
+2018-09-19 17:33:10 INFO 获取设备扩展属性api-10万个并发结束
+2018-09-19 17:37:51 INFO -------------------------开始初始化环境------------------------
+2018-09-19 17:37:51 INFO -------------------------初始化环境结束-------------------------
+2018-09-19 17:37:51 INFO ---------------------------------------------------------------
+2018-09-19 17:37:51 INFO -------------------------开始api压力测试------------------------
+2018-09-19 17:37:51 INFO --------开始获取设备扩展属性api-1万个并发
+2018-09-19 17:37:51 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:37:51 INFO Authentication (password) successful!
+2018-09-19 17:38:06 INFO 获取设备扩展属性api-1万个并发结束
+2018-09-19 17:38:19 INFO -------------------------开始初始化环境------------------------
+2018-09-19 17:38:19 INFO -------------------------初始化环境结束-------------------------
+2018-09-19 17:38:19 INFO ---------------------------------------------------------------
+2018-09-19 17:38:19 INFO -------------------------开始api压力测试------------------------
+2018-09-19 17:38:19 INFO --------开始获取设备扩展属性api-1万个并发
+2018-09-19 17:38:19 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:38:19 INFO Authentication (password) successful!
+2018-09-19 17:38:34 INFO 获取设备扩展属性api-1万个并发结束
+2018-09-19 17:38:34 INFO --------开始获取设备扩展属性api-5万个并发
+2018-09-19 17:38:34 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:38:34 INFO Authentication (password) successful!
+2018-09-19 17:39:48 INFO 获取设备扩展属性api-5万个并发结束
+2018-09-19 17:39:48 INFO --------开始获取设备扩展属性api-10万个并发
+2018-09-19 17:39:48 INFO Connected (version 2.0, client OpenSSH_7.4)
+2018-09-19 17:39:48 INFO Authentication (password) successful!
+2018-09-19 17:42:15 INFO 获取设备扩展属性api-10万个并发结束
+2018-09-19 17:46:27 INFO -------------------------开始初始化环境------------------------
+2018-09-19 17:46:27 INFO -------------------------初始化环境结束-------------------------
+2018-09-19 17:46:27 INFO ---------------------------------------------------------------
+2018-09-19 17:46:27 INFO -------------------------开始api压力测试------------------------
+2018-09-19 17:50:51 INFO -------------------------开始初始化环境------------------------
+2018-09-19 17:50:51 INFO -------------------------初始化环境结束-------------------------
+2018-09-19 17:50:51 INFO ---------------------------------------------------------------
+2018-09-19 17:50:51 INFO -------------------------开始api压力测试------------------------
+2018-09-19 17:50:51 INFO --------开始导入设备---------
+2018-09-19 17:50:51 INFO -----开始导入设备-----
+2018-09-19 17:50:51 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-19 17:53:11 INFO 导入设备结束
+2018-09-19 17:54:30 INFO -------------------------开始初始化环境------------------------
+2018-09-19 17:54:30 INFO 开始获取token
+2018-09-19 17:54:30 INFO token:MkQwNzk5MDREM0EzNzRFNjUyQjNFQkRDNTlGOENFOTUzNEQ5NjlCQjVDNjJBMTY0MUE4M0Y1RjE1RUI0NkY2Mw==
+2018-09-19 17:54:30 INFO -------------------------初始化环境结束-------------------------
+2018-09-19 17:54:30 INFO ---------------------------------------------------------------
+2018-09-19 17:54:30 INFO -------------------------开始api压力测试------------------------
+2018-09-19 17:54:30 INFO --------开始导入设备---------
+2018-09-19 17:54:35 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-19 17:54:35 INFO header:{"Access-Token": "MkQwNzk5MDREM0EzNzRFNjUyQjNFQkRDNTlGOENFOTUzNEQ5NjlCQjVDNjJBMTY0MUE4M0Y1RjE1RUI0NkY2Mw==", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-19 18:03:06 INFO -------------------------开始初始化环境------------------------
+2018-09-19 18:03:06 INFO 开始获取token
+2018-09-19 18:03:06 INFO token:QTYyOUU5MjAyN0E4MDc1M0Y3QTk5NkQxQzVGMzgyNzk4NTE1NTkxN0EyRUJEMUZDQjVDNTM2RjYxNjZCQjUwMw==
+2018-09-19 18:03:06 INFO -------------------------初始化环境结束-------------------------
+2018-09-19 18:03:06 INFO ---------------------------------------------------------------
+2018-09-19 18:03:06 INFO -------------------------开始api压力测试------------------------
+2018-09-19 18:03:06 INFO --------开始导入设备---------
+2018-09-19 18:03:09 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-19 18:03:09 INFO header:{"Access-Token": "QTYyOUU5MjAyN0E4MDc1M0Y3QTk5NkQxQzVGMzgyNzk4NTE1NTkxN0EyRUJEMUZDQjVDNTM2RjYxNjZCQjUwMw==", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-19 18:36:15 INFO -------------------------开始初始化环境------------------------
+2018-09-19 18:36:15 INFO -------------------------初始化环境结束-------------------------
+2018-09-19 18:36:15 INFO ---------------------------------------------------------------
+2018-09-19 18:36:15 INFO -------------------------开始api压力测试------------------------
+2018-09-19 18:36:15 INFO -------------------------api压力测试结束-------------------------
+2018-09-19 18:36:15 INFO ---------------------------------------------------------------
+2018-09-19 18:36:15 INFO -------------------------开始初始化cm测试环境-------------------------
+2018-09-19 18:36:15 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-19 18:36:15 INFO Authentication (password) successful!
+2018-09-19 18:36:15 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-19 18:36:15 INFO ---------------------------------------------------------------
+2018-09-19 18:37:19 INFO -------------------------开始初始化环境------------------------
+2018-09-19 18:37:19 INFO -------------------------初始化环境结束-------------------------
+2018-09-19 18:37:19 INFO ---------------------------------------------------------------
+2018-09-19 18:37:19 INFO -------------------------开始api压力测试------------------------
+2018-09-19 18:37:19 INFO -------------------------api压力测试结束-------------------------
+2018-09-19 18:37:19 INFO ---------------------------------------------------------------
+2018-09-19 18:37:19 INFO -------------------------开始初始化cm测试环境-------------------------
+2018-09-19 18:37:19 INFO Connected (version 2.0, client OpenSSH_7.2p2)
+2018-09-19 18:37:19 INFO Authentication (password) successful!
+2018-09-19 18:37:19 INFO -------------------------cm测试环境环境初始化结束-------------------------
+2018-09-19 18:37:19 INFO ---------------------------------------------------------------

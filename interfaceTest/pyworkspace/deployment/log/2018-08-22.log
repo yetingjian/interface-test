@@ -1,0 +1,100 @@
+2018-08-22 09:32:02 INFO 开始获取token
+2018-08-22 09:32:02 INFO token:REVDQkUxNkM5ODEwMTdENjJDMkJCMDM1RDI4RkExNERDRjJFMEI5QURDMkI1ODMyOEQ2QTZDQTkxN0UxQTE2OA==
+2018-08-22 09:32:02 INFO ----开始获取注册验证码----
+2018-08-22 09:32:02 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 09:32:02 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 09:32:02 INFO 已发送验证码
+2018-08-22 09:34:42 INFO 开始获取token
+2018-08-22 09:34:43 INFO token:NDdFMTI2QUM2Mzk0RDVGRkRCMzk0QzZFQzMyQzNFNjgzMDU4MjU1RjcyNDNEQjIwMEFDOTgzRDA2QzVDNDA2Qg==
+2018-08-22 09:34:43 INFO ----开始获取注册验证码----
+2018-08-22 09:34:43 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 09:34:43 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 09:34:43 INFO 已发送验证码
+2018-08-22 09:36:03 INFO 开始获取token
+2018-08-22 09:36:03 INFO token:MjhCRTdFODA2MDcxODlEMzVCREIxN0QzNDdERjE4MjI2NzhCQzU3MkJBNjY3NTQ2QzJFNjk3RjI0MEE3Q0Q1Ng==
+2018-08-22 09:36:03 INFO ----开始获取注册验证码----
+2018-08-22 09:36:03 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 09:36:03 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 09:36:03 INFO 已发送验证码
+2018-08-22 09:36:17 INFO 开始获取token
+2018-08-22 09:36:17 INFO token:MEEzRTVDQTgxRUVBNjJCRjc3NkEyQTlGNzQ5MDZCMUNBODAxQTAyMjA3OEU0MTcwOTg5MjU5NkZDMUZGNDBFNA==
+2018-08-22 09:36:17 INFO ----开始获取注册验证码----
+2018-08-22 09:36:17 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 09:36:17 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 09:36:18 INFO 已发送验证码
+2018-08-22 09:44:27 INFO 开始获取token
+2018-08-22 09:44:27 INFO token:MjJBODZDOTJCMUM5MTI3RjIzQkJFNENBNjM5ODFFNDcxMDU2RTgwMjY3NDE3MDQ1OUM5RkExNzdFQkREMUZENg==
+2018-08-22 09:44:27 INFO ----开始获取注册验证码----
+2018-08-22 09:44:27 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 09:44:27 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 09:44:27 INFO 已发送验证码
+2018-08-22 09:44:36 INFO 开始获取token
+2018-08-22 09:44:37 INFO token:QkYxODk0QjVBRTQ0MjExQjFGRkRDMTI4M0E3ODAyMTU2NEFCMzFCODYxNDc0QTgwNEU5RDM1MkJFOUY5M0JBQQ==
+2018-08-22 09:44:37 INFO ----开始获取注册验证码----
+2018-08-22 09:44:37 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 09:44:37 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 09:44:38 INFO 已发送验证码
+2018-08-22 10:22:02 INFO 开始获取token
+2018-08-22 10:22:02 INFO token:MzEyODhCQjdEQTc0MDdENjM0NUExNjAyQUM5MjdFRTYyQjlBQjA4NkZDOEY5OTM3RjgzOTFEQzQ2MTRFNURDOA==
+2018-08-22 10:22:02 INFO ----开始获取注册验证码----
+2018-08-22 10:22:02 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 10:22:02 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 10:22:02 INFO [error]:{'error': {'msg': 'captcha not exists', 'code': 4001155}}
+2018-08-22 10:22:02 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 879, in test_user_register_phone_verifycode
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [400]>'
+
+2018-08-22 10:24:35 INFO 开始获取token
+2018-08-22 10:24:35 INFO token:RkQ5MDRBRjFDQUVGNjMxRUEzNkFFOEJFMEVBQTk5OUFBMzZDMjZBNzM0OTk5RkM4OTI3RkE4MTY2RjRFN0MyNQ==
+2018-08-22 10:24:35 INFO ----开始获取注册验证码----
+2018-08-22 10:24:35 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 10:24:35 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 10:24:35 INFO [error]:{'error': {'msg': 'captcha not exists', 'code': 4001155}}
+2018-08-22 10:24:35 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 879, in test_user_register_phone_verifycode
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [400]>'
+
+2018-08-22 10:26:23 INFO 开始获取token
+2018-08-22 10:26:23 INFO token:QTI3MjNDRTFBMjYyMDA4RjNDMzI0OTkwQkNEQkQ5QzhCRkUxRDQ3Qzg1OUM3OUI2OTk5QjdDMTgzMDY2RDU0Ng==
+2018-08-22 10:26:23 INFO ----开始获取注册验证码----
+2018-08-22 10:26:23 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 10:26:23 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 10:26:24 INFO [error]:{'error': {'msg': 'captcha not exists', 'code': 4001155}}
+2018-08-22 10:26:24 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 879, in test_user_register_phone_verifycode
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [400]>'
+
+2018-08-22 10:26:27 INFO 开始获取token
+2018-08-22 10:26:28 INFO token:MjA0RUUzNkVBQTQxRUNDNTdFN0IyQkNCMzU3NDlBRTA2NTdBNjBBNDg0QjQwQkE2RjZGOUE5RTI1Q0ZERjc5Qg==
+2018-08-22 10:26:28 INFO ----开始获取注册验证码----
+2018-08-22 10:26:28 INFO url：http://iotadmin.bgycc.com/v2/user_register/verifycode
+2018-08-22 10:26:28 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d4b6f5a78e00"}
+2018-08-22 10:26:28 INFO [error]:{'error': {'msg': 'captcha not exists', 'code': 4001155}}
+2018-08-22 10:26:28 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 879, in test_user_register_phone_verifycode
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [400]>'
+

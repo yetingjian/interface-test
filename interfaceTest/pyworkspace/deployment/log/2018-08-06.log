@@ -1,0 +1,236 @@
+2018-08-06 09:51:13 INFO -----------------------------------开始测试---------------------------------
+2018-08-06 09:51:13 INFO ----开始重置设备----
+2018-08-06 09:51:13 INFO len(plist): 3
+2018-08-06 09:51:14 INFO serialFd: Serial<id=0x39f4490, open=True>(port='COM3', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=1, xonxoff=False, rtscts=False, dsrdtr=False)
+2018-08-06 09:51:19 INFO ['\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x02', '\x06', '\x04', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe']
+2018-08-06 09:51:39 INFO 开始获取token
+2018-08-06 09:51:39 INFO token:MjAzMjNCMDQ3RTgxREFGRTQzMDI0ODEwQTA5NTM1M0RERTVGRjZFOUY5RDQwODA1MkQ1MEI5MzI4QUU2MzRGMQ==
+2018-08-06 09:51:43 INFO -----开始创建产品接口-----
+2018-08-06 09:51:43 INFO url：http://kilink-api.konka.com/v2/product
+2018-08-06 09:51:43 INFO body：{"is_gateway_device": false, "name": "product_2018-08-06", "link_type": 1, "description": ""}
+2018-08-06 09:51:43 INFO 创建产品接口响应：{"is_release": false, "key": "b5ac4a6f80ce21bb5274228ffd03873e", "description": "", "quota": 100000, "is_allow_multi_admin": false, "create_time": "2018-08-06T09:51:43.725Z", "device_type": "Unkown", "is_registerable": false, "id": "160194b6cf530001160194b6cf535e01", "is_active_register": false, "name": "product_2018-08-06", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-08-06 09:51:43 INFO ----开始创建$1002数据端点----
+2018-08-06 09:51:43 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/datapoint
+2018-08-06 09:51:43 INFO body：{"is_read": true, "index": 0, "name": "$1002", "source": 1, "type": 1, "symbol": "", "is_write": 1, "field_name": "name", "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605"}
+2018-08-06 09:51:43 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a0194b6cf535e04", "name": "$1002"}
+2018-08-06 09:51:43 INFO ----开始创建自定义数据端点----
+2018-08-06 09:51:43 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/datapoint
+2018-08-06 09:51:43 INFO body：{"description": "", "max": 255, "symbol": "", "is_write": 1, "is_read": true, "field_name": "point_name", "index": 1, "name": "para_name", "min": 0, "source": 1, "type": 2}
+2018-08-06 09:51:44 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a0192b6cf535e00", "name": "para_name"}
+2018-08-06 09:51:44 INFO ----开始添加设备----
+2018-08-06 09:51:44 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/device
+2018-08-06 09:51:44 INFO body：{"mac": "F0FE6B792673", "sn": 24898930, "name": "TEST_1"}
+2018-08-06 09:51:44 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 452873792}
+2018-08-06 09:51:44 INFO ----开始设置异常规则----
+2018-08-06 09:51:44 INFO url：http://kilink-api.konka.com/v2/alert/rule
+2018-08-06 09:51:44 INFO body：{"exception": {"suggestions": "", "tag_id": "1007d2b6902cf400"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": "1a0192b6cf535e00", "content": "value>100", "source": 1, "product_id": "160194b6cf530001160194b6cf535e01", "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-08-06 09:51:44 INFO 设置异常规则响应：{"exception": {"suggestions": "", "tag_id": "1007d2b6902cf400"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "notify_target": [], "tag": "", "compare": 2, "param": "1a0192b6cf535e00", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 4, "id": "280194b6cf536001", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "160194b6cf530001160194b6cf535e01"}
+2018-08-06 09:51:44 INFO ----开始报警设置----
+2018-08-06 09:51:44 INFO url：http://kilink-api.konka.com/v2/alert/rule/280194b6cf536001
+2018-08-06 09:51:44 INFO body：{"exception": {"suggestions": "", "tag_id": "1007d2b6902cf400"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a0192b6cf535e00", "name": "test_exception", "content": "value>100", "source": 0, "is_enable": true, "value": "100", "scope": 1, "id": "280194b6cf536001", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "160194b6cf530001160194b6cf535e01"}
+2018-08-06 09:51:44 INFO 报警设置响应：{"exception": {"suggestions": "", "tag_id": "1007d2b6902cf400"}, "interval": 0, "version": 1, "notification": {"scope": {"member": {"is_all": true, "member_ids": [], "position_ids": [], "department_ids": []}}, "is_enable": true, "conditions": {"times": 1}}, "notify_target": [2], "tag": "", "compare": 2, "param": "1a0192b6cf535e00", "name": "test_exception", "content": "value>100", "source": 1, "is_enable": true, "value": "100", "scope": 1, "id": "280194b6cf536001", "notify_apps": [], "type": 1, "notify_type": 2, "product_id": "160194b6cf530001160194b6cf535e01"}
+2018-08-06 09:51:44 INFO ----开始设置快照----
+2018-08-06 09:51:44 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/snapshot
+2018-08-06 09:51:44 INFO body：{"datapoint": [1], "storage": {"expire": 0}, "name": "sanp_name", "rule": 1}
+2018-08-06 09:51:44 INFO [error]:{'error': {'msg': 'app platform had not authorized', 'code': 4001144}}
+2018-08-06 09:51:44 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 379, in test_snapshot
+    ApiTest.snapshot_id = res["id"]
+KeyError: 'id'
+
+2018-08-06 09:51:44 INFO ----开始上传固件版本1----
+2018-08-06 09:51:44 INFO 上传固件1响应：{"url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "md5": "289481edded1f0ee9ccdb083ea0ad2b5", "size": 492528}
+2018-08-06 09:51:44 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/firmware
+2018-08-06 09:51:44 INFO body：{"is_release": true, "version": "1", "identify": "", "description": "mcu1", "file_size": 492528, "file_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "release_date": "2018-08-06T01:36:06.173Z", "file_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "type": 1, "mod": "1"}
+2018-08-06 09:51:44 INFO 上传固件版本1响应：{"is_release": true, "create_date": "2018-08-06T09:51:44.708Z", "description": "mcu1", "file_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "identify": 0, "file_size": 492528, "id": "180192b6cf536000", "mod": "1", "release_date": "2018-08-06T01:36:06.173Z", "file_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "version": 1, "type": 1}
+2018-08-06 09:51:44 INFO ----开始上传固件版本2----
+2018-08-06 09:51:45 INFO 上传固件2响应：{"url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/9414988a11501324029b4517a1d9f469", "md5": "b1df8cbe20f950939cbb04a42778457d", "size": 492528}
+2018-08-06 09:51:45 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/firmware
+2018-08-06 09:51:45 INFO body：{"is_release": true, "version": "2", "identify": "", "description": "mcu2", "file_size": 492528, "file_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/9414988a11501324029b4517a1d9f469", "release_date": "2018-08-06T01:36:06.173Z", "file_md5": "b1df8cbe20f950939cbb04a42778457d", "type": 1, "mod": "2"}
+2018-08-06 09:51:45 INFO 上传固件版本2响应：{"is_release": true, "create_date": "2018-08-06T09:51:45.164Z", "description": "mcu2", "file_md5": "b1df8cbe20f950939cbb04a42778457d", "identify": 0, "file_size": 492528, "id": "180194b6cf536200", "mod": "2", "release_date": "2018-08-06T01:36:06.173Z", "file_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/9414988a11501324029b4517a1d9f469", "version": 2, "type": 1}
+2018-08-06 09:51:45 INFO ----开始上传固件版本3----
+2018-08-06 09:51:45 INFO 上传固件2响应：{"url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "md5": "289481edded1f0ee9ccdb083ea0ad2b5", "size": 492528}
+2018-08-06 09:51:45 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/firmware
+2018-08-06 09:51:45 INFO body：{"is_release": true, "version": "3", "identify": "", "description": "mcu3", "file_size": 492528, "file_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "release_date": "2018-08-06T01:36:06.173Z", "file_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "type": 1, "mod": "3"}
+2018-08-06 09:51:45 INFO 上传固件版本3响应：{"is_release": true, "create_date": "2018-08-06T09:51:45.518Z", "description": "mcu3", "file_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "identify": 0, "file_size": 492528, "id": "180192b6cf536200", "mod": "3", "release_date": "2018-08-06T01:36:06.173Z", "file_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "version": 3, "type": 1}
+2018-08-06 09:51:45 INFO ----开始创建自动升级任务----
+2018-08-06 09:51:45 INFO url：http://kilink-api.konka.com/v2/upgrade/firmware/task
+2018-08-06 09:51:45 INFO body：{"target_version": 2, "description": "task_description", "target_version_size": 492528, "from_version": 1, "from_version_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "target_version_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/9414988a11501324029b4517a1d9f469", "identify": "", "name": "task_auto", "task_type": 0, "product_id": "160194b6cf530001160194b6cf535e01", "type": 1, "target_version_md5": "b1df8cbe20f950939cbb04a42778457d", "scope": {"category": 0, "device_list": []}, "from_version_size": 492528, "from_version_md5": "289481edded1f0ee9ccdb083ea0ad2b5"}
+2018-08-06 09:51:45 INFO 创建自动升级任务响应：{"status": 0, "task_type": 0, "target_version": 2, "description": "task_description", "from_version_md5": "289481edded1f0ee9ccdb083ea0ad2b5", "from_version_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "target_version_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/9414988a11501324029b4517a1d9f469", "name": "task_auto", "product_id": "160194b6cf530001160194b6cf535e01", "identify": 0, "from_version": 1, "id": "200194b6cf536201", "scope": {"category": 0}, "from_version_size": 492528, "type": 1, "upgrade_count": 0, "target_version_size": 492528}
+2018-08-06 09:51:45 INFO ----开始创建手动升级任务----
+2018-08-06 09:51:45 INFO url：http://kilink-api.konka.com/v2/upgrade/firmware/task
+2018-08-06 09:51:45 INFO body：{"target_version": 2, "description": "task_description", "target_version_size": 492528, "from_version": 1, "from_version_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "target_version_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/9414988a11501324029b4517a1d9f469", "identify": "", "name": "task_auto", "task_type": 0, "product_id": "160194b6cf530001160194b6cf535e01", "type": 1, "target_version_md5": "b1df8cbe20f950939cbb04a42778457d", "scope": {"category": 0, "device_list": []}, "from_version_size": 492528, "from_version_md5": "289481edded1f0ee9ccdb083ea0ad2b5"}
+2018-08-06 09:51:45 INFO 创建手动升级任务响应：{"status": 0, "task_type": 1, "target_version": 3, "description": "task_description", "from_version_md5": "b1df8cbe20f950939cbb04a42778457d", "from_version_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/9414988a11501324029b4517a1d9f469", "target_version_url": "https://kilinkstorage.blob.core.chinacloudapi.cn/xlink/59b4d7cbfc9dc3742b53caca810d484f", "name": "task_manu", "product_id": "160194b6cf530001160194b6cf535e01", "identify": 0, "from_version": 2, "id": "200194b6cf536202", "scope": {"category": 0}, "from_version_size": 492528, "type": 1, "upgrade_count": 0, "target_version_size": 492528}
+2018-08-06 09:51:45 INFO ----开始启动自动升级任务----
+2018-08-06 09:51:45 INFO url：http://kilink-api.konka.com/v2/upgrade/firmware/task/status
+2018-08-06 09:51:45 INFO body：{"status": 1, "product_id": "160194b6cf530001160194b6cf535e01", "upgrade_task_id": "200194b6cf536201"}
+2018-08-06 09:51:45 INFO 启动自动升级任务成功
+2018-08-06 09:51:45 INFO ----开始启动手动升级任务----
+2018-08-06 09:51:45 INFO url：http://kilink-api.konka.com/v2/upgrade/firmware/task/status
+2018-08-06 09:51:45 INFO body：{"status": 1, "product_id": "160194b6cf530001160194b6cf535e01", "upgrade_task_id": "200194b6cf536202"}
+2018-08-06 09:51:45 INFO 启动手动升级任务成功
+2018-08-06 09:51:45 INFO ----开始调串口激活设备----
+2018-08-06 09:51:50 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe'])
+2018-08-06 09:53:50 INFO ----开始查询宽表设备列表----
+2018-08-06 09:53:50 INFO url：http://kilink-api.konka.com/v2/wide-devices
+2018-08-06 09:53:50 INFO body：{"filter": ["product_id", "id", "is_active", "is_online"], "query": {"product_id": {"$like": "160194b6cf530001160194b6cf535e01"}}, "limit": 100, "offset": 0}
+2018-08-06 09:53:51 INFO [error]:{'count': 0, 'list': []}
+2018-08-06 09:53:51 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 490, in test_wide_devices
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '452873792' not found in "{'count': 0, 'list': []}"
+
+2018-08-06 09:53:51 INFO ----开始设备控制----
+2018-08-06 09:53:51 INFO url：http://kilink-api.konka.com/v2/diagnosis/device/set/452873792
+2018-08-06 09:53:51 INFO body：{"datapoint": [{"index": 0, "value": true}, {"index": 1, "value": 150}]}
+2018-08-06 09:53:51 INFO 设备控制响应：{"status": 200}
+2018-08-06 09:53:51 INFO ----开始获取虚拟设备----
+2018-08-06 09:53:51 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/v_device/452873792
+2018-08-06 09:53:51 INFO body：{}
+2018-08-06 09:53:51 INFO 获取虚拟设备响应：{"cm_id": "MS-301", "last_login": "2018-08-06T09:52:57.784Z", "online_count": 53, "conn_prot": 2, "online": true, "ip": "61.140.126.149", "last_logout": "2018-08-06T09:52:57.774Z", "last_update": "", "device_id": 452873792}
+2018-08-06 09:53:51 INFO ----开始获取设备地理位置----
+2018-08-06 09:53:51 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/device/452873792/geography
+2018-08-06 09:53:51 INFO body：{}
+2018-08-06 09:53:51 INFO 获取设备地理位置响应：{"province": "\u5e7f\u4e1c\u7701", "city": "\u5e7f\u5dde\u5e02", "update_time": "2018-08-06T09:53:00.666Z", "district": "", "address": "", "lat": 23.1167, "country": "\u4e2d\u56fd", "lon": 113.25, "device_id": 452873792}
+2018-08-06 09:53:51 INFO ----开始获取地理位置信息列表----
+2018-08-06 09:53:51 INFO url：http://kilink-api.konka.com/v2/service/position/geographies
+2018-08-06 09:53:51 INFO body：{"param": "F001S006"}
+2018-08-06 09:53:51 INFO [error]:
+2018-08-06 09:53:51 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 824, in test_get_geographies
+    res = eval(r.text)
+  File "<string>", line 1
+    <html>
+    ^
+SyntaxError: invalid syntax
+
+2018-08-06 09:53:51 INFO ----开始用户通过邮箱注册----
+2018-08-06 09:53:51 INFO url：http://kilink-api.konka.com/v2/user_register
+2018-08-06 09:53:51 INFO body：{"corp_id": "1007d2b6902cf400", "source": "2", "local_lang": "zh-cn", "password": "120211Qq", "nickname": "nickname", "email": "wangqi@xlink.cn"}
+2018-08-06 09:53:51 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-08-06 09:53:51 INFO ----开始调串口上报数据----
+2018-08-06 09:53:53 INFO ['\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x01', '\x05', '\xfe', '\xff', '\x00', '\n', '\x82', '\x00', '\x00', '\x01', '\x01', '\x01', '\x00', '\x01', '\x96', '\x1e', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-08-06 09:53:55 INFO ['\xff', '\x00', '\x03', '\x83', '\x00', '\x80', '\xfe', '\xff', '\x00', '\x03', '\x83', '\x02', '\x82', '\xfe']
+2018-08-06 09:55:55 INFO ----开始获取告警记录----
+2018-08-06 09:55:55 INFO url：http://kilink-api.konka.com/v2/corp/alarm/states
+2018-08-06 09:55:55 INFO body：{"filter": ["id", "device_id", "rule_id", "status", "content", "count"], "query": {"scope": {"$in": [1, 3, 4]}, "product_id": {"$in": ["160194b6cf530001160194b6cf535e01"]}, "device_id": {"$eq": 452873792}}, "limit": 10, "order": {"start_time": "desc"}, "offset": 0}
+2018-08-06 09:55:56 INFO [error]:{'count': 0, 'list': []}
+2018-08-06 09:55:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1001, in test_get_alarm_list
+    self.assertIn(str(self.device_id), str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '452873792' not found in "{'count': 0, 'list': []}"
+
+2018-08-06 09:55:56 INFO ----开始获取注册验证码----
+2018-08-06 09:55:56 INFO url：http://kilink-api.konka.com/v2/user_register/verifycode
+2018-08-06 09:55:56 INFO body：{"captcha": "", "phone": "15018753353", "corp_id": "1007d2b6902cf400"}
+2018-08-06 09:55:56 INFO 已发送验证码
+2018-08-06 09:55:56 INFO ----开始用户通过邮箱登录----
+2018-08-06 09:55:56 INFO url：http://kilink-api.konka.com/v2/user_auth
+2018-08-06 09:55:56 INFO body：{"password": "120211Qq", "email": "wangqi@xlink.cn", "corp_id": "1007d2b6902cf400"}
+2018-08-06 09:55:56 INFO 用户通过邮箱登录响应：{"access_token": "MENDMDczRTE4NDU2N0IyQzBGNDU1NzBBNzM1NUQxRUE1RDU0RjdDRjE4M0JGQTJBMjM2OURCMkQ1QzEyRDMwOA==", "expire_in": 7200, "authorize": "220194b6cf545e00", "user_id": 452874072, "refresh_token": "Q0FFNjJDNzJBRjA1Mzk2NkJDQTQxOEJFOEFBRTc5Qzk4OTNDODY5OTk0MUE3OERGQzYwQThFMDZDNEExNzYwMw=="}
+2018-08-06 09:55:56 INFO ----开始配置app----
+2018-08-06 09:55:56 INFO url：http://kilink-api.konka.com/v2/plugin/app
+2018-08-06 09:55:56 INFO body：{"enable": true, "type": 10, "name": "feedback", "plugin": "helpdesk"}
+2018-08-06 09:55:56 INFO 配置app响应：{"secret": "e46ae088993dcdc600cb0762aabf7109", "create_time": "2018-08-06T09:55:56.291Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e0194b6cf555800", "fee_type": 1}
+2018-08-06 09:55:56 INFO ----开始新增用户反馈----
+2018-08-06 09:55:56 INFO url：http://kilink-api.konka.com/v2/module/feedback/2e0194b6cf555800/api/feedback/save
+2018-08-06 09:55:56 INFO body：{"content": "\u7535\u996d\u7172\u65e0\u6cd5\u542f\u7528", "user_name": "\u5c0f\u660e", "user_id": 452874072, "email": "xiaoming@qq.com", "phone": "1689624223"}
+2018-08-06 09:55:56 INFO [error]:
+2018-08-06 09:55:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1096, in test_feedback
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://apiserver/v2/module/feedback/2e0194b6cf555800/api/feedback/save
+                   ^
+SyntaxError: invalid syntax
+
+2018-08-06 09:55:56 INFO ----开始生成设备二维码----
+2018-08-06 09:55:56 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/device/452873792/qrcode
+2018-08-06 09:55:56 INFO body：{"custom_field": ["id", "mac", "pid", "sn"], "authority": "RW", "format": {"encode": "source", "prefix": "", "suffix": ""}}
+2018-08-06 09:55:56 INFO 生成设备二维码响应：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:160194b6cf530001160194b6cf535e01;QK:5b67a9b0c1d86725facfb23b;id:452873792;MAC:F0FE6B792673;SN:24898930;;"}
+2018-08-06 09:55:56 INFO ----开始订阅设备----
+2018-08-06 09:55:56 INFO url：http://kilink-api.konka.com/v2/user/452874072/qrcode_subscribe
+2018-08-06 09:55:56 INFO body：{"qrcode": "XQR:T:D;V:1;AUTH:RW;PID:160194b6cf530001160194b6cf535e01;QK:5b67a9b0c1d86725facfb23b;id:452873792;MAC:F0FE6B792673;SN:24898930;;"}
+2018-08-06 09:55:56 INFO 订阅设备响应：{"custom_property": {}, "mac": "F0FE6B792673", "pid": "160194b6cf530001160194b6cf535e01", "id": 452873792, "sn": "24898930"}
+2018-08-06 09:55:56 INFO ----开始获取设备列表----
+2018-08-06 09:55:56 INFO url：http://kilink-api.konka.com/v2/user/452874072/subscribe/devices
+2018-08-06 09:55:56 INFO body：{}
+2018-08-06 09:55:56 INFO 获取设备列表响应：[{"access_key": 0, "active_code": "168208e3f665a6ca3925093a58400854", "sn": "24898930", "product_id": "160194b6cf530001160194b6cf535e01", "mcu_version": 1, "is_active": true, "mac": "F0FE6B792673", "firmware_mod": "0", "authorize_code": "1e0194b6cf536000", "source": 3, "active_date": "2018-08-06T09:52:06.500Z", "role": 0, "authority": "RW", "groups": "", "mcu_mod": "0", "id": 452873792, "last_login": "2018-08-06T09:52:57.784Z", "firmware_version": 2, "subscribe_date": "2018-08-06T09:55:56.506Z", "is_online": true, "name": "TEST_1"}]
+2018-08-06 09:55:56 INFO ----开始是否收到测试邮件----
+2018-08-06 09:55:59 INFO 未收到测试邮件
+2018-08-06 09:55:59 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1115, in check_receive_new_email
+    self.assertTrue(False)
+  File "C:\Python27\lib\unittest\case.py", line 422, in assertTrue
+    raise self.failureException(msg)
+AssertionError: False is not true
+
+2018-08-06 09:55:59 INFO ----开始检查自动升级是否成功----
+2018-08-06 09:55:59 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/device/452873792
+2018-08-06 09:55:59 INFO body：{}
+2018-08-06 09:55:59 INFO 设备信息响应：{"region_id": 0, "mcu_version": 1, "corp_id": "1007d2b6902cf400", "active_date": "2018-08-06T09:52:06.500Z", "create_time": "2018-08-06T09:51:44.06Z", "firmware_version": 2, "id": 452873792, "gateway_id": 0, "last_login": "2018-08-06T09:52:57.784Z", "online_count": 0, "creator_type": 1, "is_active": true, "mac": "F0FE6B792673", "is_online": true, "product_id": "160194b6cf530001160194b6cf535e01", "access_key": 0, "name": "TEST_1", "firmware_mod": "0", "last_login_ip": "61.140.126.149", "creator_id": "1207d2b6902cf401", "sn": "24898930", "mcu_mod": "0"}
+2018-08-06 09:55:59 INFO ----开始关闭自动升级任务----
+2018-08-06 09:55:59 INFO url：http://kilink-api.konka.com/v2/upgrade/firmware/task/status
+2018-08-06 09:55:59 INFO body：{"status": 0, "product_id": "160194b6cf530001160194b6cf535e01", "upgrade_task_id": "200194b6cf536201"}
+2018-08-06 09:55:59 INFO [error]:{'error': {'msg': 'Access-Token invalid', 'code': 4031003}}
+2018-08-06 09:55:59 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1162, in test_upgrade_by_manual
+    self.assertIn("200", str(r1))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [403]>'
+
+2018-08-06 09:55:59 INFO ----开始删除app配置----
+2018-08-06 09:55:59 INFO url：http://kilink-api.konka.com/v2/plugin/app/2e0194b6cf555800
+2018-08-06 09:55:59 INFO 已删app配置
+2018-08-06 09:55:59 INFO -----------------------------------开始测试---------------------------------
+2018-08-06 09:55:59 INFO ----开始重置设备----
+2018-08-06 09:55:59 INFO len(plist): 3
+2018-08-06 09:55:59 INFO 【重置设备失败】
+2018-08-06 09:55:59 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 76, in test_init_device2
+    ser.find_serial('COM3')
+  File "C:\wq\pyworkspace\deployment\serial_method.py", line 160, in find_serial
+    serialFd = serial.Serial(serialName, 115200, timeout=1)
+  File "C:\Python27\lib\site-packages\serial\serialwin32.py", line 31, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\serial\serialutil.py", line 240, in __init__
+    self.open()
+  File "C:\Python27\lib\site-packages\serial\serialwin32.py", line 62, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+SerialException: could not open port 'COM3': WindowsError(5, '\xbe\xdc\xbe\xf8\xb7\xc3\xce\xca\xa1\xa3')
+
+2018-08-06 09:55:59 INFO ----开始调串口激活设备----
+2018-08-06 09:56:04 INFO ('response:', ['\xff', '\x00', '\x02', '\x03', '\x01', '\xfe', '\x00', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\xa7', '\x84', '\x85', '`', '\xf2', '\xe5', '\x87', '\xc3', '\xc4', '\xc7', '\x87', '\x87', '\xa4', '\xa4', '\xe4', '\x84', '\x03', 'C', '\xff', '\x00', '\x03', '\x11', '\x01', '\x13', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x02', '\x00', '\x07', '\xfe', '\xff', '\x00', '\x04', '\x01', '\x01', '\x00', '\x04', '\xfe'])
+2018-08-06 09:58:04 INFO ----开始检查手动升级是否成功----
+2018-08-06 09:58:04 INFO url：http://kilink-api.konka.com/v2/product/160194b6cf530001160194b6cf535e01/device/452873792
+2018-08-06 09:58:04 INFO body：{}
+2018-08-06 09:58:04 INFO [error]:{'region_id': 0, 'mcu_version': 1, 'corp_id': '1007d2b6902cf400', 'active_date': '2018-08-06T09:52:06.500Z', 'create_time': '2018-08-06T09:51:44.06Z', 'firmware_version': 2, 'id': 452873792, 'gateway_id': 0, 'last_login': '2018-08-06T09:56:05.865Z', 'online_count': 185, 'creator_type': 1, 'is_active': True, 'mac': 'F0FE6B792673', 'is_online': True, 'product_id': '160194b6cf530001160194b6cf535e01', 'access_key': 0, 'name': 'TEST_1', 'firmware_mod': '0', 'last_login_ip': '61.140.126.149', 'creator_id': '1207d2b6902cf401', 'sn': '24898930', 'mcu_mod': '0'}
+2018-08-06 09:58:04 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1200, in check_manual_update_firmware_version
+    self.assertEqual(version, '1')
+  File "C:\Python27\lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python27\lib\unittest\case.py", line 506, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '2' != '1'
+

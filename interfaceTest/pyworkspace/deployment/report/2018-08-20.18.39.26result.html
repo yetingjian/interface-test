@@ -1,0 +1,1603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>deployment_api_test</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    /*width: 500px;*/
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>deployment_api_test</h1>
+<p class='attribute'><strong>Start Time:</strong> 2018-08-20 18:39:26</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:01.347000</p>
+<p class='attribute'><strong>Status:</strong> Pass 1 Error 36</p>
+
+<p class='description'>base_api_test_of_services</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>ApiTest</td>
+    <td>37</td>
+    <td>1</td>
+    <td>0</td>
+    <td>36</td>
+    <td><a href="javascript:showClassDetail('c1',37)">Detail</a></td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_init_device: 重置设备</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 61, in test_init_device
+    ser.find_serial('COM3')
+  File "C:\wq\pyworkspace\deployment\serial_method.py", line 160, in find_serial
+    serialFd = serial.Serial(serialName, 115200, timeout=1)
+  File "C:\Python27\lib\site-packages\serial\serialwin32.py", line 31, in __init__
+    super(Serial, self).__init__(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\serial\serialutil.py", line 240, in __init__
+    self.open()
+  File "C:\Python27\lib\site-packages\serial\serialwin32.py", line 62, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+SerialException: could not open port 'COM3': WindowsError(5, '\xbe\xdc\xbe\xf8\xb7\xc3\xce\xca\xa1\xa3')
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_member_login: 企业成员登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 90, in test_member_login
+    ApiTest.corp_id = api.get_access_token(url, body)
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 36, in get_access_token
+    r = requests.post(url=url, json=login_body, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/corp_auth': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/corp_auth?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_add_member: 添加企业成员</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        error</a>
+
+    <div id='div_ft1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.3: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 124, in test_add_member
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/corp/member_add': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/corp/member_add?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_create_product: 创建产品</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        error</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 102, in test_create_product
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_add_data_point_sys: 添加数据端点$1002</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
+        error</a>
+
+    <div id='div_ft1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.5: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 155, in test_add_data_point_sys
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/datapoint': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/datapoint?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_add_data_point_custom: 添加数据端点byte</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6')" >
+        error</a>
+
+    <div id='div_ft1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.6: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 189, in test_add_data_point_custom
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/datapoint': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/datapoint?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_device: 注册设备</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7')" >
+        error</a>
+
+    <div id='div_ft1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.7: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 215, in test_register_device
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_alter_rule: 设置异常规则</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.8')" >
+        error</a>
+
+    <div id='div_ft1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.8: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 233, in test_alter_rule
+    r1 = requests.get(url=url_get_list, json={}, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/exception/tags': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/exception/tags?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_alarm_setting: 添加报警设置</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.9')" >
+        error</a>
+
+    <div id='div_ft1.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.9: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 352, in test_alarm_setting
+    r = requests.put(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 126, in put
+    return request('put', url, data=data, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/alert/rule/None': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/alert/rule/None?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.10' class='none'>
+    <td class='errorCase'><div class='testcase'>test_snapshot: 添加快照</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.10')" >
+        error</a>
+
+    <div id='div_ft1.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.10: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 377, in test_snapshot
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/snapshot': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/snapshot?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.11' class='none'>
+    <td class='errorCase'><div class='testcase'>test_statistic_rule: 添加统计规则</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.11')" >
+        error</a>
+
+    <div id='div_ft1.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.11: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 424, in test_statistic_rule
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/snapshot/None/statistic_rule': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/snapshot/None/statistic_rule?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.12' class='none'>
+    <td class='errorCase'><div class='testcase'>test_upload_MCU: 上传固件版本</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.12')" >
+        error</a>
+
+    <div id='div_ft1.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.12: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 585, in test_upload_MCU
+    r1 = requests.post(url=url_upload, data=fil1, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/upload/product/160192b6c8640001160192b6c864ee01/firmware': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/upload/product/160192b6c8640001160192b6c864ee01/firmware?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.13' class='none'>
+    <td class='errorCase'><div class='testcase'>test_create_mcu_task: 创建升级任务</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.13')" >
+        error</a>
+
+    <div id='div_ft1.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.13: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 720, in test_create_mcu_task
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/upgrade/firmware/task': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/upgrade/firmware/task?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.14' class='none'>
+    <td class='errorCase'><div class='testcase'>test_start_task: 启动任务</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.14')" >
+        error</a>
+
+    <div id='div_ft1.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.14: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 786, in test_start_task
+    res = eval(r.text)
+AttributeError: 'str' object has no attribute 'text'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.15' class='none'>
+    <td class='errorCase'><div class='testcase'>test_active_device: 串口激活设备</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.15')" >
+        error</a>
+
+    <div id='div_ft1.15' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.15').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.15: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 440, in test_active_device
+    result = ser.set_PID_PKEY(self.pid, self.p_key)
+  File "C:\wq\pyworkspace\deployment\serial_method.py", line 195, in set_PID_PKEY
+    serialFd.write(b3)
+NameError: global name 'serialFd' is not defined
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.16' class='none'>
+    <td class='errorCase'><div class='testcase'>test_wide_devices: 查询宽表设备列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.16')" >
+        error</a>
+
+    <div id='div_ft1.16' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.16').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.16: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 488, in test_wide_devices
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/wide-devices': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/wide-devices?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.17' class='none'>
+    <td class='errorCase'><div class='testcase'>test_device_control: 设备控制</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.17')" >
+        error</a>
+
+    <div id='div_ft1.17' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.17').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.17: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 519, in test_device_control
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/diagnosis/device/set/452873792': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/diagnosis/device/set/452873792?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.18' class='none'>
+    <td class='errorCase'><div class='testcase'>test_get_v_device: 获取虚拟设备</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.18')" >
+        error</a>
+
+    <div id='div_ft1.18' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.18').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.18: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 539, in test_get_v_device
+    r = requests.get(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/v_device/452873792': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/v_device/452873792?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.19' class='none'>
+    <td class='errorCase'><div class='testcase'>test_get_device_geography: 获取设备地理位置</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.19')" >
+        error</a>
+
+    <div id='div_ft1.19' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.19').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.19: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 559, in test_get_device_geography
+    r = requests.get(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device/452873792/geography': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device/452873792/geography?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.20' class='none'>
+    <td class='errorCase'><div class='testcase'>test_get_geographies: 获取地理位置信息列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.20')" >
+        error</a>
+
+    <div id='div_ft1.20' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.20').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.20: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 823, in test_get_geographies
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/service/position/geographies': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/service/position/geographies?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.21' class='none'>
+    <td class='errorCase'><div class='testcase'>test_user_register_email: 用户通过邮箱注册</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.21')" >
+        error</a>
+
+    <div id='div_ft1.21' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.21').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.21: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 850, in test_user_register_email
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/user_register': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/user_register?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.22' class='none'>
+    <td class='errorCase'><div class='testcase'>test_set_data_point_value: 串口上报数据端点</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.22')" >
+        error</a>
+
+    <div id='div_ft1.22' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.22').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.22: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 951, in test_set_data_point_value
+    ser.mcu_wifi()
+  File "C:\wq\pyworkspace\deployment\serial_method.py", line 223, in mcu_wifi
+    serialFd.write(send)
+NameError: global name 'serialFd' is not defined
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.23' class='none'>
+    <td class='errorCase'><div class='testcase'>test_get_alarm_list: 获取告警记录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.23')" >
+        error</a>
+
+    <div id='div_ft1.23' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.23').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.23: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 999, in test_get_alarm_list
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/corp/alarm/states': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/corp/alarm/states?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.24' class='none'>
+    <td class='errorCase'><div class='testcase'>test_user_register_phone_verifycode: 用户获取注册验证码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.24')" >
+        error</a>
+
+    <div id='div_ft1.24' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.24').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.24: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 878, in test_user_register_phone_verifycode
+    res = eval(r.text)
+AttributeError: 'str' object has no attribute 'text'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.25' class='none'>
+    <td class='errorCase'><div class='testcase'>test_user_login: 用户通过邮箱登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.25')" >
+        error</a>
+
+    <div id='div_ft1.25' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.25').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.25: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 898, in test_user_login
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/user_auth': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/user_auth?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.26' class='none'>
+    <td class='errorCase'><div class='testcase'>test_create_app: 配置app</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.26')" >
+        error</a>
+
+    <div id='div_ft1.26' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.26').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.26: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1057, in test_create_app
+    api.get_help_app(self.host, self.port)
+  File "C:\wq\pyworkspace\deployment\api_operation.py", line 332, in get_help_app
+    r = requests.get(url=url, json={}, headers=headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/plugin/apps': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/plugin/apps?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.27' class='none'>
+    <td class='errorCase'><div class='testcase'>test_feedback: 新增用户反馈</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.27')" >
+        error</a>
+
+    <div id='div_ft1.27' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.27').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.27: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1095, in test_feedback
+    r = requests.post(url=url, json=body, headers=self.user_headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/module/feedback/None/api/feedback/save': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/module/feedback/None/api/feedback/save?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.28' class='none'>
+    <td class='errorCase'><div class='testcase'>test_get_qrcode: 生成设备二维码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.28')" >
+        error</a>
+
+    <div id='div_ft1.28' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.28').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.28: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 933, in test_get_qrcode
+    r = requests.post(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device/452873792/qrcode': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device/452873792/qrcode?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.29' class='none'>
+    <td class='errorCase'><div class='testcase'>test_get_qrcode_subscribe: 用户通过二维码订阅设备</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.29')" >
+        error</a>
+
+    <div id='div_ft1.29' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.29').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.29: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1021, in test_get_qrcode_subscribe
+    r = requests.post(url=url, json=body, headers=self.user_headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/user/None/qrcode_subscribe': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/user/None/qrcode_subscribe?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.30' class='none'>
+    <td class='errorCase'><div class='testcase'>test_user_get_device_list: 用户获取设备列表</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.30')" >
+        error</a>
+
+    <div id='div_ft1.30' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.30').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.30: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1042, in test_user_get_device_list
+    r = requests.get(url=url, json=body, headers=self.user_headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/user/None/subscribe/devices': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/user/None/subscribe/devices?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.31' class='hiddenRow'>
+    <td class='none'><div class='testcase'>check_receive_new_email: 检查是否收到测试邮件</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.32' class='none'>
+    <td class='errorCase'><div class='testcase'>check_auto_update_firmware_version: 检查自动升级是否成功</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.32')" >
+        error</a>
+
+    <div id='div_ft1.32' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.32').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.32: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1130, in check_auto_update_firmware_version
+    r = requests.get(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device/452873792': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device/452873792?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.33' class='none'>
+    <td class='errorCase'><div class='testcase'>test_upgrade_by_manual: 设备手动升级</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.33')" >
+        error</a>
+
+    <div id='div_ft1.33' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.33').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.33: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1165, in test_upgrade_by_manual
+    res = eval(r1.text)
+AttributeError: 'str' object has no attribute 'text'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.34' class='none'>
+    <td class='errorCase'><div class='testcase'>test_clear_data: 清理测试数据</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.34')" >
+        error</a>
+
+    <div id='div_ft1.34' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.34').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.34: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1248, in test_clear_data
+    res = eval(r.text)
+AttributeError: 'str' object has no attribute 'text'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.35' class='none'>
+    <td class='errorCase'><div class='testcase'>test_init_device2: 重置设备</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.35')" >
+        error</a>
+
+    <div id='div_ft1.35' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.35').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.35: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 77, in test_init_device2
+    ser.reset_mcu()
+  File "C:\wq\pyworkspace\deployment\serial_method.py", line 246, in reset_mcu
+    serialFd.write(send)
+NameError: global name 'serialFd' is not defined
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.36' class='none'>
+    <td class='errorCase'><div class='testcase'>test_active_device2: 串口激活设备</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.36')" >
+        error</a>
+
+    <div id='div_ft1.36' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.36').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.36: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 455, in test_active_device2
+    result = ser.set_PID_PKEY(self.pid, self.p_key)
+  File "C:\wq\pyworkspace\deployment\serial_method.py", line 195, in set_PID_PKEY
+    serialFd.write(b3)
+NameError: global name 'serialFd' is not defined
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.37' class='none'>
+    <td class='errorCase'><div class='testcase'>check_manual_update_firmware_version: 检查手动升级是否成功</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.37')" >
+        error</a>
+
+    <div id='div_ft1.37' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.37').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.37: Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 1197, in check_manual_update_firmware_version
+    r = requests.get(url=url, json=body, headers=api.headers)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Python27\lib\site-packages\requests\models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "C:\Python27\lib\site-packages\requests\models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device/452873792': No schema supplied. Perhaps you meant http://Yzyapi.4001113900.com/v2/product/160192b6c8640001160192b6c864ee01/device/452873792?
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>37</td>
+    <td>1</td>
+    <td>0</td>
+    <td>36</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

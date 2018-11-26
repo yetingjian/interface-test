@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../SDK/logs/AutomationTesting.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../SDK/logs/AutomationTesting.log.1" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../deployment/log/2018-07-25.log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../performance/log/2018-09-18.log" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/../performance/log/2018-09-19.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../performance/log/2018-09-20.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../performance/log/2018-09-21.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../x_Agent_API/log/2018-06-08.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../x_Agent_API/log/2018-06-11.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../x_Agent_API/log/2018-06-12.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/../x_Agent_API/log/2018-06-13.log" charset="GBK" />
+  </component>
+</project>

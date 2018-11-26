@@ -1,0 +1,71 @@
+2018-07-24 09:55:03 INFO 开始获取token
+2018-07-24 09:55:04 INFO token:OTkyRTYyRUYyMjZGNDREM0M0NTMyRjE2Qzk3NjgyMUE1REU3QjE1Q0EyQjBBMzk2OUI4OUYyRDU4RTdBRDVEQw==
+2018-07-24 09:55:04 INFO 开始创建产品接口
+2018-07-24 09:55:04 INFO 南向接口响应：{"error": {"msg": "[description] must not null ", "code": 4001002}}
+2018-07-24 09:55:52 INFO 开始获取token
+2018-07-24 09:55:52 INFO token:MjdEMEEyM0ZCODM2OTdGNDIzNEExMTFDREY5QkZGREVBMEZFNjkzQzEwOTNENDI1MzgxNDM1NERERkY2OUZFRA==
+2018-07-24 09:55:52 INFO 开始创建产品接口
+2018-07-24 09:55:52 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 32, in create_product
+    res = eval(r.text)
+  File "<string>", line 1, in <module>
+NameError: name 'false' is not defined
+
+2018-07-24 09:57:11 INFO 开始获取token
+2018-07-24 09:57:11 INFO token:RjI4QkMwMTc3NjQ1Mzc5OURFQjE3NkQ1Q0QwQTVDMzUwMkFFNDhFRThBMDE5QTdBQjY3MDQxNEQwNjE1M0I2Mg==
+2018-07-24 09:57:11 INFO 开始创建产品接口
+2018-07-24 09:57:11 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 33, in create_product
+    res = eval(r.text)
+  File "<string>", line 1, in <module>
+NameError: name 'false' is not defined
+
+2018-07-24 09:59:56 INFO 开始获取token
+2018-07-24 09:59:56 INFO token:ODE2OTU1OTlDQTZCMjg0MENGNDk3OTIwQzFEMDVFMUIyRjlDNjRCRkZCNjFDMTU1ODgzNjAzREM3N0Y4MTE4QQ==
+2018-07-24 09:59:56 INFO 开始创建产品接口
+2018-07-24 09:59:56 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 33, in create_product
+    res = eval(r.text)
+  File "<string>", line 1, in <module>
+NameError: name 'false' is not defined
+
+2018-07-24 10:04:04 INFO 开始获取token
+2018-07-24 10:04:05 INFO token:MUQyOENFNkVBNDY0MjQxQzNCMTlGNzQ0RjkyRDIwN0UxNjk2OUEzMDQ0MDVBODZDMzU4MzZDQ0UwRTdBNTM0Ng==
+2018-07-24 10:04:05 INFO 开始创建产品接口
+2018-07-24 10:04:05 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 34, in create_product
+    print res["id"]
+TypeError: string indices must be integers
+
+2018-07-24 10:05:30 INFO 开始获取token
+2018-07-24 10:05:30 INFO token:QkZCQkJDMDg4REFEQzdCNDg5RTczQTEyOTNDOURBOEYwMjBDQUJCREFDNTQyQzZBMjYzM0Q5NUY5OEZCRDNCOQ==
+2018-07-24 10:05:30 INFO 开始创建产品接口
+2018-07-24 10:05:30 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 33, in create_product
+    res = eval(r.text)
+  File "<string>", line 1, in <module>
+NameError: name 'false' is not defined
+
+2018-07-24 10:08:48 INFO 开始获取token
+2018-07-24 10:08:48 INFO token:QjZEQjYxQzc5RkI1RDcwQ0I0NTM1NEMyNjc5ODY3OUIwRjIxOUU2QjRBNTlDRDNGRjQ1OENFNkFFQzA1OTQzNQ==
+2018-07-24 10:08:48 INFO 开始创建产品接口
+2018-07-24 10:08:48 INFO 南向接口响应：{"is_release": false, "key": "655104395d2b60d7a03afde05564ac95", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-24T10:08:49.519Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6ad1400011607d2b6ad146201", "is_active_register": false, "name": "ttt", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-24 10:11:40 INFO 开始获取token
+2018-07-24 10:11:40 INFO token:QTczRTExQzBCMzRBRjdERDgzMEY2MjA1RjA0OUUyOTMxQkM2NjIxREYzRkE0QTZBMzJFQzYxMkVCMEZFNzNGNg==
+2018-07-24 10:11:40 INFO 开始创建产品接口
+2018-07-24 10:11:40 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 33, in test_create_product
+    res = eval(r.text)
+  File "<string>", line 1, in <module>
+NameError: name 'false' is not defined
+
+2018-07-24 10:11:46 INFO 开始获取token
+2018-07-24 10:11:46 INFO token:Njc0RjU0NjI1QUZEMTY2QTkxMjM4MDc0MkUwM0I2RTY3NUU4Q0IxNDkyNTdCRDAzMTdBQTlBNDBGMkNFREQ2MA==
+2018-07-24 10:11:46 INFO 开始创建产品接口
+2018-07-24 10:11:47 INFO 创建产品接口响应：{"is_release": false, "key": "82d60c640450428beb76f21d0a5459c5", "description": "", "quota": 100, "is_allow_multi_admin": false, "create_time": "2018-07-24T10:11:47.739Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6ad1500011607d2b6ad15c601", "is_active_register": false, "name": "ttt", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}

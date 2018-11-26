@@ -1,0 +1,104 @@
+2018-06-08 17:14:50 INFO 开始获取token
+2018-06-08 17:14:50 INFO token:MDFCODY2NUU3MDI5RjMxQ0MyQThEQjQ0MTQwQTQwN0MyRUFDRjlEM0QwN0E3OThGQTY3QkJBODMyOTkyMzBBNw==
+2018-06-08 17:14:50 INFO ----------------------test_a1_diesel_generator_generator_success---------------------
+2018-06-08 17:14:50 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-08 17:14:50 INFO id=：5 body：{'status': 2, 'power_factor': 7.15, 'generator_speed': 263, 'online_status': 2, 'reactive_power': 227.81, 'tps_c_electric': 879.28, 'active_power': 486.21, 'generator_battery_voltage': 123.45, 'tps_b_voltage': 465.15, 'tps_b_electric': 750.06, 'frequency': 501.41, 'generator_time': 21511, 'tps_a_electric': 493.67, 'tps_c_voltage': 104.59, 'tps_a_voltage': 597.33, 'id': '5', 'generator_oil_pressure': 68.25}
+2018-06-08 17:14:50 INFO 已有记录数：4
+2018-06-08 17:14:50 INFO 请求的json为：{'data': {u'status': 2, u'power_factor': 69.33, u'reactive_power': 357.73, u'generator_speed': 429, u'online_status': 2, u'tps_a_voltage': 238.99, u'tps_c_electric': 679.95, u'active_power': 749.58, u'generator_battery_voltage': 666.77, u'tps_b_voltage': 325.46, u'tps_b_electric': 145.41, u'frequency': 677.65, u'generator_time': 65292, u'tps_a_electric': 837.46, u'tps_c_voltage': 674.59, u'id': '5', u'generator_oil_pressure': 500.95}}
+2018-06-08 17:14:50 INFO 南向接口响应：{"error": {"msg": "[service_id] must not null ", "code": 4001002}}
+2018-06-08 17:52:49 INFO 开始获取token
+2018-06-08 17:52:49 INFO token:ODZCNDU4OEExODM3NzQxN0NBNTNBQkVBQThFRTk4MDU1RUY1NjNFOTcwRTc5MTAxNkEzMDRCOTlBODI3NTBDQw==
+2018-06-08 17:52:49 INFO ----------------------test_a1_diesel_generator_generator_success---------------------
+2018-06-08 17:52:49 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-08 17:52:49 INFO id=：5 body：{'status': 2, 'power_factor': 1.9, 'generator_speed': 3, 'online_status': 1, 'reactive_power': 1.8, 'tps_c_electric': 1.5, 'active_power': 1.7, 'generator_battery_voltage': 2.3, 'tps_b_voltage': 1.4, 'tps_b_electric': 1.3, 'frequency': 2.1, 'generator_time': 4, 'tps_a_electric': 1.1, 'tps_c_voltage': 1.6, 'tps_a_voltage': 1.2, 'id': '5', 'generator_oil_pressure': 2.2}
+2018-06-08 17:52:49 INFO 已有记录数：4
+2018-06-08 17:52:49 INFO 请求的json为：{'service_id': 'diesel_generator', 'operation': u'upsert', 'data': {u'status': 2, u'power_factor': 608.12, u'reactive_power': 892.69, u'generator_speed': 186, u'online_status': 2, u'tps_a_voltage': 971.66, u'tps_c_electric': 676.71, u'active_power': 364.49, u'generator_battery_voltage': 164.51, u'tps_b_voltage': 759.45, u'tps_b_electric': 851.14, u'frequency': 754.51, u'generator_time': 39450, u'tps_a_electric': 373.39, u'tps_c_voltage': 831.63, u'id': '5', u'generator_oil_pressure': 216.18}, 'table': 'generator'}
+2018-06-08 17:52:49 INFO 开始掉南向接口
+2018-06-08 17:52:49 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-08 17:52:49 INFO 断言南向接口请求返回
+2018-06-08 17:52:49 INFO success
+2018-06-08 17:52:49 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 608.12, "generator_speed": 186, "online_status": 2, "reactive_power": 892.69, "tps_c_electric": 676.71, "active_power": 364.49, "generator_battery_voltage": 164.51, "tps_b_voltage": 759.45, "tps_b_electric": 851.14, "frequency": 754.51, "generator_time": 39450, "tps_a_electric": 373.39, "tps_c_voltage": 831.63, "tps_a_voltage": 971.66, "id": "5", "generator_oil_pressure": 216.18}
+2018-06-08 17:52:49 INFO 断言北向接口请求返回的body
+2018-06-08 17:54:07 INFO 开始获取token
+2018-06-08 17:54:07 INFO token:M0MyMjc4MTgzNUUyMUNERTkxRDk2QURBNjQ5RjIwQTZGRTg0MDg4MjBGNTM3NTFFMkU5NEJFQ0E0QUMxMjhCNA==
+2018-06-08 17:54:07 INFO ----------------------test_a1_diesel_generator_generator_success---------------------
+2018-06-08 17:54:07 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-08 17:54:07 INFO id=：5 body：{'status': 2, 'power_factor': 608.12, 'generator_speed': 186, 'online_status': 2, 'reactive_power': 892.69, 'tps_c_electric': 676.71, 'active_power': 364.49, 'generator_battery_voltage': 164.51, 'tps_b_voltage': 759.45, 'tps_b_electric': 851.14, 'frequency': 754.51, 'generator_time': 39450, 'tps_a_electric': 373.39, 'tps_c_voltage': 831.63, 'tps_a_voltage': 971.66, 'id': '5', 'generator_oil_pressure': 216.18}
+2018-06-08 17:54:07 INFO 已有记录数：4
+2018-06-08 17:54:07 INFO 请求的json为：{'service_id': 'diesel_generator', 'operation': u'upsert', 'data': {u'status': 1, u'power_factor': 176.78, u'reactive_power': 1.65, u'generator_speed': 503, u'online_status': 2, u'tps_a_voltage': 648.34, u'tps_c_electric': 900.36, u'active_power': 652.75, u'generator_battery_voltage': 788.23, u'tps_b_voltage': 921.32, u'tps_b_electric': 994.23, u'frequency': 498.61, u'generator_time': 12770, u'tps_a_electric': 806.67, u'tps_c_voltage': 512.85, u'id': '5', u'generator_oil_pressure': 533.83}, 'table': 'generator'}
+2018-06-08 17:54:07 INFO 开始掉南向接口
+2018-06-08 17:54:08 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-08 17:54:08 INFO 断言南向接口请求返回
+2018-06-08 17:54:08 INFO success
+2018-06-08 17:54:08 INFO 北向接口通过id查询返回：{"status": 1, "power_factor": 176.78, "generator_speed": 503, "online_status": 2, "reactive_power": 1.65, "tps_c_electric": 900.36, "active_power": 652.75, "generator_battery_voltage": 788.23, "tps_b_voltage": 921.32, "tps_b_electric": 994.23, "frequency": 498.61, "generator_time": 12770, "tps_a_electric": 806.67, "tps_c_voltage": 512.85, "tps_a_voltage": 648.34, "id": "5", "generator_oil_pressure": 533.83}
+2018-06-08 17:54:08 INFO 断言北向接口请求返回的body
+2018-06-08 17:54:08 INFO 断言失败：{'status': 1, 'power_factor': 176.78, 'generator_speed': 503, 'online_status': 2, 'reactive_power': 1.65, 'tps_c_electric': 900.36, 'active_power': 652.75, 'generator_battery_voltage': 788.23, 'tps_b_voltage': 921.32, 'tps_b_electric': 994.23, 'frequency': 498.61, 'generator_time': 12770, 'tps_a_electric': 806.67, 'tps_c_voltage': 512.85, 'tps_a_voltage': 648.34, 'id': '5', 'generator_oil_pressure': 533.83}
+2018-06-08 17:54:08 INFO 预期返回：{u'status': 1, u'power_factor': 176.78, u'reactive_power': 1.65, u'generator_speed': 503, u'online_status': 2, u'tps_a_voltage': 648.34, u'tps_c_electric': 900.36, u'active_power': 652.75, u'generator_battery_voltage': 788.23, u'tps_b_voltage': 921.32, u'tps_b_electric': 994.23, u'frequency': 498.61, u'generator_time': 12770, u'tps_a_electric': 806.67, u'tps_c_voltage': 512.85, u'id': '5', u'generator_oil_pressure': 533.83}
+2018-06-08 17:54:08 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\x-AgentAPI\xAgent_api_test.py", line 32, in assert_body_data
+    assert operator.eq(value1, value2) == 0
+AssertionError
+
+2018-06-08 17:56:55 INFO 开始获取token
+2018-06-08 17:56:55 INFO token:MDY1NUQ3OEU5NDJGQUQ3QkQ5RkVDM0VEQTQyOEFGMUQyRjVDNTBFNkUyNzUyQ0E0QkFDOEZEMUNDRDMxRTJBNg==
+2018-06-08 17:56:55 INFO ----------------------test_a1_diesel_generator_generator_success---------------------
+2018-06-08 17:56:55 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-08 17:56:55 INFO id=：5 body：{'status': 1, 'power_factor': 176.78, 'generator_speed': 503, 'online_status': 2, 'reactive_power': 1.65, 'tps_c_electric': 900.36, 'active_power': 652.75, 'generator_battery_voltage': 788.23, 'tps_b_voltage': 921.32, 'tps_b_electric': 994.23, 'frequency': 498.61, 'generator_time': 12770, 'tps_a_electric': 806.67, 'tps_c_voltage': 512.85, 'tps_a_voltage': 648.34, 'id': '5', 'generator_oil_pressure': 533.83}
+2018-06-08 17:56:55 INFO 已有记录数：4
+2018-06-08 17:56:55 INFO 请求的json为：{'service_id': 'diesel_generator', 'operation': u'upsert', 'data': {u'status': 2, u'power_factor': 713.0, u'reactive_power': 906.71, u'generator_speed': 783, u'online_status': 1, u'tps_a_voltage': 279.2, u'tps_c_electric': 738.02, u'active_power': 933.35, u'generator_battery_voltage': 772.59, u'tps_b_voltage': 378.07, u'tps_b_electric': 625.83, u'frequency': 572.66, u'generator_time': 10478, u'tps_a_electric': 897.07, u'tps_c_voltage': 520.25, u'id': '5', u'generator_oil_pressure': 322.26}, 'table': 'generator'}
+2018-06-08 17:56:55 INFO 开始掉南向接口
+2018-06-08 17:56:55 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-08 17:56:55 INFO 断言南向接口请求返回
+2018-06-08 17:56:55 INFO success
+2018-06-08 17:56:55 INFO 北向接口通过id查询返回：{"status": 2, "power_factor": 713.0, "generator_speed": 783, "online_status": 1, "reactive_power": 906.71, "tps_c_electric": 738.02, "active_power": 933.35, "generator_battery_voltage": 772.59, "tps_b_voltage": 378.07, "tps_b_electric": 625.83, "frequency": 572.66, "generator_time": 10478, "tps_a_electric": 897.07, "tps_c_voltage": 520.25, "tps_a_voltage": 279.2, "id": "5", "generator_oil_pressure": 322.26}
+2018-06-08 17:56:55 INFO 断言北向接口请求返回的body
+2018-06-08 17:56:55 INFO success
+2018-06-08 17:56:55 INFO id=：5 body：{'status': 2, 'power_factor': 713.0, 'generator_speed': 783, 'online_status': 1, 'reactive_power': 906.71, 'tps_c_electric': 738.02, 'active_power': 933.35, 'generator_battery_voltage': 772.59, 'tps_b_voltage': 378.07, 'tps_b_electric': 625.83, 'frequency': 572.66, 'generator_time': 10478, 'tps_a_electric': 897.07, 'tps_c_voltage': 520.25, 'tps_a_voltage': 279.2, 'id': '5', 'generator_oil_pressure': 322.26}
+2018-06-08 17:56:55 INFO 已有记录数：4
+2018-06-08 17:56:55 INFO 断言北向接口请求返回的body
+2018-06-08 17:56:55 INFO success
+2018-06-08 18:03:10 INFO 开始获取token
+2018-06-08 18:03:10 INFO token:QjQzRDRCNTc1NkFDMkREQTlDNTlBRDgxMTQ3MDlGRjZERkYzRkJEQUI3QTMxRTkwOTZENERBMTlENDYwRkVFNQ==
+2018-06-08 18:03:10 INFO ----------------------test_a1_diesel_generator_generator_success---------------------
+2018-06-08 18:03:10 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-08 18:03:10 INFO traceback.format_exc():
+
+2018-06-08 18:03:47 INFO 开始获取token
+2018-06-08 18:03:47 INFO token:Mjg2MDc0OTM0NTZDRTYxODY2QTY2MDQ0RjVDMDhCODU4RTNGREExRTQ4Mzc3QzhENDkxMzdGRTJFMTQ0OEY4Mg==
+2018-06-08 18:03:47 INFO ----------------------test_a1_diesel_generator_generator_success---------------------
+2018-06-08 18:03:47 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-08 18:03:48 INFO id=：5 body：{'status': 2, 'power_factor': 713.0, 'generator_speed': 783, 'online_status': 1, 'reactive_power': 906.71, 'tps_c_electric': 738.02, 'active_power': 933.35, 'generator_battery_voltage': 772.59, 'tps_b_voltage': 378.07, 'tps_b_electric': 625.83, 'frequency': 572.66, 'generator_time': 10478, 'tps_a_electric': 897.07, 'tps_c_voltage': 520.25, 'tps_a_voltage': 279.2, 'id': '5', 'generator_oil_pressure': 322.26}
+2018-06-08 18:03:48 INFO 已有记录数：4
+2018-06-08 18:03:48 INFO 请求的json为：{'service_id': 'diesel_generator', 'operation': u'upsert', 'data': {u'status': 1, u'power_factor': 340.37, u'reactive_power': 161.47, u'generator_speed': 930, u'online_status': 1, u'tps_a_voltage': 946.87, u'tps_c_electric': 233.98, u'active_power': 307.64, u'generator_battery_voltage': 521.24, u'tps_b_voltage': 154.08, u'tps_b_electric': 491.5, u'frequency': 250.56, u'generator_time': 36483, u'tps_a_electric': 668.74, u'tps_c_voltage': 622.89, u'id': '5', u'generator_oil_pressure': 535.63}, 'table': 'generator'}
+2018-06-08 18:03:48 INFO 开始掉南向接口
+2018-06-08 18:03:48 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-08 18:03:48 INFO 断言南向接口请求返回
+2018-06-08 18:03:48 INFO success
+2018-06-08 18:03:48 INFO 北向接口通过id查询返回：{"status": 1, "power_factor": 340.37, "generator_speed": 930, "online_status": 1, "reactive_power": 161.47, "tps_c_electric": 233.98, "active_power": 307.64, "generator_battery_voltage": 521.24, "tps_b_voltage": 154.08, "tps_b_electric": 491.5, "frequency": 250.56, "generator_time": 36483, "tps_a_electric": 668.74, "tps_c_voltage": 622.89, "tps_a_voltage": 946.87, "id": "5", "generator_oil_pressure": 535.63}
+2018-06-08 18:03:48 INFO 断言北向接口请求返回的body
+2018-06-08 18:03:48 INFO success
+2018-06-08 18:03:48 INFO id=：5 body：{'status': 1, 'power_factor': 340.37, 'generator_speed': 930, 'online_status': 1, 'reactive_power': 161.47, 'tps_c_electric': 233.98, 'active_power': 307.64, 'generator_battery_voltage': 521.24, 'tps_b_voltage': 154.08, 'tps_b_electric': 491.5, 'frequency': 250.56, 'generator_time': 36483, 'tps_a_electric': 668.74, 'tps_c_voltage': 622.89, 'tps_a_voltage': 946.87, 'id': '5', 'generator_oil_pressure': 535.63}
+2018-06-08 18:03:48 INFO 已有记录数：4
+2018-06-08 18:03:48 INFO 断言北向接口请求返回的body
+2018-06-08 18:03:48 INFO success
+2018-06-08 18:55:31 INFO 开始获取token
+2018-06-08 18:55:31 INFO token:RTdBMDgzNzc0QzM4RjgwRkUzNzNCQzhBQkRCOTIzRUUyRkI2M0M4RDI1NTA2QjZFQzdDMUZFQzYwM0FEODlCQQ==
+2018-06-08 18:55:31 INFO ----------------------test_a1_diesel_generator_generator_success---------------------
+2018-06-08 18:55:31 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-08 18:55:31 INFO id=：5 body：{'status': 1, 'power_factor': 340.37, 'generator_speed': 930, 'online_status': 1, 'reactive_power': 161.47, 'tps_c_electric': 233.98, 'active_power': 307.64, 'generator_battery_voltage': 521.24, 'tps_b_voltage': 154.08, 'tps_b_electric': 491.5, 'frequency': 250.56, 'generator_time': 36483, 'tps_a_electric': 668.74, 'tps_c_voltage': 622.89, 'tps_a_voltage': 946.87, 'id': '5', 'generator_oil_pressure': 535.63}
+2018-06-08 18:55:31 INFO 已有记录数：4
+2018-06-08 18:55:31 INFO 请求的json为：{'service_id': 'diesel_generator', 'operation': u'upsert', 'data': {u'status': 2, u'power_factor': 886.99, u'reactive_power': 695.68, u'generator_speed': 258, u'online_status': 2, u'tps_a_voltage': 344.58, u'tps_c_electric': 603.07, u'active_power': 504.1, u'generator_battery_voltage': 32.95, u'tps_b_voltage': 120.17, u'tps_b_electric': 946.77, u'frequency': 813.58, u'generator_time': 4429, u'tps_a_electric': 752.08, u'tps_c_voltage': 539.27, u'id': '5', u'generator_oil_pressure': 103.27}, 'table': 'generator'}
+2018-06-08 18:55:31 INFO 开始掉南向接口
+2018-06-08 18:55:31 INFO 南向接口响应：{"msg": "ok", "status": 200}
+2018-06-08 18:55:31 INFO 断言南向接口请求返回
+2018-06-08 18:55:31 INFO success
+2018-06-08 18:57:34 INFO 开始获取token
+2018-06-08 18:57:34 INFO token:NjE2Rjc3RDA2ODFGNjQ5MTZCNDIyQ0VBNTMyMjY3MDM4OUU2OENDRDFFNzkzRTM3QjI1QUU3MDY5MjUyMDQ0QQ==
+2018-06-08 18:57:34 INFO ----------------------test_a1_diesel_generator_generator_success---------------------
+2018-06-08 18:57:34 INFO C:\wq\pyworkspace\x-AgentAPI\data\API_list\BA对接说明-柴电发电机.xlsx
+2018-06-08 18:57:34 INFO id=：5 body：{'status': 2, 'power_factor': 886.99, 'generator_speed': 258, 'online_status': 2, 'reactive_power': 695.68, 'tps_c_electric': 603.07, 'active_power': 504.1, 'generator_battery_voltage': 32.95, 'tps_b_voltage': 120.17, 'tps_b_electric': 946.77, 'frequency': 813.58, 'generator_time': 4429, 'tps_a_electric': 752.08, 'tps_c_voltage': 539.27, 'tps_a_voltage': 344.58, 'id': '5', 'generator_oil_pressure': 103.27}
+2018-06-08 18:57:34 INFO 已有记录数：4
+2018-06-08 18:57:34 INFO 请求的json为：{'service_id': 'diesel_generator', 'operation': u'upsert', 'data': {u'status': 1.1, u'power_factor': 'a', u'reactive_power': 'a', u'generator_speed': 1.1, u'online_status': 1.1, u'tps_a_voltage': 'a', u'tps_c_electric': 'a', u'active_power': 'a', u'generator_battery_voltage': 'a', u'tps_b_voltage': 'a', u'tps_b_electric': 'a', u'frequency': 'a', u'generator_time': 1.1, u'tps_a_electric': 'a', u'tps_c_voltage': 'a', u'id': '5', u'generator_oil_pressure': 'a'}, 'table': 'generator'}
+2018-06-08 18:57:34 INFO 开始掉南向接口
+2018-06-08 18:57:34 INFO 南向接口响应：{"error": {"msg": "field value unvalid. field :[online_status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, generator_battery_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_c_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, frequency type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_oil_pressure type:float min:0, max:1000, maxLength:64\uff0c value:a, power_factor type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_a_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_speed type:int32 min:0, max:1000, maxLength:64\uff0c value:1.1, tps_a_electric type:float min:0, max:1000, maxLength:64\uff0c value:a, active_power type:float min:0, max:1000, maxLength:64\uff0c value:a, tps_b_voltage type:float min:0, max:1000, maxLength:64\uff0c value:a, generator_time type:int32 min:0, max:100000, maxLength:64\uff0c value:1.1, status type:int32 min:1, max:2, maxLength:64\uff0c value:1.1, reactive_power type:float min:0, max:1000, maxLength:64\uff0c value:a]", "code": 4001001}}

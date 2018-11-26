@@ -1,0 +1,284 @@
+2018-09-18 14:50:11 INFO 开始获取token
+2018-09-18 14:50:11 INFO token:MzBCMEVCQThBRDg3NkNBNUI3OUM1MDU3MzFFN0M5ODcyRDE4NEM2RUYyRDhGNDJBQ0FCMzAwQ0YzRTg3RDEyQg==
+2018-09-18 14:50:11 INFO -----开始导入设备-----
+2018-09-18 14:50:11 INFO url:http://mint-api.homecity365.com/v2/product/1607d2b740ed1f411607d2b740ed8601/device_import_batch
+2018-09-18 14:50:11 INFO body:[{"mac": "3F24DE7D8030", "name": "name0", "sn": "sn0"}, {"mac": "5A256F95B9D1", "name": "name1", "sn": "sn1"}]
+2018-09-18 14:50:11 INFO 创建产品接口响应：{"error": {"msg": "service unavailable", "code": 5031001}}
+2018-09-18 14:55:23 INFO 开始获取token
+2018-09-18 14:55:23 INFO token:RkI4ODdBMkVEQzYwMjMxNDIyNDExRUE1OTY5QTNBQjAxQ0I4QUQ4MjE2RDUwOTRCQzY1M0IwOUU4OEIyQUYzMg==
+2018-09-18 14:55:23 INFO -----开始导入设备-----
+2018-09-18 14:55:23 INFO url:http://mint-api.homecity365.com/v2/product/1607d2b740ed1f411607d2b740ed8601/device_import_batch
+2018-09-18 14:55:23 INFO body:[{"mac": "089CFC23000F", "name": "name089CFC23000F", "sn": "sn089CFC23000F"}, {"mac": "FDE058CAF7DF", "name": "nameFDE058CAF7DF", "sn": "snFDE058CAF7DF"}]
+2018-09-18 14:55:23 INFO 创建产品接口响应：{"error": {"msg": "service unavailable", "code": 5031001}}
+2018-09-18 14:56:15 INFO 开始获取token
+2018-09-18 14:56:15 INFO token:OTI4RjY5RjU4NkIwMzEyOTM0QUE3N0M0QjcyQUM0Mjc3QTQ2MzJBQ0ZDNjA1NzEwMjUxQ0IyQTM3NUExN0IzQg==
+2018-09-18 14:56:15 INFO -----开始导入设备-----
+2018-09-18 14:56:15 INFO url:http://mint-api.homecity365.com/v2/product/1607d2b740ed1f411607d2b740ed8601/device_import_batch
+2018-09-18 14:56:15 INFO body:[{"mac": "4EF46DE68315", "name": "name4EF46DE68315", "sn": "sn4EF46DE68315"}, {"mac": "4F7121C9D1B0", "name": "name4F7121C9D1B0", "sn": "sn4F7121C9D1B0"}]
+2018-09-18 14:57:00 INFO 开始获取token
+2018-09-18 14:57:00 INFO token:RDkzNkJDMDRDREFBMjYxQzhGOTQ4OUM3QjEzMzFEQjQzQjkzQTE4NkFGQUEzQkY3QTY1ODNCOEE0QTJFRUVEMQ==
+2018-09-18 14:57:00 INFO -----开始导入设备-----
+2018-09-18 14:57:00 INFO url:http://mint-api.homecity365.com/v2/product/1607d2b740ed1f411607d2b740ed8601/device_import_batch
+2018-09-18 14:57:00 INFO body:[{"mac": "0F671594105B", "name": "name0F671594105B", "sn": "sn0F671594105B"}, {"mac": "B328CFF6ED4A", "name": "nameB328CFF6ED4A", "sn": "snB328CFF6ED4A"}]
+2018-09-18 14:57:00 INFO header:{"Access-Token": "RDkzNkJDMDRDREFBMjYxQzhGOTQ4OUM3QjEzMzFEQjQzQjkzQTE4NkFGQUEzQkY3QTY1ODNCOEE0QTJFRUVEMQ==", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-18 14:57:00 INFO 创建产品接口响应：{"error": {"msg": "service unavailable", "code": 5031001}}
+2018-09-18 14:57:58 INFO 开始获取token
+2018-09-18 14:57:58 INFO token:Qjc2MkNDNkY0NDA2MTIxOEFFMkY5NTFDMEJEOTkwOERDNkVBNEQ4MTdENUQ4NUJFRjlBMzdGMTQ5OTk4MkU0OA==
+2018-09-18 14:57:58 INFO -----开始导入设备-----
+2018-09-18 14:57:58 INFO url:http://mint-api.homecity365.com/v2/product/1607d2b740ed1f411607d2b740ed8601/device_import_batch
+2018-09-18 14:57:58 INFO body:[{"mac": "02F443EFD56B", "name": "name02F443EFD56B", "sn": "sn02F443EFD56B"}, {"mac": "9510AE5EECF7", "name": "name9510AE5EECF7", "sn": "sn9510AE5EECF7"}]
+2018-09-18 14:57:58 INFO header:{"Access-Token": "Qjc2MkNDNkY0NDA2MTIxOEFFMkY5NTFDMEJEOTkwOERDNkVBNEQ4MTdENUQ4NUJFRjlBMzdGMTQ5OTk4MkU0OA==", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-18 14:57:58 INFO 创建产品接口响应：{"import_record_id": "5ba0a1f669a5c7350d575d2a", "devices": [{"mac": "02F443EFD56B", "id": 290727669}, {"mac": "9510AE5EECF7", "id": 290725775}]}
+2018-09-18 15:02:06 INFO 开始获取token
+2018-09-18 15:02:06 INFO token:ODIyNTM5MUI4RTZENzFERDVENkNCNTcyNjgwNUQ0OEU5N0JGMUU4MUU3RTE4RkU2NDI4Qzk3NDIyOUM3REZGRg==
+2018-09-18 15:02:06 INFO -----开始创建产品接口-----
+2018-09-18 15:02:06 INFO url:http://mint-api.homecity365.com/v2/product
+2018-09-18 15:02:06 INFO body:{"is_gateway_device": false, "name": "performance_product_2018-09-18", "link_type": 1, "description": ""}
+2018-09-18 15:02:06 INFO 创建产品接口响应：{"is_release": false, "description": "", "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "key": "1fdfa57355de87fd12c720ae20d479e2", "is_registerable": false, "id": "1607d4b741451f411607d4b74145dc01", "is_active_register": false, "name": "performance_product_2018-09-18", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-09-18 15:02:06 INFO -----开始导入设备-----
+2018-09-18 15:02:06 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device_import_batch
+2018-09-18 15:02:06 INFO body:[{"mac": "8E33F20F7906", "name": "name8E33F20F7906", "sn": "sn8E33F20F7906"}, {"mac": "A8969C8E09E8", "name": "nameA8969C8E09E8", "sn": "snA8969C8E09E8"}]
+2018-09-18 15:02:06 INFO header:{"Access-Token": "ODIyNTM5MUI4RTZENzFERDVENkNCNTcyNjgwNUQ0OEU5N0JGMUU4MUU3RTE4RkU2NDI4Qzk3NDIyOUM3REZGRg==", "Content-Type": "application/x-www-form-urlencoded"}
+2018-09-18 15:02:07 INFO 导入设备接口响应：{"import_record_id": "5ba0a2ee69a5c7350d575d36", "devices": [{"mac": "A8969C8E09E8", "id": 290727205}, {"mac": "8E33F20F7906", "id": 290721458}]}
+2018-09-18 15:41:00 INFO 开始获取token
+2018-09-18 15:41:01 INFO token:NUQwOUZGQzgwNzk4RTIxRTEzMDk3MUY0M0Q2QzhDRkRBRjg5RUZBMzQzREI2MEQ1RENEOUE1MDNERDMwNzVFNA==
+2018-09-18 15:41:01 INFO ----开始创建自定义数据端点----
+2018-09-18 15:41:01 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/datapoint
+2018-09-18 15:41:01 INFO body:{"is_read": true, "index": 0, "max": 100, "name": "porintid", "source": 1, "is_write": 1, "symbol": "unit", "min": 0, "type": 3, "description": "descriptions"}
+2018-09-18 15:41:01 INFO 创建自定义数据端点响应:{"description": "descriptions", "max": 100, "symbol": "unit", "is_write": true, "is_read": true, "is_collect": false, "id": "1a07d2b741581800", "default_value": "", "index": 0, "name": "porintid", "min": 0, "permission_list": [4], "ui_visible": {"control": true, "state": true}, "type": 3}
+2018-09-18 15:41:01 INFO ----开始告警设置----
+2018-09-18 15:41:01 INFO url:http://mint-api.homecity365.com/v2/alert/rule
+2018-09-18 15:41:01 INFO body:{"compare": 5, "tag": "\u544a\u8b66\u6807\u7b7e", "param": "1a07d2b741581800", "scope": 1, "name": "name", "xlink_wechat_template": "", "product_id": "1607d4b741451f411607d4b74145dc01", "type": 1, "value": "100", "content": "neirong", "is_enable": 1, "notify_apps": [], "notify_target": [3], "notify_type": 1}
+2018-09-18 15:41:01 INFO 设置异常规则响应:{"compare": 5, "tag": "\u544a\u8b66\u6807\u7b7e", "value": "100", "notify_apps": [], "is_enable": true, "id": "2807d2b741581a00", "name": "name", "type": 1, "param": "1a07d2b741581800", "content": "neirong", "xlink_wechat_template": "", "scope": 1, "notify_target": [3], "notify_type": 1}
+2018-09-18 17:02:16 INFO 开始获取token
+2018-09-18 17:02:16 INFO token:QTRCOUI1QzBFQjEwRjM5QzU1Q0NDNUM1ODQ4MDE2RUE3QUZFN0NEN0U3MjgwRkRGNUQ4MkFEOUQ1RUU1MTk1NQ==
+2018-09-18 17:02:16 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:02:16 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:02:16 INFO body:{"is_release": false, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316", "scan_mode": 1, "is_registerable": true, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "description": ""}
+2018-09-18 17:03:57 INFO 开始获取token
+2018-09-18 17:03:57 INFO token:QTM4RUNGNDVFMTdDNjY5NkE2MThERDVBOEQyODUzODM3QTZFMUNDREUxM0VERUNCQUQ2OTVFQkZBMEJFQzQyOA==
+2018-09-18 17:03:57 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:03:57 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:03:57 INFO body:{"is_release": false, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316", "scan_mode": 1, "is_registerable": true, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "description": ""}
+2018-09-18 17:03:57 INFO 设置产品允许用户自行授权响应:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "mode": "v", "is_registerable": false, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "performance_product_2018-09-18"}
+2018-09-18 17:05:58 INFO 开始获取token
+2018-09-18 17:05:58 INFO token:RDkyQTNFMjM3QzdBNkU3RTVGQ0VBRDZFNUNERDlCODY5MzAzREQwOEZCMTgwM0E3RUY3ODY1QTFCODZBMTJBNw==
+2018-09-18 17:05:58 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:05:58 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:05:58 INFO body:{"is_release": false, "description": "", "is_registerable": true, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "scan_mode": 1, "visibility": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:05:58 INFO 设置产品允许用户自行授权 响应:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "mode": "v", "is_registerable": false, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "performance_product_2018-09-18"}
+2018-09-18 17:07:30 INFO 开始获取token
+2018-09-18 17:07:30 INFO token:MTEyOTE0NzFBNTUxODM1MzE1ODY2MTZDMDMwNjdCMDE3ODRFNzA1RjQ5RDQ3REJDRTJBMTcyMjU5NzNBQ0YxMw==
+2018-09-18 17:07:30 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:07:30 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:07:30 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:07:30 INFO 设置产品允许用户自行授权 响应:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "mode": "v", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "performance_product_2018-09-18"}
+2018-09-18 17:07:45 INFO 开始获取token
+2018-09-18 17:07:45 INFO token:NDkxRjg5N0U0OURFOTNGRjFCRUUzOTJCQTJEMUZFNjBGREExNkM2MEVBOUFEOUI2OEZDN0JDODAwODgxMTlBRQ==
+2018-09-18 17:07:45 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:07:45 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:07:45 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:07:45 INFO 设置产品允许用户自行授权 响应:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "mode": "v", "is_registerable": false, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "performance_product_2018-09-18"}
+2018-09-18 17:12:45 INFO 开始获取token
+2018-09-18 17:12:45 INFO token:OTg0Mzg2ODg0NkY5NEM4QTY1MTFFMTUwRTAzMTAxM0JCMTY3ODlEQTFEQ0U0OUVBQkY1NjM5NDE4MDM1NzVBOQ==
+2018-09-18 17:12:45 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:12:45 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:12:45 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "mode": "v", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "performance_product_2018-09-18"}
+2018-09-18 17:12:45 INFO 设置产品允许用户自行授权 响应:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "mode": "v", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "performance_product_2018-09-18"}
+2018-09-18 17:13:07 INFO 开始获取token
+2018-09-18 17:13:07 INFO token:REY3MzVDRTY2QkYyQkNEREUyNzdCQjc3OUM0MEZBRjIwNzk3OUEyQUNGMDAyNEVBMTdBOEI1RjJENTYxMkM2OA==
+2018-09-18 17:13:07 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:13:07 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:13:07 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "mode": "v", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "performance_product_2018-09-18"}
+2018-09-18 17:13:07 INFO 设置产品允许用户自行授权 响应:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-18T15:02:06.632Z", "mode": "v", "is_registerable": false, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "performance_product_2018-09-18"}
+2018-09-18 17:15:46 INFO 开始获取token
+2018-09-18 17:15:46 INFO token:MEY4NEU4NjMwNTZBNEY2RTIyQTM0QjY0OThCQzRBRTc0MDcxNjUzODI2QTlDNTcxNTlFQkIwODM4QzU5RThEOQ==
+2018-09-18 17:15:46 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:15:46 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:15:46 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:15:46 INFO 设置产品允许用户自行授权响应:{"error": {"msg": "Access-Token permission invalid", "code": 4031003}}
+2018-09-18 17:18:07 INFO 开始获取token
+2018-09-18 17:18:07 INFO token:QjI5RjIxMDJFRjUzMDgyOUY1Qjg0QTk5MzZDMzc4OUMxNDNEOTQ0NzFGNzk0MTA5ODEwQzExNkE2QjBEQTM2Mw==
+2018-09-18 17:18:07 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:18:07 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:18:07 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:18:07 INFO 设置产品允许用户自行授权响应:{"error": {"msg": "Access-Token permission invalid", "code": 4031003}}
+2018-09-18 17:19:47 INFO 开始获取token
+2018-09-18 17:19:48 INFO token:RUE2RENENkZCM0IyM0I3QjgxNDBEOTdFMTZFNkI2RkJGMDZGMjhCNEExRTEyRDIyRDJENzQ4RTQ5NTFFOTE4NQ==
+2018-09-18 17:19:48 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:19:48 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:19:48 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:19:48 INFO 设置产品允许用户自行授权响应:{"error": {"msg": "Access-Token permission invalid", "code": 4031003}}
+2018-09-18 17:21:39 INFO 开始获取token
+2018-09-18 17:21:39 INFO token:RkI5Mzk3Q0E1QUFEMTVBOTcyNUQwQUU3REY3QkZFMkVGMDcyNTcxNTJBODY4NDA1QjY2OTMwQjlGQTgyRDFDQw==
+2018-09-18 17:21:39 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:21:39 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:21:39 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:21:39 INFO header:{"Access-Token": "RkI5Mzk3Q0E1QUFEMTVBOTcyNUQwQUU3REY3QkZFMkVGMDcyNTcxNTJBODY4NDA1QjY2OTMwQjlGQTgyRDFDQw==", "Content-Type": "application/json"}
+2018-09-18 17:21:39 INFO 设置产品允许用户自行授权响应:{"error": {"msg": "Access-Token permission invalid", "code": 4031003}}
+2018-09-18 17:22:16 INFO 开始获取token
+2018-09-18 17:22:16 INFO token:N0U1M0M0NEEzNUFEOEI5RTQ5NzZEQjAzN0EzMEM0RUNCMzVCMDU2QzYxN0JEMEE1QUQ1REFDNTQwQTIwMjNFRQ==
+2018-09-18 17:22:16 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:22:16 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b71ca61f411607d4b71ca69401
+2018-09-18 17:22:16 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b71ca61f411607d4b71ca69401", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:22:16 INFO header:{"Access-Token": "N0U1M0M0NEEzNUFEOEI5RTQ5NzZEQjAzN0EzMEM0RUNCMzVCMDU2QzYxN0JEMEE1QUQ1REFDNTQwQTIwMjNFRQ==", "Content-Type": "application/json"}
+2018-09-18 17:22:16 INFO 设置产品允许用户自行授权响应:{"error": {"msg": "Access-Token permission invalid", "code": 4031003}}
+2018-09-18 17:24:27 INFO 开始获取token
+2018-09-18 17:24:27 INFO token:QTg0NjExOTRFMTVGRTM4QTQ5MTY2NkY3NTRBNjVCRjhBOUUwQjdDMUQwMDIzMTFGOUU1MzkwREM4NDlFQzA1RQ==
+2018-09-18 17:24:27 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:24:27 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:24:27 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:24:27 INFO header:{"Access-Token": "QTg0NjExOTRFMTVGRTM4QTQ5MTY2NkY3NTRBNjVCRjhBOUUwQjdDMUQwMDIzMTFGOUU1MzkwREM4NDlFQzA1RQ==", "Content-Type": "application/json"}
+2018-09-18 17:24:27 INFO [error]:
+2018-09-18 17:24:27 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\performance\ApiFunc.py", line 350, in user_subscribe_device
+    res = eval(r1.text)
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+
+2018-09-18 17:30:09 INFO 开始获取token
+2018-09-18 17:30:09 INFO token:RUNENjM5NEZGODE5OTgwMEJDRUU2OTRGNzhGRDFERERFMzlEMUZERjRFRUI0MjI2RkUzMThFRkJFODAwMDEzNg==
+2018-09-18 17:30:09 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 17:30:09 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 17:30:09 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 17:30:09 INFO 已设置产品允许用户自行授权
+2018-09-18 19:29:14 INFO 开始获取token
+2018-09-18 19:29:14 INFO token:RTQ1NUJEOEEzRDEzREVEMDMwMTYwODgwRUIzMzBENzg1MzQ4MTA4RTE2N0EwQzIwOTBCNTE1NzE2MTJFNEFENg==
+2018-09-18 19:29:14 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 19:29:14 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 19:29:14 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 19:29:14 INFO 已设置产品允许用户自行授权
+2018-09-18 19:29:14 INFO ----开始注册用户----
+2018-09-18 19:29:14 INFO url:http://mint-api.homecity365.com/v2/user_register
+2018-09-18 19:29:14 INFO body:{"password": "Test1234", "email": "test@xlink.cn", "corp_id": "1007d2b5e0046800"}
+2018-09-18 19:29:14 INFO 设置异常规则响应:{"error": {"msg": "service unavailable", "code": 5031001}}
+2018-09-18 19:29:14 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\performance\ApiFunc.py", line 365, in user_subscribe_device
+    user_id = res["id"]
+KeyError: 'id'
+
+2018-09-18 19:31:09 INFO 开始获取token
+2018-09-18 19:31:09 INFO token:OTMyMzM1QjZCOTE1Njk5Nzk1RUVBMjZBMjkxMkNGQzA5MDNDQUVGODk0ODZFMEU3NENCRjI3RTJBNUIyREJEQg==
+2018-09-18 19:31:09 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 19:31:09 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 19:31:09 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 19:31:10 INFO 已设置产品允许用户自行授权
+2018-09-18 19:31:10 INFO ----开始注册用户----
+2018-09-18 19:31:10 INFO url:http://mint-api.homecity365.com/v2/user_register
+2018-09-18 19:31:10 INFO body:{"corp_id": "1007d2b5e0046800", "source": "2", "local_lang": "zh-cn", "password": "Test1234", "nickname": "nickname", "email": "test@xlink.cn"}
+2018-09-18 19:31:10 INFO 设置异常规则响应:{"status": 1, "email": "test@xlink.cn"}
+2018-09-18 19:31:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\performance\ApiFunc.py", line 368, in user_subscribe_device
+    user_id = res["id"]
+KeyError: 'id'
+
+2018-09-18 19:34:44 INFO 开始获取token
+2018-09-18 19:34:44 INFO token:NDhBRDdFNTg1OUJDQjNFMTRCNzU4MjQzQjY1NzE4QUZCRjExOTZFQzhEOEJENzU4MUMwNTUwNzFDNzM0NjI0Rg==
+2018-09-18 19:34:44 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 19:34:44 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 19:34:44 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 19:34:44 INFO 已设置产品允许用户自行授权
+2018-09-18 19:34:44 INFO ----开始注册用户----
+2018-09-18 19:34:44 INFO url:http://mint-api.homecity365.com/v2/user_register
+2018-09-18 19:34:44 INFO body:{"corp_id": "1007d2b5e0046800", "source": "2", "local_lang": "zh-cn", "password": "Test1234", "nickname": "nickname", "email": "test@xlink.cn"}
+2018-09-18 19:34:44 INFO 设置异常规则响应:{"status": 1, "email": "test@xlink.cn"}
+2018-09-18 19:34:44 INFO ----获取用户id----
+2018-09-18 19:34:44 INFO url:http://mint-api.homecity365.com/v2/user_auth
+2018-09-18 19:34:44 INFO body:{"password": "Test1234", "email": "test@xlink.cn", "corp_id": "1007d2b5e0046800"}
+2018-09-18 19:34:44 INFO 设置异常规则响应:{"access_token": "MkE0MDhEMkM1MTZDQkQ2NjBCNjhCODkwM0VCMzg3QkE2NjAxQzQ1RjlERTRCRTM1Q0E5NDg0RjJFQzE2NjI1Nw==", "expire_in": 7200, "authorize": "2207d4b741c5a800", "user_id": 290728298, "refresh_token": "OTg4MTEzQzY1RDQwNjIzRDkxM0E3QUZGNzUzQkYzODJGNzY1QTM1RkM4Q0U1NEM1RDM4OTJFRjlBOEE4RDMwQQ=="}
+2018-09-18 19:34:44 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\performance\ApiFunc.py", line 386, in user_subscribe_device
+    user_id = res["id"]
+KeyError: 'id'
+
+2018-09-18 19:35:23 INFO 开始获取token
+2018-09-18 19:35:23 INFO token:QkQyOUFDNTJDQjcxM0Y4MkYyQzY0RTRGQjEzREZGREFFMkZENjZCNTY5RDMzMTIyNjEyMjM0RTY5RjY3QkU2QQ==
+2018-09-18 19:35:23 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 19:35:23 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 19:35:23 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 19:35:23 INFO 已设置产品允许用户自行授权
+2018-09-18 19:35:23 INFO ----开始注册用户----
+2018-09-18 19:35:23 INFO url:http://mint-api.homecity365.com/v2/user_register
+2018-09-18 19:35:23 INFO body:{"corp_id": "1007d2b5e0046800", "source": "2", "local_lang": "zh-cn", "password": "Test1234", "nickname": "nickname", "email": "test@xlink.cn"}
+2018-09-18 19:35:23 INFO 设置异常规则响应:{"status": 1, "email": "test@xlink.cn"}
+2018-09-18 19:35:23 INFO ----获取用户id----
+2018-09-18 19:35:23 INFO url:http://mint-api.homecity365.com/v2/user_auth
+2018-09-18 19:35:23 INFO body:{"password": "Test1234", "email": "test@xlink.cn", "corp_id": "1007d2b5e0046800"}
+2018-09-18 19:35:24 INFO 设置异常规则响应:{"access_token": "NUU4RkY1M0Y1NTczREM5RTFEM0Y3MTMxMjYyNDU5NkVEQTg3MEYxMUEwQ0JEQzA0MzYwRDhGMkUwREQ3RkE3NQ==", "expire_in": 7200, "authorize": "2207d4b741c5f800", "user_id": 290727295, "refresh_token": "RUY5QTQ2RkVCODVEMjBGNEE0Q0FCREEzMTgxMjZDQjZDODMwMzg0NEE3OUU2REVCRTJENjRGMUFFMjNDQkFDOA=="}
+2018-09-18 19:35:53 INFO 开始获取token
+2018-09-18 19:35:53 INFO token:M0Q2QTRFOEIxQzVDNzlGODZDNUNEOUUzRTk4RjA3MkUwM0NFRDFFRjEwMkRCNjk2REUwQzZDNzgwODAyMUIxRA==
+2018-09-18 19:35:53 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 19:35:53 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 19:35:53 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 19:35:53 INFO 已设置产品允许用户自行授权
+2018-09-18 19:35:53 INFO ----开始注册用户----
+2018-09-18 19:35:53 INFO url:http://mint-api.homecity365.com/v2/user_register
+2018-09-18 19:35:53 INFO body:{"corp_id": "1007d2b5e0046800", "source": "2", "local_lang": "zh-cn", "password": "Test1234", "nickname": "nickname", "email": "test@xlink.cn"}
+2018-09-18 19:35:53 INFO 设置异常规则响应:{"status": 1, "email": "test@xlink.cn"}
+2018-09-18 19:35:53 INFO ----获取用户id----
+2018-09-18 19:35:53 INFO url:http://mint-api.homecity365.com/v2/user_auth
+2018-09-18 19:35:53 INFO body:{"password": "Test1234", "email": "test@xlink.cn", "corp_id": "1007d2b5e0046800"}
+2018-09-18 19:35:53 INFO 设置异常规则响应:{"access_token": "MjRCODM2Njc3OUUwQzA3MjMwRENCMUQ2NjZGNEUyNUMzNzZCQTY0NTM1NUU3NTZBMkMzQkNDMkE5N0E5MzdFMA==", "expire_in": 7200, "authorize": "2207d2b741c63200", "user_id": 290728921, "refresh_token": "MDBENUExMTkyRDU5RUVFNzFBMTc2MTUwN0RGMTlDNjEwMEQ5QTBDNzc3NDlBM0IzRDFCOEY3MUFENzEzRDg2NA=="}
+2018-09-18 19:35:53 INFO ----开始用户注册设备----
+2018-09-18 19:35:53 INFO url:http://mint-api.homecity365.com/v2/user/290728921/register_device
+2018-09-18 19:35:53 INFO body:{"mac": "F4DDCE00A832", "product_id": "1607d4b741451f411607d4b74145dc01"}
+2018-09-18 19:35:53 INFO 用户注册设备响应:{"error": {"msg": "Access-Token invalid", "code": 4031003}}
+2018-09-18 19:35:53 INFO [error]:{'error': {'msg': 'Access-Token invalid', 'code': 4031003}}
+2018-09-18 19:35:53 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:\wq\pyworkspace\performance\ApiFunc.py", line 404, in user_subscribe_device
+    return res["device_id"]
+KeyError: 'device_id'
+
+2018-09-18 19:37:24 INFO 开始获取token
+2018-09-18 19:37:24 INFO token:NUNBMTYxNThBN0RBRDdDODA0MTZDNjJBODBEOUQ5NUZBMzBCMzEzM0Y3QjdCMkQ0ODBBMTY2MjFDNzdDOTA3Qg==
+2018-09-18 19:37:24 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 19:37:24 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 19:37:24 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 19:37:24 INFO 已设置产品允许用户自行授权
+2018-09-18 19:37:24 INFO ----开始注册用户----
+2018-09-18 19:37:24 INFO url:http://mint-api.homecity365.com/v2/user_register
+2018-09-18 19:37:24 INFO body:{"corp_id": "1007d2b5e0046800", "source": "2", "local_lang": "zh-cn", "password": "Test1234", "nickname": "nickname", "email": "test@xlink.cn"}
+2018-09-18 19:37:24 INFO 设置异常规则响应:{"status": 1, "email": "test@xlink.cn"}
+2018-09-18 19:37:24 INFO ----获取用户id----
+2018-09-18 19:37:24 INFO url:http://mint-api.homecity365.com/v2/user_auth
+2018-09-18 19:37:24 INFO body:{"password": "Test1234", "email": "test@xlink.cn", "corp_id": "1007d2b5e0046800"}
+2018-09-18 19:37:25 INFO 设置异常规则响应:{"access_token": "M0M2Rjg2NkRFNzhBMkJEODE0MkYwNDAyQkQ3QjhBOUJBOEVFM0JGRjZDNDNFNzMwMkNGRkYxNTFENEY2NUUzRg==", "expire_in": 7200, "authorize": "2207d4b741c6ea00", "user_id": 290724628, "refresh_token": "NjUxRjJGMTdDNTVBQ0Y1M0EwMjM3NUVGMEU3Mjk1N0E5QTlENzc3MEE5MDU0RTFBMTAwQ0JBREJFQ0FERkU5Mw=="}
+2018-09-18 19:37:25 INFO ----开始用户注册设备----
+2018-09-18 19:37:25 INFO url:http://mint-api.homecity365.com/v2/user/290724628/register_device
+2018-09-18 19:37:25 INFO body:{"mac": "9416722F993F", "product_id": "1607d4b741451f411607d4b74145dc01"}
+2018-09-18 19:37:25 INFO 用户注册设备响应:{"access_key": 0, "mac": "9416722F993F", "product_id": "1607d4b741451f411607d4b74145dc01", "mcu_mod": "", "firmware_version": 0, "mcu_version": 0, "firmware_mod": "", "device_id": 290724492}
+2018-09-18 19:43:47 INFO 开始获取token
+2018-09-18 19:43:47 INFO token:ODlDOUYwM0JDMkM3RDUyMTM0MjI1QzA5RTk2ODA1RTg2QzkwNEYzMDYzRUMzQTBERkY1NjA4Qjc1QTVFMzNFQQ==
+2018-09-18 19:43:47 INFO ----开始添加accesskey----
+2018-09-18 19:43:47 INFO url:http://mint-api.homecity365.com/v2/accesskey
+2018-09-18 19:43:47 INFO body:{"name": "access_key"}
+2018-09-18 19:43:47 INFO 添加accesskey响应:{"status": 1, "secret": "80cda9cf87f137ef69ec34ccbfbd6667", "create_time": "2018-09-18T19:43:47.252Z", "name": "access_key", "id": "3207d2b741c9e600"}
+2018-09-18 19:52:40 INFO 开始获取token
+2018-09-18 19:52:40 INFO token:MDJCMDcyMkYyODQ2MzJDODg5NzQxQTBCNEJFMzM1RkExNEMwNjlDMUY1NDMwMEZFOEZBRDQwMjg1ODBCNzFCQg==
+2018-09-18 19:52:40 INFO ----开始设置产品允许用户自行授权----
+2018-09-18 19:52:40 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01
+2018-09-18 19:52:40 INFO body:{"is_release": false, "is_active_register": false, "description": "", "extend": {}, "scan_mode": 1, "categories": [], "is_gateway_device": false, "visibility": 1, "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-09-04T17:41:30.888Z", "mode": "A", "is_registerable": true, "pics": [""], "type": 0, "id": "1607d4b741451f411607d4b74145dc01", "link_type": 1, "name": "\u6027\u80fd\u6d4b\u8bd5\u81ea\u52a8\u5316"}
+2018-09-18 19:52:40 INFO 已设置产品允许用户自行授权
+2018-09-18 19:52:40 INFO ----开始注册用户----
+2018-09-18 19:52:40 INFO url:http://mint-api.homecity365.com/v2/user_register
+2018-09-18 19:52:40 INFO body:{"corp_id": "1007d2b5e0046800", "source": "2", "local_lang": "zh-cn", "password": "Test1234", "nickname": "nickname", "email": "test@xlink.cn"}
+2018-09-18 19:52:40 INFO 设置异常规则响应:{"status": 1, "email": "test@xlink.cn"}
+2018-09-18 19:52:40 INFO ----获取用户id----
+2018-09-18 19:52:40 INFO url:http://mint-api.homecity365.com/v2/user_auth
+2018-09-18 19:52:40 INFO body:{"password": "Test1234", "email": "test@xlink.cn", "corp_id": "1007d2b5e0046800"}
+2018-09-18 19:52:40 INFO 设置异常规则响应:{"access_token": "MEJGMjZBREFFQkM1RUUzQzhGMEFDMUFFNjExNzhFQzIwMzgzRjE4NDFFNUQ0Q0QyN0JBNDJFNUU3Q0FCMzBENQ==", "expire_in": 7200, "authorize": "2207d4b741ce1000", "user_id": 290727677, "refresh_token": "OEYwREE1NTJCNTM1RUY3MzI3QjQ2MEE5MUM3MTEwMjJGQUM4Q0E2Q0Y2NjM5RkY2NjJCNkMxNTVDNTQxRDcwNQ=="}
+2018-09-18 19:52:40 INFO ----开始用户注册设备----
+2018-09-18 19:52:40 INFO url:http://mint-api.homecity365.com/v2/user/290727677/register_device
+2018-09-18 19:52:40 INFO body:{"mac": "F846FDF727C3", "product_id": "1607d4b741451f411607d4b74145dc01"}
+2018-09-18 19:52:41 INFO 用户注册设备响应:{"access_key": 0, "mac": "F846FDF727C3", "product_id": "1607d4b741451f411607d4b74145dc01", "mcu_mod": "", "firmware_version": 0, "mcu_version": 0, "firmware_mod": "", "device_id": 290726071}
+2018-09-18 19:52:41 INFO ----开始设置设备扩展属性----
+2018-09-18 19:52:41 INFO url:http://mint-api.homecity365.com/v2/product/1607d4b741451f411607d4b74145dc01/device/290726071/property
+2018-09-18 19:52:41 INFO body:{"name": "value"}
+2018-09-18 19:52:41 INFO 设置设备扩展属性响应:{"name": "value"}

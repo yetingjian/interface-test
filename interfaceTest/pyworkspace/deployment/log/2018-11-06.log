@@ -1,0 +1,191 @@
+2018-11-06 09:24:48 INFO 开始获取token
+2018-11-06 09:24:48 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"MkQ0NUJEREMxM0E2RUMzRkU3RTZBQkMwOEI0NThEMThBQUE3RDNEQTk3QTU1OUNGNjEwOEYxNkRCMUQwQTQ0Ng==","refresh_token":"NzZCMTEyNzY4QjFFMzE0MTMyNDhCMDc2QjRDQjFDMTdENDNENjgwMzBGOTY1NTQwNzA4OTkwQkZFMjRGN0MyRg==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-06 09:24:48 INFO token:MkQ0NUJEREMxM0E2RUMzRkU3RTZBQkMwOEI0NThEMThBQUE3RDNEQTk3QTU1OUNGNjEwOEYxNkRCMUQwQTQ0Ng==
+2018-11-06 09:24:48 INFO 开始获取异常设备数
+2018-11-06 09:24:49 INFO 异常设备数为：37
+2018-11-06 09:24:49 INFO 开始获取过滤器配置
+2018-11-06 09:24:49 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-06 09:24:49 INFO 开始获取设备总数和在线设备数
+2018-11-06 09:24:49 INFO 设备总数为：1096 在线数为：19 离线数为：1077
+2018-11-06 09:24:49 INFO 开始获取设备报警统计
+2018-11-06 09:24:49 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-06 09:24:49 INFO 开始获取地图设备总数
+2018-11-06 09:24:50 INFO 地图设备总数为：1195
+2018-11-06 09:24:50 INFO 开始获取地图在线设备数
+2018-11-06 09:24:50 INFO 地图在线设备数为：23
+2018-11-06 09:24:50 INFO 开始获取地图异常设备数
+2018-11-06 09:24:50 INFO 地图异常设备数为：37
+2018-11-06 09:24:50 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-06 09:24:50 INFO http://api2.xlink.cn/v2/corp_setting
+2018-11-06 09:24:50 INFO 开始设置是否激活验证为：True
+2018-11-06 09:24:50 INFO 是否激活验证已设置为为：True
+2018-11-06 09:24:50 INFO 用户通过邮箱注册
+2018-11-06 09:24:50 INFO 用户通过邮箱注册响应：{"status": 1, "email": "testactive@qq.com"}
+2018-11-06 09:24:50 INFO 用户通过邮箱登录
+2018-11-06 09:24:50 INFO 用户通过邮箱登录响应：{"error": {"msg": "user not exists", "code": 4041011}}
+2018-11-06 09:25:38 INFO 开始获取token
+2018-11-06 09:25:39 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"RDlERDg2NzZENkJENjk3MTFDNjM4RDdFNTQ2NEMxRTdFQTBDQzIxRjUwNTIzRjU5MjUxNEY4QTk2M0Q0M0Q0Rg==","refresh_token":"OEM2QkYxQTJBMDI3MzM2NjgwMTgyODQ2RTVGMzc3RTRCMjExQTZGRjcxRkFCMkRCNjBDREZDM0FFNjFGODUzRg==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-06 09:25:39 INFO token:RDlERDg2NzZENkJENjk3MTFDNjM4RDdFNTQ2NEMxRTdFQTBDQzIxRjUwNTIzRjU5MjUxNEY4QTk2M0Q0M0Q0Rg==
+2018-11-06 09:25:39 INFO 开始获取异常设备数
+2018-11-06 09:25:39 INFO 异常设备数为：37
+2018-11-06 09:25:39 INFO 开始获取过滤器配置
+2018-11-06 09:25:40 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-06 09:25:40 INFO 开始获取设备总数和在线设备数
+2018-11-06 09:25:40 INFO 设备总数为：1096 在线数为：19 离线数为：1077
+2018-11-06 09:25:40 INFO 开始获取设备报警统计
+2018-11-06 09:25:41 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-06 09:25:41 INFO 开始获取地图设备总数
+2018-11-06 09:25:41 INFO 地图设备总数为：1195
+2018-11-06 09:25:41 INFO 开始获取地图在线设备数
+2018-11-06 09:25:42 INFO 地图在线设备数为：23
+2018-11-06 09:25:42 INFO 开始获取地图异常设备数
+2018-11-06 09:25:42 INFO 地图异常设备数为：37
+2018-11-06 09:25:42 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-06 09:25:42 INFO http://api2.xlink.cn/v2/corp_setting
+2018-11-06 09:25:42 INFO 开始设置是否激活验证为：True
+2018-11-06 09:25:43 INFO 是否激活验证已设置为为：True
+2018-11-06 09:25:43 INFO 用户通过邮箱注册
+2018-11-06 09:25:43 INFO 用户通过邮箱注册响应：{"status": 2, "email": "testactive@qq.com"}
+2018-11-06 09:25:43 INFO 用户通过邮箱登录
+2018-11-06 09:25:43 INFO 用户通过邮箱登录响应：{"error": {"msg": "user not exists", "code": 4041011}}
+2018-11-06 09:26:14 INFO 开始获取token
+2018-11-06 09:26:15 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"OUQ5QkEyNjcyRkYwMTIwRkEzOEEzN0EzMzkwOTJFMkZEMkZGQkYzQjVCRUMyQzUwRUIwOTA1RUY1QUFCNzI0RQ==","refresh_token":"REY5RTVDMDNGNTAwODhEQzVFRDEyREE2MTQwNTdGM0Q3RjhFRTBEN0JCNkU5OUM1N0E3OUIzQzc5MkM5QjNDQw==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-06 09:26:15 INFO token:OUQ5QkEyNjcyRkYwMTIwRkEzOEEzN0EzMzkwOTJFMkZEMkZGQkYzQjVCRUMyQzUwRUIwOTA1RUY1QUFCNzI0RQ==
+2018-11-06 09:26:15 INFO 开始获取异常设备数
+2018-11-06 09:26:16 INFO 异常设备数为：37
+2018-11-06 09:26:16 INFO 开始获取过滤器配置
+2018-11-06 09:26:17 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-06 09:26:17 INFO 开始获取设备总数和在线设备数
+2018-11-06 09:26:18 INFO 设备总数为：1096 在线数为：19 离线数为：1077
+2018-11-06 09:26:18 INFO 开始获取设备报警统计
+2018-11-06 09:26:18 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-06 09:26:18 INFO 开始获取地图设备总数
+2018-11-06 09:26:19 INFO 地图设备总数为：1195
+2018-11-06 09:26:19 INFO 开始获取地图在线设备数
+2018-11-06 09:26:19 INFO 地图在线设备数为：23
+2018-11-06 09:26:19 INFO 开始获取地图异常设备数
+2018-11-06 09:26:20 INFO 地图异常设备数为：37
+2018-11-06 09:26:20 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-06 09:26:20 INFO http://api2.xlink.cn/v2/corp_setting
+2018-11-06 09:26:20 INFO 开始设置是否激活验证为：False
+2018-11-06 09:26:20 INFO 是否激活验证已设置为为：False
+2018-11-06 09:26:20 INFO 用户通过邮箱注册
+2018-11-06 09:26:20 INFO 用户通过邮箱注册响应：{"error": {"msg": "register email exists", "code": 4001006}}
+2018-11-06 09:26:20 INFO 用户通过邮箱登录
+2018-11-06 09:26:20 INFO 用户通过邮箱登录响应：{"error": {"msg": "user not exists", "code": 4041011}}
+2018-11-06 09:27:59 INFO 开始获取token
+2018-11-06 09:27:59 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"RTk1RTE2RUY3NEZERUI0NENDNEZGMEFDOTRDNTYyQzY5NzkzQkNCQjBFRjEzNDcyQjZFNTk3N0IzNDk4OURCQQ==","refresh_token":"QUY5MDgxNzgwNUQ3RjdEQkMyQTIyMEI1OEZGQ0QzNEE5MTE2MTJDQTA5MzU5QTE5MEVENjc2NzZDMEJBMzdFNQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-06 09:27:59 INFO token:RTk1RTE2RUY3NEZERUI0NENDNEZGMEFDOTRDNTYyQzY5NzkzQkNCQjBFRjEzNDcyQjZFNTk3N0IzNDk4OURCQQ==
+2018-11-06 09:27:59 INFO 开始获取异常设备数
+2018-11-06 09:28:00 INFO 异常设备数为：37
+2018-11-06 09:28:00 INFO 开始获取过滤器配置
+2018-11-06 09:28:01 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-06 09:28:01 INFO 开始获取设备总数和在线设备数
+2018-11-06 09:28:02 INFO 设备总数为：1096 在线数为：19 离线数为：1077
+2018-11-06 09:28:02 INFO 开始获取设备报警统计
+2018-11-06 09:28:02 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-06 09:28:02 INFO 开始获取地图设备总数
+2018-11-06 09:28:02 INFO 地图设备总数为：1195
+2018-11-06 09:28:02 INFO 开始获取地图在线设备数
+2018-11-06 09:28:02 INFO 地图在线设备数为：23
+2018-11-06 09:28:02 INFO 开始获取地图异常设备数
+2018-11-06 09:28:03 INFO 地图异常设备数为：37
+2018-11-06 09:28:03 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-06 09:28:03 INFO http://api2.xlink.cn/v2/corp_setting
+2018-11-06 09:28:03 INFO 开始设置是否激活验证为：False
+2018-11-06 09:28:03 INFO 是否激活验证已设置为为：False
+2018-11-06 09:28:03 INFO 用户通过邮箱注册
+2018-11-06 09:28:03 INFO 用户通过邮箱注册响应：{"status": 1, "email": "testact@qq.com"}
+2018-11-06 09:28:03 INFO 用户通过邮箱登录
+2018-11-06 09:28:03 INFO 用户通过邮箱登录响应：{"error": {"msg": "user not exists", "code": 4041011}}
+2018-11-06 09:28:42 INFO 开始获取token
+2018-11-06 09:28:42 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"Mzg4MjY3MkFGMUE2NkYwMUM5RTQ3RjA4MTBBRTIxQTM3QTE5QjY5N0YxRDdBMkI4REE3Mzc5MjcyNjg2QjYxQQ==","refresh_token":"RjQ4OUNFMjhGOUExODQ5RkEwOEFDMzE4RjQxRkRDRTE2MDZCNTMwNTA1RkQ0NkE3MzYxRDM2NTQxRkZGNTg4QQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-06 09:28:42 INFO token:Mzg4MjY3MkFGMUE2NkYwMUM5RTQ3RjA4MTBBRTIxQTM3QTE5QjY5N0YxRDdBMkI4REE3Mzc5MjcyNjg2QjYxQQ==
+2018-11-06 09:28:42 INFO 开始获取异常设备数
+2018-11-06 09:28:42 INFO 异常设备数为：37
+2018-11-06 09:28:42 INFO 开始获取过滤器配置
+2018-11-06 09:28:43 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-06 09:28:43 INFO 开始获取设备总数和在线设备数
+2018-11-06 09:28:44 INFO 设备总数为：1096 在线数为：19 离线数为：1077
+2018-11-06 09:28:44 INFO 开始获取设备报警统计
+2018-11-06 09:28:44 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-06 09:28:44 INFO 开始获取地图设备总数
+2018-11-06 09:28:45 INFO 地图设备总数为：1195
+2018-11-06 09:28:45 INFO 开始获取地图在线设备数
+2018-11-06 09:28:45 INFO 地图在线设备数为：23
+2018-11-06 09:28:45 INFO 开始获取地图异常设备数
+2018-11-06 09:28:46 INFO 地图异常设备数为：37
+2018-11-06 09:28:46 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-06 09:28:46 INFO http://api2.xlink.cn/v2/corp_setting
+2018-11-06 09:28:46 INFO 开始设置是否激活验证为：False
+2018-11-06 09:28:46 INFO 是否激活验证已设置为为：False
+2018-11-06 09:28:46 INFO 用户通过邮箱注册
+2018-11-06 09:28:46 INFO 用户通过邮箱注册响应：{"status": 1, "email": "testact1@qq.com"}
+2018-11-06 09:28:46 INFO 用户通过邮箱登录
+2018-11-06 09:28:46 INFO [error]:{'access_token': 'MjcxMkVDMEVFNUNGNUVBQzgxRjFBMTM5Mzg5Nzg1NDczNjYzRTdCMzVFNUMwRjAzM0JERUUyMUNFN0RERjFFQw==', 'expire_in': 7200, 'authorize': '220fa8b7c1dca000', 'user_id': 1001603385, 'refresh_token': 'NjMyMDExNTE4QzRFMTIxREYxRTlGMTI5QkJBNzAyQTZEMzY0MkMwRjIyRThDOEM5RkFBQTZEMzMxMkE3MDQzMw=='}
+2018-11-06 09:28:46 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 917, in test_check_user_active
+    self.assertIn("user not exists", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'user not exists' not found in "{'access_token': 'MjcxMkVDMEVFNUNGNUVBQzgxRjFBMTM5Mzg5Nzg1NDczNjYzRTdCMzVFNUMwRjAzM0JERUUyMUNFN0RERjFFQw==', 'expire_in': 7200, 'authorize': '220fa8b7c1dca000', 'user_id': 1001603385, 'refresh_token': 'NjMyMDExNTE4QzRFMTIxREYxRTlGMTI5QkJBNzAyQTZEMzY0MkMwRjIyRThDOEM5RkFBQTZEMzMxMkE3MDQzMw=='}"
+
+2018-11-06 09:29:18 INFO 开始获取token
+2018-11-06 09:29:18 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"MEJERjhDMkQ3RkJFRTcwNDBFNkJBNjYwMkExREZBODI1OTlBMUMyQzVBMkJBMzVDRjg3NzA1MzYzMzI0M0JCNw==","refresh_token":"RDdEMDFDRkZFMUI1NDFBOTM1RDhDRjQ4NUU3NzE0N0QwOUQyRjIyOTk2MTIyOTBBNkEwMDEyNEE0MDlCN0JEOA==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-06 09:29:18 INFO token:MEJERjhDMkQ3RkJFRTcwNDBFNkJBNjYwMkExREZBODI1OTlBMUMyQzVBMkJBMzVDRjg3NzA1MzYzMzI0M0JCNw==
+2018-11-06 09:29:18 INFO 开始获取异常设备数
+2018-11-06 09:29:19 INFO 异常设备数为：37
+2018-11-06 09:29:19 INFO 开始获取过滤器配置
+2018-11-06 09:29:20 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-06 09:29:20 INFO 开始获取设备总数和在线设备数
+2018-11-06 09:29:20 INFO 设备总数为：1096 在线数为：19 离线数为：1077
+2018-11-06 09:29:20 INFO 开始获取设备报警统计
+2018-11-06 09:29:21 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-06 09:29:21 INFO 开始获取地图设备总数
+2018-11-06 09:29:21 INFO 地图设备总数为：1195
+2018-11-06 09:29:21 INFO 开始获取地图在线设备数
+2018-11-06 09:29:22 INFO 地图在线设备数为：23
+2018-11-06 09:29:22 INFO 开始获取地图异常设备数
+2018-11-06 09:29:22 INFO 地图异常设备数为：37
+2018-11-06 09:29:22 INFO ----开始检查启动激活验证用户登录是否需要激活----
+2018-11-06 09:29:22 INFO http://api2.xlink.cn/v2/corp_setting
+2018-11-06 09:29:22 INFO 开始设置是否激活验证为：True
+2018-11-06 09:29:23 INFO 是否激活验证已设置为为：True
+2018-11-06 09:29:23 INFO 用户通过邮箱注册
+2018-11-06 09:29:24 INFO 用户通过邮箱注册响应：{"status": 1, "email": "testact2@qq.com"}
+2018-11-06 09:29:24 INFO 用户通过邮箱登录
+2018-11-06 09:29:24 INFO [error]:{'error': {'msg': 'account is not valid', 'code': 4001008}}
+2018-11-06 09:29:24 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 917, in test_check_user_active
+    self.assertIn("user not exists", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'user not exists' not found in "{'error': {'msg': 'account is not valid', 'code': 4001008}}"
+
+2018-11-06 11:02:49 INFO 开始获取token
+2018-11-06 11:02:50 INFO r.text:{"member_id":"120fa2b24fee7e00","access_token":"NjI4RTA3QTlDRkM0RDMwQjgzNzc2RkIyNzIzMzY5RUUyNjc1RkNFQTM4MEJBMDQyOUQ3RTdENzQ5N0U1MjM4Ng==","refresh_token":"Q0Q2NDBEQjRBMDk3QTdFNzgzNURGRkYzMTU4MUQ2NkRDQzNFOTA2M0MyNjI3RTc3RTlCMDM0NUIxQ0EwQkEwNQ==","role_type":1,"expire_in":7200,"corp_id":"100fa6af8c879a00"}
+2018-11-06 11:02:50 INFO token:NjI4RTA3QTlDRkM0RDMwQjgzNzc2RkIyNzIzMzY5RUUyNjc1RkNFQTM4MEJBMDQyOUQ3RTdENzQ5N0U1MjM4Ng==
+2018-11-06 11:02:50 INFO 开始获取异常设备数
+2018-11-06 11:02:50 INFO 异常设备数为：37
+2018-11-06 11:02:50 INFO 开始获取过滤器配置
+2018-11-06 11:02:51 INFO 全部过滤器为：5a534930a493ae79965edbee
+2018-11-06 11:02:51 INFO 开始获取设备总数和在线设备数
+2018-11-06 11:02:52 INFO 设备总数为：1096 在线数为：20 离线数为：1076
+2018-11-06 11:02:52 INFO 开始获取设备报警统计
+2018-11-06 11:02:53 INFO 正在报警为：73 今日异常设备总数为：37 今日报警总数为：0 近7日报警总数为：2
+2018-11-06 11:02:53 INFO 开始获取地图设备总数
+2018-11-06 11:02:53 INFO 地图设备总数为：1195
+2018-11-06 11:02:53 INFO 开始获取地图在线设备数
+2018-11-06 11:02:54 INFO 地图在线设备数为：24
+2018-11-06 11:02:54 INFO 开始获取地图异常设备数
+2018-11-06 11:02:54 INFO 地图异常设备数为：37
+2018-11-06 11:02:54 INFO ----开始添加定时任务----
+2018-11-06 11:02:54 INFO url：http://api2.xlink.cn/v2/timer/task
+2018-11-06 11:02:54 INFO body：{"timer": {"first_execute_time": "2018-11-06T11:02:54.999Z", "type": "1", "last_execute_time": "2018-11-07T00:00:00.000Z", "schedule": {"exclude_day": []}}, "name": "task", "actions": [{"config": {"datapoint": [{"index": "1", "value": 11}], "device_id": "1658785277"}, "moment": "00:00:00", "type": "1", "name": "start"}], "desc": "task"}
+2018-11-06 11:02:55 INFO 添加定时任务响应：{"status": 4, "owner_type": 1, "create_time": "2018-11-06T11:02:57.309Z", "name": "task", "desc": "task", "actions": [{"config": {"datapoint": [{"index": 1, "value": "11"}], "device_id": 1658785277}, "moment": "00:00:00", "type": 1, "name": "start"}], "owner_id": "120fa2b24fee7e00", "id": "5be10461a493ae205acf46da", "timer": {"type": 1, "first_execute_time": "2018-11-06T11:02:54.999Z", "last_execute_time": "2018-11-07T00:00:00.00Z", "schedule": {}}, "execute_time": "2018-11-06T11:02:54.999Z"}

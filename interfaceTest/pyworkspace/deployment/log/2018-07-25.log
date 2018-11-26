@@ -1,0 +1,172 @@
+2018-07-25 17:17:56 INFO 开始获取token
+2018-07-25 17:17:56 INFO token:M0U5NjVDMjNBQTI1QUUwQkM4MUNCMDRBQjFDNDhFOEM5Qzc5RTRCNjkyRkZDMkUzQkUyQkQ0QjJGQTcxRjBDQg==
+2018-07-25 17:17:56 INFO 开始添加企业成员
+2018-07-25 17:17:56 INFO 创建添加企业成员响应：{"status": 1, "phone": "15018753353", "is_notice": false, "create_time": "2018-07-25T17:17:56.472Z", "role": 99, "name": "test", "is_alert": false, "id": "1207d4b6b0808800", "email": "wangqi@xlink.cn"}
+2018-07-25 17:17:56 INFO 开始创建产品接口
+2018-07-25 17:17:57 INFO 创建产品接口响应：{"is_release": false, "key": "a93d13f500440594bb3d91efc1ca0ad4", "description": "", "quota": 100000000, "is_allow_multi_admin": false, "create_time": "2018-07-25T17:17:56.518Z", "device_type": "Unkown", "is_registerable": false, "id": "1607d2b6b08007d61607d2b6b0808801", "is_active_register": false, "name": "product_2018-07-25", "is_gateway_device": false, "pics": [], "type": 0, "link_type": 1}
+2018-07-25 17:17:57 INFO 开始创建$1002数据端点
+2018-07-25 17:17:57 INFO 创建$1002数据端点响应：{"default_value": "", "index": 0, "description": "\u5f00\u5173\u5f00\u542f\u65f6\u53ef\u8fdb\u884c\u4e8c\u7ef4\u7801\u8ba2\u9605", "min": 0, "max": 0, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "name", "type": 1, "id": "1a07d4b6b0808801", "name": "$1002"}
+2018-07-25 17:17:57 INFO 开始创建自定义数据端点
+2018-07-25 17:17:57 INFO 创建自定义数据端点响应：{"default_value": "", "index": 1, "description": "", "min": 0, "max": 255, "symbol": "", "is_write": true, "is_system": false, "permission_list": [4], "is_read": true, "is_collect": false, "ui_visible": {"control": true, "state": true}, "field_name": "point_name", "type": 2, "id": "1a07d4b6b0808802", "name": "para_name"}
+2018-07-25 17:17:57 INFO 开始添加设备
+2018-07-25 17:17:57 INFO 添加设备响应：{"mac": "F0FE6B792673", "id": 452872280}
+2018-07-25 17:17:57 INFO 开始设置异常规则
+2018-07-25 17:17:57 INFO [error]:{'error': {'msg': 'exception tag not exist', 'code': 4041082}}
+2018-07-25 17:17:57 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 232, in test_alter_rule
+    self.assertIn("id", res)
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in {'error': {'msg': 'exception tag not exist', 'code': 4041082}}
+
+2018-07-25 17:17:57 INFO 开始报警设置
+2018-07-25 17:17:57 INFO [error]:{'error': {'msg': 'alarm rule not exists', 'code': 4041015}}
+2018-07-25 17:17:57 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 297, in test_alarm_setting
+    self.assertIn("id", res)
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in {'error': {'msg': 'alarm rule not exists', 'code': 4041015}}
+
+2018-07-25 17:17:57 INFO 开始设置快照
+2018-07-25 17:17:57 INFO 设置快照响应：{"id": "5b584044566fe03644a4f258"}
+2018-07-25 17:17:57 INFO 开始设置统计规则
+2018-07-25 17:17:57 INFO 统计规则响应：{"id": "5b584045899e9061497705ab"}
+2018-07-25 17:17:57 INFO 开始调串口激活设备
+2018-07-25 17:18:08 INFO 开始查询宽表设备列表
+2018-07-25 17:18:08 INFO [error]:{'count': 0, 'list': []}
+2018-07-25 17:18:08 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 412, in test_wide_devices
+    self.assertIn(self.device_id, str(res))
+  File "C:\Python27\lib\unittest\case.py", line 800, in assertIn
+    if member not in container:
+TypeError: 'in <string>' requires string as left operand, not int
+
+2018-07-25 17:18:08 INFO 开始上传固件版本1
+2018-07-25 17:18:08 INFO [error_upload]:
+2018-07-25 17:18:08 INFO [error_mcu]:
+2018-07-25 17:18:08 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 500, in test_upload_MCU
+    res1 = eval(r1.text)
+  File "<string>", line 1
+    Could not initialize class xlink.core.singleton.b
+                       ^
+SyntaxError: invalid syntax
+
+2018-07-25 17:18:08 INFO 开始创建升级任务
+2018-07-25 17:18:08 INFO [error]:{'error': {'msg': 'service unavailable', 'code': 5031001}}
+2018-07-25 17:18:08 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 596, in test_create_mcu_task
+    self.assertIn("id", str(res))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in "{'error': {'msg': 'service unavailable', 'code': 5031001}}"
+
+2018-07-25 17:18:08 INFO 开始启动升级任务
+2018-07-25 17:18:08 INFO [error]:{'error': {'msg': 'upgrade task not exists', 'code': 4041013}}
+2018-07-25 17:18:08 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 617, in test_start_task
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [404]>'
+
+2018-07-25 17:18:08 INFO 开始获取地理位置信息列表
+2018-07-25 17:18:10 INFO 获取地理位置信息列表响应：{"count": 9, "province_code": "S006", "province_latitude": 40.8106, "country_latitude": 34.7725, "country_code": "F001", "country_longitude": 113.7266, "country_name": "\u4e2d\u56fd", "list": [{"city_name": "\u547c\u548c\u6d69\u7279\u5e02", "city_longitude": 111.6522, "city_latitude": 40.8106, "city_code": "T0001"}, {"city_name": "\u5305\u5934\u5e02", "city_longitude": 109.8222, "city_latitude": 40.6522, "city_code": "T0002"}, {"city_name": "\u4e4c\u6d77\u5e02", "city_longitude": 106.7954706576, "city_latitude": 39.6538487382, "city_code": "T0003"}, {"city_name": "\u8d64\u5cf0\u5e02", "city_longitude": 118.9636, "city_latitude": 42.2683, "city_code": "T0004"}, {"city_name": "\u901a\u8fbd\u5e02", "city_longitude": 122.2446898559, "city_latitude": 43.6524723899, "city_code": "T0005"}, {"city_name": "\u9102\u5c14\u591a\u65af\u5e02", "city_longitude": 109.7808671129, "city_latitude": 39.6084455919, "city_code": "T0006"}, {"city_name": "\u547c\u4f26\u8d1d\u5c14\u5e02", "city_longitude": 119.7658430715, "city_latitude": 49.2116490124, "city_code": "T0007"}, {"city_name": "\u5df4\u5f66\u6dd6\u5c14\u5e02", "city_longitude": 107.3877197092, "city_latitude": 40.7431555653, "city_code": "T0008"}, {"city_name": "\u4e4c\u5170\u5bdf\u5e03\u5e02", "city_longitude": 113.1337553341, "city_latitude": 40.9939035403, "city_code": "T0009"}], "province_longitude": 111.6522, "province_name": "\u5185\u8499\u53e4\u81ea\u6cbb\u533a"}
+2018-07-25 17:18:10 INFO 开始调串口上报数据
+2018-07-25 17:18:10 INFO 【串口上报数据失败】
+2018-07-25 17:18:10 INFO 开始获取告警记录
+2018-07-25 17:18:10 INFO [error]:{'count': 0, 'list': []}
+2018-07-25 17:18:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 804, in test_get_alarm_list
+    self.assertIn(self.device_id, str(res))
+  File "C:\Python27\lib\unittest\case.py", line 800, in assertIn
+    if member not in container:
+TypeError: 'in <string>' requires string as left operand, not int
+
+2018-07-25 17:18:10 INFO 开始用户通过邮箱注册
+2018-07-25 17:18:10 INFO 用户通过邮箱注册响应：{"status": 1, "email": "wangqi@xlink.cn"}
+2018-07-25 17:18:10 INFO 开始获取注册验证码
+2018-07-25 17:18:10 INFO 已发送验证码
+2018-07-25 17:18:10 INFO 开始用户通过邮箱登录
+2018-07-25 17:18:10 INFO 用户通过邮箱登录响应：{"access_token": "OUU5OURBNzEwNEE3MDE5RTMzRkQ3QTM2OTYxNTAzNjUxMDQzODkwMDU2MEJFNEIxMEExNjUxMDA2Q0ZCNDQ1Qw==", "expire_in": 7200, "authorize": "2207d4b6b080a201", "user_id": 452875137, "refresh_token": "ODhDRTdCRDgxQ0ZCNzEwRUZBMTQ4MjA0OUFDRjQ5QUI5NjgwMjVEQUY3OTg5QzlGMzJGNTk3RTVFNTQxODU5Rg=="}
+2018-07-25 17:18:10 INFO 开始订阅设备
+2018-07-25 17:18:10 INFO [error]:{'error': {'msg': 'service unavailable', 'code': 5031001}}
+2018-07-25 17:18:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 825, in test_get_qrcode_subscribe
+    self.assertIn(self.device_id, str(res))
+  File "C:\Python27\lib\unittest\case.py", line 800, in assertIn
+    if member not in container:
+TypeError: 'in <string>' requires string as left operand, not int
+
+2018-07-25 17:18:10 INFO 开始获取设备列表
+2018-07-25 17:18:10 INFO [error]:[]
+2018-07-25 17:18:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 844, in test_user_get_device_list
+    self.assertIn(self.device_id, str(res))
+  File "C:\Python27\lib\unittest\case.py", line 800, in assertIn
+    if member not in container:
+TypeError: 'in <string>' requires string as left operand, not int
+
+2018-07-25 17:18:10 INFO 开始配置app
+2018-07-25 17:18:10 INFO 配置app响应：{"secret": "19b59286190d2addbcbd320b48617dda", "create_time": "2018-07-25T17:18:10.151Z", "name": "feedback", "plugin": "helpdesk", "platform_status": 1, "enable": false, "desc": "", "type": 10, "id": "2e07d2b6b080a400", "fee_type": 1}
+2018-07-25 17:18:10 INFO 开始新增用户反馈
+2018-07-25 17:18:10 INFO [error]:
+2018-07-25 17:18:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 891, in test_feedback
+    res = eval(r.text)
+  File "<string>", line 1
+    Unresolvable URL: http://apiserver/v2/module/feedback/2e07d2b6b080a400/api/feedback/save
+                   ^
+SyntaxError: invalid syntax
+
+2018-07-25 17:18:10 INFO 开始设备手动升级
+2018-07-25 17:18:10 INFO [error]:{'error': {'msg': 'Access-Token permission invalid', 'code': 4031003}}
+2018-07-25 17:18:10 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 913, in test_upgrade_by_manual
+    self.assertIn("200", str(r))
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: '200' not found in '<Response [403]>'
+
+2018-07-25 17:39:59 INFO 开始获取token
+2018-07-25 17:39:59 INFO token:OTkxQ0I2Q0Q1MUEwODNFQkUxMUVCMjZBRjE0OEMwQjNBQTE2NkE2QUEwRTg0N0NDRENEQTREMjI5MEU1QzJDQQ==
+2018-07-25 17:40:27 INFO 开始获取token
+2018-07-25 17:40:27 INFO token:MERGOEM5MDAyMkJCNjY2ODYwRjk4REZFMDkwQTYzQ0RBRkJBNDhBRDYxN0JGQjEyMDBGQzdCMjdEMjMxNEE4RQ==
+2018-07-25 17:41:23 INFO 开始获取token
+2018-07-25 17:41:23 INFO token:NzAxNkNGOTBDNjVGMDE5MjM2NDBGRDM5NkE5QUFBN0MwRkVFRkQwODI2QThEQUYyMjhBNkJERUNEOUQyRThBOQ==
+2018-07-25 17:41:23 INFO ----开始设置异常规则----
+2018-07-25 17:41:23 INFO url：http://120.78.32.202/v2/alert/rule
+2018-07-25 17:41:23 INFO body：{"exception": {"suggestions": "", "tag_id": "36d06e8945dbc7ff1974d68e009c6696"}, "type": 1, "name": "test_exception", "notification": {"scope": {"member": {"member_ids": [], "is_all": true, "department_ids": [], "position_ids": []}}, "is_enable": false, "conditions": {"times": 1}}, "tag": "", "compare": 2, "param": null, "content": "value>100", "source": 1, "product_id": null, "value": "100", "notify_apps": [], "scope": 4, "is_enable": true, "notify_target": [], "notify_type": 2, "deviceOnline": "online"}
+2018-07-25 17:41:23 INFO [error]:{'error': {'msg': 'product not exists', 'code': 4041005}}
+2018-07-25 17:41:23 INFO traceback.format_exc():
+Traceback (most recent call last):
+  File "C:/wq/pyworkspace/deployment/deployment_test.py", line 249, in test_alter_rule
+    self.assertIn("id", res)
+  File "C:\Python27\lib\unittest\case.py", line 803, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Python27\lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: 'id' not found in {'error': {'msg': 'product not exists', 'code': 4041005}}
+
